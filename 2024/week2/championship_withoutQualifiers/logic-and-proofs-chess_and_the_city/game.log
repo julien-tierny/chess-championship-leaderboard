@@ -42,14 +42,14 @@
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
 TURN FOR 1
-[DEBUG] Wrote to ouput file championship/logic-and-proofs-chess_and_the_city/move.csv move : e2e4
+[DEBUG] Wrote to ouput file championship/logic-and-proofs-chess_and_the_city/move.csv move : g2g3
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-chess_and_the_city/history.csv`...
 [32;1m[Board] [0mLoaded 0 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-chess_and_the_city/move.csv`...
-[32;1m[Board] [0m'White' player is playing e2 to e4.
+[32;1m[Board] [0m'White' player is playing g2 to g3.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
@@ -61,25 +61,2578 @@ TURN FOR 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the 'Black' player...
-timeout: failed to run command '/home/julien/Pro/git/teaching/x/2024/chess_proj/build/chess_and_the_city': No such file or directory
-[32;1m[Game] [0mPlayer's error code: 32512
+Initial board:
+--------------------
+8| r n b q k b n r |
+7| p p p p p p p p |
+6| . . . . . . . . |
+5| . . . . . . . . |
+4| . . . . . . . . |
+3| . . . . . . . . |
+2| P P P P P P P P |
+1| R N B Q K B N R |
+--------------------
+   a b c d e f g h
+After reading:
+--------------------
+8| r n b q k b n r |
+7| p p p p p p p p |
+6| . . . . . . . . |
+5| . . . . . . . . |
+4| . . . . . . . . |
+3| . . . . . . P . |
+2| P P P P P P . P |
+1| R N B Q K B N R |
+--------------------
+   a b c d e f g h
+black moved and the output is:
+--------------------
+8| r n b q k b n r |
+7| p p p p p p . p |
+6| . . . . . . . . |
+5| . . . . . . p . |
+4| . . . . . . . . |
+3| . . . . . . P . |
+2| P P P P P P . P |
+1| R N B Q K B N R |
+--------------------
+   a b c d e f g h
+[32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-chess_and_the_city/history.csv`...
 [32;1m[Board] [0mLoaded 1 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-chess_and_the_city/move.csv`...
-[32;1m[Board] [0m'Black' player is playing e2 to e4.
-[32;1m[Board] [0m[31;1m[ERROR][0m Move source (e2) contains no piece :(
-[32;1m[Referee] [0mInvalid move (code: -3) :(
+[32;1m[Board] [0m'Black' player is playing g7 to g5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the 'White' player...
+[DEBUG] Input history filename: championship/logic-and-proofs-chess_and_the_city/history.csv
+[DEBUG] Output move file: championship/logic-and-proofs-chess_and_the_city/move.csv
+g2g3
+4
+1 6
+[DEBUG] 1 6->2 6
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP | bP | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP | wP | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+g7g5
+4
+6 6
+[DEBUG] 6 6->4 6
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP | wP | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP | wP | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+TURN FOR 1
+[DEBUG] Wrote to ouput file championship/logic-and-proofs-chess_and_the_city/move.csv move : d2d3
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-chess_and_the_city/history.csv`...
+[32;1m[Board] [0mLoaded 2 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-chess_and_the_city/move.csv`...
+[32;1m[Board] [0m'White' player is playing d2 to d3.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the 'Black' player...
+Initial board:
+--------------------
+8| r n b q k b n r |
+7| p p p p p p p p |
+6| . . . . . . . . |
+5| . . . . . . . . |
+4| . . . . . . . . |
+3| . . . . . . . . |
+2| P P P P P P P P |
+1| R N B Q K B N R |
+--------------------
+   a b c d e f g h
+After reading:
+--------------------
+8| r n b q k b n r |
+7| p p p p p p . p |
+6| . . . . . . . . |
+5| . . . . . . p . |
+4| . . . . . . . . |
+3| . . . P . . P . |
+2| P P P . P P . P |
+1| R N B Q K B N R |
+--------------------
+   a b c d e f g h
+black moved and the output is:
+--------------------
+8| r n b q k b n r |
+7| p p p p p p . p |
+6| . . . . . . . . |
+5| . . . . . . . . |
+4| . . . . . . p . |
+3| . . . P . . P . |
+2| P P P . P P . P |
+1| R N B Q K B N R |
+--------------------
+   a b c d e f g h
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-chess_and_the_city/history.csv`...
+[32;1m[Board] [0mLoaded 3 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-chess_and_the_city/move.csv`...
+[32;1m[Board] [0m'Black' player is playing g5 to g4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the 'White' player...
+[DEBUG] Input history filename: championship/logic-and-proofs-chess_and_the_city/history.csv
+[DEBUG] Output move file: championship/logic-and-proofs-chess_and_the_city/move.csv
+g2g3
+4
+1 6
+[DEBUG] 1 6->2 6
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP | bP | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP | wP | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+g7g5
+4
+6 6
+[DEBUG] 6 6->4 6
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP | wP | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+d2d3
+4
+1 3
+[DEBUG] 1 3->2 3
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+g5g4
+4
+4 6
+[DEBUG] 4 6->3 6
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+TURN FOR 1
+[DEBUG] Wrote to ouput file championship/logic-and-proofs-chess_and_the_city/move.csv move : a2a4
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-chess_and_the_city/history.csv`...
+[32;1m[Board] [0mLoaded 4 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-chess_and_the_city/move.csv`...
+[32;1m[Board] [0m'White' player is playing a2 to a4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the 'Black' player...
+Initial board:
+--------------------
+8| r n b q k b n r |
+7| p p p p p p p p |
+6| . . . . . . . . |
+5| . . . . . . . . |
+4| . . . . . . . . |
+3| . . . . . . . . |
+2| P P P P P P P P |
+1| R N B Q K B N R |
+--------------------
+   a b c d e f g h
+After reading:
+--------------------
+8| r n b q k b n r |
+7| p p p p p p . p |
+6| . . . . . . . . |
+5| . . . . . . . . |
+4| P . . . . . p . |
+3| . . . P . . P . |
+2| . P P . P P . P |
+1| R N B Q K B N R |
+--------------------
+   a b c d e f g h
+black moved and the output is:
+--------------------
+8| r n b q k b n r |
+7| p p . p p p . p |
+6| . . p . . . . . |
+5| . . . . . . . . |
+4| P . . . . . p . |
+3| . . . P . . P . |
+2| . P P . P P . P |
+1| R N B Q K B N R |
+--------------------
+   a b c d e f g h
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-chess_and_the_city/history.csv`...
+[32;1m[Board] [0mLoaded 5 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-chess_and_the_city/move.csv`...
+[32;1m[Board] [0m'Black' player is playing c7 to c6.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the 'White' player...
+[DEBUG] Input history filename: championship/logic-and-proofs-chess_and_the_city/history.csv
+[DEBUG] Output move file: championship/logic-and-proofs-chess_and_the_city/move.csv
+g2g3
+4
+1 6
+[DEBUG] 1 6->2 6
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP | bP | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP | wP | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+g7g5
+4
+6 6
+[DEBUG] 6 6->4 6
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP | wP | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+d2d3
+4
+1 3
+[DEBUG] 1 3->2 3
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+g5g4
+4
+4 6
+[DEBUG] 4 6->3 6
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+a2a4
+4
+1 0
+[DEBUG] 1 0->3 0
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+c7c6
+4
+6 2
+[DEBUG] 6 2->5 2
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    | bP |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    | bP |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+TURN FOR 1
+[DEBUG] Wrote to ouput file championship/logic-and-proofs-chess_and_the_city/move.csv move : f1g2
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-chess_and_the_city/history.csv`...
+[32;1m[Board] [0mLoaded 6 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-chess_and_the_city/move.csv`...
+[32;1m[Board] [0m'White' player is playing f1 to g2.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mb[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the 'Black' player...
+Initial board:
+--------------------
+8| r n b q k b n r |
+7| p p p p p p p p |
+6| . . . . . . . . |
+5| . . . . . . . . |
+4| . . . . . . . . |
+3| . . . . . . . . |
+2| P P P P P P P P |
+1| R N B Q K B N R |
+--------------------
+   a b c d e f g h
+After reading:
+--------------------
+8| r n b q k b n r |
+7| p p . p p p . p |
+6| . . p . . . . . |
+5| . . . . . . . . |
+4| P . . . . . p . |
+3| . . . P . . P . |
+2| . P P . P P B P |
+1| R N B Q K . N R |
+--------------------
+   a b c d e f g h
+black moved and the output is:
+--------------------
+8| r n b q k b n r |
+7| p p . p p p . p |
+6| . . . . . . . . |
+5| . . p . . . . . |
+4| P . . . . . p . |
+3| . . . P . . P . |
+2| . P P . P P B P |
+1| R N B Q K . N R |
+--------------------
+   a b c d e f g h
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-chess_and_the_city/history.csv`...
+[32;1m[Board] [0mLoaded 7 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-chess_and_the_city/move.csv`...
+[32;1m[Board] [0m'Black' player is playing c6 to c5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mb[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the 'White' player...
+[DEBUG] Input history filename: championship/logic-and-proofs-chess_and_the_city/history.csv
+[DEBUG] Output move file: championship/logic-and-proofs-chess_and_the_city/move.csv
+g2g3
+4
+1 6
+[DEBUG] 1 6->2 6
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP | bP | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP | wP | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+g7g5
+4
+6 6
+[DEBUG] 6 6->4 6
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP | wP | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+d2d3
+4
+1 3
+[DEBUG] 1 3->2 3
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+g5g4
+4
+4 6
+[DEBUG] 4 6->3 6
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+a2a4
+4
+1 0
+[DEBUG] 1 0->3 0
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+c7c6
+4
+6 2
+[DEBUG] 6 2->5 2
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    | bP |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+f1g2
+4
+0 5
+[DEBUG] 0 5->1 6
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    | bP |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | wP | wP | wB | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+c6c5
+4
+5 2
+[DEBUG] 5 2->4 2
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    | bP |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | wP | wP | wB | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    | bP |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | wP | wP | wB | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+TURN FOR 1
+[DEBUG] Wrote to ouput file championship/logic-and-proofs-chess_and_the_city/move.csv move : d1d2
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-chess_and_the_city/history.csv`...
+[32;1m[Board] [0mLoaded 8 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-chess_and_the_city/move.csv`...
+[32;1m[Board] [0m'White' player is playing d1 to d2.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mQ[0m|[0;1mp[0m|[0;1mp[0m|[0;1mb[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the 'Black' player...
+Initial board:
+--------------------
+8| r n b q k b n r |
+7| p p p p p p p p |
+6| . . . . . . . . |
+5| . . . . . . . . |
+4| . . . . . . . . |
+3| . . . . . . . . |
+2| P P P P P P P P |
+1| R N B Q K B N R |
+--------------------
+   a b c d e f g h
+After reading:
+--------------------
+8| r n b q k b n r |
+7| p p . p p p . p |
+6| . . . . . . . . |
+5| . . p . . . . . |
+4| P . . . . . p . |
+3| . . . P . . P . |
+2| . P P Q P P B P |
+1| R N B . K . N R |
+--------------------
+   a b c d e f g h
+black moved and the output is:
+--------------------
+8| r n b q k b n r |
+7| p p . p p p . p |
+6| . . . . . . . . |
+5| . . . . . . . . |
+4| P . p . . . p . |
+3| . . . P . . P . |
+2| . P P Q P P B P |
+1| R N B . K . N R |
+--------------------
+   a b c d e f g h
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-chess_and_the_city/history.csv`...
+[32;1m[Board] [0mLoaded 9 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-chess_and_the_city/move.csv`...
+[32;1m[Board] [0m'Black' player is playing c5 to c4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mp[0m| |[30;1mp[0m| |[7;1m [0m| |[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mQ[0m|[0;1mp[0m|[0;1mp[0m|[0;1mb[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the 'White' player...
+[DEBUG] Input history filename: championship/logic-and-proofs-chess_and_the_city/history.csv
+[DEBUG] Output move file: championship/logic-and-proofs-chess_and_the_city/move.csv
+g2g3
+4
+1 6
+[DEBUG] 1 6->2 6
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP | bP | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP | wP | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+g7g5
+4
+6 6
+[DEBUG] 6 6->4 6
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP | wP | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+d2d3
+4
+1 3
+[DEBUG] 1 3->2 3
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+g5g4
+4
+4 6
+[DEBUG] 4 6->3 6
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+a2a4
+4
+1 0
+[DEBUG] 1 0->3 0
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+c7c6
+4
+6 2
+[DEBUG] 6 2->5 2
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    | bP |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+f1g2
+4
+0 5
+[DEBUG] 0 5->1 6
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    | bP |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | wP | wP | wB | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+c6c5
+4
+5 2
+[DEBUG] 5 2->4 2
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    | bP |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | wP | wP | wB | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+d1d2
+4
+0 3
+[DEBUG] 0 3->1 3
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    | bP |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP | wQ | wP | wP | wB | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB |    | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+c5c4
+4
+4 2
+[DEBUG] 4 2->3 2
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    | bP |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP | wQ | wP | wP | wB | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB |    | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    | bP |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP | wQ | wP | wP | wB | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB |    | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+TURN FOR 1
+[DEBUG] Wrote to ouput file championship/logic-and-proofs-chess_and_the_city/move.csv move : g2d5
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-chess_and_the_city/history.csv`...
+[32;1m[Board] [0mLoaded 10 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-chess_and_the_city/move.csv`...
+[32;1m[Board] [0m'White' player is playing g2 to d5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[0;1mb[0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mp[0m| |[30;1mp[0m| |[7;1m [0m| |[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mQ[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the 'Black' player...
+Initial board:
+--------------------
+8| r n b q k b n r |
+7| p p p p p p p p |
+6| . . . . . . . . |
+5| . . . . . . . . |
+4| . . . . . . . . |
+3| . . . . . . . . |
+2| P P P P P P P P |
+1| R N B Q K B N R |
+--------------------
+   a b c d e f g h
+After reading:
+--------------------
+8| r n b q k b n r |
+7| p p . p p p . p |
+6| . . . . . . . . |
+5| . . . B . . . . |
+4| P . p . . . p . |
+3| . . . P . . P . |
+2| . P P Q P P . P |
+1| R N B . K . N R |
+--------------------
+   a b c d e f g h
+black moved and the output is:
+--------------------
+8| r n b q k b n r |
+7| p p . p p p . p |
+6| . . . . . . . . |
+5| . . . B . . . . |
+4| P . . . . . p . |
+3| . . . p . . P . |
+2| . P P Q P P . P |
+1| R N B . K . N R |
+--------------------
+   a b c d e f g h
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-chess_and_the_city/history.csv`...
+[32;1m[Board] [0mLoaded 11 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-chess_and_the_city/move.csv`...
+[32;1m[Board] [0m'Black' player is playing c4 to d3.
+[32;1m[Board] [0m[5;1m'Black' Pawn is taking 'White' Pawn.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[0;1mb[0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mQ[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the 'White' player...
+[DEBUG] Input history filename: championship/logic-and-proofs-chess_and_the_city/history.csv
+[DEBUG] Output move file: championship/logic-and-proofs-chess_and_the_city/move.csv
+g2g3
+4
+1 6
+[DEBUG] 1 6->2 6
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP | bP | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP | wP | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+g7g5
+4
+6 6
+[DEBUG] 6 6->4 6
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP | wP | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+d2d3
+4
+1 3
+[DEBUG] 1 3->2 3
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+g5g4
+4
+4 6
+[DEBUG] 4 6->3 6
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+a2a4
+4
+1 0
+[DEBUG] 1 0->3 0
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+c7c6
+4
+6 2
+[DEBUG] 6 2->5 2
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    | bP |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+f1g2
+4
+0 5
+[DEBUG] 0 5->1 6
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    | bP |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | wP | wP | wB | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+c6c5
+4
+5 2
+[DEBUG] 5 2->4 2
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    | bP |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | wP | wP | wB | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+d1d2
+4
+0 3
+[DEBUG] 0 3->1 3
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    | bP |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP | wQ | wP | wP | wB | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB |    | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+c5c4
+4
+4 2
+[DEBUG] 4 2->3 2
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    | bP |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP | wQ | wP | wP | wB | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB |    | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+g2d5
+4
+1 6
+[DEBUG] 1 6->4 3
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    | wB |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    | bP |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP | wQ | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB |    | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+c4d3
+4
+3 2
+[DEBUG] 3 2->2 3
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    | wB |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | bP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP | wQ | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB |    | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    | wB |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | bP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP | wQ | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB |    | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+TURN FOR 1
+[DEBUG] Wrote to ouput file championship/logic-and-proofs-chess_and_the_city/move.csv move : d2f4
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-chess_and_the_city/history.csv`...
+[32;1m[Board] [0mLoaded 12 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-chess_and_the_city/move.csv`...
+[32;1m[Board] [0m'White' player is playing d2 to f4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[0;1mb[0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|[0;1mQ[0m|[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the 'Black' player...
+Initial board:
+--------------------
+8| r n b q k b n r |
+7| p p p p p p p p |
+6| . . . . . . . . |
+5| . . . . . . . . |
+4| . . . . . . . . |
+3| . . . . . . . . |
+2| P P P P P P P P |
+1| R N B Q K B N R |
+--------------------
+   a b c d e f g h
+After reading:
+--------------------
+8| r n b q k b n r |
+7| p p . p p p . p |
+6| . . . . . . . . |
+5| . . . B . . . . |
+4| P . . . . Q p . |
+3| . . . p . . P . |
+2| . P P . P P . P |
+1| R N B . K . N R |
+--------------------
+   a b c d e f g h
+black moved and the output is:
+--------------------
+8| r n b q k b n r |
+7| p p . p p p . p |
+6| . . . . . . . . |
+5| . . . B . . . . |
+4| P . . . . Q p . |
+3| . . . . . . P . |
+2| . P P . p P . P |
+1| R N B . K . N R |
+--------------------
+   a b c d e f g h
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-chess_and_the_city/history.csv`...
+[32;1m[Board] [0mLoaded 13 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-chess_and_the_city/move.csv`...
+[32;1m[Board] [0m'Black' player is playing d3 to e2.
+[32;1m[Board] [0m[5;1m'Black' Pawn is taking 'White' Pawn.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[0;1mb[0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|[0;1mQ[0m|[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[30;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the 'White' player...
+[DEBUG] Input history filename: championship/logic-and-proofs-chess_and_the_city/history.csv
+[DEBUG] Output move file: championship/logic-and-proofs-chess_and_the_city/move.csv
+g2g3
+4
+1 6
+[DEBUG] 1 6->2 6
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP | bP | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP | wP | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+g7g5
+4
+6 6
+[DEBUG] 6 6->4 6
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP | wP | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+d2d3
+4
+1 3
+[DEBUG] 1 3->2 3
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+g5g4
+4
+4 6
+[DEBUG] 4 6->3 6
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+a2a4
+4
+1 0
+[DEBUG] 1 0->3 0
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+c7c6
+4
+6 2
+[DEBUG] 6 2->5 2
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    | bP |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+f1g2
+4
+0 5
+[DEBUG] 0 5->1 6
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    | bP |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | wP | wP | wB | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+c6c5
+4
+5 2
+[DEBUG] 5 2->4 2
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    | bP |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | wP | wP | wB | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+d1d2
+4
+0 3
+[DEBUG] 0 3->1 3
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    | bP |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP | wQ | wP | wP | wB | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB |    | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+c5c4
+4
+4 2
+[DEBUG] 4 2->3 2
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    | bP |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP | wQ | wP | wP | wB | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB |    | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+g2d5
+4
+1 6
+[DEBUG] 1 6->4 3
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    | wB |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    | bP |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP | wQ | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB |    | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+c4d3
+4
+3 2
+[DEBUG] 3 2->2 3
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    | wB |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | bP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP | wQ | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB |    | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+d2f4
+4
+1 3
+[DEBUG] 1 3->3 5
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    | wB |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    | wQ | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | bP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB |    | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+d3e2
+4
+2 3
+[DEBUG] 2 3->1 4
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    | wB |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    | wQ | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | bP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB |    | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    | wB |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    | wQ | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | bP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB |    | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+TURN FOR 1
+[DEBUG] Wrote to ouput file championship/logic-and-proofs-chess_and_the_city/move.csv move : a1a3
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-chess_and_the_city/history.csv`...
+[32;1m[Board] [0mLoaded 14 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-chess_and_the_city/move.csv`...
+[32;1m[Board] [0m'White' player is playing a1 to a3.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[0;1mb[0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|[0;1mQ[0m|[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[30;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 || |[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the 'Black' player...
+Initial board:
+--------------------
+8| r n b q k b n r |
+7| p p p p p p p p |
+6| . . . . . . . . |
+5| . . . . . . . . |
+4| . . . . . . . . |
+3| . . . . . . . . |
+2| P P P P P P P P |
+1| R N B Q K B N R |
+--------------------
+   a b c d e f g h
+After reading:
+--------------------
+8| r n b q k b n r |
+7| p p . p p p . p |
+6| . . . . . . . . |
+5| . . . B . . . . |
+4| P . . . . Q p . |
+3| R . . . . . P . |
+2| . P P . p P . P |
+1| . N B . K . N R |
+--------------------
+   a b c d e f g h
+black moved and the output is:
+--------------------
+8| r n b q k b n r |
+7| p p . . p p . p |
+6| . . . p . . . . |
+5| . . . B . . . . |
+4| P . . . . Q p . |
+3| R . . . . . P . |
+2| . P P . p P . P |
+1| . N B . K . N R |
+--------------------
+   a b c d e f g h
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-chess_and_the_city/history.csv`...
+[32;1m[Board] [0mLoaded 15 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-chess_and_the_city/move.csv`...
+[32;1m[Board] [0m'Black' player is playing d7 to d6.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[0;1mb[0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|[0;1mQ[0m|[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[30;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 || |[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the 'White' player...
+[DEBUG] Input history filename: championship/logic-and-proofs-chess_and_the_city/history.csv
+[DEBUG] Output move file: championship/logic-and-proofs-chess_and_the_city/move.csv
+g2g3
+4
+1 6
+[DEBUG] 1 6->2 6
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP | bP | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP | wP | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+g7g5
+4
+6 6
+[DEBUG] 6 6->4 6
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP | wP | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+d2d3
+4
+1 3
+[DEBUG] 1 3->2 3
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+g5g4
+4
+4 6
+[DEBUG] 4 6->3 6
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | wP | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+a2a4
+4
+1 0
+[DEBUG] 1 0->3 0
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP | bP | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+c7c6
+4
+6 2
+[DEBUG] 6 2->5 2
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    | bP |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+f1g2
+4
+0 5
+[DEBUG] 0 5->1 6
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    | bP |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | wP | wP | wB | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+c6c5
+4
+5 2
+[DEBUG] 5 2->4 2
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    | bP |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | wP | wP | wB | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB | wQ | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+d1d2
+4
+0 3
+[DEBUG] 0 3->1 3
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    | bP |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP | wQ | wP | wP | wB | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB |    | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+c5c4
+4
+4 2
+[DEBUG] 4 2->3 2
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    | bP |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP | wQ | wP | wP | wB | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB |    | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+g2d5
+4
+1 6
+[DEBUG] 1 6->4 3
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    | wB |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    | bP |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | wP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP | wQ | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB |    | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+c4d3
+4
+3 2
+[DEBUG] 3 2->2 3
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    | wB |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    |    | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | bP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP | wQ | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB |    | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+d2f4
+4
+1 3
+[DEBUG] 1 3->3 5
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    | wB |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    | wQ | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | bP |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | wP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB |    | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+d3e2
+4
+2 3
+[DEBUG] 2 3->1 4
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    | wB |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    | wQ | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | bP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | wR | wN | wB |    | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+a1a3
+4
+0 0
+[DEBUG] 0 0->2 0
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    | bP | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    | wB |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    | wQ | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 | wR |    |    |    |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | bP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 |    | wN | wB |    | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+d7d6
+4
+6 3
+[DEBUG] 6 3->5 3
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    |    | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    | bP |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    | wB |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    | wQ | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 | wR |    |    |    |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | bP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 |    | wN | wB |    | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | bP | bP |    |    | bP | bP |    | bP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    | bP |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    | wB |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 | wP |    |    |    |    | wQ | bP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 | wR |    |    |    |    |    | wP |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    | wP | wP |    | bP | wP |    | wP |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 |    | wN | wB |    | wK |    | wN | wR |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+TURN FOR 1
+[DEBUG] Wrote to ouput file championship/logic-and-proofs-chess_and_the_city/move.csv move : f4f7
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-chess_and_the_city/history.csv`...
+[32;1m[Board] [0mLoaded 16 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-chess_and_the_city/move.csv`...
+[32;1m[Board] [0m'White' player is playing f4 to f7.
+[32;1m[Board] [0m[5;1m'White' Queen is taking 'Black' Pawn.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|[30;1mp[0m|[0;1mQ[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[0;1mb[0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[30;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 || |[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the 'Black' player...
+[32;1m[Board] [0m[33;1m[WARNING][0m [5;1m'Black' King in check![0m
+[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by 'White' Queen (f7)
+Initial board:
+--------------------
+8| r n b q k b n r |
+7| p p p p p p p p |
+6| . . . . . . . . |
+5| . . . . . . . . |
+4| . . . . . . . . |
+3| . . . . . . . . |
+2| P P P P P P P P |
+1| R N B Q K B N R |
+--------------------
+   a b c d e f g h
+After reading:
+--------------------
+8| r n b q k b n r |
+7| p p . . p Q . p |
+6| . . . p . . . . |
+5| . . . B . . . . |
+4| P . . . . . p . |
+3| R . . . . . P . |
+2| . P P . p P . P |
+1| . N B . K . N R |
+--------------------
+   a b c d e f g h
+black moved and the output is:
+--------------------
+8| r n b q k b n r |
+7| . p . . p Q . p |
+6| p . . p . . . . |
+5| . . . B . . . . |
+4| P . . . . . p . |
+3| R . . . . . P . |
+2| . P P . p P . P |
+1| . N B . K . N R |
+--------------------
+   a b c d e f g h
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-chess_and_the_city/history.csv`...
+[32;1m[Board] [0mLoaded 17 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-chess_and_the_city/move.csv`...
+[32;1m[Board] [0m'Black' player is playing a7 to a6.
+[32;1m[Board] [0m[31;1m[ERROR][0m Proposed move from (a7) to (a6) puts the King in check :(
+[32;1m[Board] [0m[31;1m[ERROR][0m 'Black' Pawn (a7) cannot reach its destination (a6) :(
+[32;1m[Referee] [0mInvalid move (code: -7) :(
 [32;1m[Game] [0m'Black' player has lost on illegal move.
