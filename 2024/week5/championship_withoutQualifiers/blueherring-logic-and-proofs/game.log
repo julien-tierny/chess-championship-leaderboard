@@ -1,0 +1,188 @@
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+
+Running move/undo move tests...
+
+Testing: Movement and capture for each piece
+✓ Movement and capture for each piece passed
+_____________________________________
+
+Testing: En passant
+✓ En passant passed
+_____________________________________
+
+Testing: Castling
+✓ Castling passed
+_____________________________________
+
+Testing: Pawn promotion
+✓ Pawn promotion passed
+_____________________________________
+
+Testing: Board state history
+✓ Board state history passed
+_____________________________________
+
+Testing: Check and checkmate
+✓ Check and checkmate passed
+_____________________________________
+
+
+Running speed test for position:
+
+  a b c d e f g h
+7 ♖ ♘ ♗ ♕ ♔ ♗ ♘ ♖ 
+6 ♙ ♙ ♙ ♙ ♙ ♙ ♙ ♙ 
+5 · · · · · · · · 
+4 · · · · · · · · 
+3 · · · · · · · · 
+2 · · · · · · · · 
+1 ♟ ♟ ♟ ♟ ♟ ♟ ♟ ♟ 
+0 ♜ ♞ ♝ ♛ ♚ ♝ ♞ ♜ 
+
+
+Depth 1: 20 nodes in 0ms (inf NPS)
+Depth 2: 400 nodes in 2ms (200000 NPS)
+Depth 3: 8902 nodes in 50ms (178040 NPS)
+Depth 4: 197281 nodes in 1144ms (172448 NPS)
+Depth 5: 4865609 nodes in 27103ms (179523 NPS)
+
+------------> Average NPS: 179224
+
+________________________________________________
+
+Running speed test for position:
+
+  a b c d e f g h
+7 ♖ · · · ♔ · · ♖ 
+6 ♙ · ♙ ♙ ♕ ♙ ♗ · 
+5 ♗ ♘ · · ♙ ♘ ♙ · 
+4 · · · ♟ ♞ · · · 
+3 · ♙ · · ♟ · · · 
+2 · · ♞ · · ♛ · ♙ 
+1 ♟ ♟ ♟ ♝ ♝ ♟ ♟ ♟ 
+0 ♜ · · · ♚ · · ♜ 
+
+
+Depth 1: 48 nodes in 0ms (inf NPS)
+Depth 2: 2039 nodes in 12ms (169917 NPS)
+Depth 3: 97862 nodes in 560ms (174754 NPS)
+Depth 4: 4085603 nodes in 24274ms (168312 NPS)
+
+------------> Average NPS: 168453
+
+________________________________________________
+
+Running speed test for position:
+
+  a b c d e f g h
+7 · · · · · · · · 
+6 · · ♙ · · · · · 
+5 · · · ♙ · · · · 
+4 ♚ ♟ · · · · · ♖ 
+3 · ♜ · · · ♙ · ♔ 
+2 · · · · · · · · 
+1 · · · · ♟ · ♟ · 
+0 · · · · · · · · 
+
+
+Depth 1: 14 nodes in 0ms (inf NPS)
+Depth 2: 191 nodes in 1ms (191000 NPS)
+Depth 3: 2812 nodes in 16ms (175750 NPS)
+Depth 4: 43238 nodes in 325ms (133040 NPS)
+Depth 5: 674624 nodes in 4189ms (161047 NPS)
+
+------------> Average NPS: 159064
+
+________________________________________________
+
+Final average NPS: 172997
+
+Running perft for WHITE with DEPTH=4.
+Position:
+
+  a b c d e f g h
+7 ♖ ♘ ♗ ♕ ♔ ♗ ♘ ♖ 
+6 ♙ ♙ ♙ ♙ ♙ ♙ ♙ ♙ 
+5 · · · · · · · · 
+4 · · · · · · · · 
+3 · · · · · · · · 
+2 · · · · · · · · 
+1 ♟ ♟ ♟ ♟ ♟ ♟ ♟ ♟ 
+0 ♜ ♞ ♝ ♛ ♚ ♝ ♞ ♜ 
+
+
+
+Depth 0: Result: 1, Expected: 1 ✓
+Depth 1: Result: 20, Expected: 20 ✓
+Depth 2: Result: 400, Expected: 400 ✓
+Depth 3: Result: 8902, Expected: 8902 ✓
+Depth 4: Result: 197281, Expected: 197281 ✓
+
+Success!
+
+Running perft for WHITE with DEPTH=3.
+Position:
+
+  a b c d e f g h
+7 ♖ · · · ♔ · · ♖ 
+6 ♙ · ♙ ♙ ♕ ♙ ♗ · 
+5 ♗ ♘ · · ♙ ♘ ♙ · 
+4 · · · ♟ ♞ · · · 
+3 · ♙ · · ♟ · · · 
+2 · · ♞ · · ♛ · ♙ 
+1 ♟ ♟ ♟ ♝ ♝ ♟ ♟ ♟ 
+0 ♜ · · · ♚ · · ♜ 
+
+
+
+Depth 0: Result: 1, Expected: 1 ✓
+Depth 1: Result: 48, Expected: 48 ✓
+Depth 2: Result: 2039, Expected: 2039 ✓
+Depth 3: Result: 97862, Expected: 97862 ✓
+
+Success!
+
+Running perft for WHITE with DEPTH=4.
+Position:
+
+  a b c d e f g h
+7 · · · · · · · · 
+6 · · ♙ · · · · · 
+5 · · · ♙ · · · · 
+4 ♚ ♟ · · · · · ♖ 
+3 · ♜ · · · ♙ · ♔ 
+2 · · · · · · · · 
+1 · · · · ♟ · ♟ · 
+0 · · · · · · · · 
+
+
+
+Depth 0: Result: 1, Expected: 1 ✓
+Depth 1: Result: 14, Expected: 14 ✓
+Depth 2: Result: 191, Expected: 191 ✓
+Depth 3: Result: 2812, Expected: 2812 ✓
+[32;1m[Game] [0mPlayer's error code: 31744
+[32;1m[Game] [0m[31;1m[ERROR][0m The program `/home/julien/Pro/git/teaching/x/2024/blueherring/BlueHerring' has timed out :(
+[32;1m[Game] [0mWhite player has lost on illegal move.
