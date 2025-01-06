@@ -23,13 +23,15 @@
 [32;1m[Referee] [0mThis is the turn of the White player...
 [DEBUG] Input history filename: championship/logic-and-proofs-beatingthehorse/history.csv
 [DEBUG] Output move file: championship/logic-and-proofs-beatingthehorse/move.csv
-TURN FOR 1
-b1c3
-[DEBUG] Wrote to ouput file championship/logic-and-proofs-beatingthehorse/move.csv move : b1c3
+starting search...
+searched and found best move in search: 2673
+Total nodes searched: 3365
+how i see the board before writing next move: Turn: White
+Enpassant: xx	Castling: WK WQ BK BQ 
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+8 | r  | n  | b  | q  | k  | b  | n  | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
-7 | bP | bP | bP | bP | bP | bP | bP | bP |
+7 | p  | p  | p  | p  | p  | p  | p  | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
 6 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
@@ -39,18 +41,19 @@ b1c3
    ---- ---- ---- ---- ---- ---- ---- ----
 3 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 | wP | wP | wP | wP | wP | wP | wP | wP |
+2 | P  | P  | P  | P  | P  | P  | P  | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
-1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+1 | R  | N  | B  | Q  | K  | B  | N  | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
+[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-beatingthehorse/move.csv move : b2b3
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-beatingthehorse/history.csv`...
 [32;1m[Board] [0mLoaded 0 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-beatingthehorse/move.csv`...
-[32;1m[Board] [0mWhite player is playing b1 to c3.
+[32;1m[Board] [0mWhite player is playing b2 to b3.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
@@ -64,28 +67,15 @@ b1c3
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
-a7a6
-b7b6
-c7c6
-d7d6
-e7e6
-f7f6
-g7g6
-h7h6
-b8h6
-b8a6
-b8c6
-g8f6
-g8h6
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
@@ -106,45 +96,48 @@ g8h6
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
 [DEBUG] Input history filename: championship/logic-and-proofs-beatingthehorse/history.csv
 [DEBUG] Output move file: championship/logic-and-proofs-beatingthehorse/move.csv
-TURN FOR 1
-c3d5
-[DEBUG] Wrote to ouput file championship/logic-and-proofs-beatingthehorse/move.csv move : c3d5
+starting search...
+searched and found best move in search: 2608
+Total nodes searched: 8275
+how i see the board before writing next move: Turn: White
+Enpassant: e6	Castling: WK WQ BK BQ 
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+8 | r  | n  | b  | q  | k  | b  | n  | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
-7 | bP | bP | bP | bP |    | bP | bP | bP |
+7 | p  | p  | p  | p  |    | p  | p  | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
 6 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    | bP |    |    |    |
+5 |    |    |    |    | p  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
 4 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    | wN |    |    |    |    |    |
+3 |    | P  |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 | wP | wP | wP | wP | wP | wP | wP | wP |
+2 | P  |    | P  | P  | P  | P  | P  | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
-1 | wR |    | wB | wQ | wK | wB | wN | wR |
+1 | R  | N  | B  | Q  | K  | B  | N  | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
+[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-beatingthehorse/move.csv move : a2a3
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-beatingthehorse/history.csv`...
 [32;1m[Board] [0mLoaded 2 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-beatingthehorse/move.csv`...
-[32;1m[Board] [0mWhite player is playing c3 to d5.
+[32;1m[Board] [0mWhite player is playing a2 to a3.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
@@ -154,43 +147,19 @@ c3d5
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[0;1mk[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 ||[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
-e5e4
-a7a6
-b7b6
-c7c6
-d7d6
-f7f6
-g7g6
-h7h6
-b8h6
-b8a6
-b8c6
-d8e7
-d8f6
-d8g5
-d8h4
-f8e7
-f8d6
-f8c5
-f8b4
-f8a3
-f8h1
-g8e7
-g8f6
-g8h6
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
@@ -207,49 +176,52 @@ g8h6
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mb[0m|[0;1mk[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 ||[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
 [DEBUG] Input history filename: championship/logic-and-proofs-beatingthehorse/history.csv
 [DEBUG] Output move file: championship/logic-and-proofs-beatingthehorse/move.csv
-TURN FOR 1
-d2d4
-[DEBUG] Wrote to ouput file championship/logic-and-proofs-beatingthehorse/move.csv move : d2d4
+starting search...
+searched and found best move in search: 2868
+Total nodes searched: 18773
+how i see the board before writing next move: Turn: White
+Enpassant: xx	Castling: WK WQ BK BQ 
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | bR | bN | bB | bQ | bK |    | bN | bR |
+8 | r  | n  | b  | q  | k  |    | n  | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
-7 | bP | bP | bP | bP |    | bP | bP | bP |
+7 | p  | p  | p  | p  |    | p  | p  | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
 6 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    | bB | wN | bP |    |    |    |
+5 |    |    | b  |    | p  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
 4 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    |    |    |    |    |    |    |
+3 | P  | P  |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 | wP | wP | wP | wP | wP | wP | wP | wP |
+2 |    |    | P  | P  | P  | P  | P  | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
-1 | wR |    | wB | wQ | wK | wB | wN | wR |
+1 | R  | N  | B  | Q  | K  | B  | N  | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
+[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-beatingthehorse/move.csv move : e2e3
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-beatingthehorse/history.csv`...
 [32;1m[Board] [0mLoaded 4 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-beatingthehorse/move.csv`...
-[32;1m[Board] [0mWhite player is playing d2 to d4.
+[32;1m[Board] [0mWhite player is playing e2 to e3.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
@@ -259,46 +231,19 @@ d2d4
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mb[0m|[0;1mk[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 ||[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
-c5d6
-c5e7
-c5f8
-c5b4
-c5a3
-c5h1
-c5d4
-c5b6
-e5e4
-e5d4
-a7a6
-b7b6
-c7c6
-d7d6
-f7f6
-g7g6
-h7h6
-b8h6
-b8a6
-b8c6
-d8e7
-d8f6
-d8g5
-d8h4
-g8e7
-g8f6
-g8h6
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
@@ -315,112 +260,74 @@ g8h6
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mb[0m|[0;1mk[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|[30;1mQ[0m|| 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mQ[0m|| 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 ||[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
 [DEBUG] Input history filename: championship/logic-and-proofs-beatingthehorse/history.csv
 [DEBUG] Output move file: championship/logic-and-proofs-beatingthehorse/move.csv
-TURN FOR 1
-d5c7
-[DEBUG] Wrote to ouput file championship/logic-and-proofs-beatingthehorse/move.csv move : d5c7
+starting search...
+searched and found best move in search: 19323
+Total nodes searched: 72889
+how i see the board before writing next move: Turn: White
+Enpassant: xx	Castling: WK WQ BK BQ 
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | bR | bN | bB |    | bK |    | bN | bR |
+8 | r  | n  | b  |    | k  |    | n  | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
-7 | bP | bP | bP | bP |    | bP | bP | bP |
+7 | p  | p  | p  | p  |    | p  | p  | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
 6 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    | bB | wN | bP |    |    |    |
+5 |    |    | b  |    | p  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    | wP |    |    |    | bQ |
+4 |    |    |    |    |    |    |    | q  |
    ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    |    |    |    |    |    |    |
+3 | P  | P  |    |    | P  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 | wP | wP | wP |    | wP | wP | wP | wP |
+2 |    |    | P  | P  |    | P  | P  | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
-1 | wR |    | wB | wQ | wK | wB | wN | wR |
+1 | R  | N  | B  | Q  | K  | B  | N  | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
+[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-beatingthehorse/move.csv move : d1f3
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-beatingthehorse/history.csv`...
 [32;1m[Board] [0mLoaded 6 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-beatingthehorse/move.csv`...
-[32;1m[Board] [0mWhite player is playing d5 to c7.
-[32;1m[Board] [0m[5;1mWhite Knight is taking Black Pawn.[0m
+[32;1m[Board] [0mWhite player is playing d1 to f3.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m| |[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[0;1mk[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m5 || |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|[30;1mQ[0m|| 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mQ[0m|| 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 ||[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mQ[0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
-[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mBlack King in check![0m
-[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by White Knight (c7)
-h4g4
-h4f4
-h4e4
-d4
-h4h3
-h2
-h4h5
-h4h6
-h4a6
-h4g3
-h4f2
-h4a4
-h4g5
-h4f6
-h4e7
-h4d8
-c5d6
-c5e7
-c5f8
-c5b4
-c5a3
-c5h1
-c5d4
-c5b6
-e5e4
-e5d4
-a7a6
-b7b6
-d7d6
-f7f6
-g7g6
-h7h6
-b8h6
-b8a6
-b8c6
-g8e7
-g8f6
-g8h6
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
@@ -428,7 +335,352 @@ g8h6
 [32;1m[Board] [0mLoaded 7 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-beatingthehorse/move.csv`...
 [32;1m[Board] [0mBlack player is playing h4 to f2.
-[32;1m[Board] [0m[31;1m[ERROR][0m Proposed move from (h4) to (f2) puts the King in check :(
-[32;1m[Board] [0m[31;1m[ERROR][0m Black Queen (h4) cannot reach its destination (f2) :(
+[32;1m[Board] [0m[5;1mBlack Queen is taking White Pawn.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m| |[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mQ[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[30;1mQ[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mWhite King in check![0m
+[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by Black Queen (f2)
+[DEBUG] Input history filename: championship/logic-and-proofs-beatingthehorse/history.csv
+[DEBUG] Output move file: championship/logic-and-proofs-beatingthehorse/move.csv
+starting search...
+searched and found best move in search: 1068397
+Total nodes searched: 5577
+how i see the board before writing next move: Turn: White
+Enpassant: xx	Castling: WK WQ BK BQ 
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | r  | n  | b  |    | k  |    | n  | r  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | p  | p  | p  | p  |    | p  | p  | p  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    | b  |    | p  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 | P  | P  |    |    | P  | Q  |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    |    | P  | P  |    | q  | P  | P  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | R  | N  | B  |    | K  | B  | N  | R  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-beatingthehorse/move.csv move : f3f2
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-beatingthehorse/history.csv`...
+[32;1m[Board] [0mLoaded 8 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-beatingthehorse/move.csv`...
+[32;1m[Board] [0mWhite player is playing f3 to f2.
+[32;1m[Board] [0m[5;1mWhite Queen is taking Black Queen.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m| |[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mQ[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-beatingthehorse/history.csv`...
+[32;1m[Board] [0mLoaded 9 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-beatingthehorse/move.csv`...
+[32;1m[Board] [0mBlack player is playing c5 to a3.
+[32;1m[Board] [0m[5;1mBlack Bishop is taking White Pawn.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m| |[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[30;1mb[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mQ[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+[DEBUG] Input history filename: championship/logic-and-proofs-beatingthehorse/history.csv
+[DEBUG] Output move file: championship/logic-and-proofs-beatingthehorse/move.csv
+starting search...
+searched and found best move in search: 1055289
+Total nodes searched: 83104
+how i see the board before writing next move: Turn: White
+Enpassant: xx	Castling: WK WQ BK BQ 
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | r  | n  | b  |    | k  |    | n  | r  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | p  | p  | p  | p  |    | p  | p  | p  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    | p  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 | b  | P  |    |    | P  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    |    | P  | P  |    | Q  | P  | P  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | R  | N  | B  |    | K  | B  | N  | R  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-beatingthehorse/move.csv move : b1a3
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-beatingthehorse/history.csv`...
+[32;1m[Board] [0mLoaded 10 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-beatingthehorse/move.csv`...
+[32;1m[Board] [0mWhite player is playing b1 to a3.
+[32;1m[Board] [0m[5;1mWhite Knight is taking Black Bishop.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m| |[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[0;1mk[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mQ[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-beatingthehorse/history.csv`...
+[32;1m[Board] [0mLoaded 11 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-beatingthehorse/move.csv`...
+[32;1m[Board] [0mBlack player is playing d7 to d6.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m| |[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[0;1mk[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mQ[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+[DEBUG] Input history filename: championship/logic-and-proofs-beatingthehorse/history.csv
+[DEBUG] Output move file: championship/logic-and-proofs-beatingthehorse/move.csv
+starting search...
+searched and found best move in search: 5736
+Total nodes searched: 24060
+how i see the board before writing next move: Turn: White
+Enpassant: xx	Castling: WK WQ BK BQ 
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | r  | n  | b  |    | k  |    | n  | r  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | p  | p  | p  |    |    | p  | p  | p  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    | p  |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    | p  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 | N  | P  |    |    | P  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    |    | P  | P  |    | Q  | P  | P  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | R  |    | B  |    | K  | B  | N  | R  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-beatingthehorse/move.csv move : a3b5
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-beatingthehorse/history.csv`...
+[32;1m[Board] [0mLoaded 12 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-beatingthehorse/move.csv`...
+[32;1m[Board] [0mWhite player is playing a3 to b5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m| |[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[0;1mk[0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mQ[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-beatingthehorse/history.csv`...
+[32;1m[Board] [0mLoaded 13 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-beatingthehorse/move.csv`...
+[32;1m[Board] [0mBlack player is playing d6 to d5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m| |[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[0;1mk[0m| |[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mQ[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+[DEBUG] Input history filename: championship/logic-and-proofs-beatingthehorse/history.csv
+[DEBUG] Output move file: championship/logic-and-proofs-beatingthehorse/move.csv
+starting search...
+searched and found best move in search: 1053337
+Total nodes searched: 22581
+how i see the board before writing next move: Turn: White
+Enpassant: xx	Castling: WK WQ BK BQ 
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | r  | n  | b  |    | k  |    | n  | r  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | p  | p  | p  |    |    | p  | p  | p  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    | N  |    | p  | p  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    | P  |    |    | P  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 |    |    | P  | P  |    | Q  | P  | P  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | R  |    | B  |    | K  | B  | N  | R  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-beatingthehorse/move.csv move : b5c7
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-beatingthehorse/history.csv`...
+[32;1m[Board] [0mLoaded 14 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-beatingthehorse/move.csv`...
+[32;1m[Board] [0mWhite player is playing b5 to c7.
+[32;1m[Board] [0m[5;1mWhite Knight is taking Black Pawn.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m| |[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[0;1mk[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mQ[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mBlack King in check![0m
+[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by White Knight (c7)
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-beatingthehorse/history.csv`...
+[32;1m[Board] [0mLoaded 15 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-beatingthehorse/move.csv`...
+[32;1m[Board] [0mBlack player is playing g8 to e7.
+[32;1m[Board] [0m[31;1m[ERROR][0m Proposed move from (g8) to (e7) puts the King in check :(
+[32;1m[Board] [0m[31;1m[ERROR][0m Black Knight (g8) cannot reach its destination (e7) :(
 [32;1m[Referee] [0mInvalid move (code: -7) :(
 [32;1m[Game] [0mBlack player has lost on illegal move.

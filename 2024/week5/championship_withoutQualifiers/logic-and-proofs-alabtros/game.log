@@ -23,13 +23,15 @@
 [32;1m[Referee] [0mThis is the turn of the White player...
 [DEBUG] Input history filename: championship/logic-and-proofs-alabtros/history.csv
 [DEBUG] Output move file: championship/logic-and-proofs-alabtros/move.csv
-TURN FOR 1
-b1c3
-[DEBUG] Wrote to ouput file championship/logic-and-proofs-alabtros/move.csv move : b1c3
+starting search...
+searched and found best move in search: 2673
+Total nodes searched: 3365
+how i see the board before writing next move: Turn: White
+Enpassant: xx	Castling: WK WQ BK BQ 
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | bR | bN | bB | bQ | bK | bB | bN | bR |
+8 | r  | n  | b  | q  | k  | b  | n  | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
-7 | bP | bP | bP | bP | bP | bP | bP | bP |
+7 | p  | p  | p  | p  | p  | p  | p  | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
 6 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
@@ -39,18 +41,19 @@ b1c3
    ---- ---- ---- ---- ---- ---- ---- ----
 3 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 | wP | wP | wP | wP | wP | wP | wP | wP |
+2 | P  | P  | P  | P  | P  | P  | P  | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
-1 | wR | wN | wB | wQ | wK | wB | wN | wR |
+1 | R  | N  | B  | Q  | K  | B  | N  | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
+[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-alabtros/move.csv move : b2b3
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-alabtros/history.csv`...
 [32;1m[Board] [0mLoaded 0 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-alabtros/move.csv`...
-[32;1m[Board] [0mWhite player is playing b1 to c3.
+[32;1m[Board] [0mWhite player is playing b2 to b3.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
@@ -64,24 +67,24 @@ b1c3
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
-b1c3
+b2b3
 8| r n b q k b n r 
 7| p p p p p p p p 
 6| . . . . . . . . 
 5| . . . . . . . . 
 4| . . . . . . . . 
-3| . . N . . . . . 
-2| P P P P P P P P 
-1| R . B Q K B N R 
+3| . P . . . . . . 
+2| P . P P P P P P 
+1| R N B Q K B N R 
 -| A|B|C|D|E|F|G|H
 
 8| r n b q k b n r 
@@ -89,14 +92,16 @@ b1c3
 6| . . . . . . . . 
 5| . . . . . . . . 
 4| . . . . . . . . 
-3| . . N . . . . . 
-2| P P P P P P P P 
-1| R . B Q K B N R 
+3| . P . . . . . . 
+2| P . P P P P P P 
+1| R N B Q K B N R 
 -| A|B|C|D|E|F|G|H
 a7a6
 a7a5
 b7b6
 b7b5
+c7c6
+c7c5
 d7d6
 d7d5
 e7e6
@@ -107,7 +112,11 @@ g7g6
 g7g5
 h7h6
 h7h5
-14
+b8a6
+b8c6
+g8f6
+g8h6
+20
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...

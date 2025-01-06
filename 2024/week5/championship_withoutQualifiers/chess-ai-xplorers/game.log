@@ -21,39 +21,2194 @@
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
+Enemy Positions: 
+Key: [1, 7] -> Value: true
+Key: [1, 8] -> Value: true
+Key: [2, 7] -> Value: true
+Key: [2, 8] -> Value: true
+Key: [3, 7] -> Value: true
+Key: [3, 8] -> Value: true
+Key: [4, 7] -> Value: true
+Key: [4, 8] -> Value: true
+Key: [5, 7] -> Value: true
+Key: [5, 8] -> Value: true
+Key: [6, 7] -> Value: true
+Key: [6, 8] -> Value: true
+Key: [7, 7] -> Value: true
+Key: [7, 8] -> Value: true
+Key: [8, 7] -> Value: true
+Key: [8, 8] -> Value: true
+-----------------------
+My Positions: 
+Key: [1, 1] -> Value: true
+Key: [1, 2] -> Value: true
+Key: [2, 1] -> Value: true
+Key: [2, 2] -> Value: true
+Key: [3, 1] -> Value: true
+Key: [3, 2] -> Value: true
+Key: [4, 1] -> Value: true
+Key: [4, 2] -> Value: true
+Key: [5, 1] -> Value: true
+Key: [5, 2] -> Value: true
+Key: [6, 1] -> Value: true
+Key: [6, 2] -> Value: true
+Key: [7, 1] -> Value: true
+Key: [7, 2] -> Value: true
+Key: [8, 1] -> Value: true
+Key: [8, 2] -> Value: true
+-----------------------
     a    b    c    d    e    f    g    h
   +----+----+----+----+----+----+----+----+
-8 |    |    |    |    |    |    |    |    | 8
+8 | oR | oN | oB | oQ | oK | oB | oN | oR | 8
   +----+----+----+----+----+----+----+----+
-7 |    |    |    |    |    |    |    |    | 7
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
   +----+----+----+----+----+----+----+----+
-6 |    |    | mP | oP |    |    |    |    | 6
+6 |    |    |    |    |    |    |    |    | 6
   +----+----+----+----+----+----+----+----+
 5 |    |    |    |    |    |    |    |    | 5
   +----+----+----+----+----+----+----+----+
 4 |    |    |    |    |    |    |    |    | 4
   +----+----+----+----+----+----+----+----+
-3 |    |    |    | oR |    | oN |    |    | 3
+3 |    |    |    |    |    |    |    |    | 3
   +----+----+----+----+----+----+----+----+
-2 |    |    |    |    |    |    |    |    | 2
+2 | mP | mP | mP | mP | mP | mP | mP | mP | 2
   +----+----+----+----+----+----+----+----+
-1 |    |    |    |    | mK |    |    |    | 1
+1 | mR | mN | mB | mQ | mK | mB | mN | mR | 1
   +----+----+----+----+----+----+----+----+
     a    b    c    d    e    f    g   h
 
-value of board: -850
-mobility: -137
-attack counter: -140
+all legal moves our algo finds: 
+a2a3, 
+a2a4, 
+b2b3, 
+b2b4, 
+c2c3, 
+c2c4, 
+d2d3, 
+d2d4, 
+e2e3, 
+e2e4, 
+f2f3, 
+f2f4, 
+g2g3, 
+g2g4, 
+h2h3, 
+h2h4, 
+b1c3, 
+b1a3, 
+g1h3, 
+g1f3, 
+
+random move chosen: b1a3
+Move written to championship/chess-ai-xplorers/move.csv successfully!
+value of board: -20
+mobility: 0
+attack counter: 0
 king shield: 0
-mob_near_king: 0
-king safety: -140
-pawn structure: 20
+mob_near_king: 40
+king safety: 40
+pawn structure: 0
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/chess-ai-xplorers/history.csv`...
 [32;1m[Board] [0mLoaded 0 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-xplorers/move.csv`...
-[32;1m[Board] [0m[31;1m[ERROR][0m The move could not be read from `championship/chess-ai-xplorers/move.csv' :(
-[32;1m[Referee] [0mInvalid move (code: -1) :(
+[32;1m[Board] [0mWhite player is playing b1 to a3.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+print legal moves panws: a7a6 a7a5 b7b6 b7b5 c7c6 c7c5 d7d6 d7d5 e7e6 e7e5 f7f6 f7f5 g7g6 g7g5 h7h6 h7h5 
+Wrote move "a7a6" to championship/chess-ai-xplorers/move.csv
+-----------------------------------------
+| br | bn | bb | bq | bK | bb | bn | br |
+-----------------------------------------
+| bp | bp | bp | bp | bp | bp | bp | bp |
+-----------------------------------------
+|    |    |    |    |    |    |    |    |
+-----------------------------------------
+|    |    |    |    |    |    |    |    |
+-----------------------------------------
+|    |    |    |    |    |    |    |    |
+-----------------------------------------
+| wn |    |    |    |    |    |    |    |
+-----------------------------------------
+| wp | wp | wp | wp | wp | wp | wp | wp |
+-----------------------------------------
+| wr |    | wb | wq | wK | wb | wn | wr |
+-----------------------------------------
+Black to play
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-xplorers/history.csv`...
+[32;1m[Board] [0mLoaded 1 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-xplorers/move.csv`...
+[32;1m[Board] [0mBlack player is playing a7 to a6.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+Enemy Positions: 
+Key: [1, 6] -> Value: false
+Key: [1, 8] -> Value: true
+Key: [2, 7] -> Value: true
+Key: [2, 8] -> Value: true
+Key: [3, 7] -> Value: true
+Key: [3, 8] -> Value: true
+Key: [4, 7] -> Value: true
+Key: [4, 8] -> Value: true
+Key: [5, 7] -> Value: true
+Key: [5, 8] -> Value: true
+Key: [6, 7] -> Value: true
+Key: [6, 8] -> Value: true
+Key: [7, 7] -> Value: true
+Key: [7, 8] -> Value: true
+Key: [8, 7] -> Value: true
+Key: [8, 8] -> Value: true
+-----------------------
+My Positions: 
+Key: [1, 1] -> Value: true
+Key: [1, 2] -> Value: true
+Key: [1, 3] -> Value: true
+Key: [1, 6] -> Value: true
+Key: [2, 2] -> Value: true
+Key: [3, 1] -> Value: true
+Key: [3, 2] -> Value: true
+Key: [4, 1] -> Value: true
+Key: [4, 2] -> Value: true
+Key: [5, 1] -> Value: true
+Key: [5, 2] -> Value: true
+Key: [6, 1] -> Value: true
+Key: [6, 2] -> Value: true
+Key: [7, 1] -> Value: true
+Key: [7, 2] -> Value: true
+Key: [8, 1] -> Value: true
+Key: [8, 2] -> Value: true
+-----------------------
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR | oN | oB | oQ | oK | oB | oN | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 |    | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    |    |    |    |    |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    |    |    |    |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 | mN |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP | mP | mP | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR |    | mB | mQ | mK | mB | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+all legal moves our algo finds: 
+b2b3, 
+b2b4, 
+c2c3, 
+c2c4, 
+d2d3, 
+d2d4, 
+e2e3, 
+e2e4, 
+f2f3, 
+f2f4, 
+g2g3, 
+g2g4, 
+h2h3, 
+h2h4, 
+a1b1, 
+a3b5, 
+a3c4, 
+a3b1, 
+g1h3, 
+g1f3, 
+
+random move chosen: b2b3
+Move written to championship/chess-ai-xplorers/move.csv successfully!
+value of board: 95
+mobility: -34
+attack counter: 0
+king shield: 0
+mob_near_king: 40
+king safety: 40
+pawn structure: -20
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-xplorers/history.csv`...
+[32;1m[Board] [0mLoaded 2 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-xplorers/move.csv`...
+[32;1m[Board] [0mWhite player is playing b2 to b3.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[0;1mk[0m|[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+print legal moves panws: a6a5 b7b6 b7b5 c7c6 c7c5 d7d6 d7d5 e7e6 e7e5 f7f6 f7f5 g7g6 g7g5 h7h6 h7h5 
+Wrote move "a6a5" to championship/chess-ai-xplorers/move.csv
+-----------------------------------------
+| br | bn | bb | bq | bK | bb | bn | br |
+-----------------------------------------
+|    | bp | bp | bp | bp | bp | bp | bp |
+-----------------------------------------
+| bp |    |    |    |    |    |    |    |
+-----------------------------------------
+|    |    |    |    |    |    |    |    |
+-----------------------------------------
+|    |    |    |    |    |    |    |    |
+-----------------------------------------
+| wn | wp |    |    |    |    |    |    |
+-----------------------------------------
+| wp |    | wp | wp | wp | wp | wp | wp |
+-----------------------------------------
+| wr |    | wb | wq | wK | wb | wn | wr |
+-----------------------------------------
+Black to play
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-xplorers/history.csv`...
+[32;1m[Board] [0mLoaded 3 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-xplorers/move.csv`...
+[32;1m[Board] [0mBlack player is playing a6 to a5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[0;1mk[0m|[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+Enemy Positions: 
+Key: [1, 6] -> Value: true
+Key: [1, 8] -> Value: true
+Key: [2, 3] -> Value: true
+Key: [2, 7] -> Value: true
+Key: [2, 8] -> Value: true
+Key: [3, 7] -> Value: true
+Key: [3, 8] -> Value: true
+Key: [4, 7] -> Value: true
+Key: [4, 8] -> Value: true
+Key: [5, 7] -> Value: true
+Key: [5, 8] -> Value: true
+Key: [6, 7] -> Value: true
+Key: [6, 8] -> Value: true
+Key: [7, 7] -> Value: true
+Key: [7, 8] -> Value: true
+Key: [8, 7] -> Value: true
+Key: [8, 8] -> Value: true
+-----------------------
+My Positions: 
+Key: [1, 1] -> Value: true
+Key: [1, 2] -> Value: true
+Key: [1, 3] -> Value: true
+Key: [1, 6] -> Value: false
+Key: [2, 3] -> Value: false
+Key: [3, 1] -> Value: true
+Key: [3, 2] -> Value: true
+Key: [4, 1] -> Value: true
+Key: [4, 2] -> Value: true
+Key: [5, 1] -> Value: true
+Key: [5, 2] -> Value: true
+Key: [6, 1] -> Value: true
+Key: [6, 2] -> Value: true
+Key: [7, 1] -> Value: true
+Key: [7, 2] -> Value: true
+Key: [8, 1] -> Value: true
+Key: [8, 2] -> Value: true
+-----------------------
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR | oN | oB | oQ | oK | oB | oN | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 |    | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    |    |    |    |    |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    |    |    |    |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 | mN |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP |    | mP | mP | mP | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR |    | mB | mQ | mK | mB | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+all legal moves our algo finds: 
+c2c3, 
+c2c4, 
+d2d3, 
+d2d4, 
+e2e3, 
+e2e4, 
+f2f3, 
+f2f4, 
+g2g3, 
+g2g4, 
+h2h3, 
+h2h4, 
+a1b1, 
+a3b5, 
+a3c4, 
+a3b1, 
+g1h3, 
+g1f3, 
+c1b2, 
+
+random move chosen: e2e4
+Move written to championship/chess-ai-xplorers/move.csv successfully!
+value of board: -15
+mobility: -28
+attack counter: 0
+king shield: 0
+mob_near_king: 40
+king safety: 40
+pawn structure: -670
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-xplorers/history.csv`...
+[32;1m[Board] [0mLoaded 4 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-xplorers/move.csv`...
+[32;1m[Board] [0mWhite player is playing e2 to e4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[0;1mk[0m|[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+print legal moves panws: a5a4 b7b6 b7b5 c7c6 c7c5 d7d6 d7d5 e7e6 e7e5 f7f6 f7f5 g7g6 g7g5 h7h6 h7h5 
+Wrote move "a5a4" to championship/chess-ai-xplorers/move.csv
+-----------------------------------------
+| br | bn | bb | bq | bK | bb | bn | br |
+-----------------------------------------
+|    | bp | bp | bp | bp | bp | bp | bp |
+-----------------------------------------
+|    |    |    |    |    |    |    |    |
+-----------------------------------------
+| bp |    |    |    |    |    |    |    |
+-----------------------------------------
+|    |    |    |    | wp |    |    |    |
+-----------------------------------------
+| wn | wp |    |    |    |    |    |    |
+-----------------------------------------
+| wp |    | wp | wp |    | wp | wp | wp |
+-----------------------------------------
+| wr |    | wb | wq | wK | wb | wn | wr |
+-----------------------------------------
+Black to play
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-xplorers/history.csv`...
+[32;1m[Board] [0mLoaded 5 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-xplorers/move.csv`...
+[32;1m[Board] [0mBlack player is playing a5 to a4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[30;1mp[0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[0;1mk[0m|[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+Enemy Positions: 
+Key: [1, 6] -> Value: false
+Key: [1, 8] -> Value: true
+Key: [2, 3] -> Value: false
+Key: [2, 7] -> Value: true
+Key: [2, 8] -> Value: true
+Key: [3, 7] -> Value: true
+Key: [3, 8] -> Value: true
+Key: [4, 7] -> Value: true
+Key: [4, 8] -> Value: true
+Key: [5, 4] -> Value: false
+Key: [5, 7] -> Value: true
+Key: [5, 8] -> Value: true
+Key: [6, 7] -> Value: true
+Key: [6, 8] -> Value: true
+Key: [7, 7] -> Value: true
+Key: [7, 8] -> Value: true
+Key: [8, 7] -> Value: true
+Key: [8, 8] -> Value: true
+-----------------------
+My Positions: 
+Key: [1, 1] -> Value: true
+Key: [1, 2] -> Value: true
+Key: [1, 3] -> Value: true
+Key: [1, 6] -> Value: true
+Key: [2, 3] -> Value: true
+Key: [3, 1] -> Value: true
+Key: [3, 2] -> Value: true
+Key: [4, 1] -> Value: true
+Key: [4, 2] -> Value: true
+Key: [5, 1] -> Value: true
+Key: [5, 4] -> Value: true
+Key: [6, 1] -> Value: true
+Key: [6, 2] -> Value: true
+Key: [7, 1] -> Value: true
+Key: [7, 2] -> Value: true
+Key: [8, 1] -> Value: true
+Key: [8, 2] -> Value: true
+-----------------------
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR | oN | oB | oQ | oK | oB | oN | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 |    | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    |    |    |    |    |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    |    |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 | mN |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP |    | mP | mP |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR |    | mB | mQ | mK | mB | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+all legal moves our algo finds: 
+c2c3, 
+c2c4, 
+d2d3, 
+d2d4, 
+e4e5, 
+e4e6, 
+f2f3, 
+f2f4, 
+g2g3, 
+g2g4, 
+h2h3, 
+h2h4, 
+a1b1, 
+a3b5, 
+a3c4, 
+a3b1, 
+g1h3, 
+g1e2, 
+g1f3, 
+c1b2, 
+f1e2, 
+f1d3, 
+f1c4, 
+f1b5, 
+f1a6, 
+d1e2, 
+d1f3, 
+d1g4, 
+d1h5, 
+e1e2, 
+
+random move chosen: g1e2
+Move written to championship/chess-ai-xplorers/move.csv successfully!
+value of board: 25
+mobility: 89
+attack counter: 0
+king shield: 0
+mob_near_king: 80
+king safety: 80
+pawn structure: -700
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-xplorers/history.csv`...
+[32;1m[Board] [0mLoaded 6 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-xplorers/move.csv`...
+[32;1m[Board] [0mWhite player is playing g1 to e2.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[30;1mp[0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[0;1mk[0m|[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mk[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+print legal moves panws: a4b3 b7b6 b7b5 c7c6 c7c5 d7d6 d7d5 e7e6 e7e5 f7f6 f7f5 g7g6 g7g5 h7h6 h7h5 
+Wrote move "a4b3" to championship/chess-ai-xplorers/move.csv
+-----------------------------------------
+| br | bn | bb | bq | bK | bb | bn | br |
+-----------------------------------------
+|    | bp | bp | bp | bp | bp | bp | bp |
+-----------------------------------------
+|    |    |    |    |    |    |    |    |
+-----------------------------------------
+|    |    |    |    |    |    |    |    |
+-----------------------------------------
+| bp |    |    |    | wp |    |    |    |
+-----------------------------------------
+| wn | wp |    |    |    |    |    |    |
+-----------------------------------------
+| wp |    | wp | wp | wn | wp | wp | wp |
+-----------------------------------------
+| wr |    | wb | wq | wK | wb |    | wr |
+-----------------------------------------
+Black to play
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-xplorers/history.csv`...
+[32;1m[Board] [0mLoaded 7 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-xplorers/move.csv`...
+[32;1m[Board] [0mBlack player is playing a4 to b3.
+[32;1m[Board] [0m[5;1mBlack Pawn is taking White Pawn.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[0;1mk[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mk[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+Enemy Positions: 
+Key: [1, 6] -> Value: false
+Key: [1, 8] -> Value: true
+Key: [2, 3] -> Value: false
+Key: [2, 7] -> Value: true
+Key: [2, 8] -> Value: true
+Key: [3, 7] -> Value: true
+Key: [3, 8] -> Value: true
+Key: [4, 7] -> Value: true
+Key: [4, 8] -> Value: true
+Key: [5, 4] -> Value: false
+Key: [5, 7] -> Value: true
+Key: [5, 8] -> Value: true
+Key: [6, 7] -> Value: true
+Key: [6, 8] -> Value: true
+Key: [7, 7] -> Value: true
+Key: [7, 8] -> Value: true
+Key: [8, 7] -> Value: true
+Key: [8, 8] -> Value: true
+-----------------------
+My Positions: 
+Key: [1, 1] -> Value: true
+Key: [1, 2] -> Value: true
+Key: [1, 3] -> Value: true
+Key: [1, 6] -> Value: true
+Key: [2, 3] -> Value: true
+Key: [3, 1] -> Value: true
+Key: [3, 2] -> Value: true
+Key: [4, 1] -> Value: true
+Key: [4, 2] -> Value: true
+Key: [5, 1] -> Value: true
+Key: [5, 2] -> Value: true
+Key: [5, 4] -> Value: true
+Key: [6, 1] -> Value: true
+Key: [6, 2] -> Value: true
+Key: [7, 2] -> Value: true
+Key: [8, 1] -> Value: true
+Key: [8, 2] -> Value: true
+-----------------------
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR | oN | oB | oQ | oK | oB | oN | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 |    | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    |    |    |    |    |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    |    |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 | mN |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP |    | mP | mP | mN | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR |    | mB | mQ | mK | mB |    | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+all legal moves our algo finds: 
+c2c3, 
+c2c4, 
+d2d3, 
+d2d4, 
+e4e5, 
+e4e6, 
+f2f3, 
+f2f4, 
+g2g3, 
+g2g4, 
+h2h3, 
+h2h4, 
+a1b1, 
+h1g1, 
+a3b5, 
+a3c4, 
+a3b1, 
+e2f4, 
+e2g3, 
+e2g1, 
+e2c3, 
+e2d4, 
+c1b2, 
+
+random move chosen: a3b1
+Move written to championship/chess-ai-xplorers/move.csv successfully!
+value of board: 65
+mobility: 0
+attack counter: 0
+king shield: 0
+mob_near_king: 20
+king safety: 20
+pawn structure: -700
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-xplorers/history.csv`...
+[32;1m[Board] [0mLoaded 8 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-xplorers/move.csv`...
+[32;1m[Board] [0mWhite player is playing a3 to b1.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mk[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+print legal moves panws: b3b2 b3a2 b3c2 b7b6 b7b5 c7c6 c7c5 d7d6 d7d5 e7e6 e7e5 f7f6 f7f5 g7g6 g7g5 h7h6 h7h5 
+Wrote move "b3b2" to championship/chess-ai-xplorers/move.csv
+-----------------------------------------
+| br | bn | bb | bq | bK | bb | bn | br |
+-----------------------------------------
+|    | bp | bp | bp | bp | bp | bp | bp |
+-----------------------------------------
+|    |    |    |    |    |    |    |    |
+-----------------------------------------
+|    |    |    |    |    |    |    |    |
+-----------------------------------------
+|    |    |    |    | wp |    |    |    |
+-----------------------------------------
+|    | bp |    |    |    |    |    |    |
+-----------------------------------------
+| wp |    | wp | wp | wn | wp | wp | wp |
+-----------------------------------------
+| wr | wn | wb | wq | wK | wb |    | wr |
+-----------------------------------------
+Black to play
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-xplorers/history.csv`...
+[32;1m[Board] [0mLoaded 9 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-xplorers/move.csv`...
+[32;1m[Board] [0mBlack player is playing b3 to b2.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[30;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mk[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+Enemy Positions: 
+Key: [1, 6] -> Value: false
+Key: [1, 8] -> Value: true
+Key: [2, 3] -> Value: false
+Key: [2, 7] -> Value: true
+Key: [2, 8] -> Value: true
+Key: [3, 7] -> Value: true
+Key: [3, 8] -> Value: true
+Key: [4, 7] -> Value: true
+Key: [4, 8] -> Value: true
+Key: [5, 4] -> Value: false
+Key: [5, 7] -> Value: true
+Key: [5, 8] -> Value: true
+Key: [6, 7] -> Value: true
+Key: [6, 8] -> Value: true
+Key: [7, 7] -> Value: true
+Key: [7, 8] -> Value: true
+Key: [8, 7] -> Value: true
+Key: [8, 8] -> Value: true
+-----------------------
+My Positions: 
+Key: [1, 1] -> Value: true
+Key: [1, 2] -> Value: true
+Key: [1, 6] -> Value: true
+Key: [2, 1] -> Value: true
+Key: [2, 3] -> Value: true
+Key: [3, 1] -> Value: true
+Key: [3, 2] -> Value: true
+Key: [4, 1] -> Value: true
+Key: [4, 2] -> Value: true
+Key: [5, 1] -> Value: true
+Key: [5, 2] -> Value: true
+Key: [5, 4] -> Value: true
+Key: [6, 1] -> Value: true
+Key: [6, 2] -> Value: true
+Key: [7, 2] -> Value: true
+Key: [8, 1] -> Value: true
+Key: [8, 2] -> Value: true
+-----------------------
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR | oN | oB | oQ | oK | oB | oN | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 |    | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    |    |    |    |    |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    |    |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP |    | mP | mP | mN | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK | mB |    | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+all legal moves our algo finds: 
+a2a3, 
+a2a4, 
+c2c3, 
+c2c4, 
+d2d3, 
+d2d4, 
+e4e5, 
+e4e6, 
+f2f3, 
+f2f4, 
+g2g3, 
+g2g4, 
+h2h3, 
+h2h4, 
+h1g1, 
+b1c3, 
+b1a3, 
+e2f4, 
+e2g3, 
+e2g1, 
+e2c3, 
+e2d4, 
+c1b2, 
+c1a3, 
+
+random move chosen: d2d4
+Move written to championship/chess-ai-xplorers/move.csv successfully!
+value of board: 55
+mobility: -20
+attack counter: 0
+king shield: 0
+mob_near_king: 20
+king safety: 20
+pawn structure: -700
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-xplorers/history.csv`...
+[32;1m[Board] [0mLoaded 10 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-xplorers/move.csv`...
+[32;1m[Board] [0mWhite player is playing d2 to d4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[30;1mp[0m|[0;1mp[0m| |[0;1mk[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+print legal moves panws: b2a1 b2c1 b7b6 b7b5 c7c6 c7c5 d7d6 d7d5 e7e6 e7e5 f7f6 f7f5 g7g6 g7g5 h7h6 h7h5 
+Wrote move "b2a1" to championship/chess-ai-xplorers/move.csv
+-----------------------------------------
+| br | bn | bb | bq | bK | bb | bn | br |
+-----------------------------------------
+|    | bp | bp | bp | bp | bp | bp | bp |
+-----------------------------------------
+|    |    |    |    |    |    |    |    |
+-----------------------------------------
+|    |    |    |    |    |    |    |    |
+-----------------------------------------
+|    |    |    | wp | wp |    |    |    |
+-----------------------------------------
+|    |    |    |    |    |    |    |    |
+-----------------------------------------
+| wp | bp | wp |    | wn | wp | wp | wp |
+-----------------------------------------
+| wr | wn | wb | wq | wK | wb |    | wr |
+-----------------------------------------
+Black to play
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-xplorers/history.csv`...
+[32;1m[Board] [0mLoaded 11 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-xplorers/move.csv`...
+[32;1m[Board] [0mBlack player is playing b2 to a1.
+[32;1m[Board] [0m[5;1mBlack Pawn is taking White Rook.[0m
+[32;1m[Board] [0mPromoting a Black Pawn into a Queen
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[0;1mp[0m| |[0;1mk[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[30;1mQ[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+Enemy Positions: 
+Key: [1, 6] -> Value: true
+Key: [1, 8] -> Value: true
+Key: [2, 3] -> Value: true
+Key: [2, 7] -> Value: true
+Key: [2, 8] -> Value: true
+Key: [3, 7] -> Value: true
+Key: [3, 8] -> Value: true
+Key: [4, 4] -> Value: false
+Key: [4, 7] -> Value: true
+Key: [4, 8] -> Value: true
+Key: [5, 4] -> Value: false
+Key: [5, 7] -> Value: true
+Key: [5, 8] -> Value: true
+Key: [6, 7] -> Value: true
+Key: [6, 8] -> Value: true
+Key: [7, 7] -> Value: true
+Key: [7, 8] -> Value: true
+Key: [8, 7] -> Value: true
+Key: [8, 8] -> Value: true
+-----------------------
+My Positions: 
+Key: [1, 1] -> Value: true
+Key: [1, 2] -> Value: true
+Key: [1, 6] -> Value: false
+Key: [2, 1] -> Value: true
+Key: [2, 3] -> Value: false
+Key: [3, 1] -> Value: true
+Key: [3, 2] -> Value: true
+Key: [4, 1] -> Value: true
+Key: [4, 4] -> Value: true
+Key: [5, 1] -> Value: true
+Key: [5, 2] -> Value: true
+Key: [5, 4] -> Value: true
+Key: [6, 1] -> Value: true
+Key: [6, 2] -> Value: true
+Key: [7, 2] -> Value: true
+Key: [8, 1] -> Value: true
+Key: [8, 2] -> Value: true
+-----------------------
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR | oN | oB | oQ | oK | oB | oN | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 |    | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    |    |    |    |    |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    |    | mP | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP |    | mP |    | mN | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 |    | mN | mB | mQ | mK | mB |    | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+all legal moves our algo finds: 
+a2a3, 
+a2a4, 
+c2c3, 
+c2c4, 
+d4d5, 
+d4d6, 
+e4e5, 
+e4e6, 
+f2f3, 
+f2f4, 
+g2g3, 
+g2g4, 
+h2h3, 
+h2h4, 
+h1g1, 
+b1c3, 
+b1d2, 
+b1a3, 
+e2f4, 
+e2g3, 
+e2g1, 
+e2c3, 
+c1d2, 
+c1e3, 
+c1f4, 
+c1g5, 
+c1h6, 
+c1b2, 
+c1a3, 
+d1d2, 
+d1d3, 
+e1d2, 
+
+random move chosen: e2c3
+Move written to championship/chess-ai-xplorers/move.csv successfully!
+value of board: -405
+mobility: 51
+attack counter: 0
+king shield: 0
+mob_near_king: 60
+king safety: 60
+pawn structure: -660
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-xplorers/history.csv`...
+[32;1m[Board] [0mLoaded 12 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-xplorers/move.csv`...
+[32;1m[Board] [0mWhite player is playing e2 to c3.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[30;1mQ[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+print legal moves panws: b7b6 b7b5 c7c6 c7c5 d7d6 d7d5 e7e6 e7e5 f7f6 f7f5 g7g6 g7g5 h7h6 h7h5 
+Wrote move "b7b6" to championship/chess-ai-xplorers/move.csv
+-----------------------------------------
+| br | bn | bb | bq | bK | bb | bn | br |
+-----------------------------------------
+|    | bp | bp | bp | bp | bp | bp | bp |
+-----------------------------------------
+|    |    |    |    |    |    |    |    |
+-----------------------------------------
+|    |    |    |    |    |    |    |    |
+-----------------------------------------
+|    |    |    | wp | wp |    |    |    |
+-----------------------------------------
+|    |    | wn |    |    |    |    |    |
+-----------------------------------------
+| wp |    | wp |    |    | wp | wp | wp |
+-----------------------------------------
+| bq | wn | wb | wq | wK | wb |    | wr |
+-----------------------------------------
+Black to play
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-xplorers/history.csv`...
+[32;1m[Board] [0mLoaded 13 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-xplorers/move.csv`...
+[32;1m[Board] [0mBlack player is playing b7 to b6.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[30;1mQ[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+Enemy Positions: 
+Key: [1, 6] -> Value: false
+Key: [1, 8] -> Value: true
+Key: [2, 3] -> Value: false
+Key: [2, 6] -> Value: false
+Key: [2, 8] -> Value: true
+Key: [3, 7] -> Value: true
+Key: [3, 8] -> Value: true
+Key: [4, 4] -> Value: false
+Key: [4, 7] -> Value: true
+Key: [4, 8] -> Value: true
+Key: [5, 4] -> Value: false
+Key: [5, 7] -> Value: true
+Key: [5, 8] -> Value: true
+Key: [6, 7] -> Value: true
+Key: [6, 8] -> Value: true
+Key: [7, 7] -> Value: true
+Key: [7, 8] -> Value: true
+Key: [8, 7] -> Value: true
+Key: [8, 8] -> Value: true
+-----------------------
+My Positions: 
+Key: [1, 1] -> Value: true
+Key: [1, 2] -> Value: true
+Key: [1, 6] -> Value: true
+Key: [2, 1] -> Value: true
+Key: [2, 3] -> Value: true
+Key: [2, 6] -> Value: true
+Key: [3, 1] -> Value: true
+Key: [3, 2] -> Value: true
+Key: [3, 3] -> Value: true
+Key: [4, 1] -> Value: true
+Key: [4, 4] -> Value: true
+Key: [5, 1] -> Value: true
+Key: [5, 4] -> Value: true
+Key: [6, 1] -> Value: true
+Key: [6, 2] -> Value: true
+Key: [7, 2] -> Value: true
+Key: [8, 1] -> Value: true
+Key: [8, 2] -> Value: true
+-----------------------
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR | oN | oB | oQ | oK | oB | oN | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 |    |    | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    |    |    |    |    |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    |    | mP | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    | mN |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP |    | mP |    |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 |    | mN | mB | mQ | mK | mB |    | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+all legal moves our algo finds: 
+a2a3, 
+a2a4, 
+d4d5, 
+d4d6, 
+e4e5, 
+e4e6, 
+f2f3, 
+f2f4, 
+g2g3, 
+g2g4, 
+h2h3, 
+h2h4, 
+h1g1, 
+b1d2, 
+b1a3, 
+c3d5, 
+c3e2, 
+c3a4, 
+c3b5, 
+c1d2, 
+c1e3, 
+c1f4, 
+c1g5, 
+c1h6, 
+c1b2, 
+c1a3, 
+f1e2, 
+f1d3, 
+f1c4, 
+f1b5, 
+f1a6, 
+d1e2, 
+d1f3, 
+d1g4, 
+d1h5, 
+d1d2, 
+d1d3, 
+e1e2, 
+e1d2, 
+
+random move chosen: g2g4
+Move written to championship/chess-ai-xplorers/move.csv successfully!
+value of board: -285
+mobility: 144
+attack counter: 0
+king shield: 0
+mob_near_king: 110
+king safety: 110
+pawn structure: -610
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-xplorers/history.csv`...
+[32;1m[Board] [0mLoaded 14 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-xplorers/move.csv`...
+[32;1m[Board] [0mWhite player is playing g2 to g4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[30;1mQ[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+print legal moves panws: b6b5 c7c6 c7c5 d7d6 d7d5 e7e6 e7e5 f7f6 f7f5 g7g6 g7g5 h7h6 h7h5 
+Wrote move "b6b5" to championship/chess-ai-xplorers/move.csv
+-----------------------------------------
+| br | bn | bb | bq | bK | bb | bn | br |
+-----------------------------------------
+|    |    | bp | bp | bp | bp | bp | bp |
+-----------------------------------------
+|    | bp |    |    |    |    |    |    |
+-----------------------------------------
+|    |    |    |    |    |    |    |    |
+-----------------------------------------
+|    |    |    | wp | wp |    | wp |    |
+-----------------------------------------
+|    |    | wn |    |    |    |    |    |
+-----------------------------------------
+| wp |    | wp |    |    | wp |    | wp |
+-----------------------------------------
+| bq | wn | wb | wq | wK | wb |    | wr |
+-----------------------------------------
+Black to play
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-xplorers/history.csv`...
+[32;1m[Board] [0mLoaded 15 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-xplorers/move.csv`...
+[32;1m[Board] [0mBlack player is playing b6 to b5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[30;1mQ[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+Enemy Positions: 
+Key: [1, 6] -> Value: false
+Key: [1, 8] -> Value: true
+Key: [2, 3] -> Value: false
+Key: [2, 6] -> Value: false
+Key: [2, 8] -> Value: true
+Key: [3, 7] -> Value: true
+Key: [3, 8] -> Value: true
+Key: [4, 4] -> Value: false
+Key: [4, 7] -> Value: true
+Key: [4, 8] -> Value: true
+Key: [5, 4] -> Value: false
+Key: [5, 7] -> Value: true
+Key: [5, 8] -> Value: true
+Key: [6, 7] -> Value: true
+Key: [6, 8] -> Value: true
+Key: [7, 4] -> Value: false
+Key: [7, 7] -> Value: true
+Key: [7, 8] -> Value: true
+Key: [8, 7] -> Value: true
+Key: [8, 8] -> Value: true
+-----------------------
+My Positions: 
+Key: [1, 1] -> Value: true
+Key: [1, 2] -> Value: true
+Key: [1, 6] -> Value: true
+Key: [2, 1] -> Value: true
+Key: [2, 3] -> Value: true
+Key: [2, 6] -> Value: true
+Key: [3, 1] -> Value: true
+Key: [3, 2] -> Value: true
+Key: [3, 3] -> Value: true
+Key: [4, 1] -> Value: true
+Key: [4, 4] -> Value: true
+Key: [5, 1] -> Value: true
+Key: [5, 4] -> Value: true
+Key: [6, 1] -> Value: true
+Key: [6, 2] -> Value: true
+Key: [7, 4] -> Value: true
+Key: [8, 1] -> Value: true
+Key: [8, 2] -> Value: true
+-----------------------
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR | oN | oB | oQ | oK | oB | oN | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 |    |    | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    |    |    |    |    |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    |    | mP | mP |    | mP |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    | mN |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP |    | mP |    |    | mP |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 |    | mN | mB | mQ | mK | mB |    | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+all legal moves our algo finds: 
+a2a3, 
+a2a4, 
+d4d5, 
+d4d6, 
+e4e5, 
+e4e6, 
+f2f3, 
+f2f4, 
+g4g5, 
+g4g6, 
+h2h3, 
+h2h4, 
+h1g1, 
+b1d2, 
+b1a3, 
+c3d5, 
+c3e2, 
+c3a4, 
+c3b5, 
+c1d2, 
+c1e3, 
+c1f4, 
+c1g5, 
+c1h6, 
+c1b2, 
+c1a3, 
+f1g2, 
+f1h3, 
+f1e2, 
+f1d3, 
+f1c4, 
+f1b5, 
+f1a6, 
+d1e2, 
+d1f3, 
+d1d2, 
+d1d3, 
+e1e2, 
+e1d2, 
+
+random move chosen: c1b2
+Move written to championship/chess-ai-xplorers/move.csv successfully!
+value of board: -295
+mobility: 116
+attack counter: 0
+king shield: 0
+mob_near_king: 110
+king safety: 110
+pawn structure: -760
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-xplorers/history.csv`...
+[32;1m[Board] [0mLoaded 16 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-xplorers/move.csv`...
+[32;1m[Board] [0mWhite player is playing c1 to b2.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mb[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[30;1mQ[0m|[0;1mk[0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+print legal moves panws: b5b4 c7c6 c7c5 d7d6 d7d5 e7e6 e7e5 f7f6 f7f5 g7g6 g7g5 h7h6 h7h5 
+Wrote move "b5b4" to championship/chess-ai-xplorers/move.csv
+-----------------------------------------
+| br | bn | bb | bq | bK | bb | bn | br |
+-----------------------------------------
+|    |    | bp | bp | bp | bp | bp | bp |
+-----------------------------------------
+|    |    |    |    |    |    |    |    |
+-----------------------------------------
+|    | bp |    |    |    |    |    |    |
+-----------------------------------------
+|    |    |    | wp | wp |    | wp |    |
+-----------------------------------------
+|    |    | wn |    |    |    |    |    |
+-----------------------------------------
+| wp | wb | wp |    |    | wp |    | wp |
+-----------------------------------------
+| bq | wn |    | wq | wK | wb |    | wr |
+-----------------------------------------
+Black to play
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-xplorers/history.csv`...
+[32;1m[Board] [0mLoaded 17 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-xplorers/move.csv`...
+[32;1m[Board] [0mBlack player is playing b5 to b4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[30;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mb[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[30;1mQ[0m|[0;1mk[0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+Enemy Positions: 
+Key: [1, 6] -> Value: false
+Key: [1, 8] -> Value: true
+Key: [2, 3] -> Value: false
+Key: [2, 6] -> Value: false
+Key: [2, 8] -> Value: true
+Key: [3, 7] -> Value: true
+Key: [3, 8] -> Value: true
+Key: [4, 4] -> Value: false
+Key: [4, 7] -> Value: true
+Key: [4, 8] -> Value: true
+Key: [5, 4] -> Value: false
+Key: [5, 7] -> Value: true
+Key: [5, 8] -> Value: true
+Key: [6, 7] -> Value: true
+Key: [6, 8] -> Value: true
+Key: [7, 4] -> Value: false
+Key: [7, 7] -> Value: true
+Key: [7, 8] -> Value: true
+Key: [8, 7] -> Value: true
+Key: [8, 8] -> Value: true
+-----------------------
+My Positions: 
+Key: [1, 1] -> Value: true
+Key: [1, 2] -> Value: true
+Key: [1, 6] -> Value: true
+Key: [2, 1] -> Value: true
+Key: [2, 2] -> Value: true
+Key: [2, 3] -> Value: true
+Key: [2, 6] -> Value: true
+Key: [3, 2] -> Value: true
+Key: [3, 3] -> Value: true
+Key: [4, 1] -> Value: true
+Key: [4, 4] -> Value: true
+Key: [5, 1] -> Value: true
+Key: [5, 4] -> Value: true
+Key: [6, 1] -> Value: true
+Key: [6, 2] -> Value: true
+Key: [7, 4] -> Value: true
+Key: [8, 1] -> Value: true
+Key: [8, 2] -> Value: true
+-----------------------
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR | oN | oB | oQ | oK | oB | oN | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 |    |    | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    |    |    |    |    |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    |    | mP | mP |    | mP |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    | mN |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mB | mP |    |    | mP |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 |    | mN |    | mQ | mK | mB |    | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+all legal moves our algo finds: 
+a2a3, 
+a2a4, 
+d4d5, 
+d4d6, 
+e4e5, 
+e4e6, 
+f2f3, 
+f2f4, 
+g4g5, 
+g4g6, 
+h2h3, 
+h2h4, 
+h1g1, 
+b1d2, 
+b1a3, 
+c3d5, 
+c3e2, 
+c3a4, 
+c3b5, 
+b2a3, 
+b2c1, 
+b2a1, 
+f1g2, 
+f1h3, 
+f1e2, 
+f1d3, 
+f1c4, 
+f1b5, 
+f1a6, 
+d1e2, 
+d1f3, 
+d1d2, 
+d1d3, 
+d1c1, 
+e1e2, 
+e1d2, 
+
+random move chosen: c3a4
+Move written to championship/chess-ai-xplorers/move.csv successfully!
+value of board: -285
+mobility: 112
+attack counter: 0
+king shield: 0
+mob_near_king: 90
+king safety: 90
+pawn structure: -760
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-xplorers/history.csv`...
+[32;1m[Board] [0mLoaded 18 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-xplorers/move.csv`...
+[32;1m[Board] [0mWhite player is playing c3 to a4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mk[0m|[30;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mb[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[30;1mQ[0m|[0;1mk[0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+print legal moves panws: b4b3 c7c6 c7c5 d7d6 d7d5 e7e6 e7e5 f7f6 f7f5 g7g6 g7g5 h7h6 h7h5 
+Wrote move "b4b3" to championship/chess-ai-xplorers/move.csv
+-----------------------------------------
+| br | bn | bb | bq | bK | bb | bn | br |
+-----------------------------------------
+|    |    | bp | bp | bp | bp | bp | bp |
+-----------------------------------------
+|    |    |    |    |    |    |    |    |
+-----------------------------------------
+|    |    |    |    |    |    |    |    |
+-----------------------------------------
+| wn | bp |    | wp | wp |    | wp |    |
+-----------------------------------------
+|    |    |    |    |    |    |    |    |
+-----------------------------------------
+| wp | wb | wp |    |    | wp |    | wp |
+-----------------------------------------
+| bq | wn |    | wq | wK | wb |    | wr |
+-----------------------------------------
+Black to play
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-xplorers/history.csv`...
+[32;1m[Board] [0mLoaded 19 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-xplorers/move.csv`...
+[32;1m[Board] [0mBlack player is playing b4 to b3.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mk[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mb[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[30;1mQ[0m|[0;1mk[0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+Enemy Positions: 
+Key: [1, 6] -> Value: false
+Key: [1, 8] -> Value: true
+Key: [2, 3] -> Value: false
+Key: [2, 6] -> Value: false
+Key: [2, 8] -> Value: true
+Key: [3, 7] -> Value: true
+Key: [3, 8] -> Value: true
+Key: [4, 4] -> Value: false
+Key: [4, 7] -> Value: true
+Key: [4, 8] -> Value: true
+Key: [5, 4] -> Value: false
+Key: [5, 7] -> Value: true
+Key: [5, 8] -> Value: true
+Key: [6, 7] -> Value: true
+Key: [6, 8] -> Value: true
+Key: [7, 4] -> Value: false
+Key: [7, 7] -> Value: true
+Key: [7, 8] -> Value: true
+Key: [8, 7] -> Value: true
+Key: [8, 8] -> Value: true
+-----------------------
+My Positions: 
+Key: [1, 1] -> Value: true
+Key: [1, 2] -> Value: true
+Key: [1, 4] -> Value: true
+Key: [1, 6] -> Value: true
+Key: [2, 1] -> Value: true
+Key: [2, 2] -> Value: true
+Key: [2, 3] -> Value: true
+Key: [2, 6] -> Value: true
+Key: [3, 2] -> Value: true
+Key: [4, 1] -> Value: true
+Key: [4, 4] -> Value: true
+Key: [5, 1] -> Value: true
+Key: [5, 4] -> Value: true
+Key: [6, 1] -> Value: true
+Key: [6, 2] -> Value: true
+Key: [7, 4] -> Value: true
+Key: [8, 1] -> Value: true
+Key: [8, 2] -> Value: true
+-----------------------
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR | oN | oB | oQ | oK | oB | oN | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 |    |    | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    |    |    |    |    |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 | mN |    |    | mP | mP |    | mP |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mB | mP |    |    | mP |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 |    | mN |    | mQ | mK | mB |    | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+all legal moves our algo finds: 
+a2a3, 
+c2c3, 
+c2c4, 
+d4d5, 
+d4d6, 
+e4e5, 
+e4e6, 
+f2f3, 
+f2f4, 
+g4g5, 
+g4g6, 
+h2h3, 
+h2h4, 
+h1g1, 
+b1c3, 
+b1d2, 
+b1a3, 
+a4b6, 
+a4c5, 
+a4c3, 
+b2c3, 
+b2a3, 
+b2c1, 
+b2a1, 
+f1g2, 
+f1h3, 
+f1e2, 
+f1d3, 
+f1c4, 
+f1b5, 
+f1a6, 
+d1e2, 
+d1f3, 
+d1d2, 
+d1d3, 
+d1c1, 
+e1e2, 
+e1d2, 
+
+random move chosen: a2a3
+Move written to championship/chess-ai-xplorers/move.csv successfully!
+value of board: -325
+mobility: 138
+attack counter: 0
+king shield: 0
+mob_near_king: 80
+king safety: 80
+pawn structure: -720
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-xplorers/history.csv`...
+[32;1m[Board] [0mLoaded 20 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-xplorers/move.csv`...
+[32;1m[Board] [0mWhite player is playing a2 to a3.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mk[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[0;1mp[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mb[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[30;1mQ[0m|[0;1mk[0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+print legal moves panws: b3c2 c7c6 c7c5 d7d6 d7d5 e7e6 e7e5 f7f6 f7f5 g7g6 g7g5 h7h6 h7h5 
+Wrote move "b3c2" to championship/chess-ai-xplorers/move.csv
+-----------------------------------------
+| br | bn | bb | bq | bK | bb | bn | br |
+-----------------------------------------
+|    |    | bp | bp | bp | bp | bp | bp |
+-----------------------------------------
+|    |    |    |    |    |    |    |    |
+-----------------------------------------
+|    |    |    |    |    |    |    |    |
+-----------------------------------------
+| wn |    |    | wp | wp |    | wp |    |
+-----------------------------------------
+| wp | bp |    |    |    |    |    |    |
+-----------------------------------------
+|    | wb | wp |    |    | wp |    | wp |
+-----------------------------------------
+| bq | wn |    | wq | wK | wb |    | wr |
+-----------------------------------------
+Black to play
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-xplorers/history.csv`...
+[32;1m[Board] [0mLoaded 21 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-xplorers/move.csv`...
+[32;1m[Board] [0mBlack player is playing b3 to c2.
+[32;1m[Board] [0m[5;1mBlack Pawn is taking White Pawn.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mk[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mb[0m|[30;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[30;1mQ[0m|[0;1mk[0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+Enemy Positions: 
+Key: [1, 3] -> Value: true
+Key: [1, 6] -> Value: true
+Key: [1, 8] -> Value: true
+Key: [2, 3] -> Value: true
+Key: [2, 6] -> Value: true
+Key: [2, 8] -> Value: true
+Key: [3, 7] -> Value: true
+Key: [3, 8] -> Value: true
+Key: [4, 4] -> Value: false
+Key: [4, 7] -> Value: true
+Key: [4, 8] -> Value: true
+Key: [5, 4] -> Value: false
+Key: [5, 7] -> Value: true
+Key: [5, 8] -> Value: true
+Key: [6, 7] -> Value: true
+Key: [6, 8] -> Value: true
+Key: [7, 4] -> Value: false
+Key: [7, 7] -> Value: true
+Key: [7, 8] -> Value: true
+Key: [8, 7] -> Value: true
+Key: [8, 8] -> Value: true
+-----------------------
+My Positions: 
+Key: [1, 1] -> Value: true
+Key: [1, 3] -> Value: false
+Key: [1, 4] -> Value: true
+Key: [1, 6] -> Value: false
+Key: [2, 1] -> Value: true
+Key: [2, 2] -> Value: true
+Key: [2, 6] -> Value: false
+Key: [3, 2] -> Value: true
+Key: [4, 1] -> Value: true
+Key: [4, 4] -> Value: true
+Key: [5, 1] -> Value: true
+Key: [5, 4] -> Value: true
+Key: [6, 1] -> Value: true
+Key: [6, 2] -> Value: true
+Key: [7, 4] -> Value: true
+Key: [8, 1] -> Value: true
+Key: [8, 2] -> Value: true
+-----------------------
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR | oN | oB | oQ | oK | oB | oN | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 |    |    | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    |    |    |    |    |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 | mN |    |    | mP | mP |    | mP |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 |    | mB |    |    |    | mP |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 |    | mN |    | mQ | mK | mB |    | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+all legal moves our algo finds: 
+d4d5, 
+d4d6, 
+e4e5, 
+e4e6, 
+f2f3, 
+f2f4, 
+g4g5, 
+g4g6, 
+h2h3, 
+h2h4, 
+h1g1, 
+b1c3, 
+b1d2, 
+b1a3, 
+a4b6, 
+a4c5, 
+a4c3, 
+b2c3, 
+b2a3, 
+b2c1, 
+b2a1, 
+f1g2, 
+f1h3, 
+f1e2, 
+f1d3, 
+f1c4, 
+f1b5, 
+f1a6, 
+d1e2, 
+d1f3, 
+d1c2, 
+d1b3, 
+d1d2, 
+d1d3, 
+d1c1, 
+e1e2, 
+e1d2, 
+
+random move chosen: f1a6
+Move written to championship/chess-ai-xplorers/move.csv successfully!
+value of board: -540
+mobility: 178
+attack counter: 0
+king shield: 0
+mob_near_king: 80
+king safety: 80
+pawn structure: -130
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-xplorers/history.csv`...
+[32;1m[Board] [0mLoaded 22 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-xplorers/move.csv`...
+[32;1m[Board] [0mWhite player is playing f1 to a6.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[0;1mb[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mk[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mb[0m|[30;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[30;1mQ[0m|[0;1mk[0m| |[0;1mQ[0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+print legal moves panws: c2c1 c2b1 c2d1 c7c6 c7c5 d7d6 d7d5 e7e6 e7e5 f7f6 f7f5 g7g6 g7g5 h7h6 h7h5 
+Wrote move "c2c1" to championship/chess-ai-xplorers/move.csv
+-----------------------------------------
+| br | bn | bb | bq | bK | bb | bn | br |
+-----------------------------------------
+|    |    | bp | bp | bp | bp | bp | bp |
+-----------------------------------------
+| wb |    |    |    |    |    |    |    |
+-----------------------------------------
+|    |    |    |    |    |    |    |    |
+-----------------------------------------
+| wn |    |    | wp | wp |    | wp |    |
+-----------------------------------------
+| wp |    |    |    |    |    |    |    |
+-----------------------------------------
+|    | wb | bp |    |    | wp |    | wp |
+-----------------------------------------
+| bq | wn |    | wq | wK |    |    | wr |
+-----------------------------------------
+Black to play
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-xplorers/history.csv`...
+[32;1m[Board] [0mLoaded 23 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-xplorers/move.csv`...
+[32;1m[Board] [0mBlack player is playing c2 to c1.
+[32;1m[Board] [0mPromoting a Black Pawn into a Queen
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[0;1mb[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mk[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[30;1mQ[0m|[0;1mk[0m|[30;1mQ[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+Enemy Positions: 
+Key: [1, 3] -> Value: false
+Key: [1, 6] -> Value: false
+Key: [1, 8] -> Value: true
+Key: [2, 3] -> Value: false
+Key: [2, 6] -> Value: false
+Key: [2, 8] -> Value: true
+Key: [3, 7] -> Value: true
+Key: [3, 8] -> Value: true
+Key: [4, 4] -> Value: false
+Key: [4, 7] -> Value: true
+Key: [4, 8] -> Value: true
+Key: [5, 4] -> Value: false
+Key: [5, 7] -> Value: true
+Key: [5, 8] -> Value: true
+Key: [6, 7] -> Value: true
+Key: [6, 8] -> Value: true
+Key: [7, 4] -> Value: false
+Key: [7, 7] -> Value: true
+Key: [7, 8] -> Value: true
+Key: [8, 7] -> Value: true
+Key: [8, 8] -> Value: true
+-----------------------
+My Positions: 
+Key: [1, 1] -> Value: true
+Key: [1, 3] -> Value: true
+Key: [1, 4] -> Value: true
+Key: [1, 6] -> Value: true
+Key: [2, 1] -> Value: true
+Key: [2, 2] -> Value: true
+Key: [2, 6] -> Value: true
+Key: [3, 2] -> Value: true
+Key: [4, 1] -> Value: true
+Key: [4, 4] -> Value: true
+Key: [5, 1] -> Value: true
+Key: [5, 4] -> Value: true
+Key: [6, 2] -> Value: true
+Key: [7, 4] -> Value: true
+Key: [8, 1] -> Value: true
+Key: [8, 2] -> Value: true
+-----------------------
+[32;1m[Game] [0mPlayer's error code: 11
+[32;1m[Game] [0m[31;1m[ERROR][0m The program `/home/julien/Pro/git/teaching/x/2024/chess-ai/build/chessbin' has crashed :(
 [32;1m[Game] [0mWhite player has lost on illegal move.
