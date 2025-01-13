@@ -21,38 +21,1338 @@
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
-    a    b    c    d    e    f    g    h
-  +----+----+----+----+----+----+----+----+
-8 | oR | oN | oB | oQ | oK | oB | oN | oR | 8
-  +----+----+----+----+----+----+----+----+
-7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
-  +----+----+----+----+----+----+----+----+
-6 |    |    |    |    |    |    |    |    | 6
-  +----+----+----+----+----+----+----+----+
-5 |    |    |    |    |    |    |    |    | 5
-  +----+----+----+----+----+----+----+----+
-4 |    |    |    |    |    |    |    |    | 4
-  +----+----+----+----+----+----+----+----+
-3 |    |    |    |    |    |    |    |    | 3
-  +----+----+----+----+----+----+----+----+
-2 | mP | mP | mP | mP | mP | mP | mP | mP | 2
-  +----+----+----+----+----+----+----+----+
-1 | mR | mN | mB | mQ | mK | mB | mN | mR | 1
-  +----+----+----+----+----+----+----+----+
-    a    b    c    d    e    f    g   h
-
-value of board: 0
-mobility: 0
-king shield: 30
-mob_near_king: 40
-king safety: 70
-pawn structure: 0
+a2a3 a2a4 b2b3 b2b4 c2c3 c2c4 d2d3 d2d4 e2e3 e2e4 f2f3 f2f4 g2g3 g2g4 h2h3 h2h4 b1c3 b1a3 g1h3 g1f3 
+random move: b2b3
+Move written to championship/chess-ai-remmato-iii/move.csv successfully!
+eval: 0
+Result
+Move: b1c3, Score: 97
+Move: g1f3, Score: 87
+Move: f7f6, Score: 50
+Move: f7f5, Score: 40
+Move: c7c6, Score: 30
+Move: e2e4, Score: 20
+Move: d2d4, Score: 20
+Move: c7c5, Score: 20
+Move: g7g6, Score: 15
+Move: b1a3, Score: 15
+Move: b7b6, Score: 15
+Move: g1h3, Score: 5
+Move: b7b5, Score: 5
+Move: g7g5, Score: 5
+Move: h2h4, Score: 0
+Move: h7h5, Score: 0
+Move: h7h6, Score: 0
+Move: a2a3, Score: 0
+Move: h2h3, Score: 0
+Move: e7e6, Score: 0
+Move: e2e3, Score: 0
+Move: d7d6, Score: 0
+Move: d2d3, Score: 0
+Move: a7a5, Score: 0
+Move: a7a6, Score: 0
+Move: a2a4, Score: 0
+Move: b2b4, Score: -5
+Move: g8h6, Score: -5
+Move: g2g4, Score: -5
+Move: b8a6, Score: -15
+Move: g2g3, Score: -15
+Move: b2b3, Score: -15
+Move: e7e5, Score: -20
+Move: d7d5, Score: -20
+Move: c2c4, Score: -20
+Move: c2c3, Score: -30
+Move: f2f4, Score: -40
+Move: f2f3, Score: -50
+Move: g8f6, Score: -87
+Move: b8c6, Score: -97
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/chess-ai-remmato-iii/history.csv`...
 [32;1m[Board] [0mLoaded 0 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-remmato-iii/move.csv`...
-[32;1m[Board] [0m[31;1m[ERROR][0m The move could not be read from `championship/chess-ai-remmato-iii/move.csv' :(
-[32;1m[Referee] [0mInvalid move (code: -1) :(
+[32;1m[Board] [0mWhite player is playing b2 to b3.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+Error: /data/julien/Pro/git/teaching/x/2024/remmato-iii/build/bin/../resources/openings does not exist or is not a directory
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-remmato-iii/history.csv`...
+[32;1m[Board] [0mLoaded 1 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-remmato-iii/move.csv`...
+[32;1m[Board] [0mBlack player is playing d7 to d5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 a2a4 b3b4 c2c3 c2c4 d2d3 d2d4 e2e3 e2e4 f2f3 f2f4 g2g3 g2g4 h2h3 h2h4 b1c3 b1a3 g1h3 g1f3 c1b2 c1a3 
+random move: a2a4
+Move written to championship/chess-ai-remmato-iii/move.csv successfully!
+eval: -35
+Result
+Move: b1c3, Score: 62
+Move: g1f3, Score: 52
+Move: f7f6, Score: 15
+Move: f7f5, Score: 5
+Move: c7c6, Score: -5
+Move: c7c5, Score: -15
+Move: e2e4, Score: -15
+Move: d2d4, Score: -15
+Move: b7b6, Score: -20
+Move: g7g6, Score: -20
+Move: b1a3, Score: -20
+Move: d5d4, Score: -25
+Move: b3b4, Score: -25
+Move: g1h3, Score: -30
+Move: b7b5, Score: -30
+Move: g7g5, Score: -30
+Move: h7h5, Score: -35
+Move: h2h3, Score: -35
+Move: h2h4, Score: -35
+Move: h7h6, Score: -35
+Move: a2a3, Score: -35
+Move: e7e6, Score: -35
+Move: e2e3, Score: -35
+Move: d2d3, Score: -35
+Move: a7a5, Score: -35
+Move: a7a6, Score: -35
+Move: a2a4, Score: -35
+Move: g8h6, Score: -40
+Move: g2g4, Score: -40
+Move: b8a6, Score: -50
+Move: g2g3, Score: -50
+Move: e7e5, Score: -55
+Move: c2c4, Score: -55
+Move: c2c3, Score: -65
+Move: f2f4, Score: -75
+Move: f2f3, Score: -85
+Move: g8f6, Score: -122
+Move: b8c6, Score: -132
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-remmato-iii/history.csv`...
+[32;1m[Board] [0mLoaded 2 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-remmato-iii/move.csv`...
+[32;1m[Board] [0mWhite player is playing a2 to a4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+Error: /data/julien/Pro/git/teaching/x/2024/remmato-iii/build/bin/../resources/openings does not exist or is not a directory
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-remmato-iii/history.csv`...
+[32;1m[Board] [0mLoaded 3 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-remmato-iii/move.csv`...
+[32;1m[Board] [0mBlack player is playing d5 to d4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mp[0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a4a5 b3b4 c2c3 c2c4 d2d3 e2e3 e2e4 f2f3 f2f4 g2g3 g2g4 h2h3 h2h4 a1a2 a1a3 b1c3 b1a3 g1h3 g1f3 c1b2 c1a3 
+random move: c1b2
+Move written to championship/chess-ai-remmato-iii/move.csv successfully!
+eval: -25
+Result
+Move: d2d4, Score: 125
+Move: b1c3, Score: 72
+Move: g1f3, Score: 62
+Move: f7f6, Score: 25
+Move: f7f5, Score: 15
+Move: c7c6, Score: 5
+Move: e2e4, Score: -5
+Move: c7c5, Score: -5
+Move: g7g6, Score: -10
+Move: b1a3, Score: -10
+Move: b7b6, Score: -10
+Move: b3b4, Score: -15
+Move: g1h3, Score: -20
+Move: b7b5, Score: -20
+Move: g7g5, Score: -20
+Move: a4a5, Score: -20
+Move: e2e3, Score: -25
+Move: h2h4, Score: -25
+Move: h7h6, Score: -25
+Move: h2h3, Score: -25
+Move: h7h5, Score: -25
+Move: e7e6, Score: -25
+Move: d2d3, Score: -25
+Move: a7a5, Score: -25
+Move: a7a6, Score: -25
+Move: g8h6, Score: -30
+Move: g2g4, Score: -30
+Move: d4d3, Score: -35
+Move: g2g3, Score: -40
+Move: b8a6, Score: -40
+Move: e7e5, Score: -45
+Move: c2c4, Score: -45
+Move: c2c3, Score: -55
+Move: f2f4, Score: -65
+Move: f2f3, Score: -75
+Move: g8f6, Score: -112
+Move: b8c6, Score: -122
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-remmato-iii/history.csv`...
+[32;1m[Board] [0mLoaded 4 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-remmato-iii/move.csv`...
+[32;1m[Board] [0mWhite player is playing c1 to b2.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mp[0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mb[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+Error: /data/julien/Pro/git/teaching/x/2024/remmato-iii/build/bin/../resources/openings does not exist or is not a directory
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-remmato-iii/history.csv`...
+[32;1m[Board] [0mLoaded 5 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-remmato-iii/move.csv`...
+[32;1m[Board] [0mBlack player is playing d4 to d3.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[0;1mp[0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mb[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a4a5 b3b4 c2d3 c2c3 c2c4 e2d3 e2e3 e2e4 f2f3 f2f4 g2g3 g2g4 h2h3 h2h4 a1a2 a1a3 b1c3 b1a3 g1h3 g1f3 b2c3 b2d4 b2e5 b2f6 b2g7 b2a3 b2c1 d1c1 
+random move: g2g4
+Move written to championship/chess-ai-remmato-iii/move.csv successfully!
+eval: 96
+Result
+Move: b2g7, Score: 252
+Move: d2d3, Score: 236
+Move: b1c3, Score: 193
+Move: g1f3, Score: 183
+Move: b2e5, Score: 158
+Move: b2d4, Score: 148
+Move: f7f6, Score: 146
+Move: f7f5, Score: 136
+Move: c7c6, Score: 126
+Move: b2f6, Score: 122
+Move: c7c5, Score: 116
+Move: d2d4, Score: 116
+Move: e2e4, Score: 116
+Move: g7g6, Score: 111
+Move: b7b6, Score: 111
+Move: b1a3, Score: 111
+Move: b2c3, Score: 106
+Move: b3b4, Score: 106
+Move: g1h3, Score: 101
+Move: a4a5, Score: 101
+Move: b7b5, Score: 101
+Move: g7g5, Score: 101
+Move: a7a6, Score: 96
+Move: a7a5, Score: 96
+Move: h7h5, Score: 96
+Move: h7h6, Score: 96
+Move: h2h4, Score: 96
+Move: h2h3, Score: 96
+Move: e2e3, Score: 96
+Move: e7e6, Score: 96
+Move: g2g4, Score: 91
+Move: g8h6, Score: 91
+Move: b8a6, Score: 81
+Move: g2g3, Score: 81
+Move: e7e5, Score: 76
+Move: c2c4, Score: 76
+Move: c2c3, Score: 66
+Move: b2a3, Score: 59
+Move: f2f4, Score: 56
+Move: f2f3, Score: 46
+Move: g8f6, Score: 9
+Move: b8c6, Score: -1
+Move: d3e2, Score: -74
+Move: d3c2, Score: -84
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-remmato-iii/history.csv`...
+[32;1m[Board] [0mLoaded 6 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-remmato-iii/move.csv`...
+[32;1m[Board] [0mWhite player is playing g2 to g4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[0;1mp[0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mb[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+Error: /data/julien/Pro/git/teaching/x/2024/remmato-iii/build/bin/../resources/openings does not exist or is not a directory
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-remmato-iii/history.csv`...
+[32;1m[Board] [0mLoaded 7 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-remmato-iii/move.csv`...
+[32;1m[Board] [0mBlack player is playing g7 to g5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[0;1mp[0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mb[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a4a5 b3b4 c2d3 c2c3 c2c4 e2d3 e2e3 e2e4 f2f3 f2f4 h2h3 h2h4 a1a2 a1a3 b1c3 b1a3 g1h3 g1f3 b2c3 b2d4 b2e5 b2f6 b2g7 b2h8 b2a3 b2c1 f1g2 f1h3 d1c1 
+random move: a4a5
+Move written to championship/chess-ai-remmato-iii/move.csv successfully!
+eval: 96
+Result
+Move: d2d3, Score: 236
+Move: g4g5, Score: 206
+Move: b1c3, Score: 193
+Move: g1f3, Score: 183
+Move: b2e5, Score: 158
+Move: b2d4, Score: 148
+Move: f7f6, Score: 146
+Move: b2g7, Score: 142
+Move: f7f5, Score: 136
+Move: c7c6, Score: 126
+Move: b2f6, Score: 122
+Move: c7c5, Score: 116
+Move: d2d4, Score: 116
+Move: e2e4, Score: 116
+Move: b7b6, Score: 111
+Move: b1a3, Score: 111
+Move: b3b4, Score: 106
+Move: b2c3, Score: 106
+Move: a4a5, Score: 101
+Move: g1h3, Score: 101
+Move: b7b5, Score: 101
+Move: h7h5, Score: 96
+Move: a7a6, Score: 96
+Move: h7h6, Score: 96
+Move: h2h4, Score: 96
+Move: h2h3, Score: 96
+Move: a7a5, Score: 96
+Move: e7e6, Score: 96
+Move: e2e3, Score: 96
+Move: g8h6, Score: 91
+Move: b8a6, Score: 81
+Move: e7e5, Score: 76
+Move: c2c4, Score: 76
+Move: c2c3, Score: 66
+Move: b2a3, Score: 59
+Move: f2f4, Score: 56
+Move: f2f3, Score: 46
+Move: g8f6, Score: 9
+Move: b8c6, Score: -1
+Move: g5g4, Score: -14
+Move: d3e2, Score: -74
+Move: d3c2, Score: -84
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-remmato-iii/history.csv`...
+[32;1m[Board] [0mLoaded 8 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-remmato-iii/move.csv`...
+[32;1m[Board] [0mWhite player is playing a4 to a5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[0;1mp[0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mb[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+Error: /data/julien/Pro/git/teaching/x/2024/remmato-iii/build/bin/../resources/openings does not exist or is not a directory
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-remmato-iii/history.csv`...
+[32;1m[Board] [0mLoaded 9 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-remmato-iii/move.csv`...
+[32;1m[Board] [0mBlack player is playing d8 to d5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[0;1mp[0m|[7;1m [0m| |[30;1mQ[0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[0;1mp[0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mb[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a5a6 b3b4 c2d3 c2c3 c2c4 e2d3 e2e3 e2e4 f2f3 f2f4 h2h3 h2h4 a1a2 a1a3 a1a4 b1c3 b1a3 g1h3 g1f3 b2c3 b2d4 b2e5 b2f6 b2g7 b2h8 b2a3 b2c1 f1g2 f1h3 d1c1 
+random move: b1c3
+Move written to championship/chess-ai-remmato-iii/move.csv successfully!
+eval: -609
+Result
+Move: d5a2, Score: -184
+Move: d5g5, Score: -364
+Move: d5h5, Score: -394
+Move: d5g2, Score: -434
+Move: d5c6, Score: -439
+Move: d5a5, Score: -454
+Move: d5b5, Score: -459
+Move: d2d3, Score: -469
+Move: g4g5, Score: -499
+Move: d5d3, Score: -509
+Move: b1c3, Score: -512
+Move: d5c5, Score: -514
+Move: g1f3, Score: -522
+Move: d5e6, Score: -529
+Move: d5d6, Score: -529
+Move: b2e5, Score: -547
+Move: d5c4, Score: -554
+Move: b2d4, Score: -557
+Move: f7f6, Score: -559
+Move: b2g7, Score: -563
+Move: d5e5, Score: -569
+Move: f7f5, Score: -569
+Move: d5f5, Score: -574
+Move: c7c6, Score: -579
+Move: b2f6, Score: -583
+Move: c7c5, Score: -589
+Move: e2e4, Score: -589
+Move: d2d4, Score: -589
+Move: b7b6, Score: -594
+Move: b1a3, Score: -594
+Move: b3b4, Score: -599
+Move: b2c3, Score: -599
+Move: g1h3, Score: -604
+Move: d5b3, Score: -604
+Move: b7b5, Score: -604
+Move: a5a6, Score: -604
+Move: h2h4, Score: -609
+Move: e7e6, Score: -609
+Move: e2e3, Score: -609
+Move: h2h3, Score: -609
+Move: h7h6, Score: -609
+Move: h7h5, Score: -609
+Move: a7a6, Score: -609
+Move: g8h6, Score: -614
+Move: d5f3, Score: -624
+Move: b8a6, Score: -624
+Move: c2c4, Score: -629
+Move: e7e5, Score: -629
+Move: c2c3, Score: -639
+Move: b2a3, Score: -646
+Move: f2f4, Score: -649
+Move: f2f3, Score: -659
+Move: d5e4, Score: -669
+Move: d5d4, Score: -679
+Move: g8f6, Score: -696
+Move: b8c6, Score: -706
+Move: d5d2, Score: -714
+Move: g5g4, Score: -719
+Move: a7a5, Score: -719
+Move: d3e2, Score: -779
+Move: d3c2, Score: -789
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-remmato-iii/history.csv`...
+[32;1m[Board] [0mLoaded 10 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-remmato-iii/move.csv`...
+[32;1m[Board] [0mWhite player is playing b1 to c3.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[0;1mp[0m|[7;1m [0m| |[30;1mQ[0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[0;1mp[0m|[0;1mk[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mb[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+Error: /data/julien/Pro/git/teaching/x/2024/remmato-iii/build/bin/../resources/openings does not exist or is not a directory
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-remmato-iii/history.csv`...
+[32;1m[Board] [0mLoaded 11 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-remmato-iii/move.csv`...
+[32;1m[Board] [0mBlack player is playing d5 to h1.
+[32;1m[Board] [0m[5;1mBlack Queen is taking White Rook.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[0;1mp[0m|[0;1mk[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mb[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[30;1mQ[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a5a6 b3b4 c2d3 e2d3 e2e3 e2e4 f2f3 f2f4 h2h3 h2h4 a1a2 a1a3 a1a4 a1b1 a1c1 c3d5 c3e4 c3b1 c3a2 c3a4 c3b5 g1h3 g1f3 b2a3 b2c1 f1g2 f1h3 d1c1 d1b1 
+random move: c3b5
+Move written to championship/chess-ai-remmato-iii/move.csv successfully!
+eval: -362
+Result
+Move: d2d3, Score: -222
+Move: g4g5, Score: -252
+Move: g1f3, Score: -275
+Move: c3d5, Score: -278
+Move: b2e5, Score: -300
+Move: c3e4, Score: -305
+Move: b2d4, Score: -310
+Move: f7f6, Score: -312
+Move: b2g7, Score: -316
+Move: f7f5, Score: -322
+Move: c7c6, Score: -332
+Move: b2f6, Score: -336
+Move: c3b5, Score: -340
+Move: d2d4, Score: -342
+Move: e2e4, Score: -342
+Move: c7c5, Score: -342
+Move: b7b6, Score: -347
+Move: b3b4, Score: -352
+Move: g1h3, Score: -357
+Move: b7b5, Score: -357
+Move: a5a6, Score: -357
+Move: a7a6, Score: -362
+Move: h7h5, Score: -362
+Move: h7h6, Score: -362
+Move: h2h4, Score: -362
+Move: h2h3, Score: -362
+Move: e7e6, Score: -362
+Move: e2e3, Score: -362
+Move: g8h6, Score: -367
+Move: b8a6, Score: -377
+Move: e7e5, Score: -382
+Move: c2c4, Score: -382
+Move: b2a3, Score: -399
+Move: f2f4, Score: -402
+Move: f2f3, Score: -412
+Move: c3a4, Score: -428
+Move: g8f6, Score: -449
+Move: b8c6, Score: -459
+Move: g5g4, Score: -472
+Move: a7a5, Score: -472
+Move: d3e2, Score: -532
+Move: h1h2, Score: -692
+Move: b2c3, Score: -731
+Move: c2c3, Score: -771
+Move: h1g1, Score: -814
+Move: h1g2, Score: -837
+Move: d3c2, Score: -921
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-remmato-iii/history.csv`...
+[32;1m[Board] [0mLoaded 12 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-remmato-iii/move.csv`...
+[32;1m[Board] [0mWhite player is playing c3 to b5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[0;1mp[0m|[0;1mk[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[0;1mp[0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mb[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[30;1mQ[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+Error: /data/julien/Pro/git/teaching/x/2024/remmato-iii/build/bin/../resources/openings does not exist or is not a directory
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-remmato-iii/history.csv`...
+[32;1m[Board] [0mLoaded 13 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-remmato-iii/move.csv`...
+[32;1m[Board] [0mBlack player is playing h1 to g1.
+[32;1m[Board] [0m[5;1mBlack Queen is taking White Knight.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[0;1mp[0m|[0;1mk[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[0;1mp[0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mb[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[30;1mQ[0m|[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a5a6 b3b4 c2d3 c2c3 c2c4 e2d3 e2e3 e2e4 f2f3 f2f4 h2h3 h2h4 a1a2 a1a3 a1a4 a1b1 a1c1 b5c7 b5d6 b5d4 b5c3 b5a3 b5a7 b2c3 b2d4 b2e5 b2f6 b2g7 b2h8 b2a3 b2c1 d1c1 d1b1 
+random move: b2f6
+Move written to championship/chess-ai-remmato-iii/move.csv successfully!
+eval: -792
+Result
+Move: g1h1, Score: -632
+Move: b5c7, Score: -642
+Move: d2d3, Score: -652
+Move: g4g5, Score: -682
+Move: b5d6, Score: -725
+Move: b2e5, Score: -730
+Move: b2d4, Score: -740
+Move: f7f6, Score: -742
+Move: b2g7, Score: -746
+Move: f7f5, Score: -752
+Move: c7c6, Score: -762
+Move: b2f6, Score: -766
+Move: b5d4, Score: -767
+Move: c7c5, Score: -772
+Move: d2d4, Score: -772
+Move: e2e4, Score: -772
+Move: b7b6, Score: -777
+Move: b3b4, Score: -782
+Move: b2c3, Score: -782
+Move: a5a6, Score: -787
+Move: b5a7, Score: -790
+Move: h7h5, Score: -792
+Move: a7a6, Score: -792
+Move: h7h6, Score: -792
+Move: h2h4, Score: -792
+Move: h2h3, Score: -792
+Move: e2e3, Score: -792
+Move: e7e6, Score: -792
+Move: g8h6, Score: -797
+Move: b8a6, Score: -807
+Move: e7e5, Score: -812
+Move: c2c4, Score: -812
+Move: b5c3, Score: -814
+Move: c2c3, Score: -822
+Move: b2a3, Score: -829
+Move: f2f4, Score: -832
+Move: f2f3, Score: -842
+Move: g8f6, Score: -879
+Move: b8c6, Score: -889
+Move: b5a3, Score: -896
+Move: g5g4, Score: -902
+Move: a7a5, Score: -902
+Move: g1h2, Score: -962
+Move: d3e2, Score: -962
+Move: d3c2, Score: -972
+Move: g1g2, Score: -1107
+Move: g1f1, Score: -1122
+Move: b7b5, Score: -1188
+Move: g1f2, Score: -1402
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-remmato-iii/history.csv`...
+[32;1m[Board] [0mLoaded 14 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-remmato-iii/move.csv`...
+[32;1m[Board] [0mWhite player is playing b2 to f6.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mb[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[0;1mp[0m|[0;1mk[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[0;1mp[0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[30;1mQ[0m|[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+Error: /data/julien/Pro/git/teaching/x/2024/remmato-iii/build/bin/../resources/openings does not exist or is not a directory
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-remmato-iii/history.csv`...
+[32;1m[Board] [0mLoaded 15 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-remmato-iii/move.csv`...
+[32;1m[Board] [0mBlack player is playing e7 to f6.
+[32;1m[Board] [0m[5;1mBlack Pawn is taking White Bishop.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[0;1mp[0m|[0;1mk[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[0;1mp[0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[30;1mQ[0m|[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a5a6 b3b4 c2d3 c2c3 c2c4 e2d3 e2e3 e2e4 f2f3 f2f4 h2h3 h2h4 a1a2 a1a3 a1a4 a1b1 a1c1 b5c7 b5d6 b5d4 b5c3 b5a3 b5a7 d1c1 d1b1 
+random move: c2c3
+Move written to championship/chess-ai-remmato-iii/move.csv successfully!
+eval: -1034
+Result
+Move: g1h1, Score: -874
+Move: b5c7, Score: -884
+Move: d2d3, Score: -894
+Move: g4g5, Score: -924
+Move: b5d6, Score: -967
+Move: c7c6, Score: -1004
+Move: b5d4, Score: -1009
+Move: c7c5, Score: -1014
+Move: d2d4, Score: -1014
+Move: e2e4, Score: -1014
+Move: b7b6, Score: -1019
+Move: g8f6, Score: -1021
+Move: b3b4, Score: -1024
+Move: a5a6, Score: -1029
+Move: b5a7, Score: -1032
+Move: h7h5, Score: -1034
+Move: h7h6, Score: -1034
+Move: h2h4, Score: -1034
+Move: h2h3, Score: -1034
+Move: a7a6, Score: -1034
+Move: e2e3, Score: -1034
+Move: f6f5, Score: -1044
+Move: b8a6, Score: -1049
+Move: c2c4, Score: -1054
+Move: g8h6, Score: -1055
+Move: b5c3, Score: -1056
+Move: c2c3, Score: -1064
+Move: f2f4, Score: -1074
+Move: e8f7, Score: -1076
+Move: f2f3, Score: -1084
+Move: b8c6, Score: -1131
+Move: b5a3, Score: -1138
+Move: g5g4, Score: -1144
+Move: a7a5, Score: -1144
+Move: d3e2, Score: -1204
+Move: g1h2, Score: -1204
+Move: d3c2, Score: -1214
+Move: g1g2, Score: -1349
+Move: g1f1, Score: -1364
+Move: b7b5, Score: -1430
+Move: g1f2, Score: -1674
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-remmato-iii/history.csv`...
+[32;1m[Board] [0mLoaded 16 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-remmato-iii/move.csv`...
+[32;1m[Board] [0mWhite player is playing c2 to c3.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[0;1mp[0m|[0;1mk[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[0;1mp[0m|[0;1mp[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[30;1mQ[0m|[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+Error: /data/julien/Pro/git/teaching/x/2024/remmato-iii/build/bin/../resources/openings does not exist or is not a directory
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-remmato-iii/history.csv`...
+[32;1m[Board] [0mLoaded 17 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-remmato-iii/move.csv`...
+[32;1m[Board] [0mBlack player is playing a7 to a6.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[0;1mp[0m|[0;1mk[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[0;1mp[0m|[0;1mp[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[30;1mQ[0m|[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+b3b4 c3c4 e2d3 e2e3 e2e4 f2f3 f2f4 h2h3 h2h4 a1a2 a1a3 a1a4 a1b1 a1c1 b5c7 b5d6 b5d4 b5a3 b5a7 d1c2 d1c1 d1b1 
+random move: a1a4
+Move written to championship/chess-ai-remmato-iii/move.csv successfully!
+eval: -1064
+Result
+Move: g1h1, Score: -904
+Move: b5c7, Score: -914
+Move: d2d3, Score: -924
+Move: a5a6, Score: -954
+Move: g4g5, Score: -954
+Move: b8a6, Score: -974
+Move: b5d6, Score: -997
+Move: c7c6, Score: -1034
+Move: b5d4, Score: -1039
+Move: d2d4, Score: -1044
+Move: e2e4, Score: -1044
+Move: c7c5, Score: -1044
+Move: b7b6, Score: -1049
+Move: g8f6, Score: -1051
+Move: b3b4, Score: -1054
+Move: c3c4, Score: -1054
+Move: e2e3, Score: -1064
+Move: h2h3, Score: -1064
+Move: h2h4, Score: -1064
+Move: h7h6, Score: -1064
+Move: h7h5, Score: -1064
+Move: f6f5, Score: -1074
+Move: g8h6, Score: -1085
+Move: f2f4, Score: -1104
+Move: e8f7, Score: -1106
+Move: f2f3, Score: -1114
+Move: b8c6, Score: -1161
+Move: b5a7, Score: -1167
+Move: b5a3, Score: -1168
+Move: g5g4, Score: -1174
+Move: a6a5, Score: -1174
+Move: b5c3, Score: -1186
+Move: d3c2, Score: -1214
+Move: d3e2, Score: -1234
+Move: g1h2, Score: -1234
+Move: g1g2, Score: -1379
+Move: g1f1, Score: -1394
+Move: b7b5, Score: -1460
+Move: g1f2, Score: -1704
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-remmato-iii/history.csv`...
+[32;1m[Board] [0mLoaded 18 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-remmato-iii/move.csv`...
+[32;1m[Board] [0mWhite player is playing a1 to a4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[0;1mp[0m|[0;1mk[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mr[0m| |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[0;1mp[0m|[0;1mp[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 || |[7;1m [0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[30;1mQ[0m|[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+Error: /data/julien/Pro/git/teaching/x/2024/remmato-iii/build/bin/../resources/openings does not exist or is not a directory
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-remmato-iii/history.csv`...
+[32;1m[Board] [0mLoaded 19 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-remmato-iii/move.csv`...
+[32;1m[Board] [0mBlack player is playing a6 to b5.
+[32;1m[Board] [0m[5;1mBlack Pawn is taking White Knight.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[0;1mp[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mr[0m| |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[0;1mp[0m|[0;1mp[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 || |[7;1m [0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[30;1mQ[0m|[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a5a6 b3b4 c3c4 e2d3 e2e3 e2e4 f2f3 f2f4 h2h3 h2h4 a4a3 a4a2 a4a1 a4b4 a4c4 a4d4 a4e4 a4f4 d1c2 d1c1 d1b1 d1a1 
+random move: h2h4
+Move written to championship/chess-ai-remmato-iii/move.csv successfully!
+eval: -1285
+Result
+Move: g1h1, Score: -1125
+Move: a4f4, Score: -1145
+Move: d2d3, Score: -1145
+Move: g4g5, Score: -1175
+Move: b7b5, Score: -1175
+Move: a4e4, Score: -1200
+Move: a4d4, Score: -1200
+Move: a4a6, Score: -1215
+Move: c7c6, Score: -1255
+Move: a4c4, Score: -1260
+Move: c7c5, Score: -1265
+Move: d2d4, Score: -1265
+Move: e2e4, Score: -1265
+Move: b7b6, Score: -1270
+Move: g8f6, Score: -1272
+Move: c3c4, Score: -1275
+Move: b3b4, Score: -1275
+Move: a4b4, Score: -1280
+Move: a5a6, Score: -1280
+Move: a4h4, Score: -1285
+Move: h2h3, Score: -1285
+Move: h2h4, Score: -1285
+Move: h7h6, Score: -1285
+Move: h7h5, Score: -1285
+Move: e2e3, Score: -1285
+Move: b5b4, Score: -1290
+Move: a4a3, Score: -1295
+Move: f6f5, Score: -1295
+Move: b8a6, Score: -1300
+Move: g8h6, Score: -1306
+Move: e8f7, Score: -1307
+Move: f2f4, Score: -1325
+Move: f2f3, Score: -1335
+Move: a4a7, Score: -1380
+Move: b8c6, Score: -1382
+Move: a4g4, Score: -1385
+Move: a4a5, Score: -1385
+Move: g5g4, Score: -1395
+Move: d3c2, Score: -1435
+Move: d3e2, Score: -1455
+Move: g1h2, Score: -1455
+Move: g1g2, Score: -1600
+Move: g1f1, Score: -1615
+Move: g1f2, Score: -1925
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-remmato-iii/history.csv`...
+[32;1m[Board] [0mLoaded 20 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-remmato-iii/move.csv`...
+[32;1m[Board] [0mWhite player is playing h2 to h4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[0;1mp[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mr[0m| |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|| 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[0;1mp[0m|[0;1mp[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m| || 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 || |[7;1m [0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[30;1mQ[0m|[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+Error: /data/julien/Pro/git/teaching/x/2024/remmato-iii/build/bin/../resources/openings does not exist or is not a directory
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-remmato-iii/history.csv`...
+[32;1m[Board] [0mLoaded 21 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-remmato-iii/move.csv`...
+[32;1m[Board] [0mBlack player is playing b5 to a4.
+[32;1m[Board] [0m[5;1mBlack Pawn is taking White Rook.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|| 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[0;1mp[0m|[0;1mp[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m| || 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 || |[7;1m [0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[30;1mQ[0m|[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+b3a4 b3b4 c3c4 e2d3 e2e3 e2e4 f2f3 f2f4 h4g5 h4h5 d1c2 d1c1 d1b1 d1a1 
+random move: e2d3
+Move written to championship/chess-ai-remmato-iii/move.csv successfully!
+eval: -2080
+Result
+Move: g1h1, Score: -1920
+Move: d2d3, Score: -1940
+Move: g4g5, Score: -1970
+Move: c7c6, Score: -2050
+Move: e2e4, Score: -2060
+Move: c7c5, Score: -2060
+Move: d2d4, Score: -2060
+Move: b7b6, Score: -2065
+Move: g8f6, Score: -2067
+Move: b3b4, Score: -2070
+Move: c3c4, Score: -2070
+Move: b7b5, Score: -2075
+Move: h4h5, Score: -2075
+Move: e2e3, Score: -2080
+Move: h7h6, Score: -2080
+Move: h7h5, Score: -2080
+Move: a4a3, Score: -2085
+Move: f6f5, Score: -2090
+Move: b8a6, Score: -2095
+Move: g8h6, Score: -2101
+Move: e8f7, Score: -2102
+Move: f2f4, Score: -2120
+Move: f2f3, Score: -2130
+Move: g1h2, Score: -2145
+Move: b8c6, Score: -2177
+Move: g5g4, Score: -2190
+Move: d3c2, Score: -2230
+Move: d3e2, Score: -2250
+Move: g1g2, Score: -2395
+Move: g1f1, Score: -2410
+Move: g1f2, Score: -2720
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-remmato-iii/history.csv`...
+[32;1m[Board] [0mLoaded 22 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-remmato-iii/move.csv`...
+[32;1m[Board] [0mWhite player is playing e2 to d3.
+[32;1m[Board] [0m[5;1mWhite Pawn is taking Black Pawn.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|| 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[7;1m [0m| || 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 || |[7;1m [0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[30;1mQ[0m|[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+Error: /data/julien/Pro/git/teaching/x/2024/remmato-iii/build/bin/../resources/openings does not exist or is not a directory
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-remmato-iii/history.csv`...
+[32;1m[Board] [0mLoaded 23 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-remmato-iii/move.csv`...
+[32;1m[Board] [0mBlack player is playing g5 to h4.
+[32;1m[Board] [0m[5;1mBlack Pawn is taking White Pawn.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m|[30;1mp[0m|| 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[7;1m [0m| || 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 || |[7;1m [0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[30;1mQ[0m|[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+b3a4 b3b4 c3c4 d3d4 f2f3 f2f4 g4g5 d1e2 d1f3 d1c2 d1d2 d1c1 d1b1 d1a1 e1e2 e1d2 
+random move: e1d2
+Move written to championship/chess-ai-remmato-iii/move.csv successfully!
+eval: -1879
+Result
+Move: d1d5, Score: -1334
+Move: d1d6, Score: -1389
+Move: d1d4, Score: -1429
+Move: d1d7, Score: -1444
+Move: d1d3, Score: -1629
+Move: d1d2, Score: -1719
+Move: g1h1, Score: -1719
+Move: e1d2, Score: -1747
+Move: c7c6, Score: -1849
+Move: c7c5, Score: -1859
+Move: d3d4, Score: -1859
+Move: b7b6, Score: -1864
+Move: g8f6, Score: -1866
+Move: b3b4, Score: -1869
+Move: c3c4, Score: -1869
+Move: g4g5, Score: -1874
+Move: b7b5, Score: -1874
+Move: h7h5, Score: -1879
+Move: h7h6, Score: -1879
+Move: a4a3, Score: -1884
+Move: h4h3, Score: -1884
+Move: f6f5, Score: -1889
+Move: b8a6, Score: -1894
+Move: g8h6, Score: -1900
+Move: f2f4, Score: -1919
+Move: f2f3, Score: -1929
+Move: g1h2, Score: -1944
+Move: b8c6, Score: -1976
+Move: e8f7, Score: -2001
+Move: g1g2, Score: -2194
+Move: g1f1, Score: -2209
+Move: g1f2, Score: -2519
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-remmato-iii/history.csv`...
+[32;1m[Board] [0mLoaded 24 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-remmato-iii/move.csv`...
+[32;1m[Board] [0mWhite player is playing e1 to d2.
+[32;1m[Board] [0m[31;1m[ERROR][0m Move destination (d2) contains a player's piece :(
+[32;1m[Referee] [0mInvalid move (code: -6) :(
 [32;1m[Game] [0mWhite player has lost on illegal move.

@@ -21,38 +21,4447 @@
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
-    a    b    c    d    e    f    g    h
-  +----+----+----+----+----+----+----+----+
-8 | oR | oN | oB | oQ | oK | oB | oN | oR | 8
-  +----+----+----+----+----+----+----+----+
-7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
-  +----+----+----+----+----+----+----+----+
-6 |    |    |    |    |    |    |    |    | 6
-  +----+----+----+----+----+----+----+----+
-5 |    |    |    |    |    |    |    |    | 5
-  +----+----+----+----+----+----+----+----+
-4 |    |    |    |    |    |    |    |    | 4
-  +----+----+----+----+----+----+----+----+
-3 |    |    |    |    |    |    |    |    | 3
-  +----+----+----+----+----+----+----+----+
-2 | mP | mP | mP | mP | mP | mP | mP | mP | 2
-  +----+----+----+----+----+----+----+----+
-1 | mR | mN | mB | mQ | mK | mB | mN | mR | 1
-  +----+----+----+----+----+----+----+----+
-    a    b    c    d    e    f    g   h
-
-value of board: 0
-mobility: 0
-king shield: 30
-mob_near_king: 40
-king safety: 70
-pawn structure: 0
+a2a3 a2a4 b2b3 b2b4 c2c3 c2c4 d2d3 d2d4 e2e3 e2e4 f2f3 f2f4 g2g3 g2g4 h2h3 h2h4 b1c3 b1a3 g1h3 g1f3 
+random move: e2e3
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: 0
+Result
+Move: b1c3, Score: 97
+Move: g1f3, Score: 87
+Move: f7f6, Score: 50
+Move: f7f5, Score: 40
+Move: c7c6, Score: 30
+Move: e2e4, Score: 20
+Move: d2d4, Score: 20
+Move: c7c5, Score: 20
+Move: g7g6, Score: 15
+Move: b1a3, Score: 15
+Move: b7b6, Score: 15
+Move: g1h3, Score: 5
+Move: b7b5, Score: 5
+Move: g7g5, Score: 5
+Move: h2h4, Score: 0
+Move: h7h5, Score: 0
+Move: h7h6, Score: 0
+Move: a2a3, Score: 0
+Move: h2h3, Score: 0
+Move: e7e6, Score: 0
+Move: e2e3, Score: 0
+Move: d7d6, Score: 0
+Move: d2d3, Score: 0
+Move: a7a5, Score: 0
+Move: a7a6, Score: 0
+Move: a2a4, Score: 0
+Move: b2b4, Score: -5
+Move: g8h6, Score: -5
+Move: g2g4, Score: -5
+Move: b8a6, Score: -15
+Move: g2g3, Score: -15
+Move: b2b3, Score: -15
+Move: e7e5, Score: -20
+Move: d7d5, Score: -20
+Move: c2c4, Score: -20
+Move: c2c3, Score: -30
+Move: f2f4, Score: -40
+Move: f2f3, Score: -50
+Move: g8f6, Score: -87
+Move: b8c6, Score: -97
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
 [32;1m[Board] [0mLoaded 0 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
-[32;1m[Board] [0m[31;1m[ERROR][0m The move could not be read from `championship/chess-ai-alabtros/move.csv' :(
-[32;1m[Referee] [0mInvalid move (code: -1) :(
+[32;1m[Board] [0mWhite player is playing e2 to e3.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+8| r n b q k b n r 
+7| p p p p p p p p 
+6| . . . . . . . . 
+5| . . . . . . . . 
+4| . . . . . . . . 
+3| . . . . P . . . 
+2| P P P P . P P P 
+1| R N B Q K B N R 
+-| A|B|C|D|E|F|G|H
+a7a6
+a7a5
+b7b6
+b7b5
+c7c6
+c7c5
+d7d6
+d7d5
+e7e6
+e7e5
+f7f6
+f7f5
+g7g6
+g7g5
+h7h6
+h7h5
+b8a6
+b8c6
+g8f6
+g8h6
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 1 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing a7 to a5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 a2a4 b2b3 b2b4 c2c3 c2c4 d2d3 d2d4 e3e4 f2f3 f2f4 g2g3 g2g4 h2h3 h2h4 b1c3 b1a3 g1h3 g1e2 g1f3 f1e2 f1d3 f1c4 f1b5 f1a6 d1e2 d1f3 d1g4 d1h5 e1e2 
+random move: d2d4
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: 0
+Result
+Move: b1c3, Score: 97
+Move: g1f3, Score: 87
+Move: f7f6, Score: 50
+Move: f7f5, Score: 40
+Move: c7c6, Score: 30
+Move: c7c5, Score: 20
+Move: d2d4, Score: 20
+Move: e3e4, Score: 20
+Move: g7g6, Score: 15
+Move: b7b6, Score: 15
+Move: b1a3, Score: 15
+Move: g7g5, Score: 5
+Move: b7b5, Score: 5
+Move: g1h3, Score: 5
+Move: a2a3, Score: 0
+Move: h2h4, Score: 0
+Move: h7h6, Score: 0
+Move: h2h3, Score: 0
+Move: h7h5, Score: 0
+Move: e7e6, Score: 0
+Move: d7d6, Score: 0
+Move: d2d3, Score: 0
+Move: a2a4, Score: 0
+Move: g8h6, Score: -5
+Move: g2g4, Score: -5
+Move: b2b4, Score: -5
+Move: a5a4, Score: -5
+Move: b8a6, Score: -15
+Move: g2g3, Score: -15
+Move: b2b3, Score: -15
+Move: e7e5, Score: -20
+Move: d7d5, Score: -20
+Move: c2c4, Score: -20
+Move: c2c3, Score: -30
+Move: f2f4, Score: -40
+Move: f2f3, Score: -50
+Move: g8f6, Score: -87
+Move: b8c6, Score: -97
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 2 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing d2 to d4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+8| r n b q k b n r 
+7| . p p p p p p p 
+6| . . . . . . . . 
+5| p . . . . . . . 
+4| . . . P . . . . 
+3| . . . . P . . . 
+2| P P P . . P P P 
+1| R N B Q K B N R 
+-| A|B|C|D|E|F|G|H
+a5a4
+b7b6
+b7b5
+c7c6
+c7c5
+d7d6
+d7d5
+e7e6
+e7e5
+f7f6
+f7f5
+g7g6
+g7g5
+h7h6
+h7h5
+b8a6
+b8c6
+g8f6
+g8h6
+a8a6
+a8a7
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 3 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing c7 to c6.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 a2a4 b2b3 b2b4 c2c3 c2c4 d4d5 e3e4 f2f3 f2f4 g2g3 g2g4 h2h3 h2h4 b1c3 b1d2 b1a3 g1h3 g1e2 g1f3 c1d2 f1e2 f1d3 f1c4 f1b5 f1a6 d1e2 d1f3 d1g4 d1h5 d1d2 d1d3 e1e2 e1d2 
+random move: f1b5
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: 50
+Result
+Move: b1c3, Score: 147
+Move: g1f3, Score: 137
+Move: f7f6, Score: 100
+Move: f7f5, Score: 90
+Move: e3e4, Score: 70
+Move: b1a3, Score: 65
+Move: b7b6, Score: 65
+Move: g7g6, Score: 65
+Move: g1h3, Score: 55
+Move: b7b5, Score: 55
+Move: g7g5, Score: 55
+Move: b8c6, Score: 53
+Move: h2h3, Score: 50
+Move: h2h4, Score: 50
+Move: h7h6, Score: 50
+Move: h7h5, Score: 50
+Move: a2a4, Score: 50
+Move: a2a3, Score: 50
+Move: e7e6, Score: 50
+Move: d7d6, Score: 50
+Move: g8h6, Score: 45
+Move: a5a4, Score: 45
+Move: g2g4, Score: 45
+Move: b2b4, Score: 45
+Move: c6c5, Score: 40
+Move: d4d5, Score: 40
+Move: b2b3, Score: 35
+Move: g2g3, Score: 35
+Move: b8a6, Score: 35
+Move: c2c4, Score: 30
+Move: d7d5, Score: 30
+Move: e7e5, Score: 30
+Move: c2c3, Score: 20
+Move: f2f4, Score: 10
+Move: f2f3, Score: 0
+Move: g8f6, Score: -37
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 4 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing f1 to b5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[0;1mb[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+8| r n b q k b n r 
+7| . p . p p p p p 
+6| . . p . . . . . 
+5| p B . . . . . . 
+4| . . . P . . . . 
+3| . . . . P . . . 
+2| P P P . . P P P 
+1| R N B Q K . N R 
+-| A|B|C|D|E|F|G|H
+a5a4
+c6b5
+c6c5
+b7b6
+d7d6
+d7d5
+e7e6
+e7e5
+f7f6
+f7f5
+g7g6
+g7g5
+h7h6
+h7h5
+b8a6
+g8f6
+g8h6
+a8a6
+a8a7
+d8b6
+d8c7
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 5 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing c6 to b5.
+[32;1m[Board] [0m[5;1mBlack Pawn is taking White Bishop.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 a2a4 b2b3 b2b4 c2c3 c2c4 d4d5 e3e4 f2f3 f2f4 g2g3 g2g4 h2h3 h2h4 b1c3 b1d2 b1a3 g1h3 g1e2 g1f3 c1d2 d1e2 d1f3 d1g4 d1h5 d1d2 d1d3 e1f1 e1e2 e1d2 
+random move: b1c3
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: -235
+Result
+Move: b7b5, Score: -125
+Move: b1c3, Score: -138
+Move: g1f3, Score: -148
+Move: f7f6, Score: -185
+Move: f7f5, Score: -195
+Move: e3e4, Score: -215
+Move: b1a3, Score: -220
+Move: b7b6, Score: -220
+Move: g7g6, Score: -220
+Move: g1h3, Score: -230
+Move: g7g5, Score: -230
+Move: a2a4, Score: -235
+Move: h7h5, Score: -235
+Move: h7h6, Score: -235
+Move: h2h4, Score: -235
+Move: h2h3, Score: -235
+Move: a2a3, Score: -235
+Move: e7e6, Score: -235
+Move: d7d6, Score: -235
+Move: g8h6, Score: -240
+Move: a5a4, Score: -240
+Move: g2g4, Score: -240
+Move: b2b4, Score: -240
+Move: b5b4, Score: -240
+Move: d4d5, Score: -245
+Move: b2b3, Score: -250
+Move: g2g3, Score: -250
+Move: b8a6, Score: -250
+Move: c2c4, Score: -255
+Move: d7d5, Score: -255
+Move: e7e5, Score: -255
+Move: c2c3, Score: -265
+Move: f2f4, Score: -275
+Move: f2f3, Score: -285
+Move: g8f6, Score: -322
+Move: b8c6, Score: -332
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 6 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing b1 to c3.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+8| r n b q k b n r 
+7| . p . p p p p p 
+6| . . . . . . . . 
+5| p p . . . . . . 
+4| . . . P . . . . 
+3| . . N . P . . . 
+2| P P P . . P P P 
+1| R . B Q K . N R 
+-| A|B|C|D|E|F|G|H
+a5a4
+b5b4
+b7b6
+d7d6
+d7d5
+e7e6
+e7e5
+f7f6
+f7f5
+g7g6
+g7g5
+h7h6
+h7h5
+b8a6
+b8c6
+g8f6
+g8h6
+a8a6
+a8a7
+d8b6
+d8c7
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 7 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing b8 to a6.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 a2a4 b2b3 b2b4 d4d5 e3e4 f2f3 f2f4 g2g3 g2g4 h2h3 h2h4 a1b1 c3d5 c3e4 c3e2 c3b1 c3a4 c3b5 g1h3 g1e2 g1f3 c1d2 d1e2 d1f3 d1g4 d1h5 d1d2 d1d3 e1f1 e1e2 e1d2 
+random move: d1f3
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: -153
+Result
+Move: c3b5, Score: -26
+Move: b7b5, Score: -43
+Move: g1f3, Score: -66
+Move: c3d5, Score: -69
+Move: c3e4, Score: -96
+Move: f7f6, Score: -103
+Move: f7f5, Score: -113
+Move: e3e4, Score: -133
+Move: b7b6, Score: -138
+Move: g7g6, Score: -138
+Move: g1h3, Score: -148
+Move: g7g5, Score: -148
+Move: h7h5, Score: -153
+Move: h7h6, Score: -153
+Move: h2h4, Score: -153
+Move: h2h3, Score: -153
+Move: a2a4, Score: -153
+Move: e7e6, Score: -153
+Move: d7d6, Score: -153
+Move: a2a3, Score: -153
+Move: g2g4, Score: -158
+Move: b5b4, Score: -158
+Move: g8h6, Score: -158
+Move: b2b4, Score: -158
+Move: a5a4, Score: -158
+Move: d4d5, Score: -163
+Move: g2g3, Score: -168
+Move: b2b3, Score: -168
+Move: e7e5, Score: -173
+Move: d7d5, Score: -173
+Move: c2c4, Score: -173
+Move: f2f4, Score: -193
+Move: f2f3, Score: -203
+Move: c3a4, Score: -219
+Move: g8f6, Score: -240
+Move: a6b4, Score: -257
+Move: a6c5, Score: -272
+Move: c2c3, Score: -562
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 8 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing d1 to f3.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m|[0;1mp[0m|[0;1mQ[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+8| r . b q k b n r 
+7| . p . p p p p p 
+6| n . . . . . . . 
+5| p p . . . . . . 
+4| . . . P . . . . 
+3| . . N . P Q . . 
+2| P P P . . P P P 
+1| R . B . K . N R 
+-| A|B|C|D|E|F|G|H
+a5a4
+b5b4
+b7b6
+d7d6
+d7d5
+e7e6
+e7e5
+f7f6
+f7f5
+g7g6
+g7g5
+h7h6
+h7h5
+a6b4
+a6c5
+a6c7
+a6b8
+g8f6
+g8h6
+a8a7
+a8b8
+d8b6
+d8c7
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 9 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing g7 to g6.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m|[0;1mp[0m|[0;1mQ[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 a2a4 b2b3 b2b4 d4d5 e3e4 g2g3 g2g4 h2h3 h2h4 a1b1 c3d5 c3e4 c3e2 c3d1 c3b1 c3a4 c3b5 g1h3 g1e2 c1d2 f3g4 f3h5 f3e4 f3d5 f3c6 f3b7 f3e2 f3d1 f3f4 f3f5 f3f6 f3f7 f3g3 f3h3 e1d1 e1f1 e1e2 e1d2 
+random move: c3a4
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: 442
+Result
+Move: f3f7, Score: 692
+Move: f3d5, Score: 642
+Move: f3f5, Score: 627
+Move: f3f6, Score: 587
+Move: f3c6, Score: 587
+Move: c3b5, Score: 569
+Move: b7b5, Score: 552
+Move: f3f4, Score: 537
+Move: f3e4, Score: 532
+Move: c3d5, Score: 526
+Move: c3e4, Score: 499
+Move: f7f6, Score: 492
+Move: f3d3, Score: 492
+Move: f7f5, Score: 482
+Move: e3e4, Score: 462
+Move: b7b6, Score: 457
+Move: g1h3, Score: 447
+Move: h7h6, Score: 442
+Move: h7h5, Score: 442
+Move: a2a4, Score: 442
+Move: h2h4, Score: 442
+Move: h2h3, Score: 442
+Move: a2a3, Score: 442
+Move: e7e6, Score: 442
+Move: d7d6, Score: 442
+Move: g2g4, Score: 437
+Move: a5a4, Score: 437
+Move: b2b4, Score: 437
+Move: b5b4, Score: 437
+Move: g8h6, Score: 437
+Move: g6g5, Score: 432
+Move: f3g4, Score: 432
+Move: d4d5, Score: 432
+Move: b2b3, Score: 427
+Move: g2g3, Score: 427
+Move: e7e5, Score: 422
+Move: d7d5, Score: 422
+Move: c2c4, Score: 422
+Move: f2f4, Score: 402
+Move: f3b3, Score: 392
+Move: c3a4, Score: 376
+Move: f3e3, Score: 372
+Move: f3b7, Score: 367
+Move: g8f6, Score: 355
+Move: f3a3, Score: 342
+Move: f3g3, Score: 342
+Move: f3h3, Score: 342
+Move: a6b4, Score: 338
+Move: f3h5, Score: 327
+Move: a6c5, Score: 323
+Move: c2c3, Score: 33
+Move: f3c3, Score: 23
+Move: g1f3, Score: -946
+Move: f2f3, Score: -1083
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 10 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing c3 to a4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mk[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mQ[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+8| r . b q k b n r 
+7| . p . p p p . p 
+6| n . . . . . p . 
+5| p p . . . . . . 
+4| N . . P . . . . 
+3| . . . . P Q . . 
+2| P P P . . P P P 
+1| R . B . K . N R 
+-| A|B|C|D|E|F|G|H
+b5a4
+b5b4
+g6g5
+b7b6
+d7d6
+d7d5
+e7e6
+e7e5
+f7f6
+f7f5
+h7h6
+h7h5
+a6b4
+a6c5
+a6c7
+a6b8
+g8f6
+g8h6
+f8h6
+f8g7
+a8a7
+a8b8
+d8b6
+d8c7
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 11 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing g6 to g5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mk[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mQ[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 b2b3 b2b4 c2c3 c2c4 d4d5 e3e4 g2g3 g2g4 h2h3 h2h4 a1b1 a4b6 a4c5 a4c3 g1h3 g1e2 c1d2 f3g4 f3h5 f3e4 f3d5 f3c6 f3b7 f3e2 f3d1 f3f4 f3f5 f3f6 f3f7 f3g3 f3h3 e1d1 e1f1 e1e2 e1d2 
+random move: c2c3
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: 366
+Result
+Move: f3f7, Score: 616
+Move: f3d5, Score: 566
+Move: f3f5, Score: 551
+Move: f3f6, Score: 511
+Move: f3c6, Score: 511
+Move: a4c5, Score: 506
+Move: b7b5, Score: 476
+Move: f3f4, Score: 461
+Move: a4b6, Score: 459
+Move: f3e4, Score: 456
+Move: a4c3, Score: 432
+Move: f3d3, Score: 416
+Move: f7f6, Score: 416
+Move: f7f5, Score: 406
+Move: e3e4, Score: 386
+Move: b7b6, Score: 381
+Move: g1h3, Score: 371
+Move: h2h3, Score: 366
+Move: h7h5, Score: 366
+Move: h7h6, Score: 366
+Move: h2h4, Score: 366
+Move: a2a3, Score: 366
+Move: d7d6, Score: 366
+Move: e7e6, Score: 366
+Move: g5g4, Score: 361
+Move: b2b4, Score: 361
+Move: b5b4, Score: 361
+Move: g8h6, Score: 361
+Move: g2g4, Score: 361
+Move: d4d5, Score: 356
+Move: f3g4, Score: 356
+Move: b2b3, Score: 351
+Move: g2g3, Score: 351
+Move: d7d5, Score: 346
+Move: c2c4, Score: 346
+Move: e7e5, Score: 346
+Move: c2c3, Score: 336
+Move: f2f4, Score: 326
+Move: f3c3, Score: 326
+Move: f3b3, Score: 316
+Move: f3e3, Score: 296
+Move: f3b7, Score: 291
+Move: g8f6, Score: 279
+Move: f3g3, Score: 266
+Move: f3h3, Score: 266
+Move: f3a3, Score: 266
+Move: a6b4, Score: 262
+Move: f3h5, Score: 251
+Move: a6c5, Score: 247
+Move: a2a4, Score: 53
+Move: a5a4, Score: 48
+Move: g1f3, Score: -1022
+Move: f2f3, Score: -1159
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 12 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing c2 to c3.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mk[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mQ[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+8| r . b q k b n r 
+7| . p . p p p . p 
+6| n . . . . . . . 
+5| p p . . . . p . 
+4| N . . P . . . . 
+3| . . P . P Q . . 
+2| P P . . . P P P 
+1| R . B . K . N R 
+-| A|B|C|D|E|F|G|H
+b5a4
+b5b4
+g5g4
+b7b6
+d7d6
+d7d5
+e7e6
+e7e5
+f7f6
+f7f5
+h7h6
+h7h5
+a6b4
+a6c5
+a6c7
+a6b8
+g8f6
+g8h6
+f8h6
+f8g7
+a8a7
+a8b8
+d8b6
+d8c7
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 13 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing g8 to h6.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|| 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mk[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mQ[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 b2b3 b2b4 c3c4 d4d5 e3e4 g2g3 g2g4 h2h3 h2h4 a1b1 a4b6 a4c5 g1h3 g1e2 c1d2 f3g4 f3h5 f3e4 f3d5 f3c6 f3b7 f3e2 f3d1 f3f4 f3f5 f3f6 f3f7 f3g3 f3h3 e1d1 e1f1 e1e2 e1d2 
+random move: e1d2
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: 331
+Result
+Move: h7h6, Score: 628
+Move: f3f7, Score: 581
+Move: f3d5, Score: 531
+Move: f3f5, Score: 516
+Move: f3c6, Score: 476
+Move: f3f6, Score: 476
+Move: a4c5, Score: 471
+Move: b7b5, Score: 441
+Move: f3f4, Score: 426
+Move: a4b6, Score: 424
+Move: f3e4, Score: 421
+Move: f3d3, Score: 381
+Move: f7f6, Score: 381
+Move: f7f5, Score: 371
+Move: e3e4, Score: 351
+Move: b7b6, Score: 346
+Move: c3c4, Score: 341
+Move: g1h3, Score: 336
+Move: h7h5, Score: 331
+Move: a2a3, Score: 331
+Move: h2h4, Score: 331
+Move: h2h3, Score: 331
+Move: d7d6, Score: 331
+Move: e7e6, Score: 331
+Move: g2g4, Score: 326
+Move: b2b4, Score: 326
+Move: b5b4, Score: 326
+Move: g5g4, Score: 326
+Move: d4d5, Score: 321
+Move: f3g4, Score: 321
+Move: g2g3, Score: 316
+Move: b2b3, Score: 316
+Move: d7d5, Score: 311
+Move: e7e5, Score: 311
+Move: a4c3, Score: 297
+Move: f2f4, Score: 291
+Move: f3b3, Score: 281
+Move: f3e3, Score: 261
+Move: f3b7, Score: 256
+Move: f3a3, Score: 231
+Move: f3g3, Score: 231
+Move: f3h3, Score: 231
+Move: a6b4, Score: 227
+Move: f3h5, Score: 216
+Move: h6f5, Score: 212
+Move: a6c5, Score: 212
+Move: h6g4, Score: 197
+Move: f3c3, Score: 191
+Move: a2a4, Score: 18
+Move: a5a4, Score: 13
+Move: g1f3, Score: -1057
+Move: f2f3, Score: -1194
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 14 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing e1 to d2.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|| 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mk[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mQ[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+8| r . b q k b . r 
+7| . p . p p p . p 
+6| n . . . . . . n 
+5| p p . . . . p . 
+4| N . . P . . . . 
+3| . . P . P Q . . 
+2| P P . K . P P P 
+1| R . B . . . N R 
+-| A|B|C|D|E|F|G|H
+b5a4
+b5b4
+g5g4
+b7b6
+d7d6
+d7d5
+e7e6
+e7e5
+f7f6
+f7f5
+a6b4
+a6c5
+a6c7
+a6b8
+h6g4
+h6f5
+h6g8
+f8g7
+a8a7
+a8b8
+h8g8
+d8b6
+d8c7
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 15 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing a6 to b8.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|| 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mk[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mQ[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 b2b3 b2b4 c3c4 d4d5 e3e4 g2g3 g2g4 h2h3 h2h4 a1b1 a4b6 a4c5 g1h3 g1e2 f3g4 f3h5 f3e4 f3d5 f3c6 f3b7 f3e2 f3d1 f3f4 f3f5 f3f6 f3f7 f3g3 f3h3 d2c2 d2e2 d2d1 d2d3 d2e1 
+random move: f3e2
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: 389
+Result
+Move: h7h6, Score: 686
+Move: f3f7, Score: 619
+Move: f3d5, Score: 589
+Move: f3f5, Score: 554
+Move: f3c6, Score: 534
+Move: a4c5, Score: 529
+Move: f3f6, Score: 524
+Move: b7b5, Score: 499
+Move: f3f4, Score: 484
+Move: a4b6, Score: 482
+Move: f3e4, Score: 469
+Move: f3d3, Score: 449
+Move: d2d3, Score: 441
+Move: f7f6, Score: 439
+Move: f7f5, Score: 429
+Move: g1h3, Score: 404
+Move: b7b6, Score: 404
+Move: a2a3, Score: 389
+Move: h7h5, Score: 389
+Move: h2h4, Score: 389
+Move: h2h3, Score: 389
+Move: d7d6, Score: 389
+Move: e3e4, Score: 389
+Move: e7e6, Score: 389
+Move: g2g4, Score: 384
+Move: b2b4, Score: 384
+Move: b5b4, Score: 384
+Move: g5g4, Score: 384
+Move: d4d5, Score: 379
+Move: f3g4, Score: 379
+Move: c3c4, Score: 379
+Move: b8a6, Score: 374
+Move: g2g3, Score: 374
+Move: b2b3, Score: 374
+Move: e7e5, Score: 369
+Move: d7d5, Score: 369
+Move: f2f4, Score: 369
+Move: a4c3, Score: 335
+Move: f3b3, Score: 329
+Move: d2c3, Score: 311
+Move: d2e3, Score: 301
+Move: f3e3, Score: 299
+Move: f3b7, Score: 294
+Move: h6g4, Score: 275
+Move: b8c6, Score: 272
+Move: f3g3, Score: 269
+Move: f3h3, Score: 269
+Move: f3a3, Score: 269
+Move: h6f5, Score: 250
+Move: f3h5, Score: 244
+Move: f3c3, Score: 219
+Move: a2a4, Score: 66
+Move: a5a4, Score: 61
+Move: g1f3, Score: -999
+Move: f2f3, Score: -1136
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 16 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing f3 to e2.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|| 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mk[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[0;1mQ[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+8| r n b q k b . r 
+7| . p . p p p . p 
+6| . . . . . . . n 
+5| p p . . . . p . 
+4| N . . P . . . . 
+3| . . P . P . . . 
+2| P P . K Q P P P 
+1| R . B . . . N R 
+-| A|B|C|D|E|F|G|H
+b5a4
+b5b4
+g5g4
+b7b6
+d7d6
+d7d5
+e7e6
+e7e5
+f7f6
+f7f5
+h6g4
+h6f5
+h6g8
+b8a6
+b8c6
+f8g7
+a8a6
+a8a7
+h8g8
+d8b6
+d8c7
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 17 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing a8 to a7.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|| 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mk[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[0;1mQ[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 b2b3 b2b4 c3c4 d4d5 e3e4 f2f3 f2f4 g2g3 g2g4 h2h3 h2h4 a1b1 a4b6 a4c5 g1h3 g1f3 e2f3 e2g4 e2h5 e2d3 e2c4 e2b5 e2f1 e2d1 e2e1 d2c2 d2d1 d2d3 d2e1 
+random move: e3e4
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: 194
+Result
+Move: e2e7, Score: 699
+Move: e2e6, Score: 544
+Move: e2e5, Score: 524
+Move: h7h6, Score: 491
+Move: e2e4, Score: 404
+Move: e2d3, Score: 384
+Move: e2b5, Score: 369
+Move: e2c4, Score: 369
+Move: a4c5, Score: 334
+Move: e2f3, Score: 324
+Move: e2g4, Score: 314
+Move: b7b5, Score: 304
+Move: g1f3, Score: 301
+Move: a4b6, Score: 287
+Move: e2a6, Score: 264
+Move: d2d3, Score: 246
+Move: f7f6, Score: 244
+Move: e2e3, Score: 234
+Move: f7f5, Score: 234
+Move: g1h3, Score: 209
+Move: b7b6, Score: 209
+Move: h7h5, Score: 194
+Move: h2h4, Score: 194
+Move: e3e4, Score: 194
+Move: a2a3, Score: 194
+Move: d7d6, Score: 194
+Move: e7e6, Score: 194
+Move: h2h3, Score: 194
+Move: g5g4, Score: 189
+Move: b2b4, Score: 189
+Move: b5b4, Score: 189
+Move: g2g4, Score: 189
+Move: a7a5, Score: 184
+Move: d4d5, Score: 184
+Move: c3c4, Score: 184
+Move: b8a6, Score: 179
+Move: e2h5, Score: 179
+Move: b2b3, Score: 179
+Move: g2g3, Score: 179
+Move: e7e5, Score: 174
+Move: d7d5, Score: 174
+Move: f2f4, Score: 174
+Move: f2f3, Score: 164
+Move: a4c3, Score: 140
+Move: d2c3, Score: 106
+Move: d2e3, Score: 96
+Move: a7a6, Score: 89
+Move: h6g4, Score: 80
+Move: b8c6, Score: 77
+Move: a7a2, Score: 69
+Move: h6f5, Score: 55
+Move: a7a3, Score: 9
+Move: a2a4, Score: -129
+Move: a5a4, Score: -134
+Move: a7a4, Score: -344
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 18 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing e3 to e4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|| 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mk[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[0;1mQ[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+8| . n b q k b . r 
+7| r p . p p p . p 
+6| . . . . . . . n 
+5| p p . . . . p . 
+4| N . . P P . . . 
+3| . . P . . . . . 
+2| P P . K Q P P P 
+1| R . B . . . N R 
+-| A|B|C|D|E|F|G|H
+b5a4
+b5b4
+g5g4
+b7b6
+d7d6
+d7d5
+e7e6
+e7e5
+f7f6
+f7f5
+h6g4
+h6f5
+h6g8
+b8a6
+b8c6
+f8g7
+a7a8
+a7a6
+h8g8
+d8b6
+d8c7
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 19 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing h6 to f5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m| |[7;1m [0m| |[30;1mk[0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mk[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[0;1mQ[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 b2b3 b2b4 c3c4 d4d5 e4f5 e4e5 f2f3 f2f4 g2g3 g2g4 h2h3 h2h4 a1b1 a4b6 a4c5 g1h3 g1f3 e2f3 e2g4 e2h5 e2d3 e2c4 e2b5 e2f1 e2d1 e2e3 e2e1 d2c2 d2d1 d2d3 d2e1 
+random move: a4c5
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: 55
+Result
+Move: e2e7, Score: 560
+Move: f7f5, Score: 531
+Move: e2e6, Score: 405
+Move: e2e5, Score: 385
+Move: e2d3, Score: 245
+Move: e2e3, Score: 235
+Move: e2b5, Score: 230
+Move: e2c4, Score: 230
+Move: a4c5, Score: 195
+Move: f5h6, Score: 194
+Move: e2f3, Score: 185
+Move: e2g4, Score: 175
+Move: f5h4, Score: 172
+Move: b7b5, Score: 165
+Move: g1f3, Score: 162
+Move: a4b6, Score: 148
+Move: d2d3, Score: 137
+Move: d2e3, Score: 137
+Move: e2a6, Score: 125
+Move: e2e4, Score: 125
+Move: f7f6, Score: 105
+Move: f5d6, Score: 72
+Move: g1h3, Score: 70
+Move: b7b6, Score: 70
+Move: f5g3, Score: 65
+Move: d7d6, Score: 55
+Move: e7e6, Score: 55
+Move: a2a3, Score: 55
+Move: h7h5, Score: 55
+Move: h7h6, Score: 55
+Move: h2h4, Score: 55
+Move: h2h3, Score: 55
+Move: b2b4, Score: 50
+Move: g5g4, Score: 50
+Move: g2g4, Score: 50
+Move: b5b4, Score: 50
+Move: a7a5, Score: 45
+Move: d4d5, Score: 45
+Move: e4e5, Score: 45
+Move: c3c4, Score: 45
+Move: b8a6, Score: 40
+Move: e2h5, Score: 40
+Move: b2b3, Score: 40
+Move: g2g3, Score: 40
+Move: f2f4, Score: 35
+Move: d7d5, Score: 35
+Move: e7e5, Score: 35
+Move: f2f3, Score: 25
+Move: d2c3, Score: 7
+Move: f5e3, Score: 3
+Move: a4c3, Score: 1
+Move: a7a6, Score: -50
+Move: b8c6, Score: -62
+Move: a7a2, Score: -70
+Move: f5d4, Score: -112
+Move: a7a3, Score: -130
+Move: a2a4, Score: -268
+Move: a5a4, Score: -273
+Move: a7a4, Score: -483
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 20 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing a4 to c5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m|[0;1mk[0m|[7;1m [0m| |[30;1mk[0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[0;1mQ[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+8| . n b q k b . r 
+7| r p . p p p . p 
+6| . . . . . . . . 
+5| p p N . . n p . 
+4| . . . P P . . . 
+3| . . P . . . . . 
+2| P P . K Q P P P 
+1| R . B . . . N R 
+-| A|B|C|D|E|F|G|H
+a5a4
+b5b4
+g5g4
+b7b6
+d7d6
+d7d5
+e7e6
+e7e5
+f7f6
+h7h6
+h7h5
+f5e3
+f5g3
+f5d4
+f5h4
+f5d6
+f5h6
+f5g7
+b8a6
+b8c6
+f8h6
+f8g7
+a7a8
+a7a6
+h8g8
+d8b6
+d8c7
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 21 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing d8 to c7.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m|[30;1mQ[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m|[0;1mk[0m|[7;1m [0m| |[30;1mk[0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[0;1mQ[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 a2a4 b2b3 b2b4 c3c4 d4d5 e4f5 e4e5 f2f3 f2f4 g2g3 g2g4 h2h3 h2h4 a1b1 c5d7 c5e6 c5d3 c5b3 c5a4 c5a6 c5b7 g1h3 g1f3 e2f3 e2g4 e2h5 e2d3 e2c4 e2b5 e2f1 e2d1 e2e3 e2e1 d2c2 d2d1 d2d3 d2e1 
+random move: e2g4
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: -295
+Result
+Move: e2e7, Score: 210
+Move: f7f5, Score: 181
+Move: e2e6, Score: 55
+Move: e2e5, Score: 35
+Move: e2d3, Score: -105
+Move: e2e3, Score: -115
+Move: e2c4, Score: -120
+Move: e2b5, Score: -120
+Move: d2e3, Score: -153
+Move: f5h6, Score: -156
+Move: e2f3, Score: -165
+Move: e2g4, Score: -175
+Move: f5h4, Score: -178
+Move: b7b5, Score: -185
+Move: g1f3, Score: -188
+Move: c7h2, Score: -195
+Move: c7a5, Score: -195
+Move: c5d7, Score: -202
+Move: e2e4, Score: -225
+Move: e2a6, Score: -225
+Move: f7f6, Score: -245
+Move: f5d6, Score: -278
+Move: c5b7, Score: -279
+Move: b7b6, Score: -280
+Move: g1h3, Score: -280
+Move: c5e6, Score: -280
+Move: f5g3, Score: -285
+Move: h7h6, Score: -295
+Move: a2a4, Score: -295
+Move: d7d6, Score: -295
+Move: e7e6, Score: -295
+Move: a2a3, Score: -295
+Move: h2h4, Score: -295
+Move: h7h5, Score: -295
+Move: h2h3, Score: -295
+Move: a5a4, Score: -300
+Move: b2b4, Score: -300
+Move: b5b4, Score: -300
+Move: g5g4, Score: -300
+Move: g2g4, Score: -300
+Move: d4d5, Score: -305
+Move: a7a5, Score: -305
+Move: e4e5, Score: -305
+Move: c3c4, Score: -305
+Move: b8a6, Score: -310
+Move: g2g3, Score: -310
+Move: b2b3, Score: -310
+Move: e2h5, Score: -310
+Move: d7d5, Score: -315
+Move: e7e5, Score: -315
+Move: f2f4, Score: -315
+Move: d2d3, Score: -323
+Move: f2f3, Score: -325
+Move: c7b6, Score: -335
+Move: f5e3, Score: -347
+Move: c5d3, Score: -379
+Move: c5b3, Score: -395
+Move: a7a6, Score: -400
+Move: d2c3, Score: -403
+Move: b8c6, Score: -412
+Move: c7g3, Score: -415
+Move: a7a2, Score: -420
+Move: c5a4, Score: -435
+Move: c5a6, Score: -444
+Move: c5e4, Score: -452
+Move: f5d4, Score: -462
+Move: a7a3, Score: -480
+Move: c7d6, Score: -485
+Move: c7c6, Score: -495
+Move: a7a4, Score: -510
+Move: c7c2, Score: -575
+Move: c7f4, Score: -620
+Move: c7e5, Score: -625
+Move: c7c4, Score: -660
+Move: c7c3, Score: -750
+Move: c7c5, Score: -1033
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 22 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing e2 to g4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m|[30;1mQ[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m|[0;1mk[0m|[7;1m [0m| |[30;1mk[0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[0;1mQ[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+8| . n b . k b . r 
+7| r p q p p p . p 
+6| . . . . . . . . 
+5| p p N . . n p . 
+4| . . . P P . Q . 
+3| . . P . . . . . 
+2| P P . K . P P P 
+1| R . B . . . N R 
+-| A|B|C|D|E|F|G|H
+a5a4
+b5b4
+b7b6
+d7d6
+d7d5
+e7e6
+e7e5
+f7f6
+h7h6
+h7h5
+f5e3
+f5g3
+f5d4
+f5h4
+f5d6
+f5h6
+f5g7
+b8a6
+b8c6
+f8h6
+f8g7
+a7a8
+a7a6
+h8g8
+c7c5
+c7d8
+c7h2
+c7b6
+e8d8
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 23 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing c7 to h2.
+[32;1m[Board] [0m[5;1mBlack Queen is taking White Pawn.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m|[0;1mk[0m|[7;1m [0m| |[30;1mk[0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[0;1mQ[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[30;1mQ[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 a2a4 b2b3 b2b4 c3c4 d4d5 e4f5 e4e5 f2f3 f2f4 g2g3 a1b1 h1h2 c5d7 c5e6 c5d3 c5b3 c5a4 c5a6 c5b7 g1h3 g1e2 g1f3 g4h5 g4f5 g4h3 g4f3 g4e2 g4d1 g4g5 g4g3 g4h4 g4f4 d2c2 d2e2 d2d1 d2d3 d2e1 
+random move: d4d5
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: -75
+Result
+Move: g4f5, Score: 536
+Move: f7f5, Score: 401
+Move: g4d7, Score: 160
+Move: g4e6, Score: 155
+Move: f5h6, Score: 64
+Move: f5h4, Score: 42
+Move: b7b5, Score: 35
+Move: g1f3, Score: 32
+Move: g4f4, Score: 30
+Move: g4g5, Score: 20
+Move: c5d7, Score: 18
+Move: g4g6, Score: 5
+Move: g4c4, Score: -20
+Move: f7f6, Score: -25
+Move: f5d6, Score: -58
+Move: c5b7, Score: -59
+Move: b7b6, Score: -60
+Move: g1h3, Score: -60
+Move: c5e6, Score: -60
+Move: d2d3, Score: -63
+Move: g4f3, Score: -65
+Move: g4d4, Score: -65
+Move: f5g3, Score: -65
+Move: g4b4, Score: -65
+Move: d2e3, Score: -73
+Move: a2a4, Score: -75
+Move: a2a3, Score: -75
+Move: e7e6, Score: -75
+Move: h7h6, Score: -75
+Move: h7h5, Score: -75
+Move: d7d6, Score: -75
+Move: a5a4, Score: -80
+Move: b2b4, Score: -80
+Move: b5b4, Score: -80
+Move: d4d5, Score: -85
+Move: e4e5, Score: -85
+Move: c3c4, Score: -85
+Move: a7a5, Score: -85
+Move: b2b3, Score: -90
+Move: b8a6, Score: -90
+Move: g2g3, Score: -90
+Move: d7d5, Score: -95
+Move: e7e5, Score: -95
+Move: f2f4, Score: -95
+Move: f2f3, Score: -105
+Move: g4g7, Score: -110
+Move: d2c3, Score: -123
+Move: g4e4, Score: -125
+Move: f5e3, Score: -127
+Move: g4h4, Score: -140
+Move: c5d3, Score: -159
+Move: c5b3, Score: -175
+Move: a7a6, Score: -180
+Move: g4h3, Score: -185
+Move: g4g3, Score: -185
+Move: g4a4, Score: -190
+Move: h2g1, Score: -192
+Move: b8c6, Score: -192
+Move: a7a2, Score: -200
+Move: g4h5, Score: -210
+Move: c5a4, Score: -215
+Move: c5a6, Score: -224
+Move: c5e4, Score: -232
+Move: h2h5, Score: -235
+Move: f5d4, Score: -242
+Move: a7a3, Score: -260
+Move: h2h6, Score: -270
+Move: a7a4, Score: -290
+Move: h2h3, Score: -320
+Move: h2g2, Score: -335
+Move: h2h1, Score: -350
+Move: h2h4, Score: -355
+Move: h2g3, Score: -400
+Move: h2d6, Score: -470
+Move: h2f4, Score: -605
+Move: h2e5, Score: -610
+Move: g2g4, Score: -1565
+Move: g5g4, Score: -1565
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 24 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing d4 to d5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m|[0;1mk[0m|[0;1mp[0m| |[30;1mk[0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[0;1mQ[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[30;1mQ[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+8| . n b . k b . r 
+7| r p . p p p . p 
+6| . . . . . . . . 
+5| p p N P . n p . 
+4| . . . . P . Q . 
+3| . . P . . . . . 
+2| P P . K . P P q 
+1| R . B . . . N R 
+-| A|B|C|D|E|F|G|H
+a5a4
+b5b4
+b7b6
+d7d6
+e7e6
+e7e5
+f7f6
+h7h6
+h7h5
+f5e3
+f5g3
+f5d4
+f5h4
+f5d6
+f5h6
+f5g7
+b8a6
+b8c6
+f8h6
+f8g7
+a7a8
+a7a6
+h8g8
+h2h3
+h2h4
+h2h5
+h2h6
+h2h1
+h2g2
+h2g3
+h2f4
+h2e5
+h2d6
+h2c7
+h2g1
+e8d8
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 25 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing a7 to a8.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m|[0;1mk[0m|[0;1mp[0m| |[30;1mk[0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[0;1mQ[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[30;1mQ[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 a2a4 b2b3 b2b4 c3c4 d5d6 e4f5 e4e5 f2f3 f2f4 g2g3 a1b1 h1h2 c5d7 c5e6 c5d3 c5b3 c5a4 c5a6 c5b7 g1h3 g1e2 g1f3 g4h5 g4f5 g4h3 g4f3 g4e2 g4d1 g4g5 g4g3 g4h4 g4f4 d2c2 d2e2 d2d1 d2d3 d2e1 
+random move: g4f5
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: -20
+Result
+Move: g4f5, Score: 591
+Move: f7f5, Score: 456
+Move: g4d7, Score: 215
+Move: g4e6, Score: 210
+Move: g4d4, Score: 130
+Move: f5h6, Score: 119
+Move: f5h4, Score: 97
+Move: b7b5, Score: 90
+Move: g1f3, Score: 87
+Move: g4f4, Score: 85
+Move: g4g5, Score: 75
+Move: c5d7, Score: 73
+Move: g4g6, Score: 60
+Move: g4c4, Score: 35
+Move: f7f6, Score: 30
+Move: f5d6, Score: -3
+Move: c5b7, Score: -4
+Move: b7b6, Score: -5
+Move: g1h3, Score: -5
+Move: c5e6, Score: -5
+Move: g4f3, Score: -10
+Move: d5d6, Score: -10
+Move: f5g3, Score: -10
+Move: g4b4, Score: -10
+Move: a2a4, Score: -20
+Move: h7h5, Score: -20
+Move: a2a3, Score: -20
+Move: h7h6, Score: -20
+Move: d7d6, Score: -20
+Move: e7e6, Score: -20
+Move: a5a4, Score: -25
+Move: b2b4, Score: -25
+Move: b5b4, Score: -25
+Move: d2d3, Score: -28
+Move: c3c4, Score: -30
+Move: e4e5, Score: -30
+Move: b2b3, Score: -35
+Move: b8a6, Score: -35
+Move: g2g3, Score: -35
+Move: d2e3, Score: -38
+Move: e7e5, Score: -40
+Move: f2f4, Score: -40
+Move: f5d4, Score: -47
+Move: f2f3, Score: -50
+Move: g4g7, Score: -55
+Move: g4e4, Score: -70
+Move: f5e3, Score: -72
+Move: g4h4, Score: -85
+Move: d2c3, Score: -88
+Move: c5d3, Score: -104
+Move: c5b3, Score: -120
+Move: g4g3, Score: -130
+Move: g4h3, Score: -130
+Move: g4a4, Score: -135
+Move: b8c6, Score: -137
+Move: h2g1, Score: -137
+Move: g4h5, Score: -155
+Move: c5a4, Score: -160
+Move: c5a6, Score: -169
+Move: d7d5, Score: -170
+Move: c5e4, Score: -177
+Move: h2h5, Score: -180
+Move: h2h6, Score: -215
+Move: h2h3, Score: -265
+Move: h2g2, Score: -280
+Move: h2h1, Score: -295
+Move: h2h4, Score: -300
+Move: h2g3, Score: -345
+Move: h2d6, Score: -415
+Move: h2f4, Score: -550
+Move: h2e5, Score: -555
+Move: g5g4, Score: -1510
+Move: g2g4, Score: -1510
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 26 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing g4 to f5.
+[32;1m[Board] [0m[5;1mWhite Queen is taking Black Knight.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m|[0;1mk[0m|[0;1mp[0m| |[0;1mQ[0m|[30;1mp[0m|[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[30;1mQ[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+8| r n b . k b . r 
+7| . p . p p p . p 
+6| . . . . . . . . 
+5| p p N P . Q p . 
+4| . . . . P . . . 
+3| . . P . . . . . 
+2| P P . K . P P q 
+1| R . B . . . N R 
+-| A|B|C|D|E|F|G|H
+a5a4
+b5b4
+g5g4
+b7b6
+d7d6
+e7e6
+e7e5
+f7f6
+h7h6
+h7h5
+b8a6
+b8c6
+f8h6
+f8g7
+a8a6
+a8a7
+h8g8
+h2h3
+h2h4
+h2h5
+h2h6
+h2h1
+h2g2
+h2g3
+h2f4
+h2e5
+h2d6
+h2c7
+h2g1
+e8d8
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 27 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing h7 to h5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m|[0;1mk[0m|[0;1mp[0m| |[0;1mQ[0m|[30;1mp[0m|[30;1mp[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[30;1mQ[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 a2a4 b2b3 b2b4 c3c4 d5d6 e4e5 f2f3 f2f4 g2g3 g2g4 a1b1 h1h2 c5d7 c5e6 c5d3 c5b3 c5a4 c5a6 c5b7 g1h3 g1e2 g1f3 f5g6 f5h7 f5e6 f5d7 f5g4 f5h3 f5f6 f5f7 f5f4 f5f3 f5g5 f5e5 d2c2 d2e2 d2d1 d2d3 d2e1 d2e3 
+random move: c5d3
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: 591
+Result
+Move: b7b5, Score: 701
+Move: g1f3, Score: 698
+Move: c5d7, Score: 684
+Move: f5f7, Score: 656
+Move: f5d7, Score: 651
+Move: f5e6, Score: 646
+Move: f7f6, Score: 641
+Move: f5e5, Score: 626
+Move: d2d3, Score: 613
+Move: c5b7, Score: 607
+Move: b7b6, Score: 606
+Move: g1h3, Score: 606
+Move: c5e6, Score: 606
+Move: d5d6, Score: 601
+Move: d2e3, Score: 593
+Move: a2a4, Score: 591
+Move: d7d6, Score: 591
+Move: a2a3, Score: 591
+Move: e7e6, Score: 591
+Move: b5b4, Score: 586
+Move: g2g4, Score: 586
+Move: g5g4, Score: 586
+Move: h5h4, Score: 586
+Move: a5a4, Score: 586
+Move: b2b4, Score: 586
+Move: e4e5, Score: 581
+Move: c3c4, Score: 581
+Move: b8a6, Score: 576
+Move: b2b3, Score: 576
+Move: g2g3, Score: 576
+Move: e7e5, Score: 571
+Move: f2f4, Score: 571
+Move: f5f6, Score: 561
+Move: f2f3, Score: 561
+Move: h2h5, Score: 536
+Move: d2c3, Score: 523
+Move: f5f4, Score: 521
+Move: f5g5, Score: 511
+Move: c5d3, Score: 507
+Move: f5d5, Score: 496
+Move: f5g6, Score: 496
+Move: c5b3, Score: 491
+Move: f5d3, Score: 486
+Move: b8c6, Score: 474
+Move: h2g1, Score: 474
+Move: f5b5, Score: 471
+Move: c5a4, Score: 451
+Move: c5a6, Score: 442
+Move: d7d5, Score: 441
+Move: c5e4, Score: 434
+Move: f5f3, Score: 426
+Move: f5g4, Score: 416
+Move: h2h6, Score: 396
+Move: f5h5, Score: 386
+Move: f5e4, Score: 366
+Move: h2h3, Score: 346
+Move: f5a5, Score: 346
+Move: h2g2, Score: 331
+Move: h2h1, Score: 316
+Move: h2h4, Score: 311
+Move: f5h3, Score: 306
+Move: h2g3, Score: 266
+Move: h2d6, Score: 196
+Move: f5h7, Score: 121
+Move: h2f4, Score: 61
+Move: h2e5, Score: 56
+Move: f5c5, Score: 48
+Move: f7f5, Score: -1029
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 28 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing c5 to d3.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m| |[0;1mp[0m| |[0;1mQ[0m|[30;1mp[0m|[30;1mp[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[0;1mk[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[30;1mQ[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+8| r n b . k b . r 
+7| . p . p p p . . 
+6| . . . . . . . . 
+5| p p . P . Q p p 
+4| . . . . P . . . 
+3| . . P N . . . . 
+2| P P . K . P P q 
+1| R . B . . . N R 
+-| A|B|C|D|E|F|G|H
+a5a4
+b5b4
+g5g4
+h5h4
+b7b6
+d7d6
+e7e6
+e7e5
+f7f6
+b8a6
+b8c6
+f8h6
+f8g7
+a8a6
+a8a7
+h8h6
+h8h7
+h8g8
+h2h3
+h2h4
+h2h1
+h2g2
+h2g3
+h2f4
+h2e5
+h2d6
+h2c7
+h2g1
+e8d8
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 29 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing a8 to a7.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m| |[0;1mp[0m| |[0;1mQ[0m|[30;1mp[0m|[30;1mp[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[0;1mk[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[30;1mQ[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 a2a4 b2b3 b2b4 c3c4 d5d6 e4e5 f2f3 f2f4 g2g3 g2g4 a1b1 h1h2 d3e5 d3f4 d3e1 d3b4 d3c5 g1h3 g1e2 g1f3 f5g6 f5h7 f5e6 f5d7 f5g4 f5h3 f5f6 f5f7 f5f4 f5f3 f5g5 f5e5 d2c2 d2e2 d2d1 d2e1 d2e3 
+random move: g1h3
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: 442
+Result
+Move: b7b5, Score: 552
+Move: g1f3, Score: 549
+Move: d3e5, Score: 536
+Move: d3c5, Score: 526
+Move: f5f7, Score: 507
+Move: f5d7, Score: 502
+Move: f5e6, Score: 497
+Move: f7f6, Score: 492
+Move: d3f4, Score: 479
+Move: f5e5, Score: 477
+Move: d2e3, Score: 464
+Move: b7b6, Score: 457
+Move: g1h3, Score: 457
+Move: d5d6, Score: 452
+Move: a2a4, Score: 442
+Move: a2a3, Score: 442
+Move: d7d6, Score: 442
+Move: e7e6, Score: 442
+Move: g2g4, Score: 437
+Move: g5g4, Score: 437
+Move: h5h4, Score: 437
+Move: b2b4, Score: 437
+Move: b5b4, Score: 437
+Move: a5a4, Score: 437
+Move: d3b4, Score: 437
+Move: a7a5, Score: 432
+Move: c3c4, Score: 432
+Move: e4e5, Score: 432
+Move: b2b3, Score: 427
+Move: g2g3, Score: 427
+Move: b8a6, Score: 427
+Move: f2f4, Score: 422
+Move: e7e5, Score: 422
+Move: f2f3, Score: 412
+Move: f5f6, Score: 412
+Move: d2c3, Score: 394
+Move: h2h5, Score: 387
+Move: f5f4, Score: 372
+Move: f5c5, Score: 362
+Move: f5g5, Score: 362
+Move: f5g6, Score: 347
+Move: f5d5, Score: 347
+Move: a7a6, Score: 337
+Move: b8c6, Score: 325
+Move: h2g1, Score: 325
+Move: f5b5, Score: 322
+Move: a7a2, Score: 317
+Move: d7d5, Score: 292
+Move: f5f3, Score: 277
+Move: f5g4, Score: 267
+Move: a7a3, Score: 257
+Move: h2h6, Score: 247
+Move: f5h5, Score: 237
+Move: a7a4, Score: 227
+Move: f5e4, Score: 217
+Move: f5a5, Score: 197
+Move: h2h3, Score: 197
+Move: h2g2, Score: 182
+Move: h2h1, Score: 167
+Move: h2h4, Score: 162
+Move: f5h3, Score: 157
+Move: h2g3, Score: 117
+Move: d2d3, Score: 85
+Move: h2d6, Score: 47
+Move: f5h7, Score: -28
+Move: f5d3, Score: -42
+Move: h2f4, Score: -88
+Move: h2e5, Score: -93
+Move: f7f5, Score: -1178
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 30 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing g1 to h3.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m| |[0;1mp[0m| |[0;1mQ[0m|[30;1mp[0m|[30;1mp[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[0;1mk[0m| |[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[30;1mQ[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+8| . n b . k b . r 
+7| r p . p p p . . 
+6| . . . . . . . . 
+5| p p . P . Q p p 
+4| . . . . P . . . 
+3| . . P N . . . N 
+2| P P . K . P P q 
+1| R . B . . . . R 
+-| A|B|C|D|E|F|G|H
+a5a4
+b5b4
+g5g4
+h5h4
+b7b6
+d7d6
+e7e6
+e7e5
+f7f6
+b8a6
+b8c6
+f8h6
+f8g7
+a7a8
+a7a6
+h8h6
+h8h7
+h8g8
+h2h3
+h2h1
+h2g2
+h2g3
+h2f4
+h2e5
+h2d6
+h2c7
+h2g1
+e8d8
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 31 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing g5 to g4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m| |[0;1mp[0m| |[0;1mQ[0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[0;1mk[0m| |[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[30;1mQ[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 a2a4 b2b3 b2b4 c3c4 d5d6 e4e5 f2f3 f2f4 g2g3 a1b1 h1h2 h1g1 h1f1 h1e1 h1d1 d3e5 d3f4 d3e1 d3b4 d3c5 h3g1 h3f4 h3g5 f5g6 f5h7 f5e6 f5d7 f5g4 f5f6 f5f7 f5f4 f5f3 f5g5 f5h5 f5e5 d2c2 d2e2 d2d1 d2e1 d2e3 
+random move: f2f4
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: 452
+Result
+Move: h2g1, Score: 617
+Move: h3g5, Score: 586
+Move: h3f4, Score: 571
+Move: b7b5, Score: 562
+Move: g2g4, Score: 557
+Move: d3e5, Score: 546
+Move: d3c5, Score: 536
+Move: f5f7, Score: 517
+Move: f5d7, Score: 512
+Move: f5e6, Score: 507
+Move: f7f6, Score: 502
+Move: d3f4, Score: 489
+Move: f5e5, Score: 487
+Move: d2e3, Score: 474
+Move: b7b6, Score: 467
+Move: d5d6, Score: 462
+Move: a2a4, Score: 452
+Move: a2a3, Score: 452
+Move: d7d6, Score: 452
+Move: e7e6, Score: 452
+Move: b5b4, Score: 447
+Move: d3b4, Score: 447
+Move: b2b4, Score: 447
+Move: a5a4, Score: 447
+Move: h5h4, Score: 447
+Move: a7a5, Score: 442
+Move: g4g3, Score: 442
+Move: e4e5, Score: 442
+Move: c3c4, Score: 442
+Move: b2b3, Score: 437
+Move: g2g3, Score: 437
+Move: b8a6, Score: 437
+Move: e7e5, Score: 432
+Move: f2f4, Score: 432
+Move: f2f3, Score: 422
+Move: f5f6, Score: 422
+Move: d2c3, Score: 404
+Move: h2h5, Score: 397
+Move: f5g4, Score: 387
+Move: f5f4, Score: 382
+Move: f5c5, Score: 372
+Move: f5g6, Score: 357
+Move: f5d5, Score: 357
+Move: a7a6, Score: 347
+Move: b8c6, Score: 335
+Move: f5b5, Score: 332
+Move: a7a2, Score: 327
+Move: d7d5, Score: 302
+Move: f5f3, Score: 287
+Move: f5g5, Score: 267
+Move: a7a3, Score: 267
+Move: h2h6, Score: 257
+Move: f5h5, Score: 247
+Move: a7a4, Score: 237
+Move: f5e4, Score: 227
+Move: f5a5, Score: 207
+Move: h2g2, Score: 192
+Move: h2h1, Score: 177
+Move: h2h4, Score: 172
+Move: h2g3, Score: 127
+Move: d2d3, Score: 95
+Move: h2d6, Score: 57
+Move: f5h7, Score: -18
+Move: f5d3, Score: -32
+Move: h2f4, Score: -78
+Move: h2e5, Score: -83
+Move: h2h3, Score: -90
+Move: f5h3, Score: -130
+Move: f7f5, Score: -1168
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 32 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing f2 to f4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m| |[0;1mp[0m| |[0;1mQ[0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[0;1mk[0m| |[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mp[0m|[30;1mQ[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+8| . n b . k b . r 
+7| r p . p p p . . 
+6| . . . . . . . . 
+5| p p . P . Q . p 
+4| . . . . P P p . 
+3| . . P N . . . N 
+2| P P . K . . P q 
+1| R . B . . . . R 
+-| A|B|C|D|E|F|G|H
+g4h3
+g4f3
+g4g3
+a5a4
+b5b4
+h5h4
+b7b6
+d7d6
+e7e6
+e7e5
+f7f6
+b8a6
+b8c6
+f8h6
+f8g7
+a7a8
+a7a6
+h8h6
+h8h7
+h8g8
+h2h3
+h2h1
+h2g2
+h2g3
+h2f4
+h2g1
+e8d8
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 33 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing h2 to g2.
+[32;1m[Board] [0m[5;1mBlack Queen is taking White Pawn.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m| |[0;1mp[0m| |[0;1mQ[0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[0;1mk[0m| |[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[30;1mQ[0m| || 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mWhite King in check![0m
+[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by Black Queen (g2)
+d3f2 h3f2 d2d1 d2e1 d2e3 
+random move: h3f2
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: 172
+Result
+Move: g2g1, Score: 487
+Move: g2f1, Score: 387
+Move: g2h2, Score: 322
+Move: h3g5, Score: 306
+Move: b7b5, Score: 282
+Move: d3e5, Score: 266
+Move: d3c5, Score: 256
+Move: f5f7, Score: 237
+Move: f5d7, Score: 232
+Move: f5e6, Score: 227
+Move: f7f6, Score: 222
+Move: f5e5, Score: 207
+Move: b7b6, Score: 187
+Move: d5d6, Score: 182
+Move: h3f4, Score: 181
+Move: a2a4, Score: 172
+Move: e7e6, Score: 172
+Move: a2a3, Score: 172
+Move: d7d6, Score: 172
+Move: h5h4, Score: 167
+Move: b5b4, Score: 167
+Move: b2b4, Score: 167
+Move: d3b4, Score: 167
+Move: a5a4, Score: 167
+Move: g4g3, Score: 162
+Move: e4e5, Score: 162
+Move: a7a5, Score: 162
+Move: c3c4, Score: 162
+Move: b2b3, Score: 157
+Move: b8a6, Score: 157
+Move: e7e5, Score: 152
+Move: d2e3, Score: 144
+Move: f5f6, Score: 142
+Move: d2c3, Score: 124
+Move: f5g4, Score: 107
+Move: d3f4, Score: 99
+Move: f5c5, Score: 92
+Move: f5g6, Score: 77
+Move: f5d5, Score: 77
+Move: a7a6, Score: 67
+Move: b8c6, Score: 55
+Move: f5b5, Score: 52
+Move: a7a2, Score: 47
+Move: g2h1, Score: 47
+Move: g2g4, Score: 42
+Move: g2g5, Score: 37
+Move: g2g6, Score: 27
+Move: d7d5, Score: 22
+Move: f5f3, Score: 7
+Move: g2g3, Score: -3
+Move: f5f4, Score: -8
+Move: a7a3, Score: -13
+Move: f5g5, Score: -13
+Move: g2f2, Score: -23
+Move: f5h5, Score: -33
+Move: a7a4, Score: -43
+Move: f5e4, Score: -53
+Move: f5a5, Score: -73
+Move: g2c6, Score: -83
+Move: g2f3, Score: -168
+Move: d2d3, Score: -185
+Move: g2h3, Score: -220
+Move: f5h7, Score: -298
+Move: f5d3, Score: -312
+Move: g2d5, Score: -333
+Move: g2e4, Score: -403
+Move: f5h3, Score: -410
+Move: f7f5, Score: -1448
+Move: f4f5, Score: -1478
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 34 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing h3 to f2.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[30;1mp[0m| |[0;1mp[0m| |[0;1mQ[0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[0;1mk[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[30;1mQ[0m| || 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+8| . n b . k b . r 
+7| r p . p p p . . 
+6| . . . . . . . . 
+5| p p . P . Q . p 
+4| . . . . P P p . 
+3| . . P N . . . . 
+2| P P . K . N q . 
+1| R . B . . . . R 
+-| A|B|C|D|E|F|G|H
+g4g3
+a5a4
+b5b4
+h5h4
+b7b6
+d7d6
+e7e6
+e7e5
+f7f6
+b8a6
+b8c6
+f8h6
+f8g7
+a7a8
+a7a6
+h8h6
+h8h7
+h8g8
+g2g3
+g2g1
+g2f2
+g2h2
+g2h3
+g2f3
+g2e4
+g2h1
+g2f1
+e8d8
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 35 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing a5 to a4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[30;1mp[0m| |[0;1mp[0m| |[0;1mQ[0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[30;1mp[0m| |[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[0;1mk[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[30;1mQ[0m| || 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 b2b3 b2b4 c3c4 d5d6 e4e5 a1b1 h1h2 h1h3 h1h4 h1h5 h1g1 h1f1 h1e1 h1d1 d3e5 d3e1 d3b4 d3c5 f5g6 f5h7 f5e6 f5d7 f5g4 f5f6 f5f7 f5g5 f5h5 f5e5 d2c2 d2e2 d2d1 d2e1 d2e3 
+random move: h1h5
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: 234
+Result
+Move: g2g1, Score: 549
+Move: g2f1, Score: 449
+Move: g2h2, Score: 384
+Move: f2g4, Score: 374
+Move: a2a4, Score: 344
+Move: b7b5, Score: 344
+Move: d3e5, Score: 328
+Move: d3c5, Score: 318
+Move: f5f7, Score: 299
+Move: f5d7, Score: 294
+Move: f5e6, Score: 289
+Move: f7f6, Score: 284
+Move: f5e5, Score: 269
+Move: b7b6, Score: 249
+Move: d5d6, Score: 244
+Move: e7e6, Score: 234
+Move: a2a3, Score: 234
+Move: d7d6, Score: 234
+Move: d3b4, Score: 229
+Move: b2b4, Score: 229
+Move: h5h4, Score: 229
+Move: a4a3, Score: 229
+Move: b5b4, Score: 229
+Move: c3c4, Score: 224
+Move: g4g3, Score: 224
+Move: e4e5, Score: 224
+Move: b2b3, Score: 219
+Move: b8a6, Score: 219
+Move: e7e5, Score: 214
+Move: f5f6, Score: 204
+Move: d2e3, Score: 196
+Move: f2e4, Score: 176
+Move: d2c3, Score: 176
+Move: f5g4, Score: 169
+Move: f2h3, Score: 167
+Move: d3f4, Score: 161
+Move: f5c5, Score: 154
+Move: f5g6, Score: 139
+Move: g2h3, Score: 139
+Move: f5d5, Score: 139
+Move: a7a6, Score: 129
+Move: a7a4, Score: 129
+Move: a7a5, Score: 119
+Move: b8c6, Score: 117
+Move: f5b5, Score: 114
+Move: a7a2, Score: 109
+Move: g2h1, Score: 109
+Move: g2g4, Score: 104
+Move: g2g5, Score: 99
+Move: g2g6, Score: 89
+Move: d7d5, Score: 84
+Move: f5f3, Score: 69
+Move: g2g3, Score: 59
+Move: f5f4, Score: 54
+Move: f5g5, Score: 49
+Move: a7a3, Score: 49
+Move: f5h5, Score: 29
+Move: f5e4, Score: 9
+Move: g2c6, Score: -21
+Move: f5h3, Score: -51
+Move: g2f3, Score: -106
+Move: f5a5, Score: -116
+Move: d2d3, Score: -123
+Move: f2d3, Score: -130
+Move: f5h7, Score: -236
+Move: f5d3, Score: -250
+Move: g2d5, Score: -271
+Move: g2f2, Score: -325
+Move: g2e4, Score: -341
+Move: f7f5, Score: -1386
+Move: f4f5, Score: -1416
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 36 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing h1 to h5.
+[32;1m[Board] [0m[5;1mWhite Rook is taking Black Pawn.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[30;1mp[0m| |[0;1mp[0m| |[0;1mQ[0m| |[0;1mr[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[30;1mp[0m| |[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[0;1mk[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[30;1mQ[0m| || 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+8| . n b . k b . r 
+7| r p . p p p . . 
+6| . . . . . . . . 
+5| . p . P . Q . R 
+4| p . . . P P p . 
+3| . . P N . . . . 
+2| P P . K . N q . 
+1| R . B . . . . . 
+-| A|B|C|D|E|F|G|H
+a4a3
+g4g3
+b5b4
+b7b6
+d7d6
+e7e6
+e7e5
+f7f6
+b8a6
+b8c6
+f8h6
+f8g7
+a7a8
+a7a5
+a7a6
+h8h5
+h8g8
+g2g3
+g2g1
+g2f2
+g2h2
+g2h3
+g2f3
+g2e4
+g2h1
+g2f1
+e8d8
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 37 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing f8 to h6.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mb[0m|| 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[30;1mp[0m| |[0;1mp[0m| |[0;1mQ[0m| |[0;1mr[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[30;1mp[0m| |[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[0;1mk[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[30;1mQ[0m| || 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 b2b3 b2b4 c3c4 d5d6 e4e5 a1b1 h5h6 h5h4 h5h3 h5h2 h5h1 h5g5 d3e5 d3e1 d3b4 d3c5 f5g6 f5h7 f5e6 f5d7 f5g4 f5f6 f5f7 f5g5 f5e5 d2c2 d2e2 d2d1 d2e1 d2e3 
+random move: f5d7
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: 435
+Error: did not find a king which is not normal
+[32;1m[Game] [0mPlayer's error code: 256
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 38 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing f5 to d7.
+[32;1m[Board] [0m[5;1mWhite Queen is taking Black Pawn.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[0;1mQ[0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mb[0m|| 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[30;1mp[0m| |[0;1mp[0m| |[7;1m [0m| |[0;1mr[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[30;1mp[0m| |[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[0;1mk[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[30;1mQ[0m| || 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mBlack King in check![0m
+[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by White Queen (d7)
+8| . n b . k . . r 
+7| r p . Q p p . . 
+6| . . . . . . . b 
+5| . p . P . . . R 
+4| p . . . P P p . 
+3| . . P N . . . . 
+2| P P . K . N q . 
+1| R . B . . . . . 
+-| A|B|C|D|E|F|G|H
+b8d7
+c8d7
+e8d7
+e8f8
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 39 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing e8 to f8.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[0;1mQ[0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mb[0m|| 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[30;1mp[0m| |[0;1mp[0m| |[7;1m [0m| |[0;1mr[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[30;1mp[0m| |[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[0;1mk[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[30;1mQ[0m| || 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 b2b3 b2b4 c3c4 d5d6 e4e5 a1b1 h5h6 h5h4 h5h3 h5h2 h5h1 h5g5 h5f5 h5e5 d3e5 d3e1 d3b4 d3c5 d7e8 d7c8 d7e6 d7f5 d7g4 d7c6 d7b5 d7d8 d7d6 d7e7 d7c7 d7b7 d2c2 d2e2 d2d1 d2e1 d2e3 
+random move: c3c4
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: 385
+Error: did not find a king which is not normal
+[32;1m[Game] [0mPlayer's error code: 256
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 40 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing c3 to c4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[0;1mQ[0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mb[0m|| 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[30;1mp[0m| |[0;1mp[0m| |[7;1m [0m| |[0;1mr[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[30;1mp[0m| |[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[30;1mQ[0m| || 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+8| . n b . . k . r 
+7| r p . Q p p . . 
+6| . . . . . . . b 
+5| . p . P . . . R 
+4| p . P . P P p . 
+3| . . . N . . . . 
+2| P P . K . N q . 
+1| R . B . . . . . 
+-| A|B|C|D|E|F|G|H
+a4a3
+g4g3
+b5c4
+b5b4
+b7b6
+e7e6
+e7e5
+f7f6
+f7f5
+b8a6
+b8c6
+b8d7
+h6g7
+h6f4
+c8d7
+a7a8
+a7a5
+a7a6
+h8h7
+h8g8
+g2g3
+g2g1
+g2f2
+g2h2
+g2h3
+g2f3
+g2e4
+g2h1
+g2f1
+f8g7
+f8g8
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 41 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing g2 to h2.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[0;1mQ[0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mb[0m|| 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[30;1mp[0m| |[0;1mp[0m| |[7;1m [0m| |[0;1mr[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[30;1mp[0m| |[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[7;1m [0m|[30;1mQ[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 b2b3 b2b4 c4b5 c4c5 d5d6 e4e5 a1b1 h5h6 h5h4 h5h3 h5h2 h5g5 h5f5 h5e5 d3e5 d3e1 d3b4 d3c5 d7e8 d7c8 d7e6 d7f5 d7g4 d7c6 d7b5 d7d8 d7d6 d7e7 d7c7 d7b7 d2c2 d2e2 d2d1 d2e1 d2c3 d2e3 
+random move: d3c5
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: 545
+Error: did not find a king which is not normal
+[32;1m[Game] [0mPlayer's error code: 256
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 42 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing d3 to c5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[0;1mQ[0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mb[0m|| 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[30;1mp[0m|[0;1mk[0m|[0;1mp[0m| |[7;1m [0m| |[0;1mr[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[30;1mp[0m| |[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[7;1m [0m|[30;1mQ[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+8| . n b . . k . r 
+7| r p . Q p p . . 
+6| . . . . . . . b 
+5| . p N P . . . R 
+4| p . P . P P p . 
+3| . . . . . . . . 
+2| P P . K . N . q 
+1| R . B . . . . . 
+-| A|B|C|D|E|F|G|H
+a4a3
+g4g3
+b5c4
+b5b4
+b7b6
+e7e6
+e7e5
+f7f6
+f7f5
+b8a6
+b8c6
+b8d7
+h6g7
+h6f4
+c8d7
+a7a8
+a7a5
+a7a6
+h8h7
+h8g8
+h2h3
+h2h4
+h2h5
+h2h1
+h2f2
+h2g3
+h2f4
+h2g1
+f8g7
+f8g8
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 43 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing h2 to h5.
+[32;1m[Board] [0m[5;1mBlack Queen is taking White Rook.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[0;1mQ[0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mb[0m|| 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[30;1mp[0m|[0;1mk[0m|[0;1mp[0m| |[7;1m [0m| |[30;1mQ[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[30;1mp[0m| |[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[7;1m [0m| || 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 b2b3 b2b4 c4b5 d5d6 e4e5 a1b1 c5e6 c5d3 c5b3 c5a4 c5a6 c5b7 f2g4 f2h3 f2h1 f2d1 f2d3 d7e8 d7c8 d7e6 d7f5 d7g4 d7c6 d7b5 d7d8 d7d6 d7e7 d7c7 d7b7 d2c2 d2e2 d2d1 d2d3 d2e1 d2c3 d2e3 
+random move: b2b4
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: -261
+Error: did not find a king which is not normal
+[32;1m[Game] [0mPlayer's error code: 256
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 44 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing b2 to b4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[0;1mQ[0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mb[0m|| 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[30;1mp[0m|[0;1mk[0m|[0;1mp[0m| |[7;1m [0m| |[30;1mQ[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[30;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[7;1m [0m| || 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+8| . n b . . k . r 
+7| r p . Q p p . . 
+6| . . . . . . . b 
+5| . p N P . . . q 
+4| p P P . P P p . 
+3| . . . . . . . . 
+2| P . . K . N . . 
+1| R . B . . . . . 
+-| A|B|C|D|E|F|G|H
+a4b3
+a4a3
+g4g3
+b5c4
+b7b6
+e7e6
+e7e5
+f7f6
+f7f5
+b8a6
+b8c6
+b8d7
+h6g7
+h6f4
+c8d7
+a7a8
+a7a5
+a7a6
+h8h7
+h8g8
+h5h1
+h5h2
+h5h3
+h5h4
+h5d5
+h5g6
+f8g7
+f8g8
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 45 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing a4 to a3.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[0;1mQ[0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mb[0m|| 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[30;1mp[0m|[0;1mk[0m|[0;1mp[0m| |[7;1m [0m| |[30;1mQ[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[7;1m [0m| || 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+c4b5 d5d6 e4e5 a1b1 c5e6 c5d3 c5b3 c5a4 c5a6 c5b7 f2g4 f2h3 f2h1 f2d1 f2d3 c1b2 c1a3 d7e8 d7c8 d7e6 d7f5 d7g4 d7c6 d7b5 d7d8 d7d6 d7e7 d7c7 d7b7 d2c2 d2e2 d2d1 d2d3 d2e1 d2c3 d2e3 
+random move: c5a4
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: -271
+Error: did not find a king which is not normal
+[32;1m[Game] [0mPlayer's error code: 256
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 46 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing c5 to a4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[0;1mQ[0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mb[0m|| 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[30;1mp[0m| |[0;1mp[0m| |[7;1m [0m| |[30;1mQ[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mk[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[7;1m [0m| || 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+8| . n b . . k . r 
+7| r p . Q p p . . 
+6| . . . . . . . b 
+5| . p . P . . . q 
+4| N P P . P P p . 
+3| p . . . . . . . 
+2| P . . K . N . . 
+1| R . B . . . . . 
+-| A|B|C|D|E|F|G|H
+g4g3
+b5a4
+b5c4
+b7b6
+e7e6
+e7e5
+f7f6
+f7f5
+b8a6
+b8c6
+b8d7
+h6g7
+h6f4
+c8d7
+a7a8
+a7a4
+h8h7
+h8g8
+h5h1
+h5h2
+h5h3
+h5h4
+h5d5
+h5g6
+f8g7
+f8g8
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 47 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing h6 to g7.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[0;1mQ[0m|[30;1mp[0m|[30;1mp[0m|[30;1mb[0m|[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[30;1mp[0m| |[0;1mp[0m| |[7;1m [0m| |[30;1mQ[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mk[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[7;1m [0m| || 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+c4b5 c4c5 d5d6 e4e5 f4f5 a1b1 a4b6 a4c5 a4c3 a4b2 f2g4 f2h3 f2h1 f2d1 f2d3 c1b2 c1a3 d7e8 d7c8 d7e6 d7f5 d7g4 d7c6 d7b5 d7d8 d7d6 d7e7 d7c7 d7b7 d2c2 d2e2 d2d1 d2d3 d2e1 d2e3 
+random move: c4b5
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: -458
+Result
+Move: d7e7, Score: -238
+Move: h5h2, Score: -278
+Move: d7e6, Score: -293
+Move: d7f5, Score: -298
+Move: d7d6, Score: -303
+Move: d7g4, Score: -313
+Move: f2g4, Score: -318
+Move: a4c5, Score: -338
+Move: a2a3, Score: -343
+Move: b7b5, Score: -348
+Move: b4b5, Score: -348
+Move: d7c6, Score: -368
+Move: d7d4, Score: -373
+Move: a4b6, Score: -385
+Move: g7h6, Score: -391
+Move: a4c3, Score: -392
+Move: f7f6, Score: -408
+Move: f7f5, Score: -418
+Move: f2d3, Score: -443
+Move: b7b6, Score: -443
+Move: f4f5, Score: -448
+Move: d5d6, Score: -448
+Move: c4c5, Score: -448
+Move: d7d3, Score: -453
+Move: e7e6, Score: -458
+Move: g7f6, Score: -458
+Move: g4g3, Score: -468
+Move: d7b5, Score: -468
+Move: e4e5, Score: -468
+Move: b8a6, Score: -473
+Move: e7e5, Score: -478
+Move: h5h6, Score: -483
+Move: g7c3, Score: -484
+Move: d7d5, Score: -493
+Move: h5a5, Score: -498
+Move: g7e5, Score: -500
+Move: g7d4, Score: -500
+Move: g7b2, Score: -504
+Move: d2c3, Score: -506
+Move: h5b5, Score: -508
+Move: f2h3, Score: -525
+Move: a7a3, Score: -528
+Move: a3b2, Score: -533
+Move: h5h3, Score: -533
+Move: d2d3, Score: -536
+Move: f2e4, Score: -536
+Move: a7a6, Score: -563
+Move: h5h4, Score: -568
+Move: b5b4, Score: -568
+Move: a7a5, Score: -573
+Move: h5g6, Score: -573
+Move: b8c6, Score: -575
+Move: d2e3, Score: -576
+Move: h5g4, Score: -578
+Move: a7a2, Score: -583
+Move: h5g5, Score: -583
+Move: d7c7, Score: -623
+Move: d7h3, Score: -633
+Move: d7c8, Score: -663
+Move: h5f5, Score: -688
+Move: h5c5, Score: -758
+Move: h5f3, Score: -778
+Move: a2a4, Score: -781
+Move: d7e8, Score: -788
+Move: h5e2, Score: -798
+Move: h5e5, Score: -813
+Move: d7d8, Score: -838
+Move: h5d5, Score: -933
+Move: d7a4, Score: -961
+Move: a7a4, Score: -996
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 48 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing c4 to b5.
+[32;1m[Board] [0m[5;1mWhite Pawn is taking Black Pawn.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[0;1mQ[0m|[30;1mp[0m|[30;1mp[0m|[30;1mb[0m|[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[0;1mp[0m| |[0;1mp[0m| |[7;1m [0m| |[30;1mQ[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mk[0m|[0;1mp[0m|[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[7;1m [0m| || 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+8| . n b . . k . r 
+7| r p . Q p p b . 
+6| . . . . . . . . 
+5| . P . P . . . q 
+4| N P . . P P p . 
+3| p . . . . . . . 
+2| P . . K . N . . 
+1| R . B . . . . . 
+-| A|B|C|D|E|F|G|H
+g4g3
+b7b6
+e7e6
+e7e5
+f7f6
+f7f5
+b8a6
+b8c6
+b8d7
+g7h6
+g7a1
+c8d7
+a7a8
+a7a4
+h8h6
+h8h7
+h8g8
+h5h6
+h5h7
+h5h1
+h5h2
+h5h3
+h5h4
+h5d5
+h5g6
+f8g8
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 49 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing h5 to h4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[0;1mQ[0m|[30;1mp[0m|[30;1mp[0m|[30;1mb[0m|[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[0;1mp[0m| |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[0;1mk[0m|[0;1mp[0m|[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[30;1mp[0m|[30;1mQ[0m|| 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[7;1m [0m| || 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+b5b6 d5d6 e4e5 f4f5 a1b1 a4b6 a4c5 a4c3 a4b2 f2g4 f2h3 f2h1 f2d1 f2d3 c1b2 c1a3 d7e8 d7c8 d7e6 d7f5 d7g4 d7c6 d7d8 d7d6 d7e7 d7c7 d7b7 d2c2 d2e2 d2d1 d2d3 d2e1 d2e3 
+random move: a4c5
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: -568
+Result
+Move: h4h2, Score: -278
+Move: d7e7, Score: -348
+Move: d7e6, Score: -403
+Move: d7f5, Score: -408
+Move: d7d6, Score: -413
+Move: d7g4, Score: -423
+Move: f2g4, Score: -428
+Move: a4c5, Score: -448
+Move: a2a3, Score: -453
+Move: h4h5, Score: -458
+Move: d7c6, Score: -478
+Move: h4h6, Score: -483
+Move: d7d4, Score: -483
+Move: a4b6, Score: -495
+Move: g7h6, Score: -501
+Move: a4c3, Score: -502
+Move: d2d3, Score: -516
+Move: f7f6, Score: -518
+Move: f7f5, Score: -528
+Move: h4h3, Score: -533
+Move: d2e3, Score: -536
+Move: f2d3, Score: -553
+Move: b7b6, Score: -553
+Move: d2c3, Score: -556
+Move: d5d6, Score: -558
+Move: f4f5, Score: -558
+Move: b5b6, Score: -558
+Move: d7d3, Score: -563
+Move: g7f6, Score: -568
+Move: e7e6, Score: -568
+Move: e4e5, Score: -578
+Move: h4g4, Score: -578
+Move: g4g3, Score: -578
+Move: h4g5, Score: -583
+Move: b8a6, Score: -583
+Move: h4f6, Score: -583
+Move: e7e5, Score: -588
+Move: g7c3, Score: -594
+Move: d7d5, Score: -603
+Move: g7e5, Score: -610
+Move: g7d4, Score: -610
+Move: h4g3, Score: -613
+Move: g7b2, Score: -614
+Move: f2h3, Score: -635
+Move: a7a3, Score: -638
+Move: a3b2, Score: -643
+Move: f2e4, Score: -646
+Move: a7a6, Score: -673
+Move: b7b5, Score: -673
+Move: a7a5, Score: -683
+Move: b8c6, Score: -685
+Move: a7a2, Score: -693
+Move: h4b4, Score: -718
+Move: d7c7, Score: -733
+Move: d7h3, Score: -743
+Move: d7c8, Score: -773
+Move: d7b5, Score: -793
+Move: h4c4, Score: -858
+Move: h4d4, Score: -873
+Move: a2a4, Score: -891
+Move: d7e8, Score: -898
+Move: h4f4, Score: -918
+Move: h4a4, Score: -931
+Move: d7d8, Score: -948
+Move: h4f2, Score: -997
+Move: h4e4, Score: -1023
+Move: d7a4, Score: -1071
+Move: a7a4, Score: -1106
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 50 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing a4 to c5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[0;1mQ[0m|[30;1mp[0m|[30;1mp[0m|[30;1mb[0m|[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[0;1mp[0m|[0;1mk[0m|[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[30;1mp[0m|[30;1mQ[0m|| 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[7;1m [0m| || 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+8| . n b . . k . r 
+7| r p . Q p p b . 
+6| . . . . . . . . 
+5| . P N P . . . . 
+4| . P . . P P p q 
+3| p . . . . . . . 
+2| P . . K . N . . 
+1| R . B . . . . . 
+-| A|B|C|D|E|F|G|H
+g4g3
+b7b6
+e7e6
+e7e5
+f7f6
+f7f5
+b8a6
+b8c6
+b8d7
+g7h6
+g7a1
+c8d7
+a7a8
+a7a4
+a7a5
+a7a6
+h8h5
+h8h6
+h8h7
+h8g8
+h4h5
+h4h6
+h4h7
+h4h1
+h4h2
+h4h3
+h4g5
+h4f6
+h4f2
+f8g8
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 51 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing b8 to c6.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m| |[30;1mb[0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[0;1mQ[0m|[30;1mp[0m|[30;1mp[0m|[30;1mb[0m|[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[0;1mp[0m|[0;1mk[0m|[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[30;1mp[0m|[30;1mQ[0m|| 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[7;1m [0m| || 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+b5c6 b5b6 d5c6 d5d6 e4e5 f4f5 a1b1 c5e6 c5d3 c5b3 c5a4 c5a6 c5b7 f2g4 f2h3 f2h1 f2d1 f2d3 c1b2 c1a3 d7e8 d7c8 d7e6 d7f5 d7g4 d7c6 d7d8 d7d6 d7e7 d7c7 d7b7 d2c2 d2e2 d2d1 d2d3 d2e1 d2e3 
+random move: e4e5
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: -565
+Result
+Move: d7c6, Score: -76
+Move: h4h2, Score: -275
+Move: d7e7, Score: -345
+Move: d7e6, Score: -400
+Move: d7f5, Score: -405
+Move: d7d6, Score: -410
+Move: d7g4, Score: -420
+Move: f2g4, Score: -425
+Move: a2a3, Score: -450
+Move: h4h5, Score: -455
+Move: h4h6, Score: -480
+Move: d7d4, Score: -480
+Move: g7h6, Score: -498
+Move: c6a5, Score: -499
+Move: f7f6, Score: -515
+Move: f7f5, Score: -525
+Move: h4h3, Score: -530
+Move: c5e6, Score: -530
+Move: d2d3, Score: -543
+Move: d2e3, Score: -543
+Move: b7b6, Score: -550
+Move: f2d3, Score: -550
+Move: b5b6, Score: -555
+Move: d5d6, Score: -555
+Move: f4f5, Score: -555
+Move: d7d3, Score: -560
+Move: g7f6, Score: -565
+Move: a2a4, Score: -565
+Move: e7e6, Score: -565
+Move: c5b7, Score: -569
+Move: g4g3, Score: -575
+Move: h4g4, Score: -575
+Move: e4e5, Score: -575
+Move: h4g5, Score: -580
+Move: h4f6, Score: -580
+Move: d2c3, Score: -583
+Move: e7e5, Score: -585
+Move: c6b4, Score: -587
+Move: g7c3, Score: -591
+Move: d7d5, Score: -600
+Move: h4a4, Score: -605
+Move: g7d4, Score: -607
+Move: g7e5, Score: -607
+Move: h4g3, Score: -610
+Move: g7b2, Score: -611
+Move: c6e5, Score: -612
+Move: c5d3, Score: -629
+Move: c6d4, Score: -629
+Move: f2h3, Score: -632
+Move: a7a3, Score: -635
+Move: a3b2, Score: -640
+Move: f2e4, Score: -643
+Move: c5b3, Score: -645
+Move: b7b5, Score: -670
+Move: a7a6, Score: -670
+Move: a7a5, Score: -680
+Move: c5a4, Score: -685
+Move: a7a2, Score: -690
+Move: c5a6, Score: -694
+Move: h4b4, Score: -715
+Move: c5e4, Score: -722
+Move: d7c7, Score: -730
+Move: d7h3, Score: -740
+Move: d7a4, Score: -745
+Move: d7c8, Score: -770
+Move: a7a4, Score: -780
+Move: d7b5, Score: -790
+Move: h4c4, Score: -855
+Move: h4d4, Score: -870
+Move: d7e8, Score: -895
+Move: h4f4, Score: -915
+Move: d7d8, Score: -945
+Move: h4f2, Score: -994
+Move: h4e4, Score: -1020
+Move: c5d7, Score: -2072
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 52 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing e4 to e5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m| |[30;1mb[0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[0;1mQ[0m|[30;1mp[0m|[30;1mp[0m|[30;1mb[0m|[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[0;1mp[0m|[0;1mk[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[30;1mp[0m|[30;1mQ[0m|| 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[7;1m [0m| || 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+8| . . b . . k . r 
+7| r p . Q p p b . 
+6| . . n . . . . . 
+5| . P N P P . . . 
+4| . P . . . P p q 
+3| p . . . . . . . 
+2| P . . K . N . . 
+1| R . B . . . . . 
+-| A|B|C|D|E|F|G|H
+g4g3
+b7b6
+e7e6
+f7f6
+f7f5
+c6b4
+c6d4
+c6a5
+c6e5
+c6b8
+c6d8
+g7h6
+g7e5
+c8d7
+a7a8
+a7a4
+a7a5
+a7a6
+h8h5
+h8h6
+h8h7
+h8g8
+h4h5
+h4h6
+h4h7
+h4h1
+h4h2
+h4h3
+h4g5
+h4f6
+h4f2
+f8g8
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 53 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing h8 to h6.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m| |[30;1mb[0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m| || 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[0;1mQ[0m|[30;1mp[0m|[30;1mp[0m|[30;1mb[0m|[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m|[30;1mr[0m|| 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[0;1mp[0m|[0;1mk[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[30;1mp[0m|[30;1mQ[0m|| 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[7;1m [0m| || 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+b5c6 b5b6 d5c6 d5d6 e5e6 f4f5 a1b1 c5e6 c5e4 c5d3 c5b3 c5a4 c5a6 c5b7 f2g4 f2h3 f2h1 f2d1 f2d3 f2e4 c1b2 c1a3 d7e8 d7c8 d7e6 d7f5 d7g4 d7c6 d7d8 d7d6 d7e7 d7c7 d7b7 d2c2 d2e2 d2d1 d2d3 d2e1 d2c3 d2e3 
+random move: d2e2
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: -745
+Result
+Move: h6h4, Score: 605
+Move: h4h6, Score: 10
+Move: g7h6, Score: -8
+Move: d7c6, Score: -256
+Move: h4h2, Score: -455
+Move: h6c6, Score: -456
+Move: d7e7, Score: -525
+Move: d7e6, Score: -580
+Move: d7f5, Score: -585
+Move: d7d6, Score: -590
+Move: d7g4, Score: -600
+Move: f2g4, Score: -605
+Move: a2a3, Score: -630
+Move: h4h5, Score: -635
+Move: d7d4, Score: -660
+Move: h6h2, Score: -660
+Move: c6a5, Score: -679
+Move: f2e4, Score: -683
+Move: f7f6, Score: -695
+Move: f7f5, Score: -705
+Move: h4h3, Score: -710
+Move: c5e6, Score: -710
+Move: f2d3, Score: -730
+Move: b7b6, Score: -730
+Move: f4f5, Score: -735
+Move: e5e6, Score: -735
+Move: d5d6, Score: -735
+Move: b5b6, Score: -735
+Move: h6g6, Score: -740
+Move: d7d3, Score: -740
+Move: d2e3, Score: -743
+Move: d2d3, Score: -743
+Move: g7f6, Score: -745
+Move: a2a4, Score: -745
+Move: e7e6, Score: -745
+Move: h6a6, Score: -745
+Move: c5b7, Score: -749
+Move: h6b6, Score: -750
+Move: h6h5, Score: -755
+Move: h6f6, Score: -755
+Move: g4g3, Score: -755
+Move: h4g4, Score: -755
+Move: h4g5, Score: -760
+Move: h4f6, Score: -760
+Move: c5e4, Score: -762
+Move: d2c3, Score: -763
+Move: c6b4, Score: -767
+Move: g7c3, Score: -771
+Move: d7d5, Score: -780
+Move: h4a4, Score: -785
+Move: g7d4, Score: -787
+Move: h4g3, Score: -790
+Move: g7b2, Score: -791
+Move: c6d4, Score: -809
+Move: c5d3, Score: -809
+Move: f2h3, Score: -812
+Move: a7a3, Score: -815
+Move: a3b2, Score: -820
+Move: h6h3, Score: -825
+Move: c5b3, Score: -825
+Move: a7a6, Score: -850
+Move: b7b5, Score: -850
+Move: a7a5, Score: -860
+Move: c5a4, Score: -865
+Move: a7a2, Score: -870
+Move: c5a6, Score: -874
+Move: h6e6, Score: -875
+Move: h6d6, Score: -885
+Move: e7e5, Score: -895
+Move: h4b4, Score: -895
+Move: d7c7, Score: -910
+Move: g7e5, Score: -917
+Move: d7h3, Score: -920
+Move: c6e5, Score: -922
+Move: d7a4, Score: -925
+Move: d7c8, Score: -950
+Move: a7a4, Score: -960
+Move: d7b5, Score: -970
+Move: h4c4, Score: -1035
+Move: h4d4, Score: -1050
+Move: h4e4, Score: -1060
+Move: d7e8, Score: -1075
+Move: h4f4, Score: -1095
+Move: d7d8, Score: -1125
+Move: h4f2, Score: -1174
+Move: c5d7, Score: -2252
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 54 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing d2 to e2.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m| |[30;1mb[0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m| || 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m| |[0;1mQ[0m|[30;1mp[0m|[30;1mp[0m|[30;1mb[0m|[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m|[30;1mr[0m|| 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[0;1mp[0m|[0;1mk[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[30;1mp[0m|[30;1mQ[0m|| 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[7;1m [0m| |[0;1mK[0m|[0;1mk[0m|[7;1m [0m| || 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+8| . . b . . k . . 
+7| r p . Q p p b . 
+6| . . n . . . . r 
+5| . P N P P . . . 
+4| . P . . . P p q 
+3| p . . . . . . . 
+2| P . . . K N . . 
+1| R . B . . . . . 
+-| A|B|C|D|E|F|G|H
+g4g3
+b7b6
+e7e6
+f7f6
+f7f5
+c6b4
+c6d4
+c6a5
+c6e5
+c6b8
+c6d8
+g7h8
+g7e5
+c8d7
+h6h7
+h6h8
+h6h5
+h6d6
+h6e6
+h6f6
+h6g6
+a7a8
+a7a4
+a7a5
+a7a6
+h4h5
+h4h1
+h4h2
+h4h3
+h4g5
+h4f6
+h4f2
+f8g8
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 55 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing a7 to a4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m| |[30;1mb[0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m| || 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m| |[0;1mQ[0m|[30;1mp[0m|[30;1mp[0m|[30;1mb[0m|[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m|[30;1mr[0m|| 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[0;1mp[0m|[0;1mk[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[30;1mr[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[30;1mp[0m|[30;1mQ[0m|| 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[7;1m [0m| |[0;1mK[0m|[0;1mk[0m|[7;1m [0m| || 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+b5c6 b5b6 d5c6 d5d6 e5e6 f4f5 a1b1 c5e6 c5e4 c5d3 c5b3 c5a4 c5a6 c5b7 f2g4 f2h3 f2h1 f2d1 f2d3 f2e4 c1d2 c1e3 c1b2 c1a3 d7e8 d7c8 d7e6 d7f5 d7g4 d7c6 d7d8 d7d6 d7e7 d7c7 d7b7 e2d2 e2e1 e2e3 e2d1 e2f1 e2d3 
+random move: a1b1
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: -990
+Result
+Move: a4h4, Score: 520
+Move: h6h4, Score: 410
+Move: h4a4, Score: -150
+Move: a2a4, Score: -210
+Move: h4h6, Score: -235
+Move: g7h6, Score: -293
+Move: c5a4, Score: -340
+Move: d7a4, Score: -390
+Move: d7c6, Score: -511
+Move: h6c6, Score: -611
+Move: h4h2, Score: -700
+Move: d7e7, Score: -770
+Move: d7f5, Score: -810
+Move: d7d6, Score: -825
+Move: d7e6, Score: -835
+Move: d7g4, Score: -835
+Move: a4a3, Score: -845
+Move: f2g4, Score: -850
+Move: a2a3, Score: -875
+Move: a4a6, Score: -880
+Move: h4h5, Score: -880
+Move: a4a5, Score: -890
+Move: a4g4, Score: -895
+Move: a4a2, Score: -900
+Move: c6a5, Score: -904
+Move: h6h2, Score: -905
+Move: h4h3, Score: -905
+Move: d7d4, Score: -915
+Move: f2e4, Score: -938
+Move: f7f6, Score: -940
+Move: c5e6, Score: -945
+Move: f7f5, Score: -950
+Move: e2e3, Score: -958
+Move: e2d3, Score: -958
+Move: f2d3, Score: -965
+Move: b7b6, Score: -975
+Move: b5b6, Score: -980
+Move: e5e6, Score: -980
+Move: f4f5, Score: -980
+Move: d5d6, Score: -980
+Move: h6g6, Score: -985
+Move: e7e6, Score: -990
+Move: h6a6, Score: -990
+Move: g7f6, Score: -990
+Move: c6b4, Score: -992
+Move: c5b7, Score: -994
+Move: d7d3, Score: -995
+Move: a4b4, Score: -995
+Move: h6b6, Score: -995
+Move: g4g3, Score: -1000
+Move: h6h5, Score: -1000
+Move: h4g4, Score: -1000
+Move: h4g5, Score: -1005
+Move: g7b2, Score: -1016
+Move: c5e4, Score: -1017
+Move: d7d5, Score: -1025
+Move: a4c4, Score: -1025
+Move: g7c3, Score: -1036
+Move: h4b4, Score: -1040
+Move: c5d3, Score: -1044
+Move: a4d4, Score: -1045
+Move: f2h3, Score: -1047
+Move: g7d4, Score: -1052
+Move: c6d4, Score: -1054
+Move: a4e4, Score: -1055
+Move: h4f6, Score: -1055
+Move: a3b2, Score: -1065
+Move: e2f3, Score: -1068
+Move: h6h3, Score: -1070
+Move: c5b3, Score: -1070
+Move: h4g3, Score: -1085
+Move: h6f6, Score: -1090
+Move: b7b5, Score: -1095
+Move: c5a6, Score: -1119
+Move: h6e6, Score: -1120
+Move: h6d6, Score: -1130
+Move: e7e5, Score: -1140
+Move: d7h3, Score: -1165
+Move: d7c7, Score: -1165
+Move: c6e5, Score: -1167
+Move: a4f4, Score: -1175
+Move: h4c4, Score: -1180
+Move: g7e5, Score: -1182
+Move: d7c8, Score: -1195
+Move: d7b5, Score: -1225
+Move: h4d4, Score: -1245
+Move: h4e4, Score: -1255
+Move: d7e8, Score: -1320
+Move: h4f4, Score: -1340
+Move: d7d8, Score: -1370
+Move: h4f2, Score: -1519
+Move: c5d7, Score: -2497
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 56 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing a1 to b1.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m| |[30;1mb[0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m| || 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m| |[0;1mQ[0m|[30;1mp[0m|[30;1mp[0m|[30;1mb[0m|[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m|[30;1mr[0m|| 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[0;1mp[0m|[0;1mk[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[30;1mr[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[30;1mp[0m|[30;1mQ[0m|| 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[7;1m [0m| |[0;1mK[0m|[0;1mk[0m|[7;1m [0m| || 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 || |[0;1mr[0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+8| . . b . . k . . 
+7| . p . Q p p b . 
+6| . . n . . . . r 
+5| . P N P P . . . 
+4| r P . . . P p q 
+3| p . . . . . . . 
+2| P . . . K N . . 
+1| . R B . . . . . 
+-| A|B|C|D|E|F|G|H
+g4g3
+b7b6
+e7e6
+f7f6
+f7f5
+c6b4
+c6d4
+c6a5
+c6e5
+c6a7
+c6b8
+c6d8
+g7h8
+g7e5
+c8d7
+a4a5
+a4a6
+a4a7
+a4a8
+a4b4
+h6h7
+h6h8
+h6h5
+h6d6
+h6e6
+h6f6
+h6g6
+h4h5
+h4h1
+h4h2
+h4h3
+h4g5
+h4f6
+h4f2
+f8g8
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 57 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mBlack player is playing c6 to e5.
+[32;1m[Board] [0m[5;1mBlack Knight is taking White Pawn.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m| |[30;1mb[0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m| || 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m| |[0;1mQ[0m|[30;1mp[0m|[30;1mp[0m|[30;1mb[0m|[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mr[0m|| 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[0;1mp[0m|[0;1mk[0m|[0;1mp[0m|[30;1mk[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[30;1mr[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[30;1mp[0m|[30;1mQ[0m|| 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[7;1m [0m| |[0;1mK[0m|[0;1mk[0m|[7;1m [0m| || 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 || |[0;1mr[0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+b5b6 d5d6 f4e5 f4f5 b1b2 b1b3 b1b4 b1a1 c5e6 c5e4 c5d3 c5b3 c5a4 c5a6 c5b7 f2g4 f2h3 f2h1 f2d1 f2d3 f2e4 c1d2 c1e3 c1b2 c1a3 d7e8 d7c8 d7e6 d7f5 d7g4 d7c6 d7d8 d7d6 d7e7 d7c7 d7b7 e2d2 e2e1 e2e3 e2d1 e2f1 
+random move: b1b4
+Move written to championship/chess-ai-alabtros/move.csv successfully!
+eval: -1167
+Result
+Move: a4h4, Score: 343
+Move: h6h4, Score: 233
+Move: h4a4, Score: -327
+Move: a2a4, Score: -387
+Move: h4h6, Score: -412
+Move: g7h6, Score: -470
+Move: c5a4, Score: -517
+Move: d7a4, Score: -567
+Move: e7e5, Score: -741
+Move: g7e5, Score: -783
+Move: h4h2, Score: -877
+Move: d7e7, Score: -947
+Move: d7f5, Score: -987
+Move: d7d6, Score: -1002
+Move: d7g4, Score: -1012
+Move: d7e6, Score: -1012
+Move: a4a3, Score: -1022
+Move: f2g4, Score: -1027
+Move: e5g4, Score: -1042
+Move: a2a3, Score: -1052
+Move: a4a6, Score: -1057
+Move: h4h5, Score: -1057
+Move: a4a5, Score: -1067
+Move: a4g4, Score: -1072
+Move: a4a2, Score: -1077
+Move: h4h3, Score: -1082
+Move: h6h2, Score: -1082
+Move: d7c6, Score: -1087
+Move: d7d4, Score: -1092
+Move: e5g6, Score: -1094
+Move: e2d3, Score: -1115
+Move: e2e3, Score: -1115
+Move: f2e4, Score: -1115
+Move: f7f6, Score: -1117
+Move: e5c6, Score: -1120
+Move: c5e6, Score: -1122
+Move: f7f5, Score: -1127
+Move: f2d3, Score: -1142
+Move: b7b6, Score: -1152
+Move: f4f5, Score: -1157
+Move: b5b6, Score: -1157
+Move: d5d6, Score: -1157
+Move: h6g6, Score: -1162
+Move: e5c4, Score: -1164
+Move: h6a6, Score: -1167
+Move: g7f6, Score: -1167
+Move: e7e6, Score: -1167
+Move: c5b7, Score: -1171
+Move: h6b6, Score: -1172
+Move: a4b4, Score: -1172
+Move: d7d3, Score: -1172
+Move: h4g4, Score: -1177
+Move: g4g3, Score: -1177
+Move: h6h5, Score: -1177
+Move: h4g5, Score: -1182
+Move: h6c6, Score: -1187
+Move: g7b2, Score: -1193
+Move: c5e4, Score: -1194
+Move: d7d5, Score: -1202
+Move: a4c4, Score: -1202
+Move: e5f3, Score: -1204
+Move: e5d3, Score: -1209
+Move: g7c3, Score: -1213
+Move: h4b4, Score: -1217
+Move: c5d3, Score: -1221
+Move: a4d4, Score: -1222
+Move: f2h3, Score: -1224
+Move: g7d4, Score: -1229
+Move: a4e4, Score: -1232
+Move: h4f6, Score: -1232
+Move: a3b2, Score: -1242
+Move: e2f3, Score: -1245
+Move: c5b3, Score: -1247
+Move: h6h3, Score: -1247
+Move: h4g3, Score: -1262
+Move: h6f6, Score: -1267
+Move: b7b5, Score: -1272
+Move: c5a6, Score: -1296
+Move: h6e6, Score: -1297
+Move: h6d6, Score: -1307
+Move: d7c7, Score: -1342
+Move: d7h3, Score: -1342
+Move: a4f4, Score: -1352
+Move: h4c4, Score: -1357
+Move: d7c8, Score: -1372
+Move: d7b5, Score: -1402
+Move: h4d4, Score: -1422
+Move: h4e4, Score: -1432
+Move: d7e8, Score: -1497
+Move: h4f4, Score: -1517
+Move: d7d8, Score: -1547
+Move: h4f2, Score: -1696
+Move: c5d7, Score: -2674
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-alabtros/history.csv`...
+[32;1m[Board] [0mLoaded 58 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-alabtros/move.csv`...
+[32;1m[Board] [0mWhite player is playing b1 to b4.
+[32;1m[Board] [0m[31;1m[ERROR][0m Move destination (b4) contains a player's piece :(
+[32;1m[Referee] [0mInvalid move (code: -6) :(
 [32;1m[Game] [0mWhite player has lost on illegal move.
