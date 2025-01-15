@@ -22,7 +22,7 @@
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
 a2a3 a2a4 b2b3 b2b4 c2c3 c2c4 d2d3 d2d4 e2e3 e2e4 f2f3 f2f4 g2g3 g2g4 h2h3 h2h4 b1c3 b1a3 g1h3 g1f3 
-random move: g1h3
+random move: d2d4
 Move written to championship/chess-ai-check-innit-mate/move.csv successfully!
 eval: 0
 Result
@@ -72,7 +72,7 @@ Move: b8c6, Score: -97
 [32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
 [32;1m[Board] [0mLoaded 0 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
-[32;1m[Board] [0mWhite player is playing g1 to h3.
+[32;1m[Board] [0mWhite player is playing d2 to d4.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
@@ -84,13 +84,13 @@ Move: b8c6, Score: -97
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -99,10 +99,10 @@ Move: b8c6, Score: -97
 0 0 0 0 0 0 0 0 
 - - - - - - - - 
 - - - - - - - - 
+- - - 1 - - - - 
 - - - - - - - - 
-- - - - - - - 1 
+1 1 1 - 1 1 1 1 
 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 - 1 
 --------
 looking for king 0, 0Rook
 0
@@ -116,6 +116,8 @@ looking for king 0, 4King
 1
 looking for king 0, 5Bishop
 0
+looking for king 0, 6Knight
+0
 looking for king 0, 7Rook
 0
 looking for king 1, 0Pawn
@@ -123,8 +125,6 @@ looking for king 1, 0Pawn
 looking for king 1, 1Pawn
 0
 looking for king 1, 2Pawn
-0
-looking for king 1, 3Pawn
 0
 looking for king 1, 4Pawn
 0
@@ -134,7 +134,7 @@ looking for king 1, 6Pawn
 0
 looking for king 1, 7Pawn
 0
-looking for king 2, 7Knight
+looking for king 3, 3Pawn
 0
 looking for king 6, 0Pawn
 0
@@ -188,110 +188,109 @@ From (7, 6) to (5, 5)
 [32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
 [32;1m[Board] [0mLoaded 1 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
-[32;1m[Board] [0mBlack player is playing e7 to e5.
+[32;1m[Board] [0mBlack player is playing g7 to g5.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
-a2a3 a2a4 b2b3 b2b4 c2c3 c2c4 d2d3 d2d4 e2e3 e2e4 f2f3 f2f4 g2g3 g2g4 h1g1 b1c3 b1a3 h3g1 h3f4 h3g5 
-random move: b2b3
+a2a3 a2a4 b2b3 b2b4 c2c3 c2c4 d4d5 e2e3 e2e4 f2f3 f2f4 g2g3 g2g4 h2h3 h2h4 b1c3 b1d2 b1a3 g1h3 g1f3 c1d2 c1e3 c1f4 c1g5 d1d2 d1d3 e1d2 
+random move: g2g3
 Move written to championship/chess-ai-check-innit-mate/move.csv successfully!
-eval: -15
+eval: 25
 Result
-Move: h3g5, Score: 119
-Move: h3f4, Score: 104
-Move: b1c3, Score: 82
-Move: f7f6, Score: 35
-Move: f7f5, Score: 25
-Move: c7c6, Score: 15
-Move: e2e4, Score: 5
-Move: c7c5, Score: 5
-Move: d2d4, Score: 5
-Move: b1a3, Score: 0
-Move: b7b6, Score: 0
-Move: g7g6, Score: 0
-Move: e5e4, Score: -5
-Move: g7g5, Score: -10
-Move: b7b5, Score: -10
-Move: h2h4, Score: -15
-Move: h7h6, Score: -15
-Move: h7h5, Score: -15
-Move: a2a4, Score: -15
-Move: a2a3, Score: -15
-Move: e2e3, Score: -15
-Move: a7a6, Score: -15
-Move: a7a5, Score: -15
-Move: d7d6, Score: -15
-Move: d2d3, Score: -15
-Move: g2g4, Score: -20
-Move: g8h6, Score: -20
-Move: b2b4, Score: -20
-Move: b8a6, Score: -30
-Move: b2b3, Score: -30
-Move: g2g3, Score: -30
-Move: c2c4, Score: -35
-Move: d7d5, Score: -35
-Move: c2c3, Score: -45
-Move: f2f4, Score: -55
-Move: f2f3, Score: -65
-Move: g8f6, Score: -102
-Move: b8c6, Score: -112
-Move: h2h3, Score: -312
+Move: b1c3, Score: 122
+Move: g1f3, Score: 112
+Move: f7f6, Score: 75
+Move: f7f5, Score: 65
+Move: c7c6, Score: 55
+Move: e2e4, Score: 45
+Move: c7c5, Score: 45
+Move: b7b6, Score: 40
+Move: b1a3, Score: 40
+Move: b7b5, Score: 30
+Move: g1h3, Score: 30
+Move: h7h5, Score: 25
+Move: h7h6, Score: 25
+Move: a2a3, Score: 25
+Move: h2h3, Score: 25
+Move: e7e6, Score: 25
+Move: h2h4, Score: 25
+Move: e2e3, Score: 25
+Move: d7d6, Score: 25
+Move: a7a5, Score: 25
+Move: a7a6, Score: 25
+Move: a2a4, Score: 25
+Move: b2b4, Score: 20
+Move: g8h6, Score: 20
+Move: g2g4, Score: 20
+Move: g5g4, Score: 20
+Move: d4d5, Score: 15
+Move: b8a6, Score: 10
+Move: g2g3, Score: 10
+Move: b2b3, Score: 10
+Move: e7e5, Score: 5
+Move: d7d5, Score: 5
+Move: c2c4, Score: 5
+Move: c2c3, Score: -5
+Move: f2f4, Score: -15
+Move: f2f3, Score: -25
+Move: g8f6, Score: -62
+Move: b8c6, Score: -72
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
 [32;1m[Board] [0mLoaded 2 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
-[32;1m[Board] [0mWhite player is playing b2 to b3.
+[32;1m[Board] [0mWhite player is playing g2 to g3.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
 0 0 0 0 0 0 0 0 
-0 0 0 0 - 0 0 0 
+0 0 0 0 0 0 - 0 
 - - - - - - - - 
-- - - - 0 - - - 
-- - - - - - - - 
-- 1 - - - - - 1 
-1 - 1 1 1 1 1 1 
-1 1 1 1 1 1 - 1 
+- - - - - - 0 - 
+- - - 1 - - - - 
+- - - - - - 1 - 
+1 1 1 - 1 1 - 1 
+1 1 1 1 1 1 1 1 
 --------
 looking for king 0, 0Rook
 0
@@ -305,27 +304,27 @@ looking for king 0, 4King
 1
 looking for king 0, 5Bishop
 0
+looking for king 0, 6Knight
+0
 looking for king 0, 7Rook
 0
 looking for king 1, 0Pawn
 0
-looking for king 1, 2Pawn
+looking for king 1, 1Pawn
 0
-looking for king 1, 3Pawn
+looking for king 1, 2Pawn
 0
 looking for king 1, 4Pawn
 0
 looking for king 1, 5Pawn
 0
-looking for king 1, 6Pawn
-0
 looking for king 1, 7Pawn
 0
-looking for king 2, 1Pawn
+looking for king 2, 6Pawn
 0
-looking for king 2, 7Knight
+looking for king 3, 3Pawn
 0
-looking for king 4, 4Pawn
+looking for king 4, 6Pawn
 0
 looking for king 6, 0Pawn
 0
@@ -335,9 +334,9 @@ looking for king 6, 2Pawn
 0
 looking for king 6, 3Pawn
 0
-looking for king 6, 5Pawn
+looking for king 6, 4Pawn
 0
-looking for king 6, 6Pawn
+looking for king 6, 5Pawn
 0
 looking for king 6, 7Pawn
 0
@@ -351,7 +350,7 @@ looking for king 7, 3Queen
 0
 looking for king 7, 4King
 1
-From (4, 4) to (3, 4)
+From (4, 6) to (3, 6)
 From (6, 0) to (5, 0)
 From (6, 0) to (4, 0)
 From (6, 1) to (5, 1)
@@ -360,139 +359,514 @@ From (6, 2) to (5, 2)
 From (6, 2) to (4, 2)
 From (6, 3) to (5, 3)
 From (6, 3) to (4, 3)
+From (6, 4) to (5, 4)
+From (6, 4) to (4, 4)
 From (6, 5) to (5, 5)
 From (6, 5) to (4, 5)
-From (6, 6) to (5, 6)
-From (6, 6) to (4, 6)
 From (6, 7) to (5, 7)
 From (6, 7) to (4, 7)
 From (7, 1) to (5, 2)
 From (7, 1) to (5, 0)
-From (7, 3) to (6, 4)
-From (7, 3) to (5, 5)
-From (7, 3) to (4, 6)
-From (7, 3) to (3, 7)
-From (7, 4) to (6, 4)
-From (7, 5) to (6, 4)
-From (7, 5) to (5, 3)
-From (7, 5) to (4, 2)
-From (7, 5) to (3, 1)
-From (7, 5) to (2, 0)
+From (7, 5) to (6, 6)
+From (7, 5) to (5, 7)
 From (7, 6) to (5, 7)
 From (7, 6) to (5, 5)
-From (7, 6) to (6, 4)
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
 [32;1m[Board] [0mLoaded 3 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
-[32;1m[Board] [0mBlack player is playing c7 to c6.
+[32;1m[Board] [0mBlack player is playing g5 to g4.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[30;1mp[0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
-a2a3 a2a4 b3b4 c2c3 c2c4 d2d3 d2d4 e2e3 e2e4 f2f3 f2f4 g2g3 g2g4 h1g1 b1c3 b1a3 h3g1 h3f4 h3g5 c1b2 c1a3 
-random move: h3f4
+a2a3 a2a4 b2b3 b2b4 c2c3 c2c4 d4d5 e2e3 e2e4 f2f3 f2f4 h2h3 h2h4 b1c3 b1d2 b1a3 g1h3 g1f3 c1d2 c1e3 c1f4 c1g5 c1h6 f1g2 f1h3 d1d2 d1d3 e1d2 
+random move: b1c3
 Move written to championship/chess-ai-check-innit-mate/move.csv successfully!
-eval: 0
+eval: 5
 Result
-Move: h3g5, Score: 134
-Move: h3f4, Score: 119
-Move: b1c3, Score: 97
-Move: f7f6, Score: 50
-Move: f7f5, Score: 40
-Move: d2d4, Score: 20
-Move: e2e4, Score: 20
-Move: b7b6, Score: 15
-Move: b1a3, Score: 15
-Move: g7g6, Score: 15
-Move: b3b4, Score: 10
-Move: e5e4, Score: 10
-Move: b7b5, Score: 5
-Move: g7g5, Score: 5
-Move: b8c6, Score: 3
-Move: h2h4, Score: 0
-Move: h7h6, Score: 0
-Move: h7h5, Score: 0
-Move: a2a4, Score: 0
-Move: a2a3, Score: 0
-Move: e2e3, Score: 0
-Move: d7d6, Score: 0
-Move: d2d3, Score: 0
-Move: a7a5, Score: 0
-Move: a7a6, Score: 0
-Move: g8h6, Score: -5
-Move: g2g4, Score: -5
-Move: c6c5, Score: -10
-Move: g2g3, Score: -15
-Move: b8a6, Score: -15
-Move: d7d5, Score: -20
-Move: c2c4, Score: -20
-Move: c2c3, Score: -30
-Move: f2f4, Score: -40
-Move: f2f3, Score: -50
-Move: g8f6, Score: -87
-Move: h2h3, Score: -297
+Move: g3g4, Score: 125
+Move: b1c3, Score: 102
+Move: g1f3, Score: 92
+Move: f7f6, Score: 55
+Move: f7f5, Score: 45
+Move: c7c6, Score: 35
+Move: e2e4, Score: 25
+Move: c7c5, Score: 25
+Move: b7b6, Score: 20
+Move: b1a3, Score: 20
+Move: b7b5, Score: 10
+Move: g1h3, Score: 10
+Move: h2h3, Score: 5
+Move: h2h4, Score: 5
+Move: h7h6, Score: 5
+Move: a2a3, Score: 5
+Move: h7h5, Score: 5
+Move: e7e6, Score: 5
+Move: e2e3, Score: 5
+Move: d7d6, Score: 5
+Move: a7a5, Score: 5
+Move: a7a6, Score: 5
+Move: a2a4, Score: 5
+Move: g8h6, Score: 0
+Move: b2b4, Score: 0
+Move: d4d5, Score: -5
+Move: b8a6, Score: -10
+Move: b2b3, Score: -10
+Move: e7e5, Score: -15
+Move: d7d5, Score: -15
+Move: c2c4, Score: -15
+Move: c2c3, Score: -25
+Move: f2f4, Score: -35
+Move: f2f3, Score: -45
+Move: g8f6, Score: -82
+Move: b8c6, Score: -92
+Move: g4g3, Score: -100
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
 [32;1m[Board] [0mLoaded 4 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
-[32;1m[Board] [0mWhite player is playing h3 to f4.
+[32;1m[Board] [0mWhite player is playing b1 to c3.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mk[0m|[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[30;1mp[0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
 0 0 0 0 0 0 0 0 
-0 0 - 0 - 0 0 0 
-- - 0 - - - - - 
-- - - - 0 - - - 
-- - - - - 1 - - 
-- 1 - - - - - - 
+0 0 0 0 0 0 - 0 
+- - - - - - - - 
+- - - - - - - - 
+- - - 1 - - 0 - 
+- - 1 - - - 1 - 
+1 1 1 - 1 1 - 1 
 1 - 1 1 1 1 1 1 
-1 1 1 1 1 1 - 1 
 --------
 looking for king 0, 0Rook
 0
-looking for king 0, 1Knight
+looking for king 0, 2Bishop
+0
+looking for king 0, 3Queen
+0
+looking for king 0, 4King
+1
+looking for king 0, 5Bishop
+0
+looking for king 0, 6Knight
+0
+looking for king 0, 7Rook
+0
+looking for king 1, 0Pawn
+0
+looking for king 1, 1Pawn
+0
+looking for king 1, 2Pawn
+0
+looking for king 1, 4Pawn
+0
+looking for king 1, 5Pawn
+0
+looking for king 1, 7Pawn
+0
+looking for king 2, 2Knight
+0
+looking for king 2, 6Pawn
+0
+looking for king 3, 3Pawn
+0
+looking for king 3, 6Pawn
+0
+looking for king 6, 0Pawn
+0
+looking for king 6, 1Pawn
+0
+looking for king 6, 2Pawn
+0
+looking for king 6, 3Pawn
+0
+looking for king 6, 4Pawn
+0
+looking for king 6, 5Pawn
+0
+looking for king 6, 7Pawn
+0
+looking for king 7, 0Rook
+0
+looking for king 7, 1Knight
+0
+looking for king 7, 2Bishop
+0
+looking for king 7, 3Queen
+0
+looking for king 7, 4King
+1
+From (6, 0) to (5, 0)
+From (6, 0) to (4, 0)
+From (6, 1) to (5, 1)
+From (6, 1) to (4, 1)
+From (6, 2) to (5, 2)
+From (6, 2) to (4, 2)
+From (6, 3) to (5, 3)
+From (6, 3) to (4, 3)
+From (6, 4) to (5, 4)
+From (6, 4) to (4, 4)
+From (6, 5) to (5, 5)
+From (6, 5) to (4, 5)
+From (6, 7) to (5, 7)
+From (6, 7) to (4, 7)
+From (7, 1) to (5, 2)
+From (7, 1) to (5, 0)
+From (7, 5) to (6, 6)
+From (7, 5) to (5, 7)
+From (7, 6) to (5, 7)
+From (7, 6) to (5, 5)
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
+[32;1m[Board] [0mLoaded 5 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
+[32;1m[Board] [0mBlack player is playing g8 to f6.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 a2a4 b2b3 b2b4 d4d5 e2e3 e2e4 f2f3 f2f4 h2h3 h2h4 a1b1 c3d5 c3e4 c3b1 c3a4 c3b5 g1h3 g1f3 c1d2 c1e3 c1f4 c1g5 c1h6 f1g2 f1h3 d1d2 d1d3 e1d2 
+random move: c3e4
+Move written to championship/chess-ai-check-innit-mate/move.csv successfully!
+eval: 15
+Result
+Move: f7f6, Score: 444
+Move: g3g4, Score: 135
+Move: g1f3, Score: 102
+Move: c3d5, Score: 99
+Move: f6g4, Score: 73
+Move: c3e4, Score: 72
+Move: f6h5, Score: 71
+Move: f7f5, Score: 55
+Move: c7c6, Score: 45
+Move: c3b5, Score: 37
+Move: c7c5, Score: 35
+Move: e2e4, Score: 35
+Move: b7b6, Score: 30
+Move: b7b5, Score: 20
+Move: g1h3, Score: 20
+Move: h7h5, Score: 15
+Move: e7e6, Score: 15
+Move: h7h6, Score: 15
+Move: h2h4, Score: 15
+Move: h2h3, Score: 15
+Move: a2a3, Score: 15
+Move: e2e3, Score: 15
+Move: d7d6, Score: 15
+Move: a7a5, Score: 15
+Move: a7a6, Score: 15
+Move: a2a4, Score: 15
+Move: b2b4, Score: 10
+Move: d4d5, Score: 5
+Move: b8a6, Score: 0
+Move: b2b3, Score: 0
+Move: e7e5, Score: -5
+Move: d7d5, Score: -5
+Move: c2c4, Score: -5
+Move: f2f4, Score: -25
+Move: f6d5, Score: -32
+Move: f2f3, Score: -35
+Move: c3a4, Score: -51
+Move: f6e4, Score: -79
+Move: b8c6, Score: -82
+Move: g4g3, Score: -90
+Move: c2c3, Score: -394
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
+[32;1m[Board] [0mLoaded 6 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
+[32;1m[Board] [0mWhite player is playing c3 to e4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mk[0m| |[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+0 0 0 0 0 0 - 0 
+0 0 0 0 0 0 - 0 
+- - - - - 0 - - 
+- - - - - - - - 
+- - - 1 1 - 0 - 
+- - - - - - 1 - 
+1 1 1 - 1 1 - 1 
+1 - 1 1 1 1 1 1 
+--------
+looking for king 0, 0Rook
+0
+looking for king 0, 2Bishop
+0
+looking for king 0, 3Queen
+0
+looking for king 0, 4King
+1
+looking for king 0, 5Bishop
+0
+looking for king 0, 6Knight
+0
+looking for king 0, 7Rook
+0
+looking for king 1, 0Pawn
+0
+looking for king 1, 1Pawn
+0
+looking for king 1, 2Pawn
+0
+looking for king 1, 4Pawn
+0
+looking for king 1, 5Pawn
+0
+looking for king 1, 7Pawn
+0
+looking for king 2, 6Pawn
+0
+looking for king 3, 3Pawn
+0
+looking for king 3, 4Knight
+0
+looking for king 3, 6Pawn
+0
+looking for king 5, 5Knight
+0
+looking for king 6, 0Pawn
+0
+looking for king 6, 1Pawn
+0
+looking for king 6, 2Pawn
+0
+looking for king 6, 3Pawn
+0
+looking for king 6, 4Pawn
+0
+looking for king 6, 5Pawn
+0
+looking for king 6, 7Pawn
+0
+looking for king 7, 0Rook
+0
+looking for king 7, 1Knight
+0
+looking for king 7, 2Bishop
+0
+looking for king 7, 3Queen
+0
+looking for king 7, 4King
+1
+From (5, 5) to (7, 6)
+From (5, 5) to (3, 4)
+From (5, 5) to (4, 7)
+From (5, 5) to (4, 3)
+From (6, 0) to (5, 0)
+From (6, 0) to (4, 0)
+From (6, 1) to (5, 1)
+From (6, 1) to (4, 1)
+From (6, 2) to (5, 2)
+From (6, 2) to (4, 2)
+From (6, 3) to (5, 3)
+From (6, 3) to (4, 3)
+From (6, 4) to (5, 4)
+From (6, 4) to (4, 4)
+From (6, 7) to (5, 7)
+From (6, 7) to (4, 7)
+From (7, 1) to (5, 2)
+From (7, 1) to (5, 0)
+From (7, 5) to (6, 6)
+From (7, 5) to (5, 7)
+From (7, 7) to (7, 6)
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
+[32;1m[Board] [0mLoaded 7 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
+[32;1m[Board] [0mBlack player is playing c7 to c5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mk[0m| |[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 a2a4 b2b3 b2b4 c2c3 c2c4 d4c5 d4d5 e2e3 f2f3 f2f4 h2h3 h2h4 a1b1 e4f6 e4g5 e4d2 e4c3 e4c5 e4d6 g1h3 g1f3 c1d2 c1e3 c1f4 c1g5 c1h6 f1g2 f1h3 d1d2 d1d3 e1d2 
+random move: g1h3
+Move written to championship/chess-ai-check-innit-mate/move.csv successfully!
+eval: 92
+Result
+Move: f7f6, Score: 521
+Move: e4f6, Score: 498
+Move: e4c5, Score: 219
+Move: g3g4, Score: 212
+Move: g1f3, Score: 179
+Move: f6g4, Score: 150
+Move: f6h5, Score: 148
+Move: f7f5, Score: 132
+Move: e4d6, Score: 124
+Move: b7b6, Score: 107
+Move: g1h3, Score: 97
+Move: b7b5, Score: 97
+Move: a2a4, Score: 92
+Move: h7h5, Score: 92
+Move: h7h6, Score: 92
+Move: h2h4, Score: 92
+Move: h2h3, Score: 92
+Move: a7a5, Score: 92
+Move: e7e6, Score: 92
+Move: a2a3, Score: 92
+Move: e2e3, Score: 92
+Move: a7a6, Score: 92
+Move: d7d6, Score: 92
+Move: b2b4, Score: 87
+Move: e4g5, Score: 87
+Move: d4d5, Score: 82
+Move: c5c4, Score: 82
+Move: b2b3, Score: 77
+Move: b8a6, Score: 77
+Move: c2c4, Score: 72
+Move: d7d5, Score: 72
+Move: e7e5, Score: 72
+Move: c2c3, Score: 62
+Move: f2f4, Score: 52
+Move: f6d5, Score: 45
+Move: f2f3, Score: 42
+Move: e4c3, Score: 35
+Move: b8c6, Score: -5
+Move: g4g3, Score: -13
+Move: e4g3, Score: -86
+Move: e2e4, Score: -324
+Move: f6e4, Score: -438
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
+[32;1m[Board] [0mLoaded 8 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
+[32;1m[Board] [0mWhite player is playing g1 to h3.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mk[0m| |[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+0 0 0 0 0 0 - 0 
+0 0 - 0 0 0 - 0 
+- - - - - 0 - - 
+- - 0 - - - - - 
+- - - 1 1 - 0 - 
+- - - - - - 1 1 
+1 1 1 - 1 1 - 1 
+1 - 1 1 1 1 - 1 
+--------
+looking for king 0, 0Rook
 0
 looking for king 0, 2Bishop
 0
@@ -506,25 +880,29 @@ looking for king 0, 7Rook
 0
 looking for king 1, 0Pawn
 0
-looking for king 1, 2Pawn
+looking for king 1, 1Pawn
 0
-looking for king 1, 3Pawn
+looking for king 1, 2Pawn
 0
 looking for king 1, 4Pawn
 0
 looking for king 1, 5Pawn
 0
-looking for king 1, 6Pawn
-0
 looking for king 1, 7Pawn
 0
-looking for king 2, 1Pawn
+looking for king 2, 6Pawn
 0
-looking for king 3, 5Knight
+looking for king 2, 7Knight
 0
-looking for king 4, 4Pawn
+looking for king 3, 3Pawn
 0
-looking for king 5, 2Pawn
+looking for king 3, 4Knight
+0
+looking for king 3, 6Pawn
+0
+looking for king 4, 2Pawn
+0
+looking for king 5, 5Knight
 0
 looking for king 6, 0Pawn
 0
@@ -532,9 +910,9 @@ looking for king 6, 1Pawn
 0
 looking for king 6, 3Pawn
 0
-looking for king 6, 5Pawn
+looking for king 6, 4Pawn
 0
-looking for king 6, 6Pawn
+looking for king 6, 5Pawn
 0
 looking for king 6, 7Pawn
 0
@@ -548,9 +926,417 @@ looking for king 7, 3Queen
 0
 looking for king 7, 4King
 1
-From (4, 4) to (3, 4)
-From (4, 4) to (3, 5)
-From (5, 2) to (4, 2)
+From (3, 6) to (2, 7)
+From (4, 2) to (3, 2)
+From (4, 2) to (3, 3)
+From (5, 5) to (7, 6)
+From (5, 5) to (3, 4)
+From (5, 5) to (4, 7)
+From (5, 5) to (4, 3)
+From (6, 0) to (5, 0)
+From (6, 0) to (4, 0)
+From (6, 1) to (5, 1)
+From (6, 1) to (4, 1)
+From (6, 3) to (5, 3)
+From (6, 3) to (4, 3)
+From (6, 4) to (5, 4)
+From (6, 4) to (4, 4)
+From (6, 7) to (5, 7)
+From (6, 7) to (4, 7)
+From (7, 1) to (5, 2)
+From (7, 1) to (5, 0)
+From (7, 3) to (6, 2)
+From (7, 3) to (5, 1)
+From (7, 3) to (4, 0)
+From (7, 5) to (6, 6)
+From (7, 5) to (5, 7)
+From (7, 7) to (7, 6)
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
+[32;1m[Board] [0mLoaded 9 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
+[32;1m[Board] [0mBlack player is playing f6 to h5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[30;1mk[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mk[0m| |[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 a2a4 b2b3 b2b4 c2c3 c2c4 d4c5 d4d5 e2e3 f2f3 f2f4 a1b1 h1g1 e4f6 e4g5 e4d2 e4c3 e4c5 e4d6 h3g1 h3f4 h3g5 c1d2 c1e3 c1f4 c1g5 c1h6 f1g2 d1d2 d1d3 e1d2 
+random move: c1d2
+Move written to championship/chess-ai-check-innit-mate/move.csv successfully!
+eval: 153
+Result
+Move: h7h5, Score: 476
+Move: h3g5, Score: 287
+Move: e4c5, Score: 280
+Move: g3g4, Score: 273
+Move: h3f4, Score: 272
+Move: f7f6, Score: 203
+Move: f7f5, Score: 193
+Move: e4d6, Score: 185
+Move: e4f6, Score: 180
+Move: b7b6, Score: 168
+Move: b7b5, Score: 158
+Move: a2a4, Score: 153
+Move: h7h6, Score: 153
+Move: h2h4, Score: 153
+Move: e7e6, Score: 153
+Move: e2e3, Score: 153
+Move: a2a3, Score: 153
+Move: a7a6, Score: 153
+Move: a7a5, Score: 153
+Move: d7d6, Score: 153
+Move: b2b4, Score: 148
+Move: e4g5, Score: 148
+Move: c5c4, Score: 143
+Move: d4d5, Score: 143
+Move: b8a6, Score: 138
+Move: b2b3, Score: 138
+Move: c2c4, Score: 133
+Move: e7e5, Score: 133
+Move: d7d5, Score: 133
+Move: c2c3, Score: 123
+Move: f2f4, Score: 113
+Move: f2f3, Score: 103
+Move: h5f6, Score: 97
+Move: e4c3, Score: 96
+Move: b8c6, Score: 56
+Move: g4g3, Score: 48
+Move: h5f4, Score: 23
+Move: e4g3, Score: -25
+Move: h5g3, Score: -45
+Move: h2h3, Score: -144
+Move: e2e4, Score: -263
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
+[32;1m[Board] [0mLoaded 10 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
+[32;1m[Board] [0mWhite player is playing c1 to d2.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[30;1mk[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mk[0m| |[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mb[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+0 0 0 0 0 0 - 0 
+0 0 - 0 0 0 - 0 
+- - - - - - - - 
+- - 0 - - - - 0 
+- - - 1 1 - 0 - 
+- - - - - - 1 1 
+1 1 1 1 1 1 - 1 
+1 - - 1 1 1 - 1 
+--------
+looking for king 0, 0Rook
+0
+looking for king 0, 3Queen
+0
+looking for king 0, 4King
+1
+looking for king 0, 5Bishop
+0
+looking for king 0, 7Rook
+0
+looking for king 1, 0Pawn
+0
+looking for king 1, 1Pawn
+0
+looking for king 1, 2Pawn
+0
+looking for king 1, 3Bishop
+0
+looking for king 1, 4Pawn
+0
+looking for king 1, 5Pawn
+0
+looking for king 1, 7Pawn
+0
+looking for king 2, 6Pawn
+0
+looking for king 2, 7Knight
+0
+looking for king 3, 3Pawn
+0
+looking for king 3, 4Knight
+0
+looking for king 3, 6Pawn
+0
+looking for king 4, 2Pawn
+0
+looking for king 4, 7Knight
+0
+looking for king 6, 0Pawn
+0
+looking for king 6, 1Pawn
+0
+looking for king 6, 3Pawn
+0
+looking for king 6, 4Pawn
+0
+looking for king 6, 5Pawn
+0
+looking for king 6, 7Pawn
+0
+looking for king 7, 0Rook
+0
+looking for king 7, 1Knight
+0
+looking for king 7, 2Bishop
+0
+looking for king 7, 3Queen
+0
+looking for king 7, 4King
+1
+From (3, 6) to (2, 7)
+From (4, 2) to (3, 2)
+From (4, 2) to (3, 3)
+From (4, 7) to (6, 6)
+From (4, 7) to (2, 6)
+From (4, 7) to (5, 5)
+From (4, 7) to (3, 5)
+From (6, 0) to (5, 0)
+From (6, 0) to (4, 0)
+From (6, 1) to (5, 1)
+From (6, 1) to (4, 1)
+From (6, 3) to (5, 3)
+From (6, 3) to (4, 3)
+From (6, 4) to (5, 4)
+From (6, 4) to (4, 4)
+From (6, 5) to (5, 5)
+From (6, 5) to (4, 5)
+From (6, 7) to (5, 7)
+From (7, 1) to (5, 2)
+From (7, 1) to (5, 0)
+From (7, 3) to (6, 2)
+From (7, 3) to (5, 1)
+From (7, 3) to (4, 0)
+From (7, 5) to (6, 6)
+From (7, 5) to (5, 7)
+From (7, 7) to (7, 6)
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
+[32;1m[Board] [0mLoaded 11 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
+[32;1m[Board] [0mBlack player is playing e7 to e6.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m| |[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[30;1mk[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mk[0m| |[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mb[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 a2a4 b2b3 b2b4 c2c3 c2c4 d4c5 d4d5 e2e3 f2f3 f2f4 a1b1 a1c1 h1g1 e4f6 e4g5 e4c3 e4c5 e4d6 h3g1 h3f4 h3g5 d2e3 d2f4 d2g5 d2h6 d2c3 d2b4 d2a5 d2c1 f1g2 d1c1 d1b1 
+random move: d1c1
+Move written to championship/chess-ai-check-innit-mate/move.csv successfully!
+eval: 250
+Result
+Move: h7h5, Score: 573
+Move: h3g5, Score: 384
+Move: e4c5, Score: 377
+Move: g3g4, Score: 370
+Move: h3f4, Score: 369
+Move: f7f6, Score: 300
+Move: d2g5, Score: 299
+Move: d2f4, Score: 295
+Move: d2c3, Score: 294
+Move: f7f5, Score: 290
+Move: d2b4, Score: 289
+Move: d2e3, Score: 285
+Move: e4d6, Score: 282
+Move: e4f6, Score: 277
+Move: b7b6, Score: 265
+Move: b7b5, Score: 255
+Move: h2h4, Score: 250
+Move: h7h6, Score: 250
+Move: a2a4, Score: 250
+Move: a2a3, Score: 250
+Move: e2e3, Score: 250
+Move: d7d6, Score: 250
+Move: a7a5, Score: 250
+Move: a7a6, Score: 250
+Move: b2b4, Score: 245
+Move: e4g5, Score: 245
+Move: d4d5, Score: 240
+Move: c5c4, Score: 240
+Move: b8a6, Score: 235
+Move: b2b3, Score: 235
+Move: e6e5, Score: 230
+Move: d7d5, Score: 230
+Move: c2c4, Score: 230
+Move: c2c3, Score: 220
+Move: d2h6, Score: 217
+Move: f2f4, Score: 210
+Move: d2a5, Score: 207
+Move: f2f3, Score: 200
+Move: h5f6, Score: 194
+Move: e4c3, Score: 193
+Move: b8c6, Score: 153
+Move: g4g3, Score: 145
+Move: h5f4, Score: 120
+Move: e4g3, Score: 72
+Move: h5g3, Score: 52
+Move: h2h3, Score: -47
+Move: e2e4, Score: -166
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
+[32;1m[Board] [0mLoaded 12 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
+[32;1m[Board] [0mWhite player is playing d1 to c1.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m| |[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[30;1mk[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mk[0m| |[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mb[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mQ[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+0 0 0 0 0 0 - 0 
+0 0 - 0 - 0 - 0 
+- - - - 0 - - - 
+- - 0 - - - - 0 
+- - - 1 1 - 0 - 
+- - - - - - 1 1 
+1 1 1 1 1 1 - 1 
+1 - 1 - 1 1 - 1 
+--------
+looking for king 0, 0Rook
+0
+looking for king 0, 2Queen
+0
+looking for king 0, 4King
+1
+looking for king 0, 5Bishop
+0
+looking for king 0, 7Rook
+0
+looking for king 1, 0Pawn
+0
+looking for king 1, 1Pawn
+0
+looking for king 1, 2Pawn
+0
+looking for king 1, 3Bishop
+0
+looking for king 1, 4Pawn
+0
+looking for king 1, 5Pawn
+0
+looking for king 1, 7Pawn
+0
+looking for king 2, 6Pawn
+0
+looking for king 2, 7Knight
+0
+looking for king 3, 3Pawn
+0
+looking for king 3, 4Knight
+0
+looking for king 3, 6Pawn
+0
+looking for king 4, 2Pawn
+0
+looking for king 4, 7Knight
+0
+looking for king 5, 4Pawn
+0
+looking for king 6, 0Pawn
+0
+looking for king 6, 1Pawn
+0
+looking for king 6, 3Pawn
+0
+looking for king 6, 5Pawn
+0
+looking for king 6, 7Pawn
+0
+looking for king 7, 0Rook
+0
+looking for king 7, 1Knight
+0
+looking for king 7, 2Bishop
+0
+looking for king 7, 3Queen
+0
+looking for king 7, 4King
+1
+From (3, 6) to (2, 7)
+From (4, 2) to (3, 2)
+From (4, 2) to (3, 3)
+From (4, 7) to (6, 6)
+From (4, 7) to (2, 6)
+From (4, 7) to (5, 5)
+From (4, 7) to (3, 5)
+From (5, 4) to (4, 4)
 From (6, 0) to (5, 0)
 From (6, 0) to (4, 0)
 From (6, 1) to (5, 1)
@@ -559,10 +1345,8 @@ From (6, 3) to (5, 3)
 From (6, 3) to (4, 3)
 From (6, 5) to (5, 5)
 From (6, 5) to (4, 5)
-From (6, 6) to (5, 6)
-From (6, 6) to (4, 6)
 From (6, 7) to (5, 7)
-From (6, 7) to (4, 7)
+From (7, 1) to (5, 2)
 From (7, 1) to (5, 0)
 From (7, 3) to (6, 4)
 From (7, 3) to (5, 5)
@@ -572,927 +1356,10 @@ From (7, 3) to (6, 2)
 From (7, 3) to (5, 1)
 From (7, 3) to (4, 0)
 From (7, 4) to (6, 4)
+From (7, 5) to (6, 6)
+From (7, 5) to (5, 7)
 From (7, 5) to (6, 4)
 From (7, 5) to (5, 3)
-From (7, 5) to (4, 2)
-From (7, 5) to (3, 1)
-From (7, 5) to (2, 0)
-From (7, 6) to (5, 7)
-From (7, 6) to (5, 5)
-From (7, 6) to (6, 4)
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
-[32;1m[Board] [0mLoaded 5 move(s).
-[32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
-[32;1m[Board] [0mBlack player is playing d8 to a5.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 ||[30;1mQ[0m|[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mk[0m|[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the White player...
-a2a3 a2a4 b3b4 c2c3 c2c4 e2e3 e2e4 f2f3 g2g3 g2g4 h2h3 h2h4 h1g1 b1c3 b1a3 f4g6 f4h5 f4h3 f4d3 f4d5 f4e6 c1b2 c1a3 
-random move: e2e4
-Move written to championship/chess-ai-check-innit-mate/move.csv successfully!
-eval: -326
-Result
-Move: a7a5, Score: 1014
-Move: b1c3, Score: -229
-Move: a5a2, Score: -271
-Move: f4e6, Score: -274
-Move: f7f6, Score: -276
-Move: f4d5, Score: -279
-Move: a5a4, Score: -286
-Move: f7f5, Score: -286
-Move: e2e4, Score: -306
-Move: d2d4, Score: -306
-Move: g7g6, Score: -311
-Move: b1a3, Score: -311
-Move: b7b6, Score: -311
-Move: f4g6, Score: -316
-Move: e5e4, Score: -316
-Move: b3b4, Score: -316
-Move: b7b5, Score: -321
-Move: g7g5, Score: -321
-Move: b8c6, Score: -323
-Move: h7h5, Score: -326
-Move: h7h6, Score: -326
-Move: h2h4, Score: -326
-Move: h2h3, Score: -326
-Move: a2a4, Score: -326
-Move: a2a3, Score: -326
-Move: e2e3, Score: -326
-Move: d7d6, Score: -326
-Move: d2d3, Score: -326
-Move: a7a6, Score: -326
-Move: g2g4, Score: -331
-Move: g8h6, Score: -331
-Move: c6c5, Score: -336
-Move: g2g3, Score: -341
-Move: b8a6, Score: -341
-Move: d7d5, Score: -346
-Move: c2c4, Score: -346
-Move: c2c3, Score: -356
-Move: a5a6, Score: -361
-Move: f4d3, Score: -363
-Move: a5h5, Score: -376
-Move: f2f3, Score: -376
-Move: f4h5, Score: -403
-Move: a5b4, Score: -406
-Move: a5b6, Score: -411
-Move: a5a3, Score: -411
-Move: a5e5, Score: -411
-Move: g8f6, Score: -413
-Move: a5b5, Score: -441
-Move: f4h3, Score: -445
-Move: a5g5, Score: -451
-Move: a5c5, Score: -496
-Move: a5f5, Score: -556
-Move: a5d5, Score: -591
-Move: a5c3, Score: -606
-Move: a5d2, Score: -696
-Move: f2f4, Score: -782
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
-[32;1m[Board] [0mLoaded 6 move(s).
-[32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
-[32;1m[Board] [0mWhite player is playing e2 to e4.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 ||[30;1mQ[0m|[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m|[0;1mk[0m|[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the Black player...
-0 0 0 - 0 0 0 0 
-0 0 - 0 - 0 0 0 
-- - 0 - - - - - 
-0 - - - 0 - - - 
-- - - - 1 1 - - 
-- 1 - - - - - - 
-1 - 1 1 - 1 1 1 
-1 1 1 1 1 1 - 1 
---------
-looking for king 0, 0Rook
-0
-looking for king 0, 1Knight
-0
-looking for king 0, 2Bishop
-0
-looking for king 0, 3Queen
-0
-looking for king 0, 4King
-1
-looking for king 0, 5Bishop
-0
-looking for king 0, 7Rook
-0
-looking for king 1, 0Pawn
-0
-looking for king 1, 2Pawn
-0
-looking for king 1, 3Pawn
-0
-looking for king 1, 5Pawn
-0
-looking for king 1, 6Pawn
-0
-looking for king 1, 7Pawn
-0
-looking for king 2, 1Pawn
-0
-looking for king 3, 4Pawn
-0
-looking for king 3, 5Knight
-0
-looking for king 4, 0Queen
-0
-looking for king 4, 4Pawn
-0
-looking for king 5, 2Pawn
-0
-looking for king 6, 0Pawn
-0
-looking for king 6, 1Pawn
-0
-looking for king 6, 3Pawn
-0
-looking for king 6, 5Pawn
-0
-looking for king 6, 6Pawn
-0
-looking for king 6, 7Pawn
-0
-looking for king 7, 0Rook
-0
-looking for king 7, 1Knight
-0
-looking for king 7, 2Bishop
-0
-looking for king 7, 4King
-1
-From (4, 0) to (5, 1)
-From (4, 0) to (6, 2)
-From (4, 0) to (7, 3)
-From (4, 0) to (3, 1)
-From (4, 0) to (2, 2)
-From (4, 0) to (1, 3)
-From (4, 0) to (5, 0)
-From (4, 0) to (3, 0)
-From (4, 0) to (2, 0)
-From (4, 0) to (1, 0)
-From (4, 0) to (4, 1)
-From (4, 0) to (4, 2)
-From (4, 0) to (4, 3)
-From (4, 4) to (3, 5)
-From (5, 2) to (4, 2)
-From (6, 0) to (5, 0)
-From (6, 1) to (5, 1)
-From (6, 1) to (4, 1)
-From (6, 3) to (5, 3)
-From (6, 3) to (4, 3)
-From (6, 5) to (5, 5)
-From (6, 5) to (4, 5)
-From (6, 6) to (5, 6)
-From (6, 6) to (4, 6)
-From (6, 7) to (5, 7)
-From (6, 7) to (4, 7)
-From (7, 1) to (5, 0)
-From (7, 4) to (6, 4)
-From (7, 4) to (7, 3)
-From (7, 5) to (6, 4)
-From (7, 5) to (5, 3)
-From (7, 5) to (4, 2)
-From (7, 5) to (3, 1)
-From (7, 5) to (2, 0)
-From (7, 6) to (5, 7)
-From (7, 6) to (5, 5)
-From (7, 6) to (6, 4)
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
-[32;1m[Board] [0mLoaded 7 move(s).
-[32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
-[32;1m[Board] [0mBlack player is playing f7 to f5.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 ||[30;1mQ[0m|[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m|[0;1mk[0m|[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the White player...
-a2a3 a2a4 b3b4 c2c3 c2c4 e4f5 f2f3 g2g3 g2g4 h2h3 h2h4 h1g1 b1c3 b1a3 f4g6 f4h5 f4h3 f4e2 f4d3 f4d5 f4e6 c1b2 c1a3 f1e2 f1d3 f1c4 f1b5 f1a6 d1e2 d1f3 d1g4 d1h5 e1e2 
-random move: d1f3
-Move written to championship/chess-ai-check-innit-mate/move.csv successfully!
-eval: -266
-Result
-Move: a7a5, Score: 1074
-Move: e4e5, Score: -136
-Move: b1c3, Score: -169
-Move: a5a2, Score: -211
-Move: f4e6, Score: -214
-Move: f4d5, Score: -219
-Move: a5a4, Score: -226
-Move: d2d4, Score: -246
-Move: g7g6, Score: -251
-Move: b1a3, Score: -251
-Move: b7b6, Score: -251
-Move: f4g6, Score: -256
-Move: b3b4, Score: -256
-Move: b7b5, Score: -261
-Move: g7g5, Score: -261
-Move: b8c6, Score: -263
-Move: h7h5, Score: -266
-Move: h7h6, Score: -266
-Move: h2h4, Score: -266
-Move: h2h3, Score: -266
-Move: a2a4, Score: -266
-Move: a2a3, Score: -266
-Move: a7a6, Score: -266
-Move: d7d6, Score: -266
-Move: d2d3, Score: -266
-Move: g2g4, Score: -271
-Move: g8h6, Score: -271
-Move: c6c5, Score: -276
-Move: g2g3, Score: -281
-Move: b8a6, Score: -281
-Move: d7d5, Score: -286
-Move: c2c4, Score: -286
-Move: c2c3, Score: -296
-Move: a5a6, Score: -301
-Move: f4d3, Score: -303
-Move: a5h5, Score: -316
-Move: f2f3, Score: -316
-Move: f4h5, Score: -343
-Move: a5b4, Score: -346
-Move: a5b6, Score: -351
-Move: a5e5, Score: -351
-Move: a5a3, Score: -351
-Move: g8f6, Score: -353
-Move: a5b5, Score: -381
-Move: f4h3, Score: -385
-Move: a5f5, Score: -386
-Move: a5g5, Score: -391
-Move: e5e4, Score: -396
-Move: a5c5, Score: -436
-Move: a5d5, Score: -531
-Move: a5c3, Score: -546
-Move: a5d2, Score: -636
-Move: f5f4, Score: -692
-Move: f2f4, Score: -722
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
-[32;1m[Board] [0mLoaded 8 move(s).
-[32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
-[32;1m[Board] [0mWhite player is playing d1 to f3.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 ||[30;1mQ[0m|[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m|[0;1mk[0m|[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[0;1mp[0m| |[7;1m [0m| |[0;1mQ[0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the Black player...
-0 0 0 - 0 0 0 0 
-0 0 - 0 - - 0 0 
-- - 0 - - - - - 
-0 - - - 0 0 - - 
-- - - - 1 1 - - 
-- 1 - - - 1 - - 
-1 - 1 1 - 1 1 1 
-1 1 1 - 1 1 - 1 
---------
-looking for king 0, 0Rook
-0
-looking for king 0, 1Knight
-0
-looking for king 0, 2Bishop
-0
-looking for king 0, 4King
-1
-looking for king 0, 5Bishop
-0
-looking for king 0, 7Rook
-0
-looking for king 1, 0Pawn
-0
-looking for king 1, 2Pawn
-0
-looking for king 1, 3Pawn
-0
-looking for king 1, 5Pawn
-0
-looking for king 1, 6Pawn
-0
-looking for king 1, 7Pawn
-0
-looking for king 2, 1Pawn
-0
-looking for king 2, 5Queen
-0
-looking for king 3, 4Pawn
-0
-looking for king 3, 5Knight
-0
-looking for king 4, 0Queen
-0
-looking for king 4, 4Pawn
-0
-looking for king 4, 5Pawn
-0
-looking for king 5, 2Pawn
-0
-looking for king 6, 0Pawn
-0
-looking for king 6, 1Pawn
-0
-looking for king 6, 3Pawn
-0
-looking for king 6, 6Pawn
-0
-looking for king 6, 7Pawn
-0
-looking for king 7, 0Rook
-0
-looking for king 7, 1Knight
-0
-looking for king 7, 2Bishop
-0
-looking for king 7, 4King
-1
-From (4, 0) to (5, 1)
-From (4, 0) to (6, 2)
-From (4, 0) to (7, 3)
-From (4, 0) to (3, 1)
-From (4, 0) to (2, 2)
-From (4, 0) to (1, 3)
-From (4, 0) to (5, 0)
-From (4, 0) to (3, 0)
-From (4, 0) to (2, 0)
-From (4, 0) to (1, 0)
-From (4, 0) to (4, 1)
-From (4, 0) to (4, 2)
-From (4, 0) to (4, 3)
-From (4, 4) to (3, 5)
-From (4, 5) to (3, 4)
-From (5, 2) to (4, 2)
-From (6, 0) to (5, 0)
-From (6, 1) to (5, 1)
-From (6, 1) to (4, 1)
-From (6, 3) to (5, 3)
-From (6, 3) to (4, 3)
-From (6, 6) to (5, 6)
-From (6, 6) to (4, 6)
-From (6, 7) to (5, 7)
-From (6, 7) to (4, 7)
-From (7, 1) to (5, 0)
-From (7, 4) to (6, 4)
-From (7, 4) to (7, 3)
-From (7, 4) to (6, 5)
-From (7, 5) to (6, 4)
-From (7, 5) to (5, 3)
-From (7, 5) to (4, 2)
-From (7, 5) to (3, 1)
-From (7, 5) to (2, 0)
-From (7, 6) to (5, 7)
-From (7, 6) to (5, 5)
-From (7, 6) to (6, 4)
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
-[32;1m[Board] [0mLoaded 9 move(s).
-[32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
-[32;1m[Board] [0mBlack player is playing a5 to a4.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[30;1mQ[0m| |[7;1m [0m| |[0;1mp[0m|[0;1mk[0m|[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[0;1mp[0m| |[7;1m [0m| |[0;1mQ[0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the White player...
-a2a3 b3a4 b3b4 c2c3 c2c4 d2d3 d2d4 e4f5 g2g3 g2g4 h2h3 h2h4 h1g1 b1c3 b1a3 f4g6 f4h5 f4h3 f4e2 f4d3 f4d5 f4e6 c1b2 c1a3 f1e2 f1d3 f1c4 f1b5 f1a6 f3g4 f3h5 f3e2 f3d1 f3g3 f3h3 f3e3 f3d3 f3c3 e1d1 e1e2 
-random move: c2c3
-Move written to championship/chess-ai-check-innit-mate/move.csv successfully!
-eval: 354
-Result
-Move: a2a4, Score: 1654
-Move: f3f5, Score: 649
-Move: f3c6, Score: 599
-Move: f3d5, Score: 554
-Move: f3f6, Score: 499
-Move: e4e5, Score: 484
-Move: f3f7, Score: 454
-Move: b1c3, Score: 451
-Move: f4e6, Score: 406
-Move: f3d3, Score: 404
-Move: f3e3, Score: 404
-Move: f4d5, Score: 401
-Move: d2d4, Score: 374
-Move: b7b6, Score: 369
-Move: b1a3, Score: 369
-Move: a4a2, Score: 369
-Move: g7g6, Score: 369
-Move: b3b4, Score: 364
-Move: f4g6, Score: 364
-Move: b7b5, Score: 359
-Move: g7g5, Score: 359
-Move: b8c6, Score: 357
-Move: h2h3, Score: 354
-Move: a7a6, Score: 354
-Move: a7a5, Score: 354
-Move: d2d3, Score: 354
-Move: d7d6, Score: 354
-Move: a2a3, Score: 354
-Move: h2h4, Score: 354
-Move: h7h6, Score: 354
-Move: h7h5, Score: 354
-Move: g2g4, Score: 349
-Move: g8h6, Score: 349
-Move: c6c5, Score: 344
-Move: f3g4, Score: 344
-Move: g2g3, Score: 339
-Move: b8a6, Score: 339
-Move: c2c4, Score: 334
-Move: d7d5, Score: 334
-Move: c2c3, Score: 324
-Move: a4c6, Score: 319
-Move: f4d3, Score: 317
-Move: a4a5, Score: 314
-Move: f3c3, Score: 314
-Move: f3e4, Score: 304
-Move: a4h4, Score: 294
-Move: f3b7, Score: 279
-Move: a4a6, Score: 279
-Move: f4h5, Score: 277
-Move: g8f6, Score: 267
-Move: f3g3, Score: 254
-Move: f3a3, Score: 254
-Move: f3h3, Score: 254
-Move: f3h5, Score: 239
-Move: f4h3, Score: 235
-Move: a4b4, Score: 234
-Move: a4a3, Score: 229
-Move: e5e4, Score: 224
-Move: f3b3, Score: 209
-Move: a4b5, Score: 199
-Move: a4g4, Score: 184
-Move: a4c4, Score: 104
-Move: a4c2, Score: 59
-Move: a4b3, Score: 54
-Move: f3f4, Score: 33
-Move: a4d4, Score: -21
-Move: f5f4, Score: -72
-Move: f2f4, Score: -102
-Move: a4e4, Score: -151
-Move: a4f4, Score: -422
-Move: f2f3, Score: -1171
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
-[32;1m[Board] [0mLoaded 10 move(s).
-[32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
-[32;1m[Board] [0mWhite player is playing c2 to c3.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[30;1mQ[0m| |[7;1m [0m| |[0;1mp[0m|[0;1mk[0m|[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[0;1mQ[0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the Black player...
-0 0 0 - 0 0 0 0 
-0 0 - 0 - - 0 0 
-- - 0 - - - - - 
-- - - - 0 0 - - 
-0 - - - 1 1 - - 
-- 1 1 - - 1 - - 
-1 - - 1 - 1 1 1 
-1 1 1 - 1 1 - 1 
---------
-looking for king 0, 0Rook
-0
-looking for king 0, 1Knight
-0
-looking for king 0, 2Bishop
-0
-looking for king 0, 4King
-1
-looking for king 0, 5Bishop
-0
-looking for king 0, 7Rook
-0
-looking for king 1, 0Pawn
-0
-looking for king 1, 3Pawn
-0
-looking for king 1, 5Pawn
-0
-looking for king 1, 6Pawn
-0
-looking for king 1, 7Pawn
-0
-looking for king 2, 1Pawn
-0
-looking for king 2, 2Pawn
-0
-looking for king 2, 5Queen
-0
-looking for king 3, 0Queen
-0
-looking for king 3, 4Pawn
-0
-looking for king 3, 5Knight
-0
-looking for king 4, 4Pawn
-0
-looking for king 4, 5Pawn
-0
-looking for king 5, 2Pawn
-0
-looking for king 6, 0Pawn
-0
-looking for king 6, 1Pawn
-0
-looking for king 6, 3Pawn
-0
-looking for king 6, 6Pawn
-0
-looking for king 6, 7Pawn
-0
-looking for king 7, 0Rook
-0
-looking for king 7, 1Knight
-0
-looking for king 7, 2Bishop
-0
-looking for king 7, 4King
-1
-From (3, 0) to (4, 1)
-From (3, 0) to (2, 1)
-From (3, 0) to (4, 0)
-From (3, 0) to (5, 0)
-From (3, 0) to (2, 0)
-From (3, 0) to (1, 0)
-From (3, 0) to (3, 1)
-From (3, 0) to (3, 2)
-From (3, 0) to (3, 3)
-From (3, 0) to (3, 4)
-From (4, 4) to (3, 5)
-From (4, 5) to (3, 4)
-From (5, 2) to (4, 2)
-From (6, 0) to (5, 0)
-From (6, 0) to (4, 0)
-From (6, 1) to (5, 1)
-From (6, 1) to (4, 1)
-From (6, 3) to (5, 3)
-From (6, 3) to (4, 3)
-From (6, 6) to (5, 6)
-From (6, 6) to (4, 6)
-From (6, 7) to (5, 7)
-From (6, 7) to (4, 7)
-From (7, 1) to (5, 0)
-From (7, 4) to (6, 4)
-From (7, 4) to (7, 3)
-From (7, 4) to (6, 5)
-From (7, 5) to (6, 4)
-From (7, 5) to (5, 3)
-From (7, 5) to (4, 2)
-From (7, 5) to (3, 1)
-From (7, 5) to (2, 0)
-From (7, 6) to (5, 7)
-From (7, 6) to (5, 5)
-From (7, 6) to (6, 4)
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
-[32;1m[Board] [0mLoaded 11 move(s).
-[32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
-[32;1m[Board] [0mBlack player is playing g8 to e7.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mk[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[30;1mQ[0m| |[7;1m [0m| |[0;1mp[0m|[0;1mk[0m|[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[0;1mQ[0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the White player...
-a2a3 b3a4 b3b4 c3c4 d2d3 d2d4 e4f5 g2g3 g2g4 h2h3 h2h4 h1g1 b1a3 f4g6 f4h5 f4h3 f4e2 f4d3 f4d5 f4e6 c1b2 c1a3 f1e2 f1d3 f1c4 f1b5 f1a6 f3g4 f3h5 f3e2 f3d1 f3g3 f3h3 f3e3 f3d3 e1d1 e1e2 
-random move: f3g3
-Move written to championship/chess-ai-check-innit-mate/move.csv successfully!
-eval: 252
-Result
-Move: a2a4, Score: 1552
-Move: f3f5, Score: 547
-Move: f3c6, Score: 497
-Move: f3d5, Score: 452
-Move: f3f6, Score: 397
-Move: e4e5, Score: 382
-Move: f3f7, Score: 352
-Move: e7c6, Score: 337
-Move: e7f5, Score: 310
-Move: f4e6, Score: 304
-Move: f3d3, Score: 302
-Move: f3e3, Score: 302
-Move: f4d5, Score: 299
-Move: d2d4, Score: 272
-Move: b7b6, Score: 267
-Move: a4a2, Score: 267
-Move: b1a3, Score: 267
-Move: g7g6, Score: 267
-Move: e7g6, Score: 263
-Move: b3b4, Score: 262
-Move: c3c4, Score: 262
-Move: f4g6, Score: 262
-Move: b7b5, Score: 257
-Move: g7g5, Score: 257
-Move: b8c6, Score: 255
-Move: a7a6, Score: 252
-Move: a2a3, Score: 252
-Move: a7a5, Score: 252
-Move: d7d6, Score: 252
-Move: d2d3, Score: 252
-Move: h7h5, Score: 252
-Move: h7h6, Score: 252
-Move: h2h4, Score: 252
-Move: h2h3, Score: 252
-Move: b1c3, Score: 249
-Move: g2g4, Score: 247
-Move: f3g4, Score: 242
-Move: c6c5, Score: 242
-Move: g2g3, Score: 237
-Move: b8a6, Score: 237
-Move: d7d5, Score: 232
-Move: a4c6, Score: 217
-Move: f4d3, Score: 215
-Move: a4a5, Score: 212
-Move: f3e4, Score: 202
-Move: a4h4, Score: 192
-Move: e7d5, Score: 190
-Move: f3b7, Score: 177
-Move: a4a6, Score: 177
-Move: f4h5, Score: 175
-Move: f3g3, Score: 152
-Move: f3h3, Score: 152
-Move: f3a3, Score: 152
-Move: f3h5, Score: 137
-Move: f4h3, Score: 133
-Move: a4b4, Score: 132
-Move: a4a3, Score: 127
-Move: e5e4, Score: 122
-Move: f3c3, Score: 112
-Move: f3b3, Score: 107
-Move: a4b5, Score: 97
-Move: a4c2, Score: 87
-Move: a4g4, Score: 82
-Move: a4c4, Score: 2
-Move: a4b3, Score: -48
-Move: f3f4, Score: -69
-Move: a4d4, Score: -123
-Move: f5f4, Score: -174
-Move: f2f4, Score: -204
-Move: a4e4, Score: -253
-Move: a4f4, Score: -524
-Move: f2f3, Score: -1273
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
-[32;1m[Board] [0mLoaded 12 move(s).
-[32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
-[32;1m[Board] [0mWhite player is playing f3 to g3.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mk[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[30;1mQ[0m| |[7;1m [0m| |[0;1mp[0m|[0;1mk[0m|[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|[0;1mQ[0m|[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the Black player...
-0 0 0 - 0 0 - 0 
-0 0 - 0 0 - 0 0 
-- - 0 - - - - - 
-- - - - 0 0 - - 
-0 - - - 1 1 - - 
-- 1 1 - - - 1 - 
-1 - - 1 - 1 1 1 
-1 1 1 - 1 1 - 1 
---------
-looking for king 0, 0Rook
-0
-looking for king 0, 1Knight
-0
-looking for king 0, 2Bishop
-0
-looking for king 0, 4King
-1
-looking for king 0, 5Bishop
-0
-looking for king 0, 7Rook
-0
-looking for king 1, 0Pawn
-0
-looking for king 1, 3Pawn
-0
-looking for king 1, 5Pawn
-0
-looking for king 1, 6Pawn
-0
-looking for king 1, 7Pawn
-0
-looking for king 2, 1Pawn
-0
-looking for king 2, 2Pawn
-0
-looking for king 2, 6Queen
-0
-looking for king 3, 0Queen
-0
-looking for king 3, 4Pawn
-0
-looking for king 3, 5Knight
-0
-looking for king 4, 4Pawn
-0
-looking for king 4, 5Pawn
-0
-looking for king 5, 2Pawn
-0
-looking for king 6, 0Pawn
-0
-looking for king 6, 1Pawn
-0
-looking for king 6, 3Pawn
-0
-looking for king 6, 4Knight
-0
-looking for king 6, 6Pawn
-0
-looking for king 6, 7Pawn
-0
-looking for king 7, 0Rook
-0
-looking for king 7, 1Knight
-0
-looking for king 7, 2Bishop
-0
-looking for king 7, 4King
-1
-From (3, 0) to (4, 1)
-From (3, 0) to (2, 1)
-From (3, 0) to (4, 0)
-From (3, 0) to (5, 0)
-From (3, 0) to (2, 0)
-From (3, 0) to (1, 0)
-From (3, 0) to (3, 1)
-From (3, 0) to (3, 2)
-From (3, 0) to (3, 3)
-From (3, 0) to (3, 4)
-From (4, 4) to (3, 5)
-From (4, 5) to (3, 4)
-From (5, 2) to (4, 2)
-From (6, 0) to (5, 0)
-From (6, 0) to (4, 0)
-From (6, 1) to (5, 1)
-From (6, 1) to (4, 1)
-From (6, 3) to (5, 3)
-From (6, 3) to (4, 3)
-From (6, 4) to (4, 3)
-From (6, 4) to (7, 6)
-From (6, 4) to (5, 6)
-From (6, 6) to (5, 6)
-From (6, 6) to (4, 6)
-From (6, 7) to (5, 7)
-From (6, 7) to (4, 7)
-From (7, 1) to (5, 0)
-From (7, 4) to (7, 3)
-From (7, 4) to (6, 5)
 From (7, 7) to (7, 6)
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
@@ -1500,151 +1367,125 @@ From (7, 7) to (7, 6)
 [32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
 [32;1m[Board] [0mLoaded 13 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
-[32;1m[Board] [0mBlack player is playing e8 to f7.
+[32;1m[Board] [0mBlack player is playing e8 to e7.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mk[0m|[30;1mK[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mK[0m|[30;1mp[0m| |[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[30;1mk[0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[30;1mQ[0m| |[7;1m [0m| |[0;1mp[0m|[0;1mk[0m|[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mk[0m| |[30;1mp[0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|[0;1mQ[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mk[0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mb[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mQ[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
-a2a3 b3a4 b3b4 c3c4 d2d3 d2d4 e4f5 f2f3 h2h3 h2h4 h1g1 b1a3 f4g6 f4h5 f4h3 f4e2 f4d3 f4d5 f4e6 c1b2 c1a3 f1e2 f1d3 f1c4 f1b5 f1a6 g3h4 g3g4 g3g5 g3g6 g3g7 g3h3 g3f3 g3e3 g3d3 e1d1 e1e2 
-random move: g3g4
+a2a3 a2a4 b2b3 b2b4 c2c3 c2c4 d4c5 d4d5 e2e3 f2f3 f2f4 a1b1 h1g1 e4f6 e4g5 e4c3 e4c5 e4d6 h3g1 h3f4 h3g5 d2e3 d2f4 d2g5 d2h6 d2c3 d2b4 d2a5 f1g2 c1d1 c1b1 e1d1 
+random move: f2f3
 Move written to championship/chess-ai-check-innit-mate/move.csv successfully!
-eval: 299
+eval: 222
 Result
-Move: a2a4, Score: 1599
-Move: g3e5, Score: 679
-Move: g3g7, Score: 534
-Move: g3d6, Score: 469
-Move: g3g5, Score: 449
-Move: g3g6, Score: 429
-Move: e4e5, Score: 429
-Move: g3e3, Score: 399
-Move: e7c6, Score: 394
-Move: g3g4, Score: 389
-Move: e7f5, Score: 387
-Move: f4e6, Score: 351
-Move: f4d5, Score: 326
-Move: g7g5, Score: 324
-Move: e7g6, Score: 320
-Move: d2d4, Score: 319
-Move: f7f6, Score: 317
-Move: a4a2, Score: 314
-Move: b7b6, Score: 314
-Move: g7g6, Score: 314
-Move: b1a3, Score: 314
-Move: c3c4, Score: 309
-Move: b3b4, Score: 309
-Move: f4g6, Score: 309
-Move: b7b5, Score: 304
-Move: h7h5, Score: 299
-Move: h7h6, Score: 299
-Move: h2h4, Score: 299
-Move: a7a5, Score: 299
-Move: h2h3, Score: 299
-Move: g3f3, Score: 299
-Move: a7a6, Score: 299
-Move: d2d3, Score: 299
-Move: g3d3, Score: 299
-Move: a2a3, Score: 299
-Move: b1c3, Score: 296
-Move: g2g4, Score: 294
-Move: b8c6, Score: 292
-Move: c6c5, Score: 289
-Move: b8a6, Score: 284
-Move: d7d6, Score: 279
-Move: f7g6, Score: 277
-Move: a4c6, Score: 264
-Move: f4d3, Score: 262
-Move: d7d5, Score: 259
-Move: e7d5, Score: 257
-Move: f2f3, Score: 249
-Move: a4h4, Score: 229
-Move: a4a5, Score: 229
-Move: a4a6, Score: 224
-Move: f4h5, Score: 222
-Move: g3h4, Score: 214
-Move: g3c3, Score: 209
-Move: a4b4, Score: 189
-Move: a4a3, Score: 184
-Move: f4h3, Score: 180
-Move: e5e4, Score: 169
-Move: g3h3, Score: 149
-Move: f7e6, Score: 147
-Move: g3c7, Score: 139
-Move: a4b5, Score: 114
-Move: a4c2, Score: 114
-Move: g3b3, Score: 104
-Move: g3a3, Score: 99
-Move: a4g4, Score: 99
-Move: a4c4, Score: 49
-Move: g3f4, Score: 8
-Move: a4b3, Score: -1
-Move: a4d4, Score: -76
-Move: f5f4, Score: -147
-Move: f2f4, Score: -177
-Move: a4e4, Score: -236
-Move: a4f4, Score: -517
-Move: g2g3, Score: -1241
+Move: h7h5, Score: 545
+Move: h3f4, Score: 361
+Move: e7e6, Score: 360
+Move: h3g5, Score: 356
+Move: e4c5, Score: 349
+Move: g3g4, Score: 342
+Move: e7f6, Score: 310
+Move: d2f4, Score: 287
+Move: d2c3, Score: 286
+Move: e4d6, Score: 274
+Move: d2g5, Score: 271
+Move: e4f6, Score: 269
+Move: f7f5, Score: 262
+Move: d2b4, Score: 261
+Move: d2e3, Score: 257
+Move: f7f6, Score: 252
+Move: b7b6, Score: 237
+Move: b7b5, Score: 227
+Move: a2a3, Score: 222
+Move: h2h4, Score: 222
+Move: h7h6, Score: 222
+Move: a7a6, Score: 222
+Move: a7a5, Score: 222
+Move: e2e3, Score: 222
+Move: e6e5, Score: 222
+Move: a2a4, Score: 222
+Move: e4g5, Score: 217
+Move: b2b4, Score: 217
+Move: d4d5, Score: 212
+Move: c5c4, Score: 212
+Move: b2b3, Score: 207
+Move: b8a6, Score: 207
+Move: c2c4, Score: 202
+Move: d7d5, Score: 202
+Move: d7d6, Score: 202
+Move: e7d6, Score: 200
+Move: c2c3, Score: 192
+Move: d2h6, Score: 189
+Move: e4c3, Score: 185
+Move: f2f4, Score: 182
+Move: d2a5, Score: 179
+Move: f2f3, Score: 172
+Move: h5f6, Score: 156
+Move: g4g3, Score: 117
+Move: b8c6, Score: 115
+Move: h5f4, Score: 82
+Move: e4g3, Score: 64
+Move: h5g3, Score: 14
+Move: h2h3, Score: -75
+Move: e2e4, Score: -194
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
 [32;1m[Board] [0mLoaded 14 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
-[32;1m[Board] [0mWhite player is playing g3 to g4.
+[32;1m[Board] [0mWhite player is playing f2 to f3.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mk[0m|[30;1mK[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mK[0m|[30;1mp[0m| |[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[30;1mk[0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[30;1mQ[0m| |[7;1m [0m| |[0;1mp[0m|[0;1mk[0m|[0;1mQ[0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mk[0m| |[30;1mp[0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mk[0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mb[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mQ[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
-0 0 0 - - 0 - 0 
-0 0 - 0 0 0 0 0 
-- - 0 - - - - - 
-- - - - 0 0 - - 
-0 - - - 1 1 1 - 
-- 1 1 - - - - - 
-1 - - 1 - 1 1 1 
-1 1 1 - 1 1 - 1 
+0 0 0 0 - 0 - 0 
+0 0 - 0 0 0 - 0 
+- - - - 0 - - - 
+- - 0 - - - - 0 
+- - - 1 1 - 0 - 
+- - - - - 1 1 1 
+1 1 1 1 1 - - 1 
+1 - 1 - 1 1 - 1 
 --------
 looking for king 0, 0Rook
 0
-looking for king 0, 1Knight
-0
-looking for king 0, 2Bishop
+looking for king 0, 2Queen
 0
 looking for king 0, 4King
 1
@@ -1654,31 +1495,33 @@ looking for king 0, 7Rook
 0
 looking for king 1, 0Pawn
 0
-looking for king 1, 3Pawn
+looking for king 1, 1Pawn
 0
-looking for king 1, 5Pawn
+looking for king 1, 2Pawn
 0
-looking for king 1, 6Pawn
+looking for king 1, 3Bishop
+0
+looking for king 1, 4Pawn
 0
 looking for king 1, 7Pawn
 0
-looking for king 2, 1Pawn
+looking for king 2, 5Pawn
 0
-looking for king 2, 2Pawn
+looking for king 2, 6Pawn
 0
-looking for king 3, 0Queen
+looking for king 2, 7Knight
 0
-looking for king 3, 4Pawn
+looking for king 3, 3Pawn
 0
-looking for king 3, 5Knight
+looking for king 3, 4Knight
 0
-looking for king 3, 6Queen
+looking for king 3, 6Pawn
 0
-looking for king 4, 4Pawn
+looking for king 4, 2Pawn
 0
-looking for king 4, 5Pawn
+looking for king 4, 7Knight
 0
-looking for king 5, 2Pawn
+looking for king 5, 4Pawn
 0
 looking for king 6, 0Pawn
 0
@@ -1686,43 +1529,37 @@ looking for king 6, 1Pawn
 0
 looking for king 6, 3Pawn
 0
-looking for king 6, 4Knight
-0
-looking for king 6, 5King
+looking for king 6, 4King
 1
-From (3, 0) to (4, 1)
-From (3, 0) to (2, 1)
-From (3, 0) to (4, 0)
-From (3, 0) to (5, 0)
-From (3, 0) to (2, 0)
-From (3, 0) to (1, 0)
-From (3, 0) to (3, 1)
-From (3, 0) to (3, 2)
-From (3, 0) to (3, 3)
-From (3, 0) to (3, 4)
-From (4, 4) to (3, 5)
-From (4, 5) to (3, 4)
-From (4, 5) to (3, 6)
-From (5, 2) to (4, 2)
+From (3, 6) to (2, 5)
+From (3, 6) to (2, 7)
+From (4, 2) to (3, 2)
+From (4, 2) to (3, 3)
+From (4, 7) to (6, 6)
+From (4, 7) to (2, 6)
+From (4, 7) to (5, 5)
+From (4, 7) to (3, 5)
+From (5, 4) to (4, 4)
 From (6, 0) to (5, 0)
 From (6, 0) to (4, 0)
 From (6, 1) to (5, 1)
 From (6, 1) to (4, 1)
 From (6, 3) to (5, 3)
 From (6, 3) to (4, 3)
-From (6, 4) to (4, 3)
-From (6, 4) to (7, 6)
-From (6, 4) to (5, 6)
+From (6, 4) to (7, 4)
+From (6, 4) to (5, 5)
+From (6, 4) to (5, 3)
 From (6, 5) to (5, 5)
-From (6, 5) to (7, 6)
-From (6, 5) to (7, 4)
-From (6, 5) to (5, 6)
-From (6, 5) to (5, 4)
-From (6, 6) to (5, 6)
-From (6, 6) to (4, 6)
+From (6, 5) to (4, 5)
 From (6, 7) to (5, 7)
-From (6, 7) to (4, 7)
+From (7, 1) to (5, 2)
 From (7, 1) to (5, 0)
+From (7, 3) to (6, 2)
+From (7, 3) to (5, 1)
+From (7, 3) to (4, 0)
+From (7, 3) to (7, 4)
+From (7, 5) to (6, 6)
+From (7, 5) to (5, 7)
 From (7, 7) to (7, 6)
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
@@ -1730,156 +1567,124 @@ From (7, 7) to (7, 6)
 [32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
 [32;1m[Board] [0mLoaded 15 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
-[32;1m[Board] [0mBlack player is playing a4 to d4.
+[32;1m[Board] [0mBlack player is playing c5 to c4.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mk[0m|[30;1mK[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mK[0m|[30;1mp[0m| |[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mk[0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[30;1mQ[0m|[0;1mp[0m|[0;1mk[0m|[0;1mQ[0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[30;1mp[0m|[0;1mp[0m|[0;1mk[0m| |[30;1mp[0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mk[0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mb[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mQ[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
-a2a3 a2a4 b3b4 c3d4 c3c4 d2d3 e4f5 f2f3 g2g3 h2h3 h2h4 h1g1 b1a3 f4g6 f4h5 f4h3 f4e2 f4d3 f4d5 f4e6 c1b2 c1a3 f1e2 f1d3 f1c4 f1b5 f1a6 g4h5 g4f5 g4h3 g4f3 g4e2 g4d1 g4g5 g4g6 g4g7 g4g3 g4h4 e1d1 e1e2 
-random move: h2h3
+a2a3 a2a4 b2b3 b2b4 c2c3 d4d5 e2e3 f3g4 f3f4 a1b1 h1g1 e4f6 e4g5 e4f2 e4c3 e4c5 e4d6 h3g1 h3f2 h3f4 h3g5 d2e3 d2f4 d2g5 d2h6 d2c3 d2b4 d2a5 f1g2 c1d1 c1b1 e1d1 e1f2 
+random move: e4c3
 Move written to championship/chess-ai-check-innit-mate/move.csv successfully!
-eval: 14
+eval: 162
 Result
-Move: d2d4, Score: 1709
-Move: g4d4, Score: 1679
-Move: d4a4, Score: 389
-Move: d4b2, Score: 389
-Move: d4h4, Score: 319
-Move: d4b4, Score: 279
-Move: g4f5, Score: 269
-Move: d4b6, Score: 264
-Move: d4e5, Score: 254
-Move: d4f6, Score: 184
-Move: d4c5, Score: 159
-Move: g4g7, Score: 159
-Move: e4e5, Score: 144
-Move: d4d6, Score: 144
-Move: g4e6, Score: 144
-Move: d4c4, Score: 139
-Move: e7c6, Score: 109
-Move: e7f5, Score: 102
-Move: g4g5, Score: 74
-Move: f4e6, Score: 66
-Move: d4d5, Score: 64
-Move: g4g6, Score: 54
-Move: f7g6, Score: 52
-Move: f4d5, Score: 41
-Move: g4d7, Score: 39
-Move: g7g5, Score: 39
-Move: e7g6, Score: 35
-Move: d4d3, Score: 34
-Move: f7f6, Score: 32
-Move: b1a3, Score: 29
-Move: b7b6, Score: 29
-Move: g7g6, Score: 29
-Move: f4g6, Score: 24
-Move: b3b4, Score: 24
-Move: c3c4, Score: 24
-Move: b7b5, Score: 19
-Move: a2a4, Score: 14
-Move: a7a6, Score: 14
-Move: a7a5, Score: 14
-Move: a2a3, Score: 14
-Move: d2d3, Score: 14
-Move: h7h6, Score: 14
-Move: h2h4, Score: 14
-Move: h7h5, Score: 14
-Move: h2h3, Score: 14
-Move: b1c3, Score: 11
-Move: b8c6, Score: 7
-Move: c6c5, Score: 4
-Move: g2g3, Score: -1
-Move: b8a6, Score: -1
-Move: d7d6, Score: -6
-Move: d4d2, Score: -21
-Move: f4d3, Score: -23
-Move: d4e3, Score: -26
-Move: g4e4, Score: -26
-Move: d7d5, Score: -26
-Move: e7d5, Score: -28
-Move: f2f3, Score: -36
-Move: g4h5, Score: -41
-Move: d4c3, Score: -41
-Move: d4f2, Score: -46
-Move: f7e6, Score: -48
-Move: f4h5, Score: -63
-Move: g4f3, Score: -76
-Move: g4g3, Score: -76
-Move: g4c4, Score: -91
-Move: f4h3, Score: -105
-Move: e5e4, Score: -116
-Move: d4e4, Score: -146
-Move: g4h4, Score: -161
-Move: g4b4, Score: -196
-Move: g4h3, Score: -226
-Move: g4a4, Score: -311
-Move: g4f4, Score: -367
-Move: d4f4, Score: -427
-Move: f5f4, Score: -432
-Move: f2f4, Score: -462
-Move: d4g4, Score: -1426
-Move: g2g4, Score: -1606
+Move: h7h5, Score: 485
+Move: h3f4, Score: 301
+Move: e7e6, Score: 300
+Move: h3g5, Score: 296
+Move: g3g4, Score: 282
+Move: c2c4, Score: 262
+Move: e7f6, Score: 250
+Move: d2f4, Score: 227
+Move: d2c3, Score: 226
+Move: e4d6, Score: 214
+Move: d2g5, Score: 211
+Move: e4f6, Score: 209
+Move: f7f5, Score: 202
+Move: d2b4, Score: 201
+Move: d2e3, Score: 197
+Move: f7f6, Score: 192
+Move: e4c5, Score: 179
+Move: b7b6, Score: 177
+Move: f3f4, Score: 172
+Move: b7b5, Score: 167
+Move: h7h6, Score: 162
+Move: a2a3, Score: 162
+Move: h2h4, Score: 162
+Move: a2a4, Score: 162
+Move: e6e5, Score: 162
+Move: a7a6, Score: 162
+Move: e2e3, Score: 162
+Move: a7a5, Score: 162
+Move: e7d6, Score: 160
+Move: e4g5, Score: 157
+Move: b2b4, Score: 157
+Move: d4d5, Score: 152
+Move: c4c3, Score: 152
+Move: b8a6, Score: 147
+Move: b2b3, Score: 147
+Move: d7d6, Score: 142
+Move: d7d5, Score: 142
+Move: c2c3, Score: 132
+Move: d2h6, Score: 129
+Move: e4c3, Score: 125
+Move: d2a5, Score: 119
+Move: h5f6, Score: 96
+Move: g4g3, Score: 57
+Move: b8c6, Score: 55
+Move: h5f4, Score: 22
+Move: e4g3, Score: 4
+Move: h5g3, Score: -46
+Move: h2h3, Score: -135
+Move: e2e4, Score: -254
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
 [32;1m[Board] [0mLoaded 16 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
-[32;1m[Board] [0mWhite player is playing h2 to h3.
+[32;1m[Board] [0mWhite player is playing e4 to c3.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mk[0m|[30;1mK[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mK[0m|[30;1mp[0m| |[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mk[0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[30;1mQ[0m|[0;1mp[0m|[0;1mk[0m|[0;1mQ[0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[30;1mp[0m|[0;1mp[0m|[7;1m [0m| |[30;1mp[0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[0;1mp[0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mk[0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m| || 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mb[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mQ[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
-0 0 0 - - 0 - 0 
-0 0 - 0 0 0 0 0 
-- - 0 - - - - - 
-- - - - 0 0 - - 
-- - - 0 1 1 1 - 
-- 1 1 - - - - 1 
-1 - - 1 - 1 1 - 
-1 1 1 - 1 1 - 1 
+0 0 0 0 - 0 - 0 
+0 0 - 0 0 0 - 0 
+- - - - 0 - - - 
+- - - - - - - 0 
+- - 0 1 - - 0 - 
+- - 1 - - 1 1 1 
+1 1 1 1 1 - - 1 
+1 - 1 - 1 1 - 1 
 --------
 looking for king 0, 0Rook
 0
-looking for king 0, 1Knight
-0
-looking for king 0, 2Bishop
+looking for king 0, 2Queen
 0
 looking for king 0, 4King
 1
@@ -1889,31 +1694,33 @@ looking for king 0, 7Rook
 0
 looking for king 1, 0Pawn
 0
-looking for king 1, 3Pawn
+looking for king 1, 1Pawn
 0
-looking for king 1, 5Pawn
+looking for king 1, 2Pawn
 0
-looking for king 1, 6Pawn
+looking for king 1, 3Bishop
 0
-looking for king 2, 1Pawn
+looking for king 1, 4Pawn
 0
-looking for king 2, 2Pawn
+looking for king 1, 7Pawn
 0
-looking for king 2, 7Pawn
+looking for king 2, 2Knight
 0
-looking for king 3, 3Queen
+looking for king 2, 5Pawn
 0
-looking for king 3, 4Pawn
+looking for king 2, 6Pawn
 0
-looking for king 3, 5Knight
+looking for king 2, 7Knight
 0
-looking for king 3, 6Queen
+looking for king 3, 2Pawn
 0
-looking for king 4, 4Pawn
+looking for king 3, 3Pawn
 0
-looking for king 4, 5Pawn
+looking for king 3, 6Pawn
 0
-looking for king 5, 2Pawn
+looking for king 4, 7Knight
+0
+looking for king 5, 4Pawn
 0
 looking for king 6, 0Pawn
 0
@@ -1921,46 +1728,35 @@ looking for king 6, 1Pawn
 0
 looking for king 6, 3Pawn
 0
-looking for king 6, 4Knight
-0
-looking for king 6, 5King
+looking for king 6, 4King
 1
-From (3, 3) to (4, 2)
-From (3, 3) to (5, 1)
-From (3, 3) to (2, 4)
-From (3, 3) to (1, 5)
-From (3, 3) to (2, 2)
-From (3, 3) to (4, 3)
-From (3, 3) to (5, 3)
-From (3, 3) to (2, 3)
-From (3, 3) to (1, 3)
-From (3, 3) to (3, 4)
-From (3, 3) to (3, 2)
-From (3, 3) to (3, 1)
-From (3, 3) to (3, 0)
-From (4, 4) to (3, 5)
-From (4, 5) to (3, 4)
-From (4, 5) to (3, 6)
-From (5, 2) to (4, 2)
+From (3, 6) to (2, 5)
+From (3, 6) to (2, 7)
+From (4, 7) to (6, 6)
+From (4, 7) to (2, 6)
+From (4, 7) to (5, 5)
+From (4, 7) to (3, 5)
+From (5, 4) to (4, 4)
 From (6, 0) to (5, 0)
 From (6, 0) to (4, 0)
 From (6, 1) to (5, 1)
 From (6, 1) to (4, 1)
 From (6, 3) to (5, 3)
 From (6, 3) to (4, 3)
-From (6, 4) to (4, 3)
-From (6, 4) to (7, 6)
-From (6, 4) to (5, 6)
+From (6, 4) to (7, 4)
+From (6, 4) to (5, 5)
+From (6, 4) to (5, 3)
 From (6, 5) to (5, 5)
-From (6, 5) to (7, 6)
-From (6, 5) to (7, 4)
-From (6, 5) to (5, 6)
-From (6, 5) to (5, 4)
-From (6, 6) to (5, 6)
-From (6, 6) to (4, 6)
+From (6, 5) to (4, 5)
 From (6, 7) to (5, 7)
-From (6, 7) to (4, 7)
+From (7, 1) to (5, 2)
 From (7, 1) to (5, 0)
+From (7, 3) to (6, 2)
+From (7, 3) to (5, 1)
+From (7, 3) to (4, 0)
+From (7, 3) to (7, 4)
+From (7, 5) to (6, 6)
+From (7, 5) to (5, 7)
 From (7, 7) to (7, 6)
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
@@ -1968,36 +1764,33 @@ From (7, 7) to (7, 6)
 [32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
 [32;1m[Board] [0mLoaded 17 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
-[32;1m[Board] [0mBlack player is playing d4 to f2.
-[32;1m[Board] [0m[5;1mBlack Queen is taking White Pawn.[0m
+[32;1m[Board] [0mBlack player is playing e7 to d6.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mk[0m|[30;1mK[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m| |[30;1mp[0m| |[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m|[30;1mK[0m|[30;1mp[0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mk[0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m|[0;1mk[0m|[0;1mQ[0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[30;1mp[0m|[0;1mp[0m|[7;1m [0m| |[30;1mp[0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[0;1mp[0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mk[0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[30;1mQ[0m|[0;1mp[0m| || 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mb[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mQ[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
-[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mWhite King in check![0m
-[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by Black Queen (f2)
-e1d1 e1f2 
-random move: e1f2
+a2a3 a2a4 b2b3 b2b4 d4d5 e2e3 e2e4 f3g4 f3f4 a1b1 h1g1 c3d5 c3e4 c3d1 c3b1 c3a4 c3b5 h3g1 h3f2 h3f4 h3g5 d2e3 d2f4 d2g5 d2h6 f1g2 c1d1 c1b1 e1d1 e1f2 
+random move: c1b1
 Move written to championship/chess-ai-check-innit-mate/move.csv successfully!
-eval: -46
+eval: 143
 Error: did not find a king which is not normal
 [32;1m[Game] [0mPlayer's error code: 256
 [32;1m[Game] [0mChecking move validity...
@@ -2005,108 +1798,111 @@ Error: did not find a king which is not normal
 [32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
 [32;1m[Board] [0mLoaded 18 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
-[32;1m[Board] [0mWhite player is playing e1 to f2.
-[32;1m[Board] [0m[5;1mWhite King is taking Black Queen.[0m
+[32;1m[Board] [0mWhite player is playing c1 to b1.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mk[0m|[30;1mK[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m| |[30;1mp[0m| |[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m|[30;1mK[0m|[30;1mp[0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mk[0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m|[0;1mk[0m|[0;1mQ[0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[30;1mp[0m|[0;1mp[0m|[7;1m [0m| |[30;1mp[0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[0;1mp[0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mk[0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mK[0m|[0;1mp[0m| || 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mb[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m| |[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mQ[0m| |[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
-0 0 0 - - 0 - 0 
-0 0 - 0 0 0 0 0 
-- - 0 - - - - - 
-- - - - 0 0 - - 
-- - - - 1 1 1 - 
-- 1 1 - - - - 1 
-1 - - 1 - 1 1 - 
-1 1 1 - - 1 - 1 
+0 0 0 0 - 0 - 0 
+0 0 - 0 - 0 - 0 
+- - - 0 0 - - - 
+- - - - - - - 0 
+- - 0 1 - - 0 - 
+- - 1 - - 1 1 1 
+1 1 1 1 1 - - 1 
+1 1 - - 1 1 - 1 
 --------
 looking for king 0, 0Rook
 0
-looking for king 0, 1Knight
+looking for king 0, 1Queen
 0
-looking for king 0, 2Bishop
-0
+looking for king 0, 4King
+1
 looking for king 0, 5Bishop
 0
 looking for king 0, 7Rook
 0
 looking for king 1, 0Pawn
 0
-looking for king 1, 3Pawn
+looking for king 1, 1Pawn
 0
-looking for king 1, 5King
+looking for king 1, 2Pawn
+0
+looking for king 1, 3Bishop
+0
+looking for king 1, 4Pawn
+0
+looking for king 1, 7Pawn
+0
+looking for king 2, 2Knight
+0
+looking for king 2, 5Pawn
+0
+looking for king 2, 6Pawn
+0
+looking for king 2, 7Knight
+0
+looking for king 3, 2Pawn
+0
+looking for king 3, 3Pawn
+0
+looking for king 3, 6Pawn
+0
+looking for king 4, 7Knight
+0
+looking for king 5, 3King
 1
-looking for king 1, 6Pawn
-0
-looking for king 2, 1Pawn
-0
-looking for king 2, 2Pawn
-0
-looking for king 2, 7Pawn
-0
-looking for king 3, 4Pawn
-0
-looking for king 3, 5Knight
-0
-looking for king 3, 6Queen
-0
-looking for king 4, 4Pawn
-0
-looking for king 4, 5Pawn
-0
-looking for king 5, 2Pawn
-0
-looking for king 6, 0Pawn
-0
-looking for king 6, 1Pawn
-0
-looking for king 6, 3Pawn
-0
-looking for king 6, 4Knight
-0
-looking for king 6, 5King
-1
-From (4, 4) to (3, 5)
-From (4, 5) to (3, 4)
-From (4, 5) to (3, 6)
-From (5, 2) to (4, 2)
+From (3, 6) to (2, 5)
+From (3, 6) to (2, 7)
+From (4, 7) to (6, 6)
+From (4, 7) to (2, 6)
+From (4, 7) to (5, 5)
+From (4, 7) to (3, 5)
+From (5, 3) to (4, 3)
+From (5, 3) to (5, 2)
+From (5, 3) to (6, 4)
+From (5, 3) to (6, 2)
+From (5, 3) to (4, 4)
+From (5, 3) to (4, 2)
+From (5, 4) to (4, 4)
 From (6, 0) to (5, 0)
 From (6, 0) to (4, 0)
 From (6, 1) to (5, 1)
 From (6, 1) to (4, 1)
-From (6, 3) to (5, 3)
-From (6, 3) to (4, 3)
-From (6, 4) to (4, 3)
-From (6, 4) to (7, 6)
-From (6, 4) to (5, 6)
 From (6, 5) to (5, 5)
-From (6, 5) to (7, 6)
-From (6, 5) to (7, 4)
-From (6, 5) to (5, 6)
-From (6, 5) to (5, 4)
-From (6, 6) to (5, 6)
-From (6, 6) to (4, 6)
+From (6, 5) to (4, 5)
 From (6, 7) to (5, 7)
-From (6, 7) to (4, 7)
+From (7, 1) to (5, 2)
 From (7, 1) to (5, 0)
+From (7, 3) to (6, 4)
+From (7, 3) to (5, 5)
+From (7, 3) to (4, 6)
+From (7, 3) to (3, 7)
+From (7, 3) to (6, 2)
+From (7, 3) to (5, 1)
+From (7, 3) to (4, 0)
+From (7, 3) to (7, 4)
+From (7, 5) to (6, 6)
+From (7, 5) to (5, 7)
+From (7, 5) to (6, 4)
 From (7, 7) to (7, 6)
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
@@ -2114,8 +1910,492 @@ From (7, 7) to (7, 6)
 [32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
 [32;1m[Board] [0mLoaded 19 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
-[32;1m[Board] [0mBlack player is playing f7 to g6.
-[32;1m[Board] [0m[31;1m[ERROR][0m Target position (g6) puts the King in check :(
-[32;1m[Board] [0m[31;1m[ERROR][0m Black King (f7) cannot reach its destination (g6) :(
+[32;1m[Board] [0mBlack player is playing d8 to g5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m| |[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m|[30;1mK[0m|[30;1mp[0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mQ[0m|[30;1mk[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[30;1mp[0m|[0;1mp[0m|[7;1m [0m| |[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mb[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mQ[0m| |[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 a2a4 b2b3 b2b4 d4d5 e2e3 e2e4 f3g4 f3f4 h1g1 c3d5 c3e4 c3d1 c3a4 c3b5 h3g1 h3f2 h3f4 h3g5 d2e3 d2f4 d2g5 d2c1 f1g2 b1c1 b1d1 e1d1 e1f2 
+random move: c3d1
+Move written to championship/chess-ai-check-innit-mate/move.csv successfully!
+eval: -447
+Error: did not find a king which is not normal
+[32;1m[Game] [0mPlayer's error code: 256
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
+[32;1m[Board] [0mLoaded 20 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
+[32;1m[Board] [0mWhite player is playing c3 to d1.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m| |[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m|[30;1mK[0m|[30;1mp[0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mQ[0m|[30;1mk[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[30;1mp[0m|[0;1mp[0m|[7;1m [0m| |[30;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mb[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mQ[0m| |[0;1mk[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+0 0 0 - - 0 - 0 
+0 0 - 0 - 0 - 0 
+- - - 0 0 - - - 
+- - - - - - 0 0 
+- - 0 1 - - 0 - 
+- - - - - 1 1 1 
+1 1 1 1 1 - - 1 
+1 1 - 1 1 1 - 1 
+--------
+looking for king 0, 0Rook
+0
+looking for king 0, 1Queen
+0
+looking for king 0, 3Knight
+0
+looking for king 0, 4King
+1
+looking for king 0, 5Bishop
+0
+looking for king 0, 7Rook
+0
+looking for king 1, 0Pawn
+0
+looking for king 1, 1Pawn
+0
+looking for king 1, 2Pawn
+0
+looking for king 1, 3Bishop
+0
+looking for king 1, 4Pawn
+0
+looking for king 1, 7Pawn
+0
+looking for king 2, 5Pawn
+0
+looking for king 2, 6Pawn
+0
+looking for king 2, 7Knight
+0
+looking for king 3, 2Pawn
+0
+looking for king 3, 3Pawn
+0
+looking for king 3, 6Pawn
+0
+looking for king 4, 6Queen
+0
+looking for king 4, 7Knight
+0
+looking for king 5, 3King
+1
+From (3, 2) to (2, 2)
+From (3, 6) to (2, 5)
+From (3, 6) to (2, 7)
+From (4, 6) to (5, 7)
+From (4, 6) to (5, 5)
+From (4, 6) to (6, 4)
+From (4, 6) to (7, 3)
+From (4, 6) to (3, 7)
+From (4, 6) to (3, 5)
+From (4, 6) to (2, 4)
+From (4, 6) to (1, 3)
+From (4, 6) to (5, 6)
+From (4, 6) to (6, 6)
+From (4, 6) to (7, 6)
+From (4, 6) to (4, 5)
+From (4, 6) to (4, 4)
+From (4, 6) to (4, 3)
+From (4, 6) to (4, 2)
+From (4, 6) to (4, 1)
+From (4, 6) to (4, 0)
+From (4, 7) to (6, 6)
+From (4, 7) to (2, 6)
+From (4, 7) to (5, 5)
+From (4, 7) to (3, 5)
+From (5, 3) to (4, 3)
+From (5, 3) to (5, 2)
+From (5, 3) to (6, 4)
+From (5, 3) to (6, 2)
+From (5, 3) to (4, 4)
+From (5, 3) to (4, 2)
+From (5, 4) to (4, 4)
+From (6, 0) to (5, 0)
+From (6, 0) to (4, 0)
+From (6, 1) to (5, 1)
+From (6, 1) to (4, 1)
+From (6, 5) to (5, 5)
+From (6, 5) to (4, 5)
+From (6, 7) to (5, 7)
+From (7, 1) to (5, 2)
+From (7, 1) to (5, 0)
+From (7, 5) to (6, 6)
+From (7, 5) to (5, 7)
+From (7, 5) to (6, 4)
+From (7, 7) to (7, 6)
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
+[32;1m[Board] [0mLoaded 21 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
+[32;1m[Board] [0mBlack player is playing g5 to h4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m| |[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m|[30;1mK[0m|[30;1mp[0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mk[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[30;1mp[0m|[0;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mQ[0m|| 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mb[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mQ[0m| |[0;1mk[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 a2a4 b2b3 b2b4 c2c3 d4d5 e2e3 e2e4 f3f4 g3h4 h1g1 d1e3 d1f2 d1c3 h3g1 h3f2 h3f4 h3g5 d2e3 d2f4 d2g5 d2h6 d2c3 d2b4 d2a5 d2c1 f1g2 b1c1 e1f2 
+random move: d2c1
+Move written to championship/chess-ai-check-innit-mate/move.csv successfully!
+eval: -459
+Error: did not find a king which is not normal
+[32;1m[Game] [0mPlayer's error code: 256
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
+[32;1m[Board] [0mLoaded 22 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
+[32;1m[Board] [0mWhite player is playing d2 to c1.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m| |[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m|[30;1mK[0m|[30;1mp[0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mk[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[30;1mp[0m|[0;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mQ[0m|| 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mQ[0m|[0;1mb[0m|[0;1mk[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+0 0 0 - - 0 - 0 
+0 0 - 0 - 0 - 0 
+- - - 0 0 - - - 
+- - - - - - - 0 
+- - 0 1 - - 0 0 
+- - - - - 1 1 1 
+1 1 1 - 1 - - 1 
+1 1 1 1 1 1 - 1 
+--------
+looking for king 0, 0Rook
+0
+looking for king 0, 1Queen
+0
+looking for king 0, 2Bishop
+0
+looking for king 0, 3Knight
+0
+looking for king 0, 4King
+1
+looking for king 0, 5Bishop
+0
+looking for king 0, 7Rook
+0
+looking for king 1, 0Pawn
+0
+looking for king 1, 1Pawn
+0
+looking for king 1, 2Pawn
+0
+looking for king 1, 4Pawn
+0
+looking for king 1, 7Pawn
+0
+looking for king 2, 5Pawn
+0
+looking for king 2, 6Pawn
+0
+looking for king 2, 7Knight
+0
+looking for king 3, 2Pawn
+0
+looking for king 3, 3Pawn
+0
+looking for king 3, 6Pawn
+0
+looking for king 3, 7Queen
+0
+looking for king 4, 7Knight
+0
+looking for king 5, 3King
+1
+From (3, 2) to (2, 2)
+From (3, 6) to (2, 5)
+From (3, 6) to (2, 7)
+From (3, 7) to (4, 6)
+From (3, 7) to (5, 5)
+From (3, 7) to (6, 4)
+From (3, 7) to (7, 3)
+From (3, 7) to (2, 6)
+From (3, 7) to (2, 7)
+From (4, 7) to (6, 6)
+From (4, 7) to (2, 6)
+From (4, 7) to (5, 5)
+From (4, 7) to (3, 5)
+From (5, 3) to (4, 3)
+From (5, 3) to (5, 2)
+From (5, 3) to (6, 4)
+From (5, 3) to (6, 2)
+From (5, 3) to (4, 4)
+From (5, 3) to (4, 2)
+From (5, 4) to (4, 4)
+From (6, 0) to (5, 0)
+From (6, 0) to (4, 0)
+From (6, 1) to (5, 1)
+From (6, 1) to (4, 1)
+From (6, 5) to (5, 5)
+From (6, 5) to (4, 5)
+From (6, 7) to (5, 7)
+From (7, 1) to (5, 2)
+From (7, 1) to (5, 0)
+From (7, 5) to (6, 6)
+From (7, 5) to (5, 7)
+From (7, 5) to (6, 4)
+From (7, 7) to (7, 6)
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
+[32;1m[Board] [0mLoaded 23 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
+[32;1m[Board] [0mBlack player is playing c4 to c3.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m| |[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m|[30;1mK[0m|[30;1mp[0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mk[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mQ[0m|| 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mQ[0m|[0;1mb[0m|[0;1mk[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 a2a4 b2c3 b2b3 b2b4 d4d5 e2e3 e2e4 f3f4 g3h4 h1g1 d1e3 d1f2 d1c3 h3g1 h3f2 h3f4 h3g5 c1d2 c1e3 c1f4 c1g5 c1h6 f1g2 e1f2 
+random move: b2c3
+Move written to championship/chess-ai-check-innit-mate/move.csv successfully!
+eval: -566
+Error: did not find a king which is not normal
+[32;1m[Game] [0mPlayer's error code: 256
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
+[32;1m[Board] [0mLoaded 24 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
+[32;1m[Board] [0mWhite player is playing b2 to c3.
+[32;1m[Board] [0m[5;1mWhite Pawn is taking Black Pawn.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m| |[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m|[30;1mK[0m|[30;1mp[0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mk[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mQ[0m|| 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[0;1mp[0m| |[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mQ[0m|[0;1mb[0m|[0;1mk[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+0 0 0 - - 0 - 0 
+0 0 - 0 - 0 - 0 
+- - - 0 0 - - - 
+- - - - - - - 0 
+- - - 1 - - 0 0 
+- - 1 - - 1 1 1 
+1 - 1 - 1 - - 1 
+1 1 1 1 1 1 - 1 
+--------
+looking for king 0, 0Rook
+0
+looking for king 0, 1Queen
+0
+looking for king 0, 2Bishop
+0
+looking for king 0, 3Knight
+0
+looking for king 0, 4King
+1
+looking for king 0, 5Bishop
+0
+looking for king 0, 7Rook
+0
+looking for king 1, 0Pawn
+0
+looking for king 1, 2Pawn
+0
+looking for king 1, 4Pawn
+0
+looking for king 1, 7Pawn
+0
+looking for king 2, 2Pawn
+0
+looking for king 2, 5Pawn
+0
+looking for king 2, 6Pawn
+0
+looking for king 2, 7Knight
+0
+looking for king 3, 3Pawn
+0
+looking for king 3, 6Pawn
+0
+looking for king 3, 7Queen
+0
+looking for king 4, 7Knight
+0
+looking for king 5, 3King
+1
+From (3, 6) to (2, 5)
+From (3, 6) to (2, 7)
+From (3, 7) to (4, 6)
+From (3, 7) to (5, 5)
+From (3, 7) to (6, 4)
+From (3, 7) to (7, 3)
+From (3, 7) to (2, 6)
+From (3, 7) to (2, 7)
+From (4, 7) to (6, 6)
+From (4, 7) to (2, 6)
+From (4, 7) to (5, 5)
+From (4, 7) to (3, 5)
+From (5, 3) to (4, 3)
+From (5, 3) to (5, 2)
+From (5, 3) to (6, 4)
+From (5, 3) to (6, 2)
+From (5, 3) to (4, 4)
+From (5, 3) to (4, 2)
+From (5, 4) to (4, 4)
+From (6, 0) to (5, 0)
+From (6, 0) to (4, 0)
+From (6, 1) to (5, 1)
+From (6, 1) to (4, 1)
+From (6, 5) to (5, 5)
+From (6, 5) to (4, 5)
+From (6, 7) to (5, 7)
+From (7, 1) to (5, 2)
+From (7, 1) to (5, 0)
+From (7, 5) to (6, 6)
+From (7, 5) to (5, 7)
+From (7, 5) to (6, 4)
+From (7, 7) to (7, 6)
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
+[32;1m[Board] [0mLoaded 25 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
+[32;1m[Board] [0mBlack player is playing f7 to f6.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m| |[7;1m [0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m|[30;1mK[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mk[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mQ[0m|| 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m| |[0;1mp[0m| |[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mQ[0m|[0;1mb[0m|[0;1mk[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 a2a4 c3c4 d4d5 e2e3 e2e4 f3f4 g3h4 h1g1 d1e3 d1f2 d1b2 h3g1 h3f2 h3f4 h3g5 c1d2 c1e3 c1f4 c1g5 c1h6 c1b2 c1a3 f1g2 b1c2 b1d3 b1e4 b1f5 b1g6 b1h7 b1b2 b1b3 b1b4 b1b5 b1b6 b1b7 e1d2 e1f2 
+random move: b1e4
+Move written to championship/chess-ai-check-innit-mate/move.csv successfully!
+eval: -326
+Error: did not find a king which is not normal
+[32;1m[Game] [0mPlayer's error code: 256
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-check-innit-mate/history.csv`...
+[32;1m[Board] [0mLoaded 26 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-check-innit-mate/move.csv`...
+[32;1m[Board] [0mWhite player is playing b1 to e4.
+[32;1m[Board] [0mWhite Pawn (c2) is blocking the move :(
+[32;1m[Board] [0m[31;1m[ERROR][0m White Queen (b1) cannot reach its destination (e4) :(
 [32;1m[Referee] [0mInvalid move (code: -7) :(
-[32;1m[Game] [0mBlack player has lost on illegal move.
+[32;1m[Game] [0mWhite player has lost on illegal move.

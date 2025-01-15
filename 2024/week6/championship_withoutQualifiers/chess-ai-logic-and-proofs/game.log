@@ -22,7 +22,7 @@
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
 a2a3 a2a4 b2b3 b2b4 c2c3 c2c4 d2d3 d2d4 e2e3 e2e4 f2f3 f2f4 g2g3 g2g4 h2h3 h2h4 b1c3 b1a3 g1h3 g1f3 
-random move: f2f4
+random move: g1h3
 Move written to championship/chess-ai-logic-and-proofs/move.csv successfully!
 eval: 0
 Result
@@ -72,7 +72,7 @@ Move: b8c6, Score: -97
 [32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 0 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mWhite player is playing f2 to f4.
+[32;1m[Board] [0mWhite player is playing g1 to h3.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
@@ -84,13 +84,13 @@ Move: b8c6, Score: -97
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -98,10 +98,10 @@ Move: b8c6, Score: -97
 [DEBUG] Input history filename: championship/chess-ai-logic-and-proofs/history.csv
 [DEBUG] Output move file: championship/chess-ai-logic-and-proofs/move.csv
 starting search...
-searched and found best move in search: 29697
-Total nodes searched: 31829
+searched and found best move in search: 2123532
+Total nodes searched: 30014
 how i see the board before writing next move: Turn: Black
-Enpassant: f3	Castling: WK WQ BK BQ 
+Enpassant: xx	Castling: WK WQ BK BQ 
    ---- ---- ---- ---- ---- ---- ---- ----
 8 | r  | n  | b  | q  | k  | b  | n  | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
@@ -111,114 +111,551 @@ Enpassant: f3	Castling: WK WQ BK BQ
    ---- ---- ---- ---- ---- ---- ---- ----
 5 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    |    |    | P  |    |    |
+4 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    |    |    |    |    |    |    |
+3 |    |    |    |    |    |    |    | N  |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 | P  | P  | P  | P  | P  |    | P  | P  |
+2 | P  | P  | P  | P  | P  | P  | P  | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  | N  | B  | Q  | K  | B  | N  | R  |
+1 | R  | N  | B  | Q  | K  | B  |    | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
-[DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : b8a6
+[DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : e7e5
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 1 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mBlack player is playing b8 to a6.
+[32;1m[Board] [0mBlack player is playing e7 to e5.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
-a2a3 a2a4 b2b3 b2b4 c2c3 c2c4 d2d3 d2d4 e2e3 e2e4 f4f5 g2g3 g2g4 h2h3 h2h4 b1c3 b1a3 g1h3 g1f3 e1f2 
-random move: g2g3
+a2a3 a2a4 b2b3 b2b4 c2c3 c2c4 d2d3 d2d4 e2e3 e2e4 f2f3 f2f4 g2g3 g2g4 h1g1 b1c3 b1a3 h3g1 h3f4 h3g5 
+random move: h3g1
 Move written to championship/chess-ai-logic-and-proofs/move.csv successfully!
-eval: -55
+eval: -15
 Result
-Move: a7a6, Score: 242
-Move: b1c3, Score: 42
-Move: g1f3, Score: 32
-Move: f7f6, Score: -5
-Move: f7f5, Score: -15
-Move: c7c6, Score: -25
-Move: e2e4, Score: -35
-Move: d2d4, Score: -35
-Move: c7c5, Score: -35
-Move: b1a3, Score: -40
-Move: g7g6, Score: -40
-Move: b7b6, Score: -40
-Move: f4f5, Score: -45
-Move: b7b5, Score: -50
-Move: g7g5, Score: -50
-Move: g1h3, Score: -50
-Move: h2h4, Score: -55
-Move: h2h3, Score: -55
-Move: h7h6, Score: -55
-Move: h7h5, Score: -55
-Move: e2e3, Score: -55
-Move: a2a3, Score: -55
-Move: e7e6, Score: -55
-Move: d7d6, Score: -55
-Move: d2d3, Score: -55
-Move: a7a5, Score: -55
-Move: a2a4, Score: -55
-Move: g2g4, Score: -60
-Move: g8h6, Score: -60
-Move: b2b4, Score: -60
-Move: g2g3, Score: -70
-Move: b2b3, Score: -70
-Move: e7e5, Score: -75
-Move: d7d5, Score: -75
-Move: c2c4, Score: -75
-Move: c2c3, Score: -85
-Move: g8f6, Score: -142
-Move: a6b4, Score: -159
-Move: a6c5, Score: -174
+Move: h3g5, Score: 119
+Move: h3f4, Score: 104
+Move: b1c3, Score: 82
+Move: f7f6, Score: 35
+Move: f7f5, Score: 25
+Move: c7c6, Score: 15
+Move: e2e4, Score: 5
+Move: c7c5, Score: 5
+Move: d2d4, Score: 5
+Move: b1a3, Score: 0
+Move: b7b6, Score: 0
+Move: g7g6, Score: 0
+Move: e5e4, Score: -5
+Move: g7g5, Score: -10
+Move: b7b5, Score: -10
+Move: h2h4, Score: -15
+Move: h7h6, Score: -15
+Move: h7h5, Score: -15
+Move: a2a4, Score: -15
+Move: a2a3, Score: -15
+Move: e2e3, Score: -15
+Move: a7a6, Score: -15
+Move: a7a5, Score: -15
+Move: d7d6, Score: -15
+Move: d2d3, Score: -15
+Move: g2g4, Score: -20
+Move: g8h6, Score: -20
+Move: b2b4, Score: -20
+Move: b8a6, Score: -30
+Move: b2b3, Score: -30
+Move: g2g3, Score: -30
+Move: c2c4, Score: -35
+Move: d7d5, Score: -35
+Move: c2c3, Score: -45
+Move: f2f4, Score: -55
+Move: f2f3, Score: -65
+Move: g8f6, Score: -102
+Move: b8c6, Score: -112
+Move: h2h3, Score: -312
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 2 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mWhite player is playing h3 to g1.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+[DEBUG] Input history filename: championship/chess-ai-logic-and-proofs/history.csv
+[DEBUG] Output move file: championship/chess-ai-logic-and-proofs/move.csv
+starting search...
+searched and found best move in search: 43459
+Total nodes searched: 40852
+how i see the board before writing next move: Turn: Black
+Enpassant: xx	Castling: WK WQ BK BQ 
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | r  | n  | b  | q  | k  | b  | n  | r  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | p  | p  | p  | p  |    | p  | p  | p  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    | p  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | P  | P  | P  | P  | P  | P  | P  | P  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | R  | N  | B  | Q  | K  | B  | N  | R  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+[DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : d8h4
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 3 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mBlack player is playing d8 to h4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mQ[0m|| 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 a2a4 b2b3 b2b4 c2c3 c2c4 d2d3 d2d4 e2e3 e2e4 g2g3 g2g4 h2h3 b1c3 b1a3 g1h3 g1f3 
+random move: g2g3
+Move written to championship/chess-ai-logic-and-proofs/move.csv successfully!
+eval: -485
+Result
+Move: h2h4, Score: 875
+Move: b1c3, Score: -388
+Move: g1f3, Score: -398
+Move: h4h2, Score: -410
+Move: h4a4, Score: -425
+Move: f7f6, Score: -435
+Move: f7f5, Score: -445
+Move: c7c6, Score: -455
+Move: c7c5, Score: -465
+Move: d2d4, Score: -465
+Move: e2e4, Score: -465
+Move: b7b6, Score: -470
+Move: b1a3, Score: -470
+Move: g7g6, Score: -470
+Move: e5e4, Score: -475
+Move: b7b5, Score: -480
+Move: g1h3, Score: -480
+Move: g7g5, Score: -480
+Move: h7h5, Score: -485
+Move: h7h6, Score: -485
+Move: a2a3, Score: -485
+Move: h2h3, Score: -485
+Move: a2a4, Score: -485
+Move: a7a6, Score: -485
+Move: e2e3, Score: -485
+Move: d7d6, Score: -485
+Move: d2d3, Score: -485
+Move: a7a5, Score: -485
+Move: g2g4, Score: -490
+Move: g8h6, Score: -490
+Move: b2b4, Score: -490
+Move: g2g3, Score: -500
+Move: h4h6, Score: -500
+Move: b8a6, Score: -500
+Move: b2b3, Score: -500
+Move: c2c4, Score: -505
+Move: d7d5, Score: -505
+Move: c2c3, Score: -515
+Move: h4h5, Score: -515
+Move: f2f4, Score: -525
+Move: f2f3, Score: -535
+Move: h4b4, Score: -545
+Move: h4h3, Score: -550
+Move: g8f6, Score: -572
+Move: b8c6, Score: -582
+Move: h4g5, Score: -590
+Move: h4g4, Score: -595
+Move: h4f6, Score: -600
+Move: h4c4, Score: -675
+Move: h4g3, Score: -680
+Move: h4f4, Score: -785
+Move: h4e4, Score: -790
+Move: h4d4, Score: -800
+Move: h4f2, Score: -850
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 4 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
 [32;1m[Board] [0mWhite player is playing g2 to g3.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mQ[0m|| 4
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+[DEBUG] Input history filename: championship/chess-ai-logic-and-proofs/history.csv
+[DEBUG] Output move file: championship/chess-ai-logic-and-proofs/move.csv
+starting search...
+searched and found best move in search: 43239
+Total nodes searched: 72605
+how i see the board before writing next move: Turn: Black
+Enpassant: xx	Castling: WK WQ BK BQ 
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | r  | n  | b  |    | k  | b  | n  | r  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | p  | p  | p  | p  |    | p  | p  | p  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    | p  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    | q  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    |    |    | P  |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | P  | P  | P  | P  | P  | P  |    | P  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | R  | N  | B  | Q  | K  | B  | N  | R  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+[DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : h4d4
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 5 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mBlack player is playing h4 to d4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[30;1mQ[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 a2a4 b2b3 b2b4 c2c3 c2c4 d2d3 e2e3 e2e4 f2f3 f2f4 g3g4 h2h3 h2h4 b1c3 b1a3 g1h3 g1f3 f1g2 f1h3 
+random move: g1f3
+Move written to championship/chess-ai-logic-and-proofs/move.csv successfully!
+eval: -815
+Result
+Move: d2d4, Score: 880
+Move: d4a4, Score: -440
+Move: d4h4, Score: -500
+Move: d4b2, Score: -540
+Move: d4b4, Score: -560
+Move: d4e5, Score: -565
+Move: d4b6, Score: -565
+Move: d4g4, Score: -610
+Move: d4f6, Score: -615
+Move: d4c5, Score: -650
+Move: d4d6, Score: -665
+Move: d4c4, Score: -690
+Move: b1c3, Score: -718
+Move: g1f3, Score: -728
+Move: d4d5, Score: -745
+Move: d4c3, Score: -760
+Move: f7f6, Score: -765
+Move: f7f5, Score: -775
+Move: c7c6, Score: -785
+Move: d4d3, Score: -785
+Move: c7c5, Score: -795
+Move: e2e4, Score: -795
+Move: d4f4, Score: -800
+Move: b1a3, Score: -800
+Move: g7g6, Score: -800
+Move: b7b6, Score: -800
+Move: e5e4, Score: -805
+Move: g3g4, Score: -805
+Move: d4e4, Score: -805
+Move: g7g5, Score: -810
+Move: b7b5, Score: -810
+Move: g1h3, Score: -810
+Move: h7h6, Score: -815
+Move: e2e3, Score: -815
+Move: a2a4, Score: -815
+Move: a7a6, Score: -815
+Move: a7a5, Score: -815
+Move: d2d3, Score: -815
+Move: d7d6, Score: -815
+Move: h7h5, Score: -815
+Move: h2h4, Score: -815
+Move: a2a3, Score: -815
+Move: h2h3, Score: -815
+Move: b2b4, Score: -820
+Move: g8h6, Score: -820
+Move: b2b3, Score: -830
+Move: b8a6, Score: -830
+Move: d4e3, Score: -835
+Move: d7d5, Score: -835
+Move: c2c4, Score: -835
+Move: c2c3, Score: -845
+Move: d4d2, Score: -850
+Move: f2f4, Score: -855
+Move: d4f2, Score: -865
+Move: f2f3, Score: -865
+Move: g8f6, Score: -902
+Move: b8c6, Score: -912
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 6 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mWhite player is playing g1 to f3.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[30;1mQ[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+[DEBUG] Input history filename: championship/chess-ai-logic-and-proofs/history.csv
+[DEBUG] Output move file: championship/chess-ai-logic-and-proofs/move.csv
+starting search...
+searched and found best move in search: 43299
+Total nodes searched: 211163
+how i see the board before writing next move: Turn: Black
+Enpassant: xx	Castling: WK WQ BK BQ 
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | r  | n  | b  |    | k  | b  | n  | r  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | p  | p  | p  | p  |    | p  | p  | p  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    | p  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    | q  |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    |    | N  | P  |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | P  | P  | P  | P  | P  | P  |    | P  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | R  | N  | B  | Q  | K  | B  |    | R  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+[DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : d4e4
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 7 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mBlack player is playing d4 to e4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[30;1mQ[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+a2a3 a2a4 b2b3 b2b4 c2c3 c2c4 d2d3 d2d4 e2e3 g3g4 h2h3 h2h4 h1g1 b1c3 b1a3 f3g5 f3h4 f3g1 f3d4 f3e5 f1g2 f1h3 
+random move: h2h4
+Move written to championship/chess-ai-logic-and-proofs/move.csv successfully!
+eval: -718
+Result
+Move: e2e4, Score: 967
+Move: e5e4, Score: 957
+Move: e4a4, Score: -353
+Move: e4h4, Score: -413
+Move: e4g6, Score: -428
+Move: e4b4, Score: -473
+Move: e4e5, Score: -478
+Move: e4g2, Score: -483
+Move: f3e5, Score: -484
+Move: e4c6, Score: -488
+Move: e4g4, Score: -523
+Move: e4e6, Score: -578
+Move: e4c4, Score: -603
+Move: b1c3, Score: -621
+Move: e4f5, Score: -623
+Move: e4c2, Score: -648
+Move: e4d5, Score: -658
+Move: f3g5, Score: -666
+Move: f7f6, Score: -668
+Move: f3d4, Score: -671
+Move: f7f5, Score: -678
+Move: c7c6, Score: -688
+Move: e4d3, Score: -698
+Move: d2d4, Score: -698
+Move: c7c5, Score: -698
+Move: b7b6, Score: -703
+Move: g7g6, Score: -703
+Move: b1a3, Score: -703
+Move: g3g4, Score: -708
+Move: e4f4, Score: -713
+Move: g7g5, Score: -713
+Move: b7b5, Score: -713
+Move: h7h5, Score: -718
+Move: a2a3, Score: -718
+Move: a2a4, Score: -718
+Move: a7a6, Score: -718
+Move: a7a5, Score: -718
+Move: d2d3, Score: -718
+Move: d7d6, Score: -718
+Move: e2e3, Score: -718
+Move: h2h3, Score: -718
+Move: h2h4, Score: -718
+Move: h7h6, Score: -718
+Move: g8h6, Score: -723
+Move: b2b4, Score: -723
+Move: e4d4, Score: -728
+Move: b2b3, Score: -733
+Move: b8a6, Score: -733
+Move: d7d5, Score: -738
+Move: c2c4, Score: -738
+Move: e4e3, Score: -748
+Move: c2c3, Score: -748
+Move: f2f4, Score: -758
+Move: f3h4, Score: -774
+Move: g8f6, Score: -805
+Move: b8c6, Score: -815
+Move: e4e2, Score: -913
+Move: e4f3, Score: -1052
+Move: f2f3, Score: -1147
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 8 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mWhite player is playing h2 to h4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[30;1mQ[0m| |[7;1m [0m|[0;1mp[0m|| 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m| || 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -227,25 +664,25 @@ Move: a6c5, Score: -174
 [DEBUG] Output move file: championship/chess-ai-logic-and-proofs/move.csv
 starting search...
 searched and found best move in search: 30022
-Total nodes searched: 25185
+Total nodes searched: 166340
 how i see the board before writing next move: Turn: Black
-Enpassant: xx	Castling: WK WQ BK BQ 
+Enpassant: h3	Castling: WK WQ BK BQ 
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  |    | b  | q  | k  | b  | n  | r  |
+8 | r  | n  | b  |    | k  | b  | n  | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  | p  | p  | p  | p  | p  | p  | p  |
+7 | p  | p  | p  | p  |    | p  | p  | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
-6 | n  |    |    |    |    |    |    |    |
+6 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    |    |    |    |    |
+5 |    |    |    |    | p  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    |    |    | P  |    |    |
+4 |    |    |    |    | q  |    |    | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    |    |    |    |    | P  |    |
+3 |    |    |    |    |    | N  | P  |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 | P  | P  | P  | P  | P  |    |    | P  |
+2 | P  | P  | P  | P  | P  | P  |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  | N  | B  | Q  | K  | B  | N  | R  |
+1 | R  | N  | B  | Q  | K  | B  |    | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
 [DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : g8f6
@@ -253,469 +690,96 @@ Enpassant: xx	Castling: WK WQ BK BQ
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
-[32;1m[Board] [0mLoaded 3 move(s).
+[32;1m[Board] [0mLoaded 9 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
 [32;1m[Board] [0mBlack player is playing g8 to f6.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[30;1mQ[0m| |[7;1m [0m|[0;1mp[0m|| 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m|[0;1mp[0m|[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m| || 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
-a2a3 a2a4 b2b3 b2b4 c2c3 c2c4 d2d3 d2d4 e2e3 e2e4 f4f5 g3g4 h2h3 h2h4 b1c3 b1a3 g1h3 g1f3 f1g2 f1h3 e1f2 
-random move: f1h3
-Move written to championship/chess-ai-logic-and-proofs/move.csv successfully!
-eval: -157
-Result
-Move: f7f6, Score: 272
-Move: a7a6, Score: 140
-Move: b1c3, Score: -60
-Move: g1f3, Score: -70
-Move: f6h5, Score: -101
-Move: f7f5, Score: -117
-Move: c7c6, Score: -127
-Move: c7c5, Score: -137
-Move: d2d4, Score: -137
-Move: e2e4, Score: -137
-Move: b1a3, Score: -142
-Move: b7b6, Score: -142
-Move: g7g6, Score: -142
-Move: f4f5, Score: -147
-Move: g3g4, Score: -147
-Move: b7b5, Score: -152
-Move: g1h3, Score: -152
-Move: g7g5, Score: -152
-Move: a2a4, Score: -157
-Move: h2h3, Score: -157
-Move: h2h4, Score: -157
-Move: h7h6, Score: -157
-Move: h7h5, Score: -157
-Move: e7e6, Score: -157
-Move: e2e3, Score: -157
-Move: a2a3, Score: -157
-Move: d7d6, Score: -157
-Move: d2d3, Score: -157
-Move: a7a5, Score: -157
-Move: b2b4, Score: -162
-Move: b2b3, Score: -172
-Move: e7e5, Score: -177
-Move: c2c4, Score: -177
-Move: d7d5, Score: -177
-Move: c2c3, Score: -187
-Move: f6d5, Score: -204
-Move: f6g4, Score: -209
-Move: f6e4, Score: -251
-Move: a6b4, Score: -261
-Move: a6c5, Score: -276
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
-[32;1m[Board] [0mLoaded 4 move(s).
-[32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mWhite player is playing f1 to h3.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mb[0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the Black player...
-[DEBUG] Input history filename: championship/chess-ai-logic-and-proofs/history.csv
-[DEBUG] Output move file: championship/chess-ai-logic-and-proofs/move.csv
-starting search...
-searched and found best move in search: 25868
-Total nodes searched: 27329
-how i see the board before writing next move: Turn: Black
-Enpassant: xx	Castling: WK WQ BK BQ 
-   ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  |    | b  | q  | k  | b  |    | r  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  | p  | p  | p  | p  | p  | p  | p  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-6 | n  |    |    |    |    | n  |    |    |
-   ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    |    |    |    |    |
-   ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    |    |    | P  |    |    |
-   ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    |    |    |    |    | P  | B  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-2 | P  | P  | P  | P  | P  |    |    | P  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  | N  | B  | Q  | K  |    | N  | R  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-    a    b    c    d    e    f    g    h
-[DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : e7e6
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
-[32;1m[Board] [0mLoaded 5 move(s).
-[32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mBlack player is playing e7 to e6.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[30;1mp[0m|[30;1mk[0m|[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mb[0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the White player...
-a2a3 a2a4 b2b3 b2b4 c2c3 c2c4 d2d3 d2d4 e2e3 e2e4 f4f5 g3g4 b1c3 b1a3 g1f3 h3g4 h3f5 h3e6 h3g2 h3f1 e1f1 e1f2 
-random move: h3f5
-Move written to championship/chess-ai-logic-and-proofs/move.csv successfully!
-eval: -63
-Result
-Move: f7f6, Score: 366
-Move: a7a6, Score: 234
-Move: h3e6, Score: 136
-Move: h3d7, Score: 127
-Move: b1c3, Score: 34
-Move: g1f3, Score: 24
-Move: h3f5, Score: 16
-Move: f6h5, Score: -7
-Move: h3g4, Score: -11
-Move: f7f5, Score: -23
-Move: c7c6, Score: -33
-Move: c7c5, Score: -43
-Move: d2d4, Score: -43
-Move: e2e4, Score: -43
-Move: b7b6, Score: -48
-Move: b1a3, Score: -48
-Move: g7g6, Score: -48
-Move: f4f5, Score: -53
-Move: g3g4, Score: -53
-Move: b7b5, Score: -58
-Move: g7g5, Score: -58
-Move: a2a4, Score: -63
-Move: a7a5, Score: -63
-Move: h7h5, Score: -63
-Move: h7h6, Score: -63
-Move: h2h4, Score: -63
-Move: a2a3, Score: -63
-Move: d2d3, Score: -63
-Move: d7d6, Score: -63
-Move: e2e3, Score: -63
-Move: b2b4, Score: -68
-Move: b2b3, Score: -78
-Move: e6e5, Score: -83
-Move: d7d5, Score: -83
-Move: c2c4, Score: -83
-Move: c2c3, Score: -93
-Move: f6d5, Score: -110
-Move: f6g4, Score: -115
-Move: f6e4, Score: -157
-Move: a6b4, Score: -167
-Move: a6c5, Score: -182
-Move: g1h3, Score: -432
-Move: h2h3, Score: -437
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
-[32;1m[Board] [0mLoaded 6 move(s).
-[32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mWhite player is playing h3 to f5.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[30;1mp[0m|[30;1mk[0m|[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[0;1mb[0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the Black player...
-[DEBUG] Input history filename: championship/chess-ai-logic-and-proofs/history.csv
-[DEBUG] Output move file: championship/chess-ai-logic-and-proofs/move.csv
-starting search...
-searched and found best move in search: 1075028
-Total nodes searched: 60432
-how i see the board before writing next move: Turn: Black
-Enpassant: xx	Castling: WK WQ BK BQ 
-   ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  |    | b  | q  | k  | b  |    | r  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  | p  | p  | p  |    | p  | p  | p  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-6 | n  |    |    |    | p  | n  |    |    |
-   ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    |    | B  |    |    |
-   ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    |    |    | P  |    |    |
-   ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    |    |    |    |    | P  |    |
-   ---- ---- ---- ---- ---- ---- ---- ----
-2 | P  | P  | P  | P  | P  |    |    | P  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  | N  | B  | Q  | K  |    | N  | R  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-    a    b    c    d    e    f    g    h
-[DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : e6f5
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
-[32;1m[Board] [0mLoaded 7 move(s).
-[32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mBlack player is playing e6 to f5.
-[32;1m[Board] [0m[5;1mBlack Pawn is taking White Bishop.[0m
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the White player...
-a2a3 a2a4 b2b3 b2b4 c2c3 c2c4 d2d3 d2d4 e2e3 e2e4 g3g4 h2h3 h2h4 b1c3 b1a3 g1h3 g1f3 e1f1 e1f2 
-random move: e1f1
-Move written to championship/chess-ai-logic-and-proofs/move.csv successfully!
-eval: -48
-Result
-Move: a7a6, Score: 249
-Move: f7f5, Score: 102
-Move: f4f5, Score: 72
-Move: b1c3, Score: 49
-Move: g1f3, Score: 39
-Move: f7f6, Score: 2
-Move: c7c6, Score: -18
-Move: e2e4, Score: -28
-Move: d2d4, Score: -28
-Move: c7c5, Score: -28
-Move: b7b6, Score: -33
-Move: g7g6, Score: -33
-Move: b1a3, Score: -33
-Move: g3g4, Score: -38
-Move: g7g5, Score: -43
-Move: b7b5, Score: -43
-Move: g1h3, Score: -43
-Move: h2h4, Score: -48
-Move: h7h6, Score: -48
-Move: h2h3, Score: -48
-Move: h7h5, Score: -48
-Move: a2a4, Score: -48
-Move: e2e3, Score: -48
-Move: d7d6, Score: -48
-Move: d2d3, Score: -48
-Move: a7a5, Score: -48
-Move: a2a3, Score: -48
-Move: b2b4, Score: -53
-Move: b2b3, Score: -63
-Move: d7d5, Score: -68
-Move: c2c4, Score: -68
-Move: c2c3, Score: -78
-Move: a6b4, Score: -152
-Move: a6c5, Score: -167
-Move: f5f4, Score: -168
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
-[32;1m[Board] [0mLoaded 8 move(s).
-[32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mWhite player is playing e1 to f1.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m| |[0;1mK[0m|[0;1mk[0m|[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the Black player...
-[DEBUG] Input history filename: championship/chess-ai-logic-and-proofs/history.csv
-[DEBUG] Output move file: championship/chess-ai-logic-and-proofs/move.csv
-starting search...
-searched and found best move in search: 41731
-Total nodes searched: 30097
-how i see the board before writing next move: Turn: Black
-Enpassant: xx	Castling: xxBK BQ 
-   ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  |    | b  | q  | k  | b  |    | r  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  | p  | p  | p  |    | p  | p  | p  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-6 | n  |    |    |    |    | n  |    |    |
-   ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    |    | p  |    |    |
-   ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    |    |    | P  |    |    |
-   ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    |    |    |    |    | P  |    |
-   ---- ---- ---- ---- ---- ---- ---- ----
-2 | P  | P  | P  | P  | P  |    |    | P  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  | N  | B  | Q  |    | K  | N  | R  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-    a    b    c    d    e    f    g    h
-[DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : d8e7
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
-[32;1m[Board] [0mLoaded 9 move(s).
-[32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mBlack player is playing d8 to e7.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mQ[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m| |[0;1mK[0m|[0;1mk[0m|[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the White player...
-a2a3 a2a4 b2b3 b2b4 c2c3 c2c4 d2d3 d2d4 e2e3 e2e4 g3g4 h2h3 h2h4 b1c3 b1a3 g1h3 g1f3 d1e1 f1e1 f1f2 f1g2 
+a2a3 a2a4 b2b3 b2b4 c2c3 c2c4 d2d3 d2d4 e2e3 g3g4 h4h5 h1h2 h1h3 h1g1 b1c3 b1a3 f3g5 f3h2 f3g1 f3d4 f3e5 f1g2 f1h3 
 random move: a2a3
 Move written to championship/chess-ai-logic-and-proofs/move.csv successfully!
-eval: -528
+eval: -805
 Result
-Move: a7a6, Score: -231
-Move: f7f5, Score: -378
-Move: f4f5, Score: -408
-Move: b1c3, Score: -431
-Move: g1f3, Score: -441
-Move: f7f6, Score: -478
-Move: d2d4, Score: -488
-Move: c7c6, Score: -498
-Move: c7c5, Score: -508
-Move: e2e4, Score: -508
-Move: d2d3, Score: -508
-Move: g7g6, Score: -513
-Move: b7b6, Score: -513
-Move: b1a3, Score: -513
-Move: g3g4, Score: -518
-Move: g7g5, Score: -523
-Move: b7b5, Score: -523
-Move: g1h3, Score: -523
-Move: a2a4, Score: -528
-Move: h7h6, Score: -528
-Move: h7h5, Score: -528
-Move: h2h4, Score: -528
-Move: h2h3, Score: -528
-Move: e2e3, Score: -528
-Move: d7d6, Score: -528
-Move: a7a5, Score: -528
-Move: a2a3, Score: -528
-Move: b2b4, Score: -533
-Move: b2b3, Score: -543
-Move: e7b4, Score: -543
-Move: d7d5, Score: -548
-Move: c2c4, Score: -548
-Move: c2c3, Score: -558
-Move: e7h4, Score: -583
-Move: e7a3, Score: -598
-Move: a6b4, Score: -612
-Move: a6c5, Score: -627
-Move: e7f6, Score: -648
-Move: e7d6, Score: -648
-Move: f5f4, Score: -648
-Move: e7c5, Score: -683
-Move: e7g5, Score: -688
-Move: e7e6, Score: -698
-Move: e7e5, Score: -788
-Move: e7e3, Score: -818
-Move: e7e4, Score: -838
-Move: e7e2, Score: -883
+Move: e2e4, Score: 880
+Move: e5e4, Score: 870
+Move: f6e4, Score: 766
+Move: f7f6, Score: -376
+Move: e4a4, Score: -440
+Move: e4g6, Score: -515
+Move: e4b4, Score: -560
+Move: e4e5, Score: -565
+Move: e4g2, Score: -570
+Move: f3e5, Score: -571
+Move: e4c6, Score: -575
+Move: e4h4, Score: -605
+Move: e4g4, Score: -610
+Move: e4e6, Score: -665
+Move: e4c4, Score: -690
+Move: b1c3, Score: -708
+Move: e4f5, Score: -710
+Move: e4c2, Score: -735
+Move: e4d5, Score: -745
+Move: f6h5, Score: -749
+Move: f3g5, Score: -753
+Move: f3d4, Score: -758
+Move: f7f5, Score: -765
+Move: c7c6, Score: -775
+Move: e4d3, Score: -785
+Move: c7c5, Score: -785
+Move: d2d4, Score: -785
+Move: b1a3, Score: -790
+Move: g7g6, Score: -790
+Move: b7b6, Score: -790
+Move: g3g4, Score: -795
+Move: h4h5, Score: -800
+Move: g7g5, Score: -800
+Move: e4f4, Score: -800
+Move: b7b5, Score: -800
+Move: d7d6, Score: -805
+Move: a2a4, Score: -805
+Move: a7a6, Score: -805
+Move: a7a5, Score: -805
+Move: d2d3, Score: -805
+Move: h7h5, Score: -805
+Move: e2e3, Score: -805
+Move: h7h6, Score: -805
+Move: a2a3, Score: -805
+Move: b2b4, Score: -810
+Move: e4d4, Score: -815
+Move: b2b3, Score: -820
+Move: b8a6, Score: -820
+Move: d7d5, Score: -825
+Move: c2c4, Score: -825
+Move: c2c3, Score: -835
+Move: e4e3, Score: -835
+Move: f2f4, Score: -845
+Move: f6d5, Score: -852
+Move: f6g4, Score: -857
+Move: b8c6, Score: -902
+Move: f3h4, Score: -966
+Move: e4e2, Score: -1000
+Move: e4f3, Score: -1139
+Move: f2f3, Score: -1234
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
@@ -726,21 +790,21 @@ Move: e7e2, Score: -883
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mQ[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[30;1mQ[0m| |[7;1m [0m|[0;1mp[0m|| 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 ||[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m3 ||[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[0;1mk[0m|[0;1mp[0m|[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m| || 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m| |[0;1mK[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -748,141 +812,154 @@ Move: e7e2, Score: -883
 [DEBUG] Input history filename: championship/chess-ai-logic-and-proofs/history.csv
 [DEBUG] Output move file: championship/chess-ai-logic-and-proofs/move.csv
 starting search...
-searched and found best move in search: 43276
-Total nodes searched: 33038
+searched and found best move in search: 34437
+Total nodes searched: 82667
 how i see the board before writing next move: Turn: Black
-Enpassant: xx	Castling: xxBK BQ 
+Enpassant: xx	Castling: WK WQ BK BQ 
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  |    | b  |    | k  | b  |    | r  |
+8 | r  | n  | b  |    | k  | b  |    | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  | p  | p  | p  | q  | p  | p  | p  |
+7 | p  | p  | p  | p  |    | p  | p  | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
-6 | n  |    |    |    |    | n  |    |    |
+6 |    |    |    |    |    | n  |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    |    | p  |    |    |
+5 |    |    |    |    | p  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    |    |    | P  |    |    |
+4 |    |    |    |    | q  |    |    | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
-3 | P  |    |    |    |    |    | P  |    |
+3 | P  |    |    |    |    | N  | P  |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 |    | P  | P  | P  | P  |    |    | P  |
+2 |    | P  | P  | P  | P  | P  |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  | N  | B  | Q  |    | K  | N  | R  |
+1 | R  | N  | B  | Q  | K  | B  |    | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
-[DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : e7e4
+[DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : f8c5
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 11 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mBlack player is playing e7 to e4.
+[32;1m[Board] [0mBlack player is playing f8 to c5.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[30;1mQ[0m|[0;1mp[0m|[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[30;1mQ[0m| |[7;1m [0m|[0;1mp[0m|| 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 ||[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m3 ||[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[0;1mk[0m|[0;1mp[0m|[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m| || 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m| |[0;1mK[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
-a3a4 b2b3 b2b4 c2c3 c2c4 d2d3 d2d4 e2e3 g3g4 h2h3 h2h4 a1a2 b1c3 g1h3 g1f3 d1e1 f1e1 f1f2 
-random move: f1e1
+a3a4 b2b3 b2b4 c2c3 c2c4 d2d3 d2d4 e2e3 g3g4 h4h5 a1a2 h1h2 h1h3 h1g1 b1c3 f3g5 f3h2 f3g1 f3d4 f3e5 f1g2 f1h3 
+random move: a3a4
 Move written to championship/chess-ai-logic-and-proofs/move.csv successfully!
-eval: -838
+eval: -967
 Result
-Move: e2e4, Score: 847
-Move: e4a4, Score: -473
-Move: a7a6, Score: -541
-Move: e4b4, Score: -543
-Move: e4f5, Score: -583
-Move: e4h4, Score: -583
-Move: e4g6, Score: -598
-Move: e4c2, Score: -618
-Move: e4c6, Score: -658
-Move: e4c4, Score: -673
-Move: f7f5, Score: -688
-Move: e4e6, Score: -698
-Move: e4g2, Score: -703
-Move: f4f5, Score: -718
-Move: e4d5, Score: -728
-Move: b1c3, Score: -741
-Move: e4g4, Score: -743
-Move: e4d4, Score: -748
-Move: g1f3, Score: -751
-Move: e4e5, Score: -788
-Move: f7f6, Score: -788
-Move: d2d4, Score: -798
-Move: c7c6, Score: -808
-Move: d2d3, Score: -818
-Move: e4e3, Score: -818
-Move: c7c5, Score: -818
-Move: e4d3, Score: -818
-Move: g7g6, Score: -823
-Move: b7b6, Score: -823
-Move: g3g4, Score: -828
-Move: g7g5, Score: -833
-Move: g1h3, Score: -833
-Move: b7b5, Score: -833
-Move: a3a4, Score: -838
-Move: d7d6, Score: -838
-Move: h7h5, Score: -838
-Move: h7h6, Score: -838
-Move: h2h4, Score: -838
-Move: h2h3, Score: -838
-Move: e2e3, Score: -838
-Move: a7a5, Score: -838
-Move: b2b4, Score: -843
-Move: e4f3, Score: -843
-Move: b2b3, Score: -853
-Move: d7d5, Score: -858
-Move: c2c4, Score: -858
-Move: c2c3, Score: -868
-Move: e4e2, Score: -883
-Move: a6b4, Score: -922
-Move: b1a3, Score: -928
-Move: a6c5, Score: -937
-Move: e4f4, Score: -943
-Move: f5f4, Score: -958
+Move: e2e4, Score: 718
+Move: e5e4, Score: 708
+Move: f6e4, Score: 604
+Move: c7c5, Score: -505
+Move: f7f6, Score: -538
+Move: e4a4, Score: -602
+Move: e4g6, Score: -677
+Move: e4b4, Score: -722
+Move: e4e5, Score: -727
+Move: e4g2, Score: -732
+Move: f3e5, Score: -733
+Move: e4c6, Score: -737
+Move: e4h4, Score: -767
+Move: e4g4, Score: -772
+Move: e4e6, Score: -827
+Move: e4c4, Score: -852
+Move: b1c3, Score: -870
+Move: e4f5, Score: -872
+Move: e4c2, Score: -897
+Move: e4d5, Score: -907
+Move: f6h5, Score: -911
+Move: f3g5, Score: -915
+Move: f3d4, Score: -920
+Move: f7f5, Score: -927
+Move: c5b4, Score: -931
+Move: c5b6, Score: -935
+Move: c5d6, Score: -937
+Move: c7c6, Score: -937
+Move: d2d4, Score: -947
+Move: e4d3, Score: -947
+Move: b7b6, Score: -952
+Move: g7g6, Score: -952
+Move: g3g4, Score: -957
+Move: e4f4, Score: -962
+Move: b7b5, Score: -962
+Move: g7g5, Score: -962
+Move: h4h5, Score: -962
+Move: a7a6, Score: -967
+Move: a7a5, Score: -967
+Move: d7d6, Score: -967
+Move: e2e3, Score: -967
+Move: h7h6, Score: -967
+Move: h7h5, Score: -967
+Move: d2d3, Score: -967
+Move: a3a4, Score: -967
+Move: b2b4, Score: -972
+Move: c5a3, Score: -974
+Move: e4d4, Score: -977
+Move: c5e3, Score: -978
+Move: b8a6, Score: -982
+Move: b2b3, Score: -982
+Move: d7d5, Score: -987
+Move: c2c4, Score: -987
+Move: e4e3, Score: -997
+Move: c2c3, Score: -997
+Move: f2f4, Score: -1007
+Move: c5d4, Score: -1008
+Move: f6d5, Score: -1014
+Move: f6g4, Score: -1019
+Move: b1a3, Score: -1057
+Move: b8c6, Score: -1064
+Move: c5f2, Score: -1123
+Move: f3h4, Score: -1128
+Move: e4e2, Score: -1162
+Move: e4f3, Score: -1301
+Move: f2f3, Score: -1396
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 12 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mWhite player is playing f1 to e1.
+[32;1m[Board] [0mWhite player is playing a3 to a4.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[30;1mQ[0m|[0;1mp[0m|[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[0;1mp[0m| |[7;1m [0m| |[30;1mQ[0m| |[7;1m [0m|[0;1mp[0m|| 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 ||[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m|[0;1mp[0m|[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m| || 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -890,126 +967,156 @@ Move: f5f4, Score: -958
 [DEBUG] Input history filename: championship/chess-ai-logic-and-proofs/history.csv
 [DEBUG] Output move file: championship/chess-ai-logic-and-proofs/move.csv
 starting search...
-searched and found best move in search: 1093604
-Total nodes searched: 96331
+searched and found best move in search: 31125
+Total nodes searched: 110756
 how i see the board before writing next move: Turn: Black
-Enpassant: xx	Castling: xxBK BQ 
+Enpassant: xx	Castling: WK WQ BK BQ 
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  |    | b  |    | k  | b  |    | r  |
+8 | r  | n  | b  |    | k  |    |    | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
 7 | p  | p  | p  | p  |    | p  | p  | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
-6 | n  |    |    |    |    | n  |    |    |
+6 |    |    |    |    |    | n  |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    |    | p  |    |    |
+5 |    |    | b  |    | p  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    |    | q  | P  |    |    |
+4 | P  |    |    |    | q  |    |    | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
-3 | P  |    |    |    |    |    | P  |    |
+3 |    |    |    |    |    | N  | P  |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 |    | P  | P  | P  | P  |    |    | P  |
+2 |    | P  | P  | P  | P  | P  |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  | N  | B  | Q  | K  |    | N  | R  |
+1 | R  | N  | B  | Q  | K  | B  |    | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
-[DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : e4h1
+[DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : f6g4
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 13 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mBlack player is playing e4 to h1.
-[32;1m[Board] [0m[5;1mBlack Queen is taking White Rook.[0m
+[32;1m[Board] [0mBlack player is playing f6 to g4.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[0;1mp[0m| |[7;1m [0m| |[30;1mQ[0m| |[30;1mk[0m|[0;1mp[0m|| 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 ||[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m|[0;1mp[0m|[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m| || 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[30;1mQ[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
-a3a4 b2b3 b2b4 c2c3 c2c4 d2d3 d2d4 e2e3 e2e4 g3g4 h2h3 h2h4 a1a2 b1c3 e1f1 e1f2 
-random move: d2d3
+a4a5 b2b3 b2b4 c2c3 c2c4 d2d3 d2d4 e2e3 h4h5 a1a2 a1a3 h1h2 h1h3 h1g1 b1c3 b1a3 f3g5 f3h2 f3g1 f3d4 f3e5 f1g2 f1h3 
+random move: a4a5
 Move written to championship/chess-ai-logic-and-proofs/move.csv successfully!
-eval: -608
+eval: -1019
 Result
-Move: a7a6, Score: -311
-Move: f7f5, Score: -458
-Move: f4f5, Score: -488
-Move: b1c3, Score: -511
-Move: g1f3, Score: -521
-Move: f7f6, Score: -558
-Move: c7c6, Score: -578
-Move: c7c5, Score: -588
-Move: d2d4, Score: -588
-Move: e2e4, Score: -588
-Move: b7b6, Score: -593
-Move: g7g6, Score: -593
-Move: g3g4, Score: -598
-Move: b7b5, Score: -603
-Move: g1h3, Score: -603
-Move: g7g5, Score: -603
-Move: h2h4, Score: -608
-Move: h2h3, Score: -608
-Move: a7a5, Score: -608
-Move: a3a4, Score: -608
-Move: h7h6, Score: -608
-Move: e2e3, Score: -608
-Move: h7h5, Score: -608
-Move: d7d6, Score: -608
-Move: d2d3, Score: -608
-Move: b2b4, Score: -613
-Move: b2b3, Score: -623
-Move: d7d5, Score: -628
-Move: c2c4, Score: -628
-Move: c2c3, Score: -638
-Move: b1a3, Score: -698
-Move: a6b4, Score: -712
-Move: a6c5, Score: -727
-Move: f5f4, Score: -728
-Move: h1h2, Score: -938
-Move: h1g1, Score: -1060
-Move: h1g2, Score: -1083
+Move: e2e4, Score: 666
+Move: e5e4, Score: 656
+Move: e4g4, Score: -393
+Move: c7c5, Score: -557
+Move: g3g4, Score: -578
+Move: e4g6, Score: -729
+Move: e4a4, Score: -759
+Move: e4b4, Score: -774
+Move: e4e5, Score: -779
+Move: e4g2, Score: -784
+Move: f3e5, Score: -785
+Move: e4c6, Score: -789
+Move: e4h4, Score: -819
+Move: e4e6, Score: -879
+Move: g4e5, Score: -884
+Move: g4h6, Score: -885
+Move: e4c4, Score: -904
+Move: c5a3, Score: -921
+Move: b1c3, Score: -922
+Move: e4f5, Score: -924
+Move: g4h2, Score: -926
+Move: e4c2, Score: -949
+Move: e4d5, Score: -959
+Move: f3g5, Score: -967
+Move: g4f6, Score: -967
+Move: f7f6, Score: -969
+Move: f3d4, Score: -972
+Move: f7f5, Score: -979
+Move: c5b4, Score: -983
+Move: c5b6, Score: -987
+Move: c5d6, Score: -989
+Move: c7c6, Score: -989
+Move: e4d3, Score: -999
+Move: d2d4, Score: -999
+Move: b1a3, Score: -1004
+Move: g7g6, Score: -1004
+Move: b7b6, Score: -1004
+Move: h4h5, Score: -1014
+Move: g7g5, Score: -1014
+Move: e4f4, Score: -1014
+Move: b7b5, Score: -1014
+Move: a4a5, Score: -1014
+Move: a7a6, Score: -1019
+Move: h7h6, Score: -1019
+Move: d2d3, Score: -1019
+Move: d7d6, Score: -1019
+Move: e2e3, Score: -1019
+Move: h7h5, Score: -1019
+Move: a7a5, Score: -1019
+Move: b2b4, Score: -1024
+Move: e4d4, Score: -1029
+Move: c5e3, Score: -1030
+Move: b8a6, Score: -1034
+Move: b2b3, Score: -1034
+Move: c2c4, Score: -1039
+Move: d7d5, Score: -1039
+Move: c2c3, Score: -1049
+Move: e4e3, Score: -1049
+Move: g4e3, Score: -1056
+Move: f2f4, Score: -1059
+Move: c5d4, Score: -1060
+Move: b8c6, Score: -1116
+Move: g4f2, Score: -1159
+Move: c5f2, Score: -1175
+Move: f3h4, Score: -1180
+Move: e4e2, Score: -1214
+Move: e4f3, Score: -1353
+Move: f2f3, Score: -1448
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 14 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mWhite player is playing d2 to d3.
+[32;1m[Board] [0mWhite player is playing a4 to a5.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 ||[0;1mp[0m|[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[30;1mQ[0m| |[30;1mk[0m|[0;1mp[0m|| 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 ||[0;1mp[0m|[7;1m [0m| |[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m|[0;1mp[0m|[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m| || 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[30;1mQ[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -1017,240 +1124,58 @@ Move: h1g2, Score: -1083
 [DEBUG] Input history filename: championship/chess-ai-logic-and-proofs/history.csv
 [DEBUG] Output move file: championship/chess-ai-logic-and-proofs/move.csv
 starting search...
-searched and found best move in search: 1093567
-Total nodes searched: 72413
+searched and found best move in search: 1084762
+Total nodes searched: 48797
 how i see the board before writing next move: Turn: Black
-Enpassant: xx	Castling: xxBK BQ 
+Enpassant: xx	Castling: WK WQ BK BQ 
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  |    | b  |    | k  | b  |    | r  |
+8 | r  | n  | b  |    | k  |    |    | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
 7 | p  | p  | p  | p  |    | p  | p  | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
-6 | n  |    |    |    |    | n  |    |    |
+6 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    |    | p  |    |    |
+5 | P  |    | b  |    | p  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    |    |    | P  |    |    |
+4 |    |    |    |    | q  |    | n  | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
-3 | P  |    |    | P  |    |    | P  |    |
+3 |    |    |    |    |    | N  | P  |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 |    | P  | P  |    | P  |    |    | P  |
+2 |    | P  | P  | P  | P  | P  |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  | N  | B  | Q  | K  |    | N  | q  |
+1 | R  | N  | B  | Q  | K  | B  |    | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
-[DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : h1g1
+[DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : c5f2
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 15 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mBlack player is playing h1 to g1.
-[32;1m[Board] [0m[5;1mBlack Queen is taking White Knight.[0m
+[32;1m[Board] [0mBlack player is playing c5 to f2.
+[32;1m[Board] [0m[5;1mBlack Bishop is taking White Pawn.[0m
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 ||[0;1mp[0m|[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[30;1mQ[0m| |[30;1mk[0m|[0;1mp[0m|| 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 ||[0;1mp[0m|[7;1m [0m| |[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m|[0;1mp[0m|[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[30;1mb[0m|[7;1m [0m| || 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m|[30;1mQ[0m|[7;1m [0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
-[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mWhite King in check![0m
-[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by Black Queen (g1)
-e1d2 
-random move: e1d2
-Move written to championship/chess-ai-logic-and-proofs/move.csv successfully!
-eval: -1060
-Result
-Move: a7a6, Score: -763
-Move: g1h1, Score: -900
-Move: f7f5, Score: -910
-Move: f4f5, Score: -940
-Move: b1c3, Score: -963
-Move: f7f6, Score: -1010
-Move: c7c6, Score: -1030
-Move: c7c5, Score: -1040
-Move: d3d4, Score: -1040
-Move: e2e4, Score: -1040
-Move: g7g6, Score: -1045
-Move: b7b6, Score: -1045
-Move: g3g4, Score: -1050
-Move: b7b5, Score: -1055
-Move: g7g5, Score: -1055
-Move: e2e3, Score: -1060
-Move: a7a5, Score: -1060
-Move: a3a4, Score: -1060
-Move: d7d6, Score: -1060
-Move: h2h3, Score: -1060
-Move: h2h4, Score: -1060
-Move: h7h6, Score: -1060
-Move: h7h5, Score: -1060
-Move: b2b4, Score: -1065
-Move: b2b3, Score: -1075
-Move: d7d5, Score: -1080
-Move: c2c4, Score: -1080
-Move: c2c3, Score: -1090
-Move: g1f1, Score: -1110
-Move: b1a3, Score: -1150
-Move: a6b4, Score: -1164
-Move: a6c5, Score: -1179
-Move: f5f4, Score: -1180
-Move: g1h2, Score: -1230
-Move: g1g2, Score: -1375
-Move: g1f2, Score: -1520
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
-[32;1m[Board] [0mLoaded 16 move(s).
-[32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mWhite player is playing e1 to d2.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 ||[0;1mp[0m|[7;1m [0m| |[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mK[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m| |[7;1m [0m|[30;1mQ[0m|[7;1m [0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the Black player...
-[DEBUG] Input history filename: championship/chess-ai-logic-and-proofs/history.csv
-[DEBUG] Output move file: championship/chess-ai-logic-and-proofs/move.csv
-starting search...
-searched and found best move in search: 30997
-Total nodes searched: 143469
-how i see the board before writing next move: Turn: Black
-Enpassant: xx	Castling: xxBK BQ 
-   ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  |    | b  |    | k  | b  |    | r  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  | p  | p  | p  |    | p  | p  | p  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-6 | n  |    |    |    |    | n  |    |    |
-   ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    |    | p  |    |    |
-   ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    |    |    | P  |    |    |
-   ---- ---- ---- ---- ---- ---- ---- ----
-3 | P  |    |    | P  |    |    | P  |    |
-   ---- ---- ---- ---- ---- ---- ---- ----
-2 |    | P  | P  | K  | P  |    |    | P  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  | N  | B  | Q  |    |    | q  |    |
-   ---- ---- ---- ---- ---- ---- ---- ----
-    a    b    c    d    e    f    g    h
-[DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : f6e4
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
-[32;1m[Board] [0mLoaded 17 move(s).
-[32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mBlack player is playing f6 to e4.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[30;1mk[0m|[0;1mp[0m|[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 ||[0;1mp[0m|[7;1m [0m| |[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mK[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m| |[7;1m [0m|[30;1mQ[0m|[7;1m [0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the White player...
-[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mWhite King in check![0m
-[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by Black Knight (e4)
-a3a4 b2b3 b2b4 c2c3 c2c4 d3d4 e2e3 e2e4 g3g4 h2h3 h2h4 a1a2 b1c3 d1e1 d1f1 d1g1 d2c3 
-random move: a3a4
-Move written to championship/chess-ai-logic-and-proofs/move.csv successfully!
-eval: -907
-Result
-Move: a7a6, Score: -610
-Move: f7f5, Score: -757
-Move: f4f5, Score: -787
-Move: b1c3, Score: -810
-Move: g1h1, Score: -847
-Move: f7f6, Score: -857
-Move: c7c6, Score: -877
-Move: c7c5, Score: -887
-Move: e2e4, Score: -887
-Move: e2e3, Score: -887
-Move: g7g6, Score: -892
-Move: b7b6, Score: -892
-Move: g3g4, Score: -897
-Move: g7g5, Score: -902
-Move: b7b5, Score: -902
-Move: h7h5, Score: -907
-Move: a3a4, Score: -907
-Move: h2h3, Score: -907
-Move: h2h4, Score: -907
-Move: h7h6, Score: -907
-Move: d7d6, Score: -907
-Move: d3d4, Score: -907
-Move: a7a5, Score: -907
-Move: b2b4, Score: -912
-Move: b2b3, Score: -922
-Move: d7d5, Score: -927
-Move: c2c3, Score: -937
-Move: d2c3, Score: -945
-Move: d2e3, Score: -945
-Move: c2c4, Score: -947
-Move: b1a3, Score: -997
-Move: g1f1, Score: -1007
-Move: f5f4, Score: -1027
-Move: a6b4, Score: -1031
-Move: d2d3, Score: -1035
-Move: a6c5, Score: -1046
-Move: g1h2, Score: -1177
-Move: g1g2, Score: -1222
-Move: g1f2, Score: -1417
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
-[32;1m[Board] [0mLoaded 18 move(s).
-[32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mWhite player is playing a3 to a4.
-[32;1m[Board] [0m[31;1m[ERROR][0m Proposed move from (a3) to (a4) puts the King in check :(
-[32;1m[Board] [0m[31;1m[ERROR][0m White Pawn (a3) cannot reach its destination (a4) :(
-[32;1m[Referee] [0mInvalid move (code: -7) :(
-[32;1m[Game] [0mWhite player has lost on illegal move.
+[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mWhite King in checkmate![0m
+[32;1m[Board] [0m[33;1m[WARNING][0m The Black player wins!
