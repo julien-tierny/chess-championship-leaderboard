@@ -29,15 +29,35 @@
  . . . . . . . .
  P P P P P P P P
  R N B Q K B N R
+a2a3
+a2a4
+b2b3
+b2b4
+c2c3
+c2c4
+d2d3
+d2d4
+e2e3
+e2e4
+f2f3
+f2f4
+g2g3
+g2g4
+h2h3
+h2h4
+b1a3
+b1c3
+g1f3
+g1h3
 
-Random next move for the current player: h2h3
+Random next move for the current player: e2e3
  r n b q k b n r
  p p p p p p p p
  . . . . . . . .
  . . . . . . . .
  . . . . . . . .
- . . . . . . . P
- P P P P P P P .
+ . . . . P . . .
+ P P P P . P P P
  R N B Q K B N R
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
@@ -45,7 +65,7 @@ Random next move for the current player: h2h3
 [32;1m[Board] [0mLoading history file `championship/jykchess-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 0 move(s).
 [32;1m[Board] [0mLoading move file `championship/jykchess-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mWhite player is playing h2 to h3.
+[32;1m[Board] [0mWhite player is playing e2 to e3.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
@@ -59,9 +79,9 @@ Random next move for the current player: h2h3
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| || 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
@@ -72,7 +92,7 @@ Random next move for the current player: h2h3
 [DEBUG] Output move file: championship/jykchess-logic-and-proofs/move.csv
 starting search...
 searched and found best move in search: 2123532
-Total nodes searched: 16614
+Total nodes searched: 39069
 how i see the board before writing next move: Turn: Black
 Enpassant: xx	Castling: WK WQ BK BQ 
    ---- ---- ---- ---- ---- ---- ---- ----
@@ -86,9 +106,9 @@ Enpassant: xx	Castling: WK WQ BK BQ
    ---- ---- ---- ---- ---- ---- ---- ----
 4 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    |    |    |    |    |    | P  |
+3 |    |    |    |    | P  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 | P  | P  | P  | P  | P  | P  | P  |    |
+2 | P  | P  | P  | P  |    | P  | P  | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
 1 | R  | N  | B  | Q  | K  | B  | N  | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
@@ -114,9 +134,9 @@ Enpassant: xx	Castling: WK WQ BK BQ
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| || 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
@@ -128,26 +148,56 @@ Enpassant: xx	Castling: WK WQ BK BQ
  . . . . . . . .
  . . . . p . . .
  . . . . . . . .
- . . . . . . . P
- P P P P P P P .
+ . . . . P . . .
+ P P P P . P P P
  R N B Q K B N R
+e3e4
+a2a3
+a2a4
+b2b3
+b2b4
+c2c3
+c2c4
+d2d3
+d2d4
+f2f3
+f2f4
+g2g3
+g2g4
+h2h3
+h2h4
+b1a3
+b1c3
+d1e2
+d1f3
+d1g4
+d1h5
+e1e2
+f1e2
+f1d3
+f1c4
+f1b5
+f1a6
+g1f3
+g1h3
+g1e2
 
-Random next move for the current player: f2f4
+Random next move for the current player: d1h5
  r n b q k b n r
  p p p p . p p p
  . . . . . . . .
- . . . . p . . .
- . . . . . P . .
- . . . . . . . P
- P P P P P . P .
- R N B Q K B N R
+ . . . . p . . Q
+ . . . . . . . .
+ . . . . P . . .
+ P P P P . P P P
+ R N B . K B N R
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/jykchess-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 2 move(s).
 [32;1m[Board] [0mLoading move file `championship/jykchess-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mWhite player is playing f2 to f4.
+[32;1m[Board] [0mWhite player is playing d1 to h5.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
@@ -157,15 +207,15 @@ Random next move for the current player: f2f4
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[0;1mQ[0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m| || 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -173,10 +223,10 @@ Random next move for the current player: f2f4
 [DEBUG] Input history filename: championship/jykchess-logic-and-proofs/history.csv
 [DEBUG] Output move file: championship/jykchess-logic-and-proofs/move.csv
 starting search...
-searched and found best move in search: 43459
-Total nodes searched: 39791
+searched and found best move in search: 29825
+Total nodes searched: 179979
 how i see the board before writing next move: Turn: Black
-Enpassant: f3	Castling: WK WQ BK BQ 
+Enpassant: xx	Castling: WK WQ BK BQ 
    ---- ---- ---- ---- ---- ---- ---- ----
 8 | r  | n  | b  | q  | k  | b  | n  | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
@@ -184,92 +234,130 @@ Enpassant: f3	Castling: WK WQ BK BQ
    ---- ---- ---- ---- ---- ---- ---- ----
 6 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    | p  |    |    |    |
+5 |    |    |    |    | p  |    |    | Q  |
    ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    |    |    | P  |    |    |
+4 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    |    |    |    |    |    | P  |
+3 |    |    |    |    | P  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 | P  | P  | P  | P  | P  |    | P  |    |
+2 | P  | P  | P  | P  |    | P  | P  | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  | N  | B  | Q  | K  | B  | N  | R  |
+1 | R  | N  | B  |    | K  | B  | N  | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
-[DEBUG] [Parser] Wrote to ouput file championship/jykchess-logic-and-proofs/move.csv move : d8h4
+[DEBUG] [Parser] Wrote to ouput file championship/jykchess-logic-and-proofs/move.csv move : b8c6
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/jykchess-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 3 move(s).
 [32;1m[Board] [0mLoading move file `championship/jykchess-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mBlack player is playing d8 to h4.
+[32;1m[Board] [0mBlack player is playing b8 to c6.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[0;1mQ[0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[30;1mQ[0m|| 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m| || 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
-[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mWhite King in check![0m
-[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by Black Queen (h4)
- r n b . k b n r
+ r . b q k b n r
  p p p p . p p p
+ . . n . . . . .
+ . . . . p . . Q
  . . . . . . . .
- . . . . p . . .
- . . . . . P . q
- . . . . . . . P
- P P P P P . P .
- R N B Q K B N R
+ . . . . P . . .
+ P P P P . P P P
+ R N B . K B N R
+h5h6
+h5h7
+h5h4
+h5h3
+h5g5
+h5f5
+h5e5
+h5g6
+h5f7
+h5g4
+h5f3
+h5e2
+h5d1
+e3e4
+a2a3
+a2a4
+b2b3
+b2b4
+c2c3
+c2c4
+d2d3
+d2d4
+f2f3
+f2f4
+g2g3
+g2g4
+h2h3
+h2h4
+b1a3
+b1c3
+e1e2
+e1d1
+f1e2
+f1d3
+f1c4
+f1b5
+f1a6
+g1f3
+g1h3
+g1e2
 
-Random next move for the current player: g2g3
- r n b . k b n r
+Random next move for the current player: g1h3
+ r . b q k b n r
  p p p p . p p p
+ . . n . . . . .
+ . . . . p . . Q
  . . . . . . . .
- . . . . p . . .
- . . . . . P . q
- . . . . . . P P
- P P P P P . . .
- R N B Q K B N R
+ . . . . P . . N
+ P P P P . P P P
+ R N B . K B . R
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/jykchess-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 4 move(s).
 [32;1m[Board] [0mLoading move file `championship/jykchess-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mWhite player is playing g2 to g3.
+[32;1m[Board] [0mWhite player is playing g1 to h3.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[0;1mQ[0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[30;1mQ[0m|| 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[0;1mk[0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| || 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -277,55 +365,1432 @@ Random next move for the current player: g2g3
 [DEBUG] Input history filename: championship/jykchess-logic-and-proofs/history.csv
 [DEBUG] Output move file: championship/jykchess-logic-and-proofs/move.csv
 starting search...
-searched and found best move in search: 1092519
-Total nodes searched: 25538
+searched and found best move in search: 34885
+Total nodes searched: 105731
 how i see the board before writing next move: Turn: Black
 Enpassant: xx	Castling: WK WQ BK BQ 
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  | n  | b  |    | k  | b  | n  | r  |
+8 | r  |    | b  | q  | k  | b  | n  | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
 7 | p  | p  | p  | p  |    | p  | p  | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
-6 |    |    |    |    |    |    |    |    |
+6 |    |    | n  |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    | p  |    |    |    |
+5 |    |    |    |    | p  |    |    | Q  |
    ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    |    |    | P  |    | q  |
+4 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    |    |    |    |    | P  | P  |
+3 |    |    |    |    | P  |    |    | N  |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 | P  | P  | P  | P  | P  |    |    |    |
+2 | P  | P  | P  | P  |    | P  | P  | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  | N  | B  | Q  | K  | B  | N  | R  |
+1 | R  | N  | B  |    | K  | B  |    | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
-[DEBUG] [Parser] Wrote to ouput file championship/jykchess-logic-and-proofs/move.csv move : h4g3
+[DEBUG] [Parser] Wrote to ouput file championship/jykchess-logic-and-proofs/move.csv move : f8b4
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/jykchess-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 5 move(s).
 [32;1m[Board] [0mLoading move file `championship/jykchess-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mBlack player is playing h4 to g3.
+[32;1m[Board] [0mBlack player is playing f8 to b4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m| |[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[0;1mQ[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[30;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+ r . b q k . n r
+ p p p p . p p p
+ . . n . . . . .
+ . . . . p . . Q
+ . b . . . . . .
+ . . . . P . . N
+ P P P P . P P P
+ R N B . K B . R
+h5h6
+h5h7
+h5h4
+h5g5
+h5f5
+h5e5
+h5g6
+h5f7
+h5g4
+h5f3
+h5e2
+h5d1
+e3e4
+h3g5
+h3f4
+h3g1
+a2a3
+a2a4
+b2b3
+c2c3
+c2c4
+f2f3
+f2f4
+g2g3
+g2g4
+b1a3
+b1c3
+e1e2
+e1d1
+f1e2
+f1d3
+f1c4
+f1b5
+f1a6
+h1g1
+
+Random next move for the current player: f1a6
+ r . b q k . n r
+ p p p p . p p p
+ B . n . . . . .
+ . . . . p . . Q
+ . b . . . . . .
+ . . . . P . . N
+ P P P P . P P P
+ R N B . K . . R
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/jykchess-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 6 move(s).
+[32;1m[Board] [0mLoading move file `championship/jykchess-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mWhite player is playing f1 to a6.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m| |[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[0;1mb[0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[0;1mQ[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[30;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+[DEBUG] Input history filename: championship/jykchess-logic-and-proofs/history.csv
+[DEBUG] Output move file: championship/jykchess-logic-and-proofs/move.csv
+starting search...
+searched and found best move in search: 1074185
+Total nodes searched: 61637
+how i see the board before writing next move: Turn: Black
+Enpassant: xx	Castling: WK WQ BK BQ 
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | r  |    | b  | q  | k  |    | n  | r  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | p  | p  | p  | p  |    | p  | p  | p  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 | B  |    | n  |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    | p  |    |    | Q  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    | b  |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    | P  |    |    | N  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | P  | P  | P  | P  |    | P  | P  | P  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | R  | N  | B  |    | K  |    |    | R  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+[DEBUG] [Parser] Wrote to ouput file championship/jykchess-logic-and-proofs/move.csv move : b7a6
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/jykchess-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 7 move(s).
+[32;1m[Board] [0mLoading move file `championship/jykchess-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mBlack player is playing b7 to a6.
+[32;1m[Board] [0m[5;1mBlack Pawn is taking White Bishop.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m| |[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mp[0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[0;1mQ[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[30;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+ r . b q k . n r
+ p . p p . p p p
+ p . n . . . . .
+ . . . . p . . Q
+ . b . . . . . .
+ . . . . P . . N
+ P P P P . P P P
+ R N B . K . . R
+h5h6
+h5h7
+h5h4
+h5g5
+h5f5
+h5e5
+h5g6
+h5f7
+h5g4
+h5f3
+h5e2
+h5d1
+e3e4
+h3g5
+h3f4
+h3g1
+a2a3
+a2a4
+b2b3
+c2c3
+c2c4
+f2f3
+f2f4
+g2g3
+g2g4
+b1a3
+b1c3
+e1e2
+e1d1
+e1f1
+e1g1
+h1g1
+h1f1
+
+Random next move for the current player: h1f1
+ r . b q k . n r
+ p . p p . p p p
+ p . n . . . . .
+ . . . . p . . Q
+ . b . . . . . .
+ . . . . P . . N
+ P P P P . P P P
+ R N B . K R . .
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/jykchess-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 8 move(s).
+[32;1m[Board] [0mLoading move file `championship/jykchess-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mWhite player is playing h1 to f1.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m| |[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mp[0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[0;1mQ[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[30;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mr[0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+[DEBUG] Input history filename: championship/jykchess-logic-and-proofs/history.csv
+[DEBUG] Output move file: championship/jykchess-logic-and-proofs/move.csv
+starting search...
+searched and found best move in search: 2123467
+Total nodes searched: 38002
+how i see the board before writing next move: Turn: Black
+Enpassant: xx	Castling: xWQ BK BQ 
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | r  |    | b  | q  | k  |    | n  | r  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | p  |    | p  | p  |    | p  | p  | p  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 | p  |    | n  |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    | p  |    |    | Q  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    | b  |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    | P  |    |    | N  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | P  | P  | P  | P  |    | P  | P  | P  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | R  | N  | B  |    | K  | R  |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+[DEBUG] [Parser] Wrote to ouput file championship/jykchess-logic-and-proofs/move.csv move : d7d5
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/jykchess-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 9 move(s).
+[32;1m[Board] [0mLoading move file `championship/jykchess-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mBlack player is playing d7 to d5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m| |[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mp[0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[0;1mQ[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[30;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mr[0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+ r . b q k . n r
+ p . p . . p p p
+ p . n . . . . .
+ . . . p p . . Q
+ . b . . . . . .
+ . . . . P . . N
+ P P P P . P P P
+ R N B . K R . .
+h5h6
+h5h7
+h5h4
+h5g5
+h5f5
+h5e5
+h5g6
+h5f7
+h5g4
+h5f3
+h5e2
+h5d1
+e3e4
+h3g5
+h3f4
+h3g1
+a2a3
+a2a4
+b2b3
+c2c3
+c2c4
+f2f3
+f2f4
+g2g3
+g2g4
+b1a3
+b1c3
+e1e2
+e1d1
+f1g1
+f1h1
+
+Random next move for the current player: e1d1
+ r . b q k . n r
+ p . p . . p p p
+ p . n . . . . .
+ . . . p p . . Q
+ . b . . . . . .
+ . . . . P . . N
+ P P P P . P P P
+ R N B K . R . .
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/jykchess-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 10 move(s).
+[32;1m[Board] [0mLoading move file `championship/jykchess-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mWhite player is playing e1 to d1.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m| |[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mp[0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[0;1mQ[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[30;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mK[0m| |[0;1mr[0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+[DEBUG] Input history filename: championship/jykchess-logic-and-proofs/history.csv
+[DEBUG] Output move file: championship/jykchess-logic-and-proofs/move.csv
+starting search...
+searched and found best move in search: 30022
+Total nodes searched: 60172
+how i see the board before writing next move: Turn: Black
+Enpassant: xx	Castling: xxBK BQ 
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | r  |    | b  | q  | k  |    | n  | r  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | p  |    | p  |    |    | p  | p  | p  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 | p  |    | n  |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    | p  | p  |    |    | Q  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    | b  |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    | P  |    |    | N  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | P  | P  | P  | P  |    | P  | P  | P  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | R  | N  | B  | K  |    | R  |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+[DEBUG] [Parser] Wrote to ouput file championship/jykchess-logic-and-proofs/move.csv move : g8f6
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/jykchess-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 11 move(s).
+[32;1m[Board] [0mLoading move file `championship/jykchess-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mBlack player is playing g8 to f6.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mp[0m| |[30;1mk[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[0;1mQ[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[30;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mK[0m| |[0;1mr[0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+ r . b q k . . r
+ p . p . . p p p
+ p . n . . n . .
+ . . . p p . . Q
+ . b . . . . . .
+ . . . . P . . N
+ P P P P . P P P
+ R N B K . R . .
+h5h6
+h5h7
+h5h4
+h5g5
+h5f5
+h5e5
+h5g6
+h5f7
+h5g4
+h5f3
+h5e2
+e3e4
+h3g5
+h3f4
+h3g1
+a2a3
+a2a4
+b2b3
+c2c3
+c2c4
+d2d3
+d2d4
+f2f3
+f2f4
+g2g3
+g2g4
+b1a3
+b1c3
+d1e2
+d1e1
+f1e1
+f1g1
+f1h1
+
+Random next move for the current player: h5e2
+ r . b q k . . r
+ p . p . . p p p
+ p . n . . n . .
+ . . . p p . . .
+ . b . . . . . .
+ . . . . P . . N
+ P P P P Q P P P
+ R N B K . R . .
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/jykchess-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 12 move(s).
+[32;1m[Board] [0mLoading move file `championship/jykchess-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mWhite player is playing h5 to e2.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mp[0m| |[30;1mk[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[30;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mQ[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mK[0m| |[0;1mr[0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+[DEBUG] Input history filename: championship/jykchess-logic-and-proofs/history.csv
+[DEBUG] Output move file: championship/jykchess-logic-and-proofs/move.csv
+starting search...
+searched and found best move in search: 35202
+Total nodes searched: 85438
+how i see the board before writing next move: Turn: Black
+Enpassant: xx	Castling: xxBK BQ 
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | r  |    | b  | q  | k  |    |    | r  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | p  |    | p  |    |    | p  | p  | p  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 | p  |    | n  |    |    | n  |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    | p  | p  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    | b  |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    | P  |    |    | N  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | P  | P  | P  | P  | Q  | P  | P  | P  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | R  | N  | B  | K  |    | R  |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+[DEBUG] [Parser] Wrote to ouput file championship/jykchess-logic-and-proofs/move.csv move : c8g4
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/jykchess-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 13 move(s).
+[32;1m[Board] [0mLoading move file `championship/jykchess-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mBlack player is playing c8 to g4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[7;1m [0m|[30;1mQ[0m|[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mp[0m| |[30;1mk[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[30;1mb[0m|[7;1m [0m| |[7;1m [0m| |[30;1mb[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mQ[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mK[0m| |[0;1mr[0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+ r . . q k . . r
+ p . p . . p p p
+ p . n . . n . .
+ . . . p p . . .
+ . b . . . . b .
+ . . . . P . . N
+ P P P P Q P P P
+ R N B K . R . .
+e3e4
+h3g5
+h3f4
+h3g1
+a2a3
+a2a4
+b2b3
+c2c3
+c2c4
+d2d3
+d2d4
+e2f3
+e2g4
+f2f3
+f2f4
+g2g3
+b1a3
+b1c3
+d1e1
+f1e1
+f1g1
+f1h1
+
+Random next move for the current player: b1c3
+ r . . q k . . r
+ p . p . . p p p
+ p . n . . n . .
+ . . . p p . . .
+ . b . . . . b .
+ . . N . P . . N
+ P P P P Q P P P
+ R . B K . R . .
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/jykchess-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 14 move(s).
+[32;1m[Board] [0mLoading move file `championship/jykchess-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mWhite player is playing b1 to c3.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[7;1m [0m|[30;1mQ[0m|[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mp[0m| |[30;1mk[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[30;1mb[0m|[7;1m [0m| |[7;1m [0m| |[30;1mb[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mQ[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mK[0m| |[0;1mr[0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+[DEBUG] Input history filename: championship/jykchess-logic-and-proofs/history.csv
+[DEBUG] Output move file: championship/jykchess-logic-and-proofs/move.csv
+starting search...
+searched and found best move in search: 1084710
+Total nodes searched: 64964
+how i see the board before writing next move: Turn: Black
+Enpassant: xx	Castling: xxBK BQ 
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | r  |    |    | q  | k  |    |    | r  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | p  |    | p  |    |    | p  | p  | p  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 | p  |    | n  |    |    | n  |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    | p  | p  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    | b  |    |    |    |    | b  |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    | N  |    | P  |    |    | N  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | P  | P  | P  | P  | Q  | P  | P  | P  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | R  |    | B  | K  |    | R  |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+[DEBUG] [Parser] Wrote to ouput file championship/jykchess-logic-and-proofs/move.csv move : g4e2
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/jykchess-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 15 move(s).
+[32;1m[Board] [0mLoading move file `championship/jykchess-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mBlack player is playing g4 to e2.
+[32;1m[Board] [0m[5;1mBlack Bishop is taking White Queen.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[7;1m [0m|[30;1mQ[0m|[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mp[0m| |[30;1mk[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[30;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[30;1mb[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mK[0m| |[0;1mr[0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mWhite King in check![0m
+[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by Black Bishop (e2)
+ r . . q k . . r
+ p . p . . p p p
+ p . n . . n . .
+ . . . p p . . .
+ . b . . . . . .
+ . . N . P . . N
+ P P P P b P P P
+ R . B K . R . .
+c3e2
+d1e2
+d1e1
+
+Random next move for the current player: d1e2
+ r . . q k . . r
+ p . p . . p p p
+ p . n . . n . .
+ . . . p p . . .
+ . b . . . . . .
+ . . N . P . . N
+ P P P P K P P P
+ R . B . . R . .
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/jykchess-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 16 move(s).
+[32;1m[Board] [0mLoading move file `championship/jykchess-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mWhite player is playing d1 to e2.
+[32;1m[Board] [0m[5;1mWhite King is taking Black Bishop.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[7;1m [0m|[30;1mQ[0m|[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mp[0m| |[30;1mk[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[30;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mK[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[0;1mr[0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+[DEBUG] Input history filename: championship/jykchess-logic-and-proofs/history.csv
+[DEBUG] Output move file: championship/jykchess-logic-and-proofs/move.csv
+starting search...
+searched and found best move in search: 41091
+Total nodes searched: 45348
+how i see the board before writing next move: Turn: Black
+Enpassant: xx	Castling: xxBK BQ 
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | r  |    |    | q  | k  |    |    | r  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | p  |    | p  |    |    | p  | p  | p  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 | p  |    | n  |    |    | n  |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    | p  | p  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    | b  |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    | N  |    | P  |    |    | N  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | P  | P  | P  | P  | K  | P  | P  | P  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | R  |    | B  |    |    | R  |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+[DEBUG] [Parser] Wrote to ouput file championship/jykchess-logic-and-proofs/move.csv move : d8c8
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/jykchess-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 17 move(s).
+[32;1m[Board] [0mLoading move file `championship/jykchess-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mBlack player is playing d8 to c8.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mQ[0m| |[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mp[0m| |[30;1mk[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[30;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mK[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[0;1mr[0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+ r . q . k . . r
+ p . p . . p p p
+ p . n . . n . .
+ . . . p p . . .
+ . b . . . . . .
+ . . N . P . . N
+ P P P P K P P P
+ R . B . . R . .
+c3b5
+c3d5
+c3a4
+c3e4
+c3b1
+c3d1
+e3e4
+h3g5
+h3f4
+h3g1
+a2a3
+a2a4
+b2b3
+d2d3
+d2d4
+e2d3
+e2f3
+e2d1
+e2e1
+f2f3
+f2f4
+g2g3
+g2g4
+a1b1
+f1e1
+f1d1
+f1g1
+f1h1
+
+Random next move for the current player: c3d5
+ r . q . k . . r
+ p . p . . p p p
+ p . n . . n . .
+ . . . N p . . .
+ . b . . . . . .
+ . . . . P . . N
+ P P P P K P P P
+ R . B . . R . .
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/jykchess-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 18 move(s).
+[32;1m[Board] [0mLoading move file `championship/jykchess-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mWhite player is playing c3 to d5.
+[32;1m[Board] [0m[5;1mWhite Knight is taking Black Pawn.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mQ[0m| |[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mp[0m| |[30;1mk[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[0;1mk[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[30;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mK[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[0;1mr[0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+[DEBUG] Input history filename: championship/jykchess-logic-and-proofs/history.csv
+[DEBUG] Output move file: championship/jykchess-logic-and-proofs/move.csv
+starting search...
+searched and found best move in search: 1078997
+Total nodes searched: 53582
+how i see the board before writing next move: Turn: Black
+Enpassant: xx	Castling: xxBK BQ 
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | r  |    | q  |    | k  |    |    | r  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | p  |    | p  |    |    | p  | p  | p  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 | p  |    | n  |    |    | n  |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    | N  | p  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    | b  |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    | P  |    |    | N  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | P  | P  | P  | P  | K  | P  | P  | P  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | R  |    | B  |    |    | R  |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+[DEBUG] [Parser] Wrote to ouput file championship/jykchess-logic-and-proofs/move.csv move : f6d5
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/jykchess-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 19 move(s).
+[32;1m[Board] [0mLoading move file `championship/jykchess-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mBlack player is playing f6 to d5.
+[32;1m[Board] [0m[5;1mBlack Knight is taking White Knight.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mQ[0m| |[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mp[0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mk[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[30;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mK[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[0;1mr[0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+ r . q . k . . r
+ p . p . . p p p
+ p . n . . . . .
+ . . . n p . . .
+ . b . . . . . .
+ . . . . P . . N
+ P P P P K P P P
+ R . B . . R . .
+e3e4
+h3g5
+h3f4
+h3g1
+a2a3
+a2a4
+b2b3
+c2c3
+c2c4
+d2d3
+d2d4
+e2d3
+e2f3
+e2d1
+e2e1
+f2f3
+f2f4
+g2g3
+g2g4
+a1b1
+f1e1
+f1d1
+f1g1
+f1h1
+
+Random next move for the current player: g2g4
+ r . q . k . . r
+ p . p . . p p p
+ p . n . . . . .
+ . . . n p . . .
+ . b . . . . P .
+ . . . . P . . N
+ P P P P K P . P
+ R . B . . R . .
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/jykchess-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 20 move(s).
+[32;1m[Board] [0mLoading move file `championship/jykchess-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mWhite player is playing g2 to g4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mQ[0m| |[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mp[0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mk[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[30;1mb[0m|[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mK[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[0;1mr[0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+[DEBUG] Input history filename: championship/jykchess-logic-and-proofs/history.csv
+[DEBUG] Output move file: championship/jykchess-logic-and-proofs/move.csv
+starting search...
+searched and found best move in search: 1091970
+Total nodes searched: 54937
+how i see the board before writing next move: Turn: Black
+Enpassant: g3	Castling: xxBK BQ 
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | r  |    | q  |    | k  |    |    | r  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | p  |    | p  |    |    | p  | p  | p  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 | p  |    | n  |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    | n  | p  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    | b  |    |    |    |    | P  |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    | P  |    |    | N  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | P  | P  | P  | P  | K  | P  |    | P  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | R  |    | B  |    |    | R  |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+[DEBUG] [Parser] Wrote to ouput file championship/jykchess-logic-and-proofs/move.csv move : c8g4
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/jykchess-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 21 move(s).
+[32;1m[Board] [0mLoading move file `championship/jykchess-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mBlack player is playing c8 to g4.
 [32;1m[Board] [0m[5;1mBlack Queen is taking White Pawn.[0m
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[7;1m [0m| |[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[30;1mp[0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mk[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[30;1mb[0m|[7;1m [0m| |[7;1m [0m| |[30;1mQ[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mK[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[0;1mr[0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mWhite King in check![0m
+[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by Black Queen (g4)
+ r . . . k . . r
+ p . p . . p p p
+ p . n . . . . .
+ . . . n p . . .
+ . b . . . . q .
+ . . . . P . . N
+ P P P P K P . P
+ R . B . . R . .
+e2d3
+e2e1
+f2f3
+
+Random next move for the current player: f2f3
+ r . . . k . . r
+ p . p . . p p p
+ p . n . . . . .
+ . . . n p . . .
+ . b . . . . q .
+ . . . . P P . N
+ P P P P K . . P
+ R . B . . R . .
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/jykchess-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 22 move(s).
+[32;1m[Board] [0mLoading move file `championship/jykchess-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mWhite player is playing f2 to f3.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[7;1m [0m| |[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mp[0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mk[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[30;1mb[0m|[7;1m [0m| |[7;1m [0m| |[30;1mQ[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mK[0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[0;1mr[0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+[DEBUG] Input history filename: championship/jykchess-logic-and-proofs/history.csv
+[DEBUG] Output move file: championship/jykchess-logic-and-proofs/move.csv
+starting search...
+searched and found best move in search: 1092582
+Total nodes searched: 46319
+how i see the board before writing next move: Turn: Black
+Enpassant: xx	Castling: xxBK BQ 
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | r  |    |    |    | k  |    |    | r  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | p  |    | p  |    |    | p  | p  | p  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 | p  |    | n  |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    | n  | p  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    | b  |    |    |    |    | q  |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    | P  | P  |    | N  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | P  | P  | P  | P  | K  |    |    | P  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | R  |    | B  |    |    | R  |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+[DEBUG] [Parser] Wrote to ouput file championship/jykchess-logic-and-proofs/move.csv move : g4h3
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/jykchess-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 23 move(s).
+[32;1m[Board] [0mLoading move file `championship/jykchess-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mBlack player is playing g4 to h3.
+[32;1m[Board] [0m[5;1mBlack Queen is taking White Knight.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[7;1m [0m| |[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mp[0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mk[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[30;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[30;1mQ[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mK[0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[0;1mr[0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+ r . . . k . . r
+ p . p . . p p p
+ p . n . . . . .
+ . . . n p . . .
+ . b . . . . . .
+ . . . . P P . q
+ P P P P K . . P
+ R . B . . R . .
+e3e4
+f3f4
+a2a3
+a2a4
+b2b3
+c2c3
+c2c4
+d2d3
+d2d4
+e2d3
+e2f2
+e2d1
+e2e1
+a1b1
+f1f2
+f1e1
+f1d1
+f1g1
+f1h1
+
+Random next move for the current player: e2e1
+ r . . . k . . r
+ p . p . . p p p
+ p . n . . . . .
+ . . . n p . . .
+ . b . . . . . .
+ . . . . P P . q
+ P P P P . . . P
+ R . B . K R . .
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/jykchess-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 24 move(s).
+[32;1m[Board] [0mLoading move file `championship/jykchess-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mWhite player is playing e2 to e1.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[7;1m [0m| |[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mp[0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mk[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[30;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[30;1mQ[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mr[0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+[DEBUG] Input history filename: championship/jykchess-logic-and-proofs/history.csv
+[DEBUG] Output move file: championship/jykchess-logic-and-proofs/move.csv
+starting search...
+searched and found best move in search: 1080091
+Total nodes searched: 24903
+how i see the board before writing next move: Turn: Black
+Enpassant: xx	Castling: xxBK BQ 
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | r  |    |    |    | k  |    |    | r  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | p  |    | p  |    |    | p  | p  | p  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 | p  |    | n  |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    | n  | p  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    | b  |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    | P  | P  |    | q  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | P  | P  | P  | P  |    |    |    | P  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | R  |    | B  |    | K  | R  |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+[DEBUG] [Parser] Wrote to ouput file championship/jykchess-logic-and-proofs/move.csv move : d5e3
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/jykchess-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 25 move(s).
+[32;1m[Board] [0mLoading move file `championship/jykchess-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mBlack player is playing d5 to e3.
+[32;1m[Board] [0m[5;1mBlack Knight is taking White Pawn.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[7;1m [0m| |[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mp[0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m|[30;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mQ[0m|[0;1mp[0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|[0;1mp[0m| |[30;1mQ[0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| || 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mr[0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+ r . . . k . . r
+ p . p . . p p p
+ p . n . . . . .
+ . . . . p . . .
+ . b . . . . . .
+ . . . . n P . q
+ P P P P . . . P
+ R . B . K R . .
+f3f4
+a2a3
+a2a4
+b2b3
+c2c3
+c2c4
+a1b1
+e1e2
+e1f2
+f1f2
+f1g1
+f1h1
+
+Random next move for the current player: a1b1
+ r . . . k . . r
+ p . p . . p p p
+ p . n . . . . .
+ . . . . p . . .
+ . b . . . . . .
+ . . . . n P . q
+ P P P P . . . P
+ . R B . K R . .
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/jykchess-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 26 move(s).
+[32;1m[Board] [0mLoading move file `championship/jykchess-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mWhite player is playing a1 to b1.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[7;1m [0m| |[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mp[0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[30;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|[0;1mp[0m| |[30;1mQ[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 || |[0;1mr[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mr[0m| |[7;1m [0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+[DEBUG] Input history filename: championship/jykchess-logic-and-proofs/history.csv
+[DEBUG] Output move file: championship/jykchess-logic-and-proofs/move.csv
+starting search...
+searched and found best move in search: 1093487
+Total nodes searched: 59699
+how i see the board before writing next move: Turn: Black
+Enpassant: xx	Castling: xxBK BQ 
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | r  |    |    |    | k  |    |    | r  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | p  |    | p  |    |    | p  | p  | p  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 | p  |    | n  |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    | p  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    | b  |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    |    | n  | P  |    | q  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | P  | P  | P  | P  |    |    |    | P  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 |    | R  | B  |    | K  | R  |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+[DEBUG] [Parser] Wrote to ouput file championship/jykchess-logic-and-proofs/move.csv move : h3f1
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/jykchess-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 27 move(s).
+[32;1m[Board] [0mLoading move file `championship/jykchess-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mBlack player is playing h3 to f1.
+[32;1m[Board] [0m[5;1mBlack Queen is taking White Rook.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[7;1m [0m| |[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mp[0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m|[30;1mb[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|[0;1mp[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 || |[0;1mr[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[30;1mQ[0m| |[7;1m [0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
