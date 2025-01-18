@@ -28,7 +28,7 @@ Error : can't load the file openings.txt
 Opening move :
 the actual fen is : rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq
 starting search...
-[search_random]: b1c3
+[search_random]: a2a3
 searched and found best move in search: 2099508
 Total nodes searched: 30863
 info score depth 5 score 0
@@ -82,7 +82,7 @@ Enpassant: xx	Castling: WK WQ BK BQ
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
-/home/julien/Pro/git/teaching/x/2024/beatingthehorse/sources/main.cpp:43:25: runtime error: load of value 68, which is not a valid value for type 'bool'
+/home/julien/Pro/git/teaching/x/2024/beatingthehorse/sources/main.cpp:43:25: runtime error: load of value 7, which is not a valid value for type 'bool'
 SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /home/julien/Pro/git/teaching/x/2024/beatingthehorse/sources/main.cpp:43:25 
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
@@ -120,7 +120,7 @@ Error : can't load the file openings.txt
 Opening move :
 the actual fen is : rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq
 starting search...
-[search_random]: g1e2
+[search_random]: d2d3
 searched and found best move in search: 18427
 Total nodes searched: 50953
 info score depth 5 score 0
@@ -174,33 +174,33 @@ Enpassant: e6	Castling: WK WQ BK BQ
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
-/home/julien/Pro/git/teaching/x/2024/beatingthehorse/sources/main.cpp:43:25: runtime error: load of value 188, which is not a valid value for type 'bool'
+/home/julien/Pro/git/teaching/x/2024/beatingthehorse/sources/main.cpp:43:25: runtime error: load of value 175, which is not a valid value for type 'bool'
 SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /home/julien/Pro/git/teaching/x/2024/beatingthehorse/sources/main.cpp:43:25 
-12965037333191410704
-/usr/lib/gcc/x86_64-pc-linux-gnu/12/include/g++-v12/bits/stl_vector.h:1124:34: runtime error: applying non-zero offset 2851578465273259808 to null pointer
+265576705996396066
+/usr/lib/gcc/x86_64-pc-linux-gnu/12/include/g++-v12/bits/stl_vector.h:1124:34: runtime error: applying non-zero offset 9096709910089178720 to null pointer
 SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /usr/lib/gcc/x86_64-pc-linux-gnu/12/include/g++-v12/bits/stl_vector.h:1124:34 
-/usr/lib/gcc/x86_64-pc-linux-gnu/12/include/g++-v12/bits/stl_vector.h:1124:9: runtime error: reference binding to address 0x2792d7817fc42720 with insufficient space for an object of type 'std::basic_string<char>'
-0x2792d7817fc42720: note: pointer points here
+/usr/lib/gcc/x86_64-pc-linux-gnu/12/include/g++-v12/bits/stl_vector.h:1124:9: runtime error: reference binding to address 0x7e3e01777fa41e60 with insufficient space for an object of type 'std::basic_string<char>'
+0x7e3e01777fa41e60: note: pointer points here
 <memory cannot be printed>
 SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /usr/lib/gcc/x86_64-pc-linux-gnu/12/include/g++-v12/bits/stl_vector.h:1124:9 
 AddressSanitizer:DEADLYSIGNAL
 =================================================================
-==32206==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x55c37eaa03a3 bp 0x7ffc3a052fc0 sp 0x7ffc3a052e20 T0)
-==32206==The signal is caused by a READ memory access.
-==32206==Hint: this fault was caused by a dereference of a high value address (see register values below).  Disassemble the provided pc to learn which register was used.
-    #0 0x55c37eaa03a3 in main (/data/julien/Pro/git/teaching/x/2024/beatingthehorse/build/beatingthehorse+0x1183a3)
-    #1 0x7fbc51a4052f  (/lib64/libc.so.6+0x2652f)
-    #2 0x7fbc51a405e8 in __libc_start_main (/lib64/libc.so.6+0x265e8)
-    #3 0x55c37e9b7b84 in _start (/data/julien/Pro/git/teaching/x/2024/beatingthehorse/build/beatingthehorse+0x2fb84)
+==30928==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x5607413de3a3 bp 0x7ffc51b6e5d0 sp 0x7ffc51b6e440 T0)
+==30928==The signal is caused by a READ memory access.
+==30928==Hint: this fault was caused by a dereference of a high value address (see register values below).  Disassemble the provided pc to learn which register was used.
+    #0 0x5607413de3a3 in main (/data/julien/Pro/git/teaching/x/2024/beatingthehorse/build/beatingthehorse+0x1183a3)
+    #1 0x7faf8054552f  (/lib64/libc.so.6+0x2652f)
+    #2 0x7faf805455e8 in __libc_start_main (/lib64/libc.so.6+0x265e8)
+    #3 0x5607412f5b84 in _start (/data/julien/Pro/git/teaching/x/2024/beatingthehorse/build/beatingthehorse+0x2fb84)
 
-==32206==Register values:
-rax = 0x04f25af02ff884e4  rbx = 0x00007ffc3a052e20  rcx = 0x0000000000000000  rdx = 0x0000000000000000  
-rdi = 0x00007ffc3a052178  rsi = 0x0000000000000000  rbp = 0x00007ffc3a052fc0  rsp = 0x00007ffc3a052e20  
+==30928==Register values:
+rax = 0x0fc7c02eeff483cc  rbx = 0x00007ffc51b6e440  rcx = 0x0000000000000000  rdx = 0x0000000000000000  
+rdi = 0x00007ffc51b6d798  rsi = 0x0000000000000000  rbp = 0x00007ffc51b6e5d0  rsp = 0x00007ffc51b6e440  
  r8 = 0x000000000000007c   r9 = 0x0000000000000000  r10 = 0xafffff00000fffff  r11 = 0x0000000000000246  
-r12 = 0x00000ff80a09881a  r13 = 0x2792d7817fc42720  r14 = 0x00007fbc505040d0  r15 = 0x0000000000000000  
+r12 = 0x00000ff66fdf881a  r13 = 0x7e3e01777fa41e60  r14 = 0x00007faf7f0040d0  r15 = 0x0000000000000000  
 AddressSanitizer can not provide additional info.
 SUMMARY: AddressSanitizer: SEGV (/data/julien/Pro/git/teaching/x/2024/beatingthehorse/build/beatingthehorse+0x1183a3) in main
-==32206==ABORTING
+==30928==ABORTING
 [32;1m[Game] [0mPlayer's error code: 256
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...

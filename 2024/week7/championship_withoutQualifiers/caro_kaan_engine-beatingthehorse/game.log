@@ -51,7 +51,7 @@ championship/caro_kaan_engine-beatingthehorse/history.csv
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
-/home/julien/Pro/git/teaching/x/2024/beatingthehorse/sources/main.cpp:43:25: runtime error: load of value 246, which is not a valid value for type 'bool'
+/home/julien/Pro/git/teaching/x/2024/beatingthehorse/sources/main.cpp:43:25: runtime error: load of value 113, which is not a valid value for type 'bool'
 SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /home/julien/Pro/git/teaching/x/2024/beatingthehorse/sources/main.cpp:43:25 
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
@@ -83,8 +83,6 @@ SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /home/julien/Pro/git/tea
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
 championship/caro_kaan_engine-beatingthehorse/history.csv
-d2d4
-e7e5
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
@@ -115,33 +113,33 @@ e7e5
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
-/home/julien/Pro/git/teaching/x/2024/beatingthehorse/sources/main.cpp:43:25: runtime error: load of value 235, which is not a valid value for type 'bool'
+/home/julien/Pro/git/teaching/x/2024/beatingthehorse/sources/main.cpp:43:25: runtime error: load of value 176, which is not a valid value for type 'bool'
 SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /home/julien/Pro/git/teaching/x/2024/beatingthehorse/sources/main.cpp:43:25 
-685614409516817863
-/usr/lib/gcc/x86_64-pc-linux-gnu/12/include/g++-v12/bits/stl_vector.h:1124:34: runtime error: applying non-zero offset 8201400445569662784 to null pointer
+2184454896093754904
+/usr/lib/gcc/x86_64-pc-linux-gnu/12/include/g++-v12/bits/stl_vector.h:1124:34: runtime error: applying non-zero offset 10615718066446832864 to null pointer
 SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /usr/lib/gcc/x86_64-pc-linux-gnu/12/include/g++-v12/bits/stl_vector.h:1124:34 
-/usr/lib/gcc/x86_64-pc-linux-gnu/12/include/g++-v12/bits/stl_vector.h:1124:9: runtime error: reference binding to address 0x71d13a409ae8ff40 with insufficient space for an object of type 'std::basic_string<char>'
-0x71d13a409ae8ff40: note: pointer points here
+/usr/lib/gcc/x86_64-pc-linux-gnu/12/include/g++-v12/bits/stl_vector.h:1124:9: runtime error: reference binding to address 0x93529b56424294e0 with insufficient space for an object of type 'std::basic_string<char>'
+0x93529b56424294e0: note: pointer points here
 <memory cannot be printed>
 SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior /usr/lib/gcc/x86_64-pc-linux-gnu/12/include/g++-v12/bits/stl_vector.h:1124:9 
 AddressSanitizer:DEADLYSIGNAL
 =================================================================
-==6612==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x560476c303a3 bp 0x7ffce89c3fb0 sp 0x7ffce89c3e20 T0)
-==6612==The signal is caused by a READ memory access.
-==6612==Hint: this fault was caused by a dereference of a high value address (see register values below).  Disassemble the provided pc to learn which register was used.
-    #0 0x560476c303a3 in main (/data/julien/Pro/git/teaching/x/2024/beatingthehorse/build/beatingthehorse+0x1183a3)
-    #1 0x7feb1bb7f52f  (/lib64/libc.so.6+0x2652f)
-    #2 0x7feb1bb7f5e8 in __libc_start_main (/lib64/libc.so.6+0x265e8)
-    #3 0x560476b47b84 in _start (/data/julien/Pro/git/teaching/x/2024/beatingthehorse/build/beatingthehorse+0x2fb84)
+==28202==ERROR: AddressSanitizer: SEGV on unknown address (pc 0x564c1a6de3a3 bp 0x7ffc10b46290 sp 0x7ffc10b46100 T0)
+==28202==The signal is caused by a READ memory access.
+==28202==Hint: this fault was caused by a dereference of a high value address (see register values below).  Disassemble the provided pc to learn which register was used.
+    #0 0x564c1a6de3a3 in main (/data/julien/Pro/git/teaching/x/2024/beatingthehorse/build/beatingthehorse+0x1183a3)
+    #1 0x7fb0aa69f52f  (/lib64/libc.so.6+0x2652f)
+    #2 0x7fb0aa69f5e8 in __libc_start_main (/lib64/libc.so.6+0x265e8)
+    #3 0x564c1a5f5b84 in _start (/data/julien/Pro/git/teaching/x/2024/beatingthehorse/build/beatingthehorse+0x2fb84)
 
-==6612==Register values:
-rax = 0x0e3a2748135d1fe8  rbx = 0x00007ffce89c3e20  rcx = 0x0000000000000000  rdx = 0x0000000000000000  
-rdi = 0x00007ffce89c3178  rsi = 0x0000000000000000  rbp = 0x00007ffce89c3fb0  rsp = 0x00007ffce89c3e20  
+==28202==Register values:
+rax = 0x126a536ac848529c  rbx = 0x00007ffc10b46100  rcx = 0x0000000000000000  rdx = 0x0000000000000000  
+rdi = 0x00007ffc10b45458  rsi = 0x0000000000000000  rbp = 0x00007ffc10b46290  rsp = 0x00007ffc10b46100  
  r8 = 0x000000000000007c   r9 = 0x0000000000000000  r10 = 0xafffff00000fffff  r11 = 0x0000000000000246  
-r12 = 0x00000ffde34b881a  r13 = 0x71d13a409ae8ff40  r14 = 0x00007feb1a6040d0  r15 = 0x0000000000000000  
+r12 = 0x00000ff69521881a  r13 = 0x93529b56424294e0  r14 = 0x00007fb0a91040d0  r15 = 0x0000000000000000  
 AddressSanitizer can not provide additional info.
 SUMMARY: AddressSanitizer: SEGV (/data/julien/Pro/git/teaching/x/2024/beatingthehorse/build/beatingthehorse+0x1183a3) in main
-==6612==ABORTING
+==28202==ABORTING
 [32;1m[Game] [0mPlayer's error code: 256
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
