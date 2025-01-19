@@ -41,7 +41,7 @@
   +----+----+----+----+----+----+----+----+
     a    b    c    d    e    f    g   h
 
-random move: b1c3
+random move: e2e4
 Move written to championship/chess-ai-logic-and-proofs/move.csv successfully!
 eval: 0
 Result
@@ -55,7 +55,7 @@ Move: g8f6, Score: -50
 [32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 0 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mWhite player is playing b1 to c3.
+[32;1m[Board] [0mWhite player is playing e2 to e4.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
@@ -67,13 +67,13 @@ Move: g8f6, Score: -50
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -83,14 +83,14 @@ Error : can't load the file openings.txt
 [DEBUG] Output move file: championship/chess-ai-logic-and-proofs/move.csv
 [Parser][ply=] 1
 Opening move :
-the actual fen is : rnbqkbnr/pppppppp/8/8/8/2N5/PPPPPPPP/R1BQKBNR b KQkq
+the actual fen is : rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq
 starting search...
-[search_random]: g8f6
-searched and found best move in search: 2123532
-Total nodes searched: 24947
+[search_random]: d7d5
+searched and found best move in search: 29825
+Total nodes searched: 30141
 info score depth 5 score 0
 how i see the board before writing next move: Turn: Black
-Enpassant: xx	Castling: WK WQ BK BQ 
+Enpassant: e3	Castling: WK WQ BK BQ 
    ---- ---- ---- ---- ---- ---- ---- ----
 8 | r  | n  | b  | q  | k  | b  | n  | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
@@ -100,41 +100,41 @@ Enpassant: xx	Castling: WK WQ BK BQ
    ---- ---- ---- ---- ---- ---- ---- ----
 5 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    |    |    |    |    |    |
+4 |    |    |    |    | P  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    | N  |    |    |    |    |    |
+3 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 | P  | P  | P  | P  | P  | P  | P  | P  |
+2 | P  | P  | P  | P  |    | P  | P  | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  |    | B  | Q  | K  | B  | N  | R  |
+1 | R  | N  | B  | Q  | K  | B  | N  | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
-[DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : e7e5
+[DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : b8c6
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 1 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mBlack player is playing e7 to e5.
+[32;1m[Board] [0mBlack player is playing b8 to c6.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -149,101 +149,97 @@ Enpassant: xx	Castling: WK WQ BK BQ
   +----+----+----+----+----+----+----+----+
 5 |    |    |    |    |    |    |    |    | 5
   +----+----+----+----+----+----+----+----+
-4 |    |    |    |    |    |    |    |    | 4
+4 |    |    |    |    | mP |    |    |    | 4
   +----+----+----+----+----+----+----+----+
-3 |    |    | mN |    |    |    |    |    | 3
+3 |    |    |    |    |    |    |    |    | 3
   +----+----+----+----+----+----+----+----+
-2 | mP | mP | mP | mP | mP | mP | mP | mP | 2
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
   +----+----+----+----+----+----+----+----+
-1 | mR |    | mB | mQ | mK | mB | mN | mR | 1
-  +----+----+----+----+----+----+----+----+
-    a    b    c    d    e    f    g   h
-
-    a    b    c    d    e    f    g    h
-  +----+----+----+----+----+----+----+----+
-8 | oR | oN | oB | oQ | oK | oB | oN | oR | 8
-  +----+----+----+----+----+----+----+----+
-7 | oP | oP | oP | oP |    | oP | oP | oP | 7
-  +----+----+----+----+----+----+----+----+
-6 |    |    |    |    |    |    |    |    | 6
-  +----+----+----+----+----+----+----+----+
-5 |    |    |    |    | oP |    |    |    | 5
-  +----+----+----+----+----+----+----+----+
-4 |    |    |    |    |    |    |    |    | 4
-  +----+----+----+----+----+----+----+----+
-3 |    |    | mN |    |    |    |    |    | 3
-  +----+----+----+----+----+----+----+----+
-2 | mP | mP | mP | mP | mP | mP | mP | mP | 2
-  +----+----+----+----+----+----+----+----+
-1 | mR |    | mB | mQ | mK | mB | mN | mR | 1
+1 | mR | mN | mB | mQ | mK | mB | mN | mR | 1
   +----+----+----+----+----+----+----+----+
     a    b    c    d    e    f    g   h
 
     a    b    c    d    e    f    g    h
   +----+----+----+----+----+----+----+----+
-8 | oR | oN | oB | oQ | oK | oB | oN | oR | 8
+8 | oR |    | oB | oQ | oK | oB | oN | oR | 8
   +----+----+----+----+----+----+----+----+
-7 | oP | oP | oP | oP |    | oP | oP | oP | 7
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
   +----+----+----+----+----+----+----+----+
-6 |    |    |    |    |    |    |    |    | 6
+6 |    |    | oN |    |    |    |    |    | 6
   +----+----+----+----+----+----+----+----+
-5 |    |    |    |    | oP |    |    |    | 5
+5 |    |    |    |    |    |    |    |    | 5
   +----+----+----+----+----+----+----+----+
-4 |    |    |    |    |    |    |    |    | 4
+4 |    |    |    |    | mP |    |    |    | 4
   +----+----+----+----+----+----+----+----+
-3 |    |    | mN |    |    |    |    |    | 3
+3 |    |    |    |    |    |    |    |    | 3
   +----+----+----+----+----+----+----+----+
-2 | mP | mP | mP | mP | mP | mP | mP | mP | 2
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
   +----+----+----+----+----+----+----+----+
-1 | mR |    | mB | mQ | mK | mB | mN | mR | 1
+1 | mR | mN | mB | mQ | mK | mB | mN | mR | 1
   +----+----+----+----+----+----+----+----+
     a    b    c    d    e    f    g   h
 
-random move: g2g4
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB | oN | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    |    |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    |    |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK | mB | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+random move: f1c4
 Move written to championship/chess-ai-logic-and-proofs/move.csv successfully!
-eval: -129
-Result
-Move: e5e6, Score: 30
-Move: e8e7, Score: 20
-Move: d8h4, Score: 10
-Move: d8e7, Score: 5
-Move: b8a6, Score: 0
-Move: g8h6, Score: 0
-Move: f8e7, Score: 0
-Move: f8a3, Score: 0
-Move: d8g5, Score: 0
-Move: d8f6, Score: -5
-Move: f8d6, Score: -20
-Move: f8c5, Score: -20
-Move: f8b4, Score: -20
-Move: g8e7, Score: -30
-Move: b8c6, Score: -40
-Move: g8f6, Score: -40
+eval: 129
+qrbkqrbkResult
+Move: c6b8, Score: 40
+Move: c6a5, Score: 30
+Move: c6b4, Score: 0
+Move: a8b8, Score: -10
+Move: c6e5, Score: -20
+Move: c6d4, Score: -20
+Move: g8h6, Score: -20
+Move: g8f6, Score: -60
+Move: b7b8k, Score: -160
+Move: b7b8b, Score: -180
+Move: b7b8r, Score: -400
+Move: b7b8q, Score: -790
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 2 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mWhite player is playing g2 to g4.
+[32;1m[Board] [0mWhite player is playing f1 to c4.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[0;1mb[0m| |[0;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -253,58 +249,58 @@ Error : can't load the file openings.txt
 [DEBUG] Output move file: championship/chess-ai-logic-and-proofs/move.csv
 [Parser][ply=] 3
 Opening move :
-the actual fen is : rnbqkbnr/pppp1ppp/8/4p3/6P1/2N5/PPPPPP1P/R1BQKBNR b KQkq
+the actual fen is : r1bqkbnr/pppppppp/2n5/8/2B1P3/8/PPPP1PPP/RNBQK1NR b KQkq
 starting search...
-[search_random]: g8f6
-searched and found best move in search: 29825
-Total nodes searched: 30807
+[search_random]: d7d5
+searched and found best move in search: 30022
+Total nodes searched: 62173
 info score depth 5 score 0
 how i see the board before writing next move: Turn: Black
-Enpassant: g3	Castling: WK WQ BK BQ 
+Enpassant: xx	Castling: WK WQ BK BQ 
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  | n  | b  | q  | k  | b  | n  | r  |
+8 | r  |    | b  | q  | k  | b  | n  | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  | p  | p  | p  |    | p  | p  | p  |
+7 | p  | p  | p  | p  | p  | p  | p  | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
-6 |    |    |    |    |    |    |    |    |
+6 |    |    | n  |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    | p  |    |    |    |
+5 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    |    |    |    | P  |    |
+4 |    |    | B  |    | P  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    | N  |    |    |    |    |    |
+3 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 | P  | P  | P  | P  | P  | P  |    | P  |
+2 | P  | P  | P  | P  |    | P  | P  | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  |    | B  | Q  | K  | B  | N  | R  |
+1 | R  | N  | B  | Q  | K  |    | N  | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
-[DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : b8c6
+[DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : g8f6
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 3 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mBlack player is playing b8 to c6.
+[32;1m[Board] [0mBlack player is playing g8 to f6.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[0;1mb[0m| |[0;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -319,53 +315,13 @@ Enpassant: g3	Castling: WK WQ BK BQ
   +----+----+----+----+----+----+----+----+
 5 |    |    |    |    |    |    |    |    | 5
   +----+----+----+----+----+----+----+----+
-4 |    |    |    |    |    |    |    |    | 4
+4 |    |    |    |    | mP |    |    |    | 4
   +----+----+----+----+----+----+----+----+
-3 |    |    | mN |    |    |    |    |    | 3
+3 |    |    |    |    |    |    |    |    | 3
   +----+----+----+----+----+----+----+----+
-2 | mP | mP | mP | mP | mP | mP | mP | mP | 2
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
   +----+----+----+----+----+----+----+----+
-1 | mR |    | mB | mQ | mK | mB | mN | mR | 1
-  +----+----+----+----+----+----+----+----+
-    a    b    c    d    e    f    g   h
-
-    a    b    c    d    e    f    g    h
-  +----+----+----+----+----+----+----+----+
-8 | oR | oN | oB | oQ | oK | oB | oN | oR | 8
-  +----+----+----+----+----+----+----+----+
-7 | oP | oP | oP | oP |    | oP | oP | oP | 7
-  +----+----+----+----+----+----+----+----+
-6 |    |    |    |    |    |    |    |    | 6
-  +----+----+----+----+----+----+----+----+
-5 |    |    |    |    | oP |    |    |    | 5
-  +----+----+----+----+----+----+----+----+
-4 |    |    |    |    |    |    |    |    | 4
-  +----+----+----+----+----+----+----+----+
-3 |    |    | mN |    |    |    |    |    | 3
-  +----+----+----+----+----+----+----+----+
-2 | mP | mP | mP | mP | mP | mP | mP | mP | 2
-  +----+----+----+----+----+----+----+----+
-1 | mR |    | mB | mQ | mK | mB | mN | mR | 1
-  +----+----+----+----+----+----+----+----+
-    a    b    c    d    e    f    g   h
-
-    a    b    c    d    e    f    g    h
-  +----+----+----+----+----+----+----+----+
-8 | oR | oN | oB | oQ | oK | oB | oN | oR | 8
-  +----+----+----+----+----+----+----+----+
-7 | oP | oP | oP | oP |    | oP | oP | oP | 7
-  +----+----+----+----+----+----+----+----+
-6 |    |    |    |    |    |    |    |    | 6
-  +----+----+----+----+----+----+----+----+
-5 |    |    |    |    | oP |    |    |    | 5
-  +----+----+----+----+----+----+----+----+
-4 |    |    |    |    |    |    | mP |    | 4
-  +----+----+----+----+----+----+----+----+
-3 |    |    | mN |    |    |    |    |    | 3
-  +----+----+----+----+----+----+----+----+
-2 | mP | mP | mP | mP | mP | mP |    | mP | 2
-  +----+----+----+----+----+----+----+----+
-1 | mR |    | mB | mQ | mK | mB | mN | mR | 1
+1 | mR | mN | mB | mQ | mK | mB | mN | mR | 1
   +----+----+----+----+----+----+----+----+
     a    b    c    d    e    f    g   h
 
@@ -373,19 +329,19 @@ Enpassant: g3	Castling: WK WQ BK BQ
   +----+----+----+----+----+----+----+----+
 8 | oR |    | oB | oQ | oK | oB | oN | oR | 8
   +----+----+----+----+----+----+----+----+
-7 | oP | oP | oP | oP |    | oP | oP | oP | 7
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
   +----+----+----+----+----+----+----+----+
 6 |    |    | oN |    |    |    |    |    | 6
   +----+----+----+----+----+----+----+----+
-5 |    |    |    |    | oP |    |    |    | 5
+5 |    |    |    |    |    |    |    |    | 5
   +----+----+----+----+----+----+----+----+
-4 |    |    |    |    |    |    | mP |    | 4
+4 |    |    |    |    | mP |    |    |    | 4
   +----+----+----+----+----+----+----+----+
-3 |    |    | mN |    |    |    |    |    | 3
+3 |    |    |    |    |    |    |    |    | 3
   +----+----+----+----+----+----+----+----+
-2 | mP | mP | mP | mP | mP | mP |    | mP | 2
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
   +----+----+----+----+----+----+----+----+
-1 | mR |    | mB | mQ | mK | mB | mN | mR | 1
+1 | mR | mN | mB | mQ | mK | mB | mN | mR | 1
   +----+----+----+----+----+----+----+----+
     a    b    c    d    e    f    g   h
 
@@ -393,75 +349,111 @@ Enpassant: g3	Castling: WK WQ BK BQ
   +----+----+----+----+----+----+----+----+
 8 | oR |    | oB | oQ | oK | oB | oN | oR | 8
   +----+----+----+----+----+----+----+----+
-7 | oP | oP | oP | oP |    | oP | oP | oP | 7
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
   +----+----+----+----+----+----+----+----+
 6 |    |    | oN |    |    |    |    |    | 6
   +----+----+----+----+----+----+----+----+
-5 |    |    |    |    | oP |    |    |    | 5
+5 |    |    |    |    |    |    |    |    | 5
   +----+----+----+----+----+----+----+----+
-4 |    |    |    |    |    |    | mP |    | 4
+4 |    |    | mB |    | mP |    |    |    | 4
   +----+----+----+----+----+----+----+----+
-3 |    |    | mN |    |    |    |    |    | 3
+3 |    |    |    |    |    |    |    |    | 3
   +----+----+----+----+----+----+----+----+
-2 | mP | mP | mP | mP | mP | mP |    | mP | 2
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
   +----+----+----+----+----+----+----+----+
-1 | mR |    | mB | mQ | mK | mB | mN | mR | 1
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
   +----+----+----+----+----+----+----+----+
     a    b    c    d    e    f    g   h
 
-random move: c3a4
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+random move: d2d3
 Move written to championship/chess-ai-logic-and-proofs/move.csv successfully!
-eval: -205
-qrbkqrbkResult
-Move: c6b8, Score: 0
-Move: c6a5, Score: -10
-Move: e5e6, Score: -30
-Move: e8e7, Score: -40
-Move: c6b4, Score: -40
-Move: c6e7, Score: -40
-Move: a8b8, Score: -50
-Move: d8h4, Score: -50
-Move: d8e7, Score: -55
-Move: c6d4, Score: -60
-Move: d8g5, Score: -60
-Move: g8h6, Score: -60
-Move: f8e7, Score: -60
-Move: f8a3, Score: -60
-Move: d8f6, Score: -65
-Move: f8d6, Score: -80
-Move: f8c5, Score: -80
-Move: f8b4, Score: -80
-Move: g8e7, Score: -90
-Move: g8f6, Score: -100
-Move: b7b8k, Score: -200
-Move: b7b8b, Score: -220
-Move: b7b8r, Score: -440
-Move: b7b8q, Score: -830
+eval: 171
+qrbkqrbkqrbkqrbkResult
+Move: f6g8, Score: 20
+Move: c6b8, Score: 20
+Move: f6h5, Score: 10
+Move: c6a5, Score: 10
+Move: f6g4, Score: -20
+Move: c6b4, Score: -20
+Move: a8b8, Score: -30
+Move: h8g8, Score: -30
+Move: c6e5, Score: -40
+Move: f6d5, Score: -40
+Move: c6d4, Score: -40
+Move: f6e4, Score: -160
+Move: g7g8k, Score: -180
+Move: b7b8k, Score: -180
+Move: g7g8b, Score: -200
+Move: b7b8b, Score: -200
+Move: g7g8r, Score: -420
+Move: b7b8r, Score: -420
+Move: b7b8q, Score: -810
+Move: g7g8q, Score: -810
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 4 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mWhite player is playing c3 to a4.
+[32;1m[Board] [0mWhite player is playing d2 to d3.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[0;1mk[0m| |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[0;1mb[0m| |[0;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -471,58 +463,58 @@ Error : can't load the file openings.txt
 [DEBUG] Output move file: championship/chess-ai-logic-and-proofs/move.csv
 [Parser][ply=] 5
 Opening move :
-the actual fen is : r1bqkbnr/pppp1ppp/2n5/4p3/N5P1/8/PPPPPP1P/R1BQKBNR b KQkq
+the actual fen is : r1bqkb1r/pppppppp/2n2n2/8/2B1P3/3P4/PPP2PPP/RNBQK1NR b KQkq
 starting search...
-[search_random]: d8f6
-searched and found best move in search: 2123467
-Total nodes searched: 27889
+[search_random]: g7g5
+searched and found best move in search: 2123532
+Total nodes searched: 57632
 info score depth 5 score 0
 how i see the board before writing next move: Turn: Black
 Enpassant: xx	Castling: WK WQ BK BQ 
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  |    | b  | q  | k  | b  | n  | r  |
+8 | r  |    | b  | q  | k  | b  |    | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  | p  | p  | p  |    | p  | p  | p  |
+7 | p  | p  | p  | p  | p  | p  | p  | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
-6 |    |    | n  |    |    |    |    |    |
+6 |    |    | n  |    |    | n  |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    | p  |    |    |    |
+5 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-4 | N  |    |    |    |    |    | P  |    |
+4 |    |    | B  |    | P  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    |    |    |    |    |    |    |
+3 |    |    |    | P  |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 | P  | P  | P  | P  | P  | P  |    | P  |
+2 | P  | P  | P  |    |    | P  | P  | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  |    | B  | Q  | K  | B  | N  | R  |
+1 | R  | N  | B  | Q  | K  |    | N  | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
-[DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : d7d5
+[DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : e7e5
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 5 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mBlack player is playing d7 to d5.
+[32;1m[Board] [0mBlack player is playing e7 to e5.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[0;1mk[0m| |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[0;1mb[0m| |[0;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -537,113 +529,13 @@ Enpassant: xx	Castling: WK WQ BK BQ
   +----+----+----+----+----+----+----+----+
 5 |    |    |    |    |    |    |    |    | 5
   +----+----+----+----+----+----+----+----+
-4 |    |    |    |    |    |    |    |    | 4
-  +----+----+----+----+----+----+----+----+
-3 |    |    | mN |    |    |    |    |    | 3
-  +----+----+----+----+----+----+----+----+
-2 | mP | mP | mP | mP | mP | mP | mP | mP | 2
-  +----+----+----+----+----+----+----+----+
-1 | mR |    | mB | mQ | mK | mB | mN | mR | 1
-  +----+----+----+----+----+----+----+----+
-    a    b    c    d    e    f    g   h
-
-    a    b    c    d    e    f    g    h
-  +----+----+----+----+----+----+----+----+
-8 | oR | oN | oB | oQ | oK | oB | oN | oR | 8
-  +----+----+----+----+----+----+----+----+
-7 | oP | oP | oP | oP |    | oP | oP | oP | 7
-  +----+----+----+----+----+----+----+----+
-6 |    |    |    |    |    |    |    |    | 6
-  +----+----+----+----+----+----+----+----+
-5 |    |    |    |    | oP |    |    |    | 5
-  +----+----+----+----+----+----+----+----+
-4 |    |    |    |    |    |    |    |    | 4
-  +----+----+----+----+----+----+----+----+
-3 |    |    | mN |    |    |    |    |    | 3
-  +----+----+----+----+----+----+----+----+
-2 | mP | mP | mP | mP | mP | mP | mP | mP | 2
-  +----+----+----+----+----+----+----+----+
-1 | mR |    | mB | mQ | mK | mB | mN | mR | 1
-  +----+----+----+----+----+----+----+----+
-    a    b    c    d    e    f    g   h
-
-    a    b    c    d    e    f    g    h
-  +----+----+----+----+----+----+----+----+
-8 | oR | oN | oB | oQ | oK | oB | oN | oR | 8
-  +----+----+----+----+----+----+----+----+
-7 | oP | oP | oP | oP |    | oP | oP | oP | 7
-  +----+----+----+----+----+----+----+----+
-6 |    |    |    |    |    |    |    |    | 6
-  +----+----+----+----+----+----+----+----+
-5 |    |    |    |    | oP |    |    |    | 5
-  +----+----+----+----+----+----+----+----+
-4 |    |    |    |    |    |    | mP |    | 4
-  +----+----+----+----+----+----+----+----+
-3 |    |    | mN |    |    |    |    |    | 3
-  +----+----+----+----+----+----+----+----+
-2 | mP | mP | mP | mP | mP | mP |    | mP | 2
-  +----+----+----+----+----+----+----+----+
-1 | mR |    | mB | mQ | mK | mB | mN | mR | 1
-  +----+----+----+----+----+----+----+----+
-    a    b    c    d    e    f    g   h
-
-    a    b    c    d    e    f    g    h
-  +----+----+----+----+----+----+----+----+
-8 | oR |    | oB | oQ | oK | oB | oN | oR | 8
-  +----+----+----+----+----+----+----+----+
-7 | oP | oP | oP | oP |    | oP | oP | oP | 7
-  +----+----+----+----+----+----+----+----+
-6 |    |    | oN |    |    |    |    |    | 6
-  +----+----+----+----+----+----+----+----+
-5 |    |    |    |    | oP |    |    |    | 5
-  +----+----+----+----+----+----+----+----+
-4 |    |    |    |    |    |    | mP |    | 4
-  +----+----+----+----+----+----+----+----+
-3 |    |    | mN |    |    |    |    |    | 3
-  +----+----+----+----+----+----+----+----+
-2 | mP | mP | mP | mP | mP | mP |    | mP | 2
-  +----+----+----+----+----+----+----+----+
-1 | mR |    | mB | mQ | mK | mB | mN | mR | 1
-  +----+----+----+----+----+----+----+----+
-    a    b    c    d    e    f    g   h
-
-    a    b    c    d    e    f    g    h
-  +----+----+----+----+----+----+----+----+
-8 | oR |    | oB | oQ | oK | oB | oN | oR | 8
-  +----+----+----+----+----+----+----+----+
-7 | oP | oP | oP | oP |    | oP | oP | oP | 7
-  +----+----+----+----+----+----+----+----+
-6 |    |    | oN |    |    |    |    |    | 6
-  +----+----+----+----+----+----+----+----+
-5 |    |    |    |    | oP |    |    |    | 5
-  +----+----+----+----+----+----+----+----+
-4 | mN |    |    |    |    |    | mP |    | 4
+4 |    |    |    |    | mP |    |    |    | 4
   +----+----+----+----+----+----+----+----+
 3 |    |    |    |    |    |    |    |    | 3
   +----+----+----+----+----+----+----+----+
-2 | mP | mP | mP | mP | mP | mP |    | mP | 2
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
   +----+----+----+----+----+----+----+----+
-1 | mR |    | mB | mQ | mK | mB | mN | mR | 1
-  +----+----+----+----+----+----+----+----+
-    a    b    c    d    e    f    g   h
-
-    a    b    c    d    e    f    g    h
-  +----+----+----+----+----+----+----+----+
-8 | oR |    | oB | oQ | oK | oB | oN | oR | 8
-  +----+----+----+----+----+----+----+----+
-7 | oP | oP | oP |    |    | oP | oP | oP | 7
-  +----+----+----+----+----+----+----+----+
-6 |    |    | oN |    |    |    |    |    | 6
-  +----+----+----+----+----+----+----+----+
-5 |    |    |    | oP | oP |    |    |    | 5
-  +----+----+----+----+----+----+----+----+
-4 | mN |    |    |    |    |    | mP |    | 4
-  +----+----+----+----+----+----+----+----+
-3 |    |    |    |    |    |    |    |    | 3
-  +----+----+----+----+----+----+----+----+
-2 | mP | mP | mP | mP | mP | mP |    | mP | 2
-  +----+----+----+----+----+----+----+----+
-1 | mR |    | mB | mQ | mK | mB | mN | mR | 1
+1 | mR | mN | mB | mQ | mK | mB | mN | mR | 1
   +----+----+----+----+----+----+----+----+
     a    b    c    d    e    f    g   h
 
@@ -651,83 +543,178 @@ Enpassant: xx	Castling: WK WQ BK BQ
   +----+----+----+----+----+----+----+----+
 8 | oR |    | oB | oQ | oK | oB | oN | oR | 8
   +----+----+----+----+----+----+----+----+
-7 | oP | oP | oP |    |    | oP | oP | oP | 7
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
   +----+----+----+----+----+----+----+----+
 6 |    |    | oN |    |    |    |    |    | 6
   +----+----+----+----+----+----+----+----+
-5 |    |    |    | oP | oP |    |    |    | 5
+5 |    |    |    |    |    |    |    |    | 5
   +----+----+----+----+----+----+----+----+
-4 | mN |    |    |    |    |    | mP |    | 4
+4 |    |    |    |    | mP |    |    |    | 4
   +----+----+----+----+----+----+----+----+
 3 |    |    |    |    |    |    |    |    | 3
   +----+----+----+----+----+----+----+----+
-2 | mP | mP | mP | mP | mP | mP |    | mP | 2
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
   +----+----+----+----+----+----+----+----+
-1 | mR |    | mB | mQ | mK | mB | mN | mR | 1
+1 | mR | mN | mB | mQ | mK | mB | mN | mR | 1
   +----+----+----+----+----+----+----+----+
     a    b    c    d    e    f    g   h
 
-random move: f2f4
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB | oN | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    |    |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+random move: g2g4
 Move written to championship/chess-ai-logic-and-proofs/move.csv successfully!
-eval: -397
-qrbkqrbkResult
-Move: c6b8, Score: -80
-Move: c6a5, Score: -90
-Move: d5d6, Score: -110
-Move: e5e6, Score: -110
-Move: e8d7, Score: -120
-Move: c6b4, Score: -120
-Move: c6e7, Score: -120
-Move: e8e7, Score: -120
-Move: a8b8, Score: -130
-Move: d8h4, Score: -130
-Move: d8d7, Score: -135
-Move: d8e7, Score: -135
-Move: c6d4, Score: -140
-Move: g8h6, Score: -140
-Move: c8d7, Score: -140
-Move: d8g5, Score: -140
-Move: f8e7, Score: -140
-Move: f8a3, Score: -140
-Move: d8f6, Score: -145
-Move: d8d6, Score: -150
-Move: c8e6, Score: -160
-Move: f8b4, Score: -160
-Move: f8c5, Score: -160
-Move: f8d6, Score: -160
-Move: c8f5, Score: -160
-Move: g8e7, Score: -170
-Move: g8f6, Score: -180
-Move: c8g4, Score: -260
-Move: b7b8k, Score: -280
-Move: b7b8b, Score: -300
-Move: b7b8r, Score: -520
-Move: b7b8q, Score: -910
+eval: 129
+qrbkqrbkqrbkqrbkResult
+Move: f6g8, Score: 0
+Move: c6b8, Score: 0
+Move: f6h5, Score: -10
+Move: c6a5, Score: -10
+Move: e5e6, Score: -30
+Move: c6b4, Score: -40
+Move: e8e7, Score: -40
+Move: f6g4, Score: -40
+Move: c6e7, Score: -40
+Move: h8g8, Score: -50
+Move: a8b8, Score: -50
+Move: d8e7, Score: -55
+Move: c6d4, Score: -60
+Move: f8a3, Score: -60
+Move: f6d5, Score: -60
+Move: f8e7, Score: -60
+Move: f8c5, Score: -80
+Move: f8d6, Score: -80
+Move: f6e4, Score: -180
+Move: g7g8k, Score: -200
+Move: b7b8k, Score: -200
+Move: b7b8b, Score: -220
+Move: g7g8b, Score: -220
+Move: g7g8r, Score: -440
+Move: b7b8r, Score: -440
+Move: g7g8q, Score: -830
+Move: b7b8q, Score: -830
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 6 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mWhite player is playing f2 to f4.
+[32;1m[Board] [0mWhite player is playing g2 to g4.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[0;1mk[0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[0;1mb[0m| |[0;1mp[0m| |[0;1mp[0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -737,58 +724,2062 @@ Error : can't load the file openings.txt
 [DEBUG] Output move file: championship/chess-ai-logic-and-proofs/move.csv
 [Parser][ply=] 7
 Opening move :
-the actual fen is : r1bqkbnr/ppp2ppp/2n5/3pp3/N4PP1/8/PPPPP2P/R1BQKBNR b KQkq
+the actual fen is : r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P1P1/3P4/PPP2P1P/RNBQK1NR b KQkq
 starting search...
-[search_random]: d8d7
-searched and found best move in search: 43459
-Total nodes searched: 21637
+[search_random]: f6g4
+searched and found best move in search: 2123467
+Total nodes searched: 31181
 info score depth 5 score 0
 how i see the board before writing next move: Turn: Black
-Enpassant: f3	Castling: WK WQ BK BQ 
+Enpassant: g3	Castling: WK WQ BK BQ 
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  |    | b  | q  | k  | b  | n  | r  |
+8 | r  |    | b  | q  | k  | b  |    | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  | p  | p  |    |    | p  | p  | p  |
+7 | p  | p  | p  | p  |    | p  | p  | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
-6 |    |    | n  |    |    |    |    |    |
+6 |    |    | n  |    |    | n  |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    | p  | p  |    |    |    |
+5 |    |    |    |    | p  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-4 | N  |    |    |    |    | P  | P  |    |
+4 |    |    | B  |    | P  |    | P  |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    |    |    |    |    |    |    |
+3 |    |    |    | P  |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 | P  | P  | P  | P  | P  |    |    | P  |
+2 | P  | P  | P  |    |    | P  |    | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  |    | B  | Q  | K  | B  | N  | R  |
+1 | R  | N  | B  | Q  | K  |    | N  | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
-[DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : d8h4
+[DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : d7d5
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 7 move(s).
 [32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mBlack player is playing d8 to h4.
+[32;1m[Board] [0mBlack player is playing d7 to d5.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[0;1mk[0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[30;1mQ[0m|| 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[0;1mb[0m| |[0;1mp[0m| |[0;1mp[0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+5    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR | oN | oB | oQ | oK | oB | oN | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    |    |    |    |    |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    |    |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK | mB | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB | oN | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    |    |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    |    |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK | mB | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB | oN | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    |    |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    | mP |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    | mP |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    | oP | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    | mP |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    | mP |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    | oP | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    | mP |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    | mP |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+random move: f2f4
+Move written to championship/chess-ai-logic-and-proofs/move.csv successfully!
+eval: -123
+qrbkqrbkqrbkqrbkResult
+Move: f6g8, Score: -50
+Move: c6b8, Score: -50
+Move: f6h5, Score: -60
+Move: c6a5, Score: -60
+Move: d5d6, Score: -80
+Move: e5e6, Score: -80
+Move: e8d7, Score: -90
+Move: e8e7, Score: -90
+Move: f6d7, Score: -90
+Move: c6b4, Score: -90
+Move: c6e7, Score: -90
+Move: a8b8, Score: -100
+Move: h8g8, Score: -100
+Move: d8d7, Score: -105
+Move: d8e7, Score: -105
+Move: c6d4, Score: -110
+Move: f8a3, Score: -110
+Move: f8e7, Score: -110
+Move: c8d7, Score: -110
+Move: d8d6, Score: -120
+Move: c8e6, Score: -130
+Move: f8c5, Score: -130
+Move: f8d6, Score: -130
+Move: c8f5, Score: -130
+Move: f6g4, Score: -190
+Move: c8g4, Score: -230
+Move: f6e4, Score: -230
+Move: b7b8k, Score: -250
+Move: g7g8k, Score: -250
+Move: b7b8b, Score: -270
+Move: g7g8b, Score: -270
+Move: g7g8r, Score: -490
+Move: b7b8r, Score: -490
+Move: g7g8q, Score: -880
+Move: b7b8q, Score: -880
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 8 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mWhite player is playing f2 to f4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[0;1mb[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+Error : can't load the file openings.txt
+[DEBUG] Input history filename: championship/chess-ai-logic-and-proofs/history.csv
+[DEBUG] Output move file: championship/chess-ai-logic-and-proofs/move.csv
+[Parser][ply=] 9
+Opening move :
+the actual fen is : r1bqkb1r/ppp2ppp/2n2n2/3pp3/2B1PPP1/3P4/PPP4P/RNBQK1NR b KQkq
+starting search...
+[search_random]: g7g5
+searched and found best move in search: 1075355
+Total nodes searched: 24500
+info score depth 5 score 0
+how i see the board before writing next move: Turn: Black
+Enpassant: f3	Castling: WK WQ BK BQ 
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | r  |    | b  | q  | k  | b  |    | r  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | p  | p  | p  |    |    | p  | p  | p  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    | n  |    |    | n  |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    | p  | p  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    | B  |    | P  | P  | P  |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    |    | P  |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | P  | P  | P  |    |    |    |    | P  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | R  | N  | B  | Q  | K  |    | N  | R  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+[DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : d5c4
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 9 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mBlack player is playing d5 to c4.
+[32;1m[Board] [0m[5;1mBlack Pawn is taking White Bishop.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[30;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+5    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR | oN | oB | oQ | oK | oB | oN | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    |    |    |    |    |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    |    |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK | mB | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB | oN | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    |    |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    |    |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK | mB | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB | oN | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    |    |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    | mP |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    | mP |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    | oP | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    | mP |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    | mP |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    | oP | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP | mP | mP |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    |    |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | oP |    | mP | mP | mP |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    |    |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | oP |    | mP | mP | mP |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    |    |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+random move: c2c3
+Move written to championship/chess-ai-logic-and-proofs/move.csv successfully!
+eval: -700
+qrbkqrbkqrbkqrbkResult
+Move: f6g8, Score: -360
+Move: c6b8, Score: -360
+Move: f6h5, Score: -370
+Move: c6a5, Score: -370
+Move: e5e6, Score: -390
+Move: e8d7, Score: -400
+Move: f6d7, Score: -400
+Move: c6b4, Score: -400
+Move: c6e7, Score: -400
+Move: e8e7, Score: -400
+Move: c4c5, Score: -400
+Move: a8b8, Score: -410
+Move: h8g8, Score: -410
+Move: d8d7, Score: -415
+Move: d8e7, Score: -415
+Move: c6d4, Score: -420
+Move: f8a3, Score: -420
+Move: f6d5, Score: -420
+Move: c8d7, Score: -420
+Move: f8e7, Score: -420
+Move: d8d6, Score: -430
+Move: d8d5, Score: -435
+Move: d8d4, Score: -435
+Move: f8c5, Score: -440
+Move: c8e6, Score: -440
+Move: c8f5, Score: -440
+Move: f8d6, Score: -440
+Move: f6g4, Score: -500
+Move: d8d3, Score: -530
+Move: c8g4, Score: -540
+Move: f6e4, Score: -540
+Move: g7g8k, Score: -560
+Move: b7b8k, Score: -560
+Move: g7g8b, Score: -580
+Move: b7b8b, Score: -580
+Move: g7g8r, Score: -800
+Move: b7b8r, Score: -800
+Move: b7b8q, Score: -1190
+Move: g7g8q, Score: -1190
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 10 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mWhite player is playing c2 to c3.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[30;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+Error : can't load the file openings.txt
+[DEBUG] Input history filename: championship/chess-ai-logic-and-proofs/history.csv
+[DEBUG] Output move file: championship/chess-ai-logic-and-proofs/move.csv
+[Parser][ply=] 11
+Opening move :
+the actual fen is : r1bqkb1r/ppp2ppp/2n2n2/4p3/2p1PPP1/2PP4/PP5P/RNBQK1NR b KQkq
+starting search...
+[search_random]: f6e4
+searched and found best move in search: 1083778
+Total nodes searched: 45975
+info score depth 5 score 0
+how i see the board before writing next move: Turn: Black
+Enpassant: xx	Castling: WK WQ BK BQ 
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | r  |    | b  | q  | k  | b  |    | r  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | p  | p  | p  |    |    | p  | p  | p  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    | n  |    |    | n  |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    | p  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    | p  |    | P  | P  | P  |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    | P  | P  |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | P  | P  |    |    |    |    |    | P  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | R  | N  | B  | Q  | K  |    | N  | R  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+[DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : c8g4
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 11 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mBlack player is playing c8 to g4.
+[32;1m[Board] [0m[5;1mBlack Bishop is taking White Pawn.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[7;1m [0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[30;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[30;1mb[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+5    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR | oN | oB | oQ | oK | oB | oN | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    |    |    |    |    |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    |    |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK | mB | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB | oN | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    |    |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    |    |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK | mB | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB | oN | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    |    |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    | mP |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    | mP |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    | oP | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    | mP |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    | mP |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    | oP | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP | mP | mP |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    |    |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | oP |    | mP | mP | mP |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    |    |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | oP |    | mP | mP | mP |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    | mP | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP |    |    |    |    |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    |    | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | oP |    | mP | mP | oB |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    | mP | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP |    |    |    |    |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    |    | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | oP |    | mP | mP | oB |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    | mP | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP |    |    |    |    |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+random move: b1d2
+Move written to championship/chess-ai-logic-and-proofs/move.csv successfully!
+eval: -940
+qrbkqrbkqrbkqrbkqrbkqrbkResult
+Move: c6b8, Score: -510
+Move: f6g8, Score: -510
+Move: c6a5, Score: -520
+Move: f6h5, Score: -520
+Move: g4c8, Score: -530
+Move: e5e6, Score: -540
+Move: g4h3, Score: -540
+Move: g4d7, Score: -540
+Move: g4h5, Score: -540
+Move: c4c5, Score: -550
+Move: f6d7, Score: -550
+Move: e8e7, Score: -550
+Move: c6b4, Score: -550
+Move: c6e7, Score: -550
+Move: e8d7, Score: -550
+Move: d8c8, Score: -555
+Move: d8b8, Score: -555
+Move: g4f5, Score: -560
+Move: g4e6, Score: -560
+Move: h8g8, Score: -560
+Move: a8c8, Score: -560
+Move: a8b8, Score: -560
+Move: g4f3, Score: -560
+Move: g4e2, Score: -560
+Move: d8e7, Score: -565
+Move: d8d7, Score: -565
+Move: f8e7, Score: -570
+Move: f8a3, Score: -570
+Move: f6d5, Score: -570
+Move: c6d4, Score: -570
+Move: d8d6, Score: -580
+Move: d8d4, Score: -585
+Move: d8d5, Score: -585
+Move: f8d6, Score: -590
+Move: f8c5, Score: -590
+Move: f8b4, Score: -590
+Move: d8d3, Score: -680
+Move: f6e4, Score: -690
+Move: g7g8k, Score: -710
+Move: b7b8k, Score: -710
+Move: c7c8k, Score: -720
+Move: c7c8b, Score: -730
+Move: g7g8b, Score: -730
+Move: b7b8b, Score: -730
+Move: c7c8r, Score: -950
+Move: g7g8r, Score: -950
+Move: b7b8r, Score: -950
+Move: b7b8q, Score: -1340
+Move: g7g8q, Score: -1340
+Move: c7c8q, Score: -1340
+Move: g4d1, Score: -1435
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 12 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mWhite player is playing b1 to d2.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[7;1m [0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[30;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[30;1mb[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+Error : can't load the file openings.txt
+[DEBUG] Input history filename: championship/chess-ai-logic-and-proofs/history.csv
+[DEBUG] Output move file: championship/chess-ai-logic-and-proofs/move.csv
+[Parser][ply=] 13
+Opening move :
+the actual fen is : r2qkb1r/ppp2ppp/2n2n2/4p3/2p1PPb1/2PP4/PP1N3P/R1BQK1NR b KQkq
+starting search...
+[search_random]: a7a5
+searched and found best move in search: 1085158
+Total nodes searched: 217072
+info score depth 5 score 0
+how i see the board before writing next move: Turn: Black
+Enpassant: xx	Castling: WK WQ BK BQ 
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | r  |    |    | q  | k  | b  |    | r  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | p  | p  | p  |    |    | p  | p  | p  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    | n  |    |    | n  |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    | p  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    | p  |    | P  | P  | b  |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    | P  | P  |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | P  | P  |    | N  |    |    |    | P  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | R  |    | B  | Q  | K  |    | N  | R  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+[DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : g4d1
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 13 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mBlack player is playing g4 to d1.
+[32;1m[Board] [0m[5;1mBlack Bishop is taking White Queen.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[7;1m [0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[30;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[30;1mb[0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+5    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR | oN | oB | oQ | oK | oB | oN | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    |    |    |    |    |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    |    |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK | mB | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB | oN | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    |    |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    |    |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK | mB | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB | oN | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    |    |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    | mP |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    | mP |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    | oP | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    | mP |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    | mP |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    | oP | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP | mP | mP |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    |    |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | oP |    | mP | mP | mP |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    |    |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | oP |    | mP | mP | mP |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    | mP | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP |    |    |    |    |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    |    | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | oP |    | mP | mP | oB |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    | mP | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP |    |    |    |    |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    |    | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | oP |    | mP | mP | oB |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    | mP | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP |    | mN |    |    |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR |    | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    |    | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | oP |    | mP | mP |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    | mP | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP |    | mN |    |    |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR |    | mB | oB | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    |    | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | oP |    | mP | mP |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    | mP | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP |    | mN |    |    |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR |    | mB | oB | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+random move: f4f5
+Move written to championship/chess-ai-logic-and-proofs/move.csv successfully!
+eval: -1888
+qrbkqrbkqrbkqrbkqrbkqrbkResult
+Move: f6g8, Score: -1345
+Move: c6b8, Score: -1345
+Move: f6h5, Score: -1355
+Move: c6a5, Score: -1355
+Move: e5e6, Score: -1375
+Move: e8d7, Score: -1385
+Move: f6d7, Score: -1385
+Move: f6g4, Score: -1385
+Move: c6b4, Score: -1385
+Move: c6e7, Score: -1385
+Move: e8e7, Score: -1385
+Move: c4c5, Score: -1385
+Move: d8b8, Score: -1390
+Move: d8c8, Score: -1390
+Move: d1a4, Score: -1395
+Move: d1h5, Score: -1395
+Move: a8b8, Score: -1395
+Move: a8c8, Score: -1395
+Move: h8g8, Score: -1395
+Move: d8d7, Score: -1400
+Move: d8e7, Score: -1400
+Move: c6d4, Score: -1405
+Move: f8a3, Score: -1405
+Move: f6d5, Score: -1405
+Move: f8e7, Score: -1405
+Move: d1c2, Score: -1410
+Move: d1b3, Score: -1410
+Move: d1e2, Score: -1415
+Move: d1f3, Score: -1415
+Move: d1g4, Score: -1415
+Move: d8d6, Score: -1415
+Move: d8d4, Score: -1420
+Move: d8d5, Score: -1420
+Move: f8c5, Score: -1425
+Move: f8d6, Score: -1425
+Move: f8b4, Score: -1425
+Move: d8d3, Score: -1515
+Move: f6e4, Score: -1525
+Move: g7g8k, Score: -1545
+Move: b7b8k, Score: -1545
+Move: c7c8k, Score: -1555
+Move: g7g8b, Score: -1565
+Move: c7c8b, Score: -1565
+Move: b7b8b, Score: -1565
+Move: g7g8r, Score: -1785
+Move: c7c8r, Score: -1785
+Move: b7b8r, Score: -1785
+Move: b7b8q, Score: -2175
+Move: g7g8q, Score: -2175
+Move: c7c8q, Score: -2175
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 14 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mWhite player is playing f4 to f5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[7;1m [0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[0;1mp[0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[30;1mp[0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[30;1mb[0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+Error : can't load the file openings.txt
+[DEBUG] Input history filename: championship/chess-ai-logic-and-proofs/history.csv
+[DEBUG] Output move file: championship/chess-ai-logic-and-proofs/move.csv
+[Parser][ply=] 15
+Opening move :
+the actual fen is : r2qkb1r/ppp2ppp/2n2n2/4pP2/2p1P3/2PP4/PP1N3P/R1BbK1NR b KQkq
+starting search...
+[search_random]: e8e7
+searched and found best move in search: 1092291
+Total nodes searched: 48287
+info score depth 5 score 0
+how i see the board before writing next move: Turn: Black
+Enpassant: xx	Castling: WK WQ BK BQ 
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | r  |    |    | q  | k  | b  |    | r  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | p  | p  | p  |    |    | p  | p  | p  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    | n  |    |    | n  |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    | p  | P  |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    | p  |    | P  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    | P  | P  |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | P  | P  |    | N  |    |    |    | P  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | R  |    | B  | b  | K  |    | N  | R  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+[DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : d8d3
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 15 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mBlack player is playing d8 to d3.
+[32;1m[Board] [0m[5;1mBlack Queen is taking White Pawn.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[7;1m [0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[0;1mp[0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[30;1mp[0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[30;1mQ[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[30;1mb[0m|[0;1mK[0m|[7;1m [0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+5    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR | oN | oB | oQ | oK | oB | oN | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    |    |    |    |    |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    |    |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK | mB | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB | oN | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    |    |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    |    |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK | mB | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB | oN | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    |    |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    |    |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP | mP |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP | oP | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    |    |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    | mP | mP | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP | oP |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    | mP |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    | mP |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    | oP | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP |    | mP |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    | mP |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    | oP | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | mB |    | mP | mP | mP |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    |    |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | oP |    | mP | mP | mP |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    |    | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP | mP |    |    |    |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    | oB | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | oP |    | mP | mP | mP |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    | mP | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP |    |    |    |    |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    |    | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | oP |    | mP | mP | oB |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    | mP | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP |    |    |    |    |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR | mN | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    |    | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | oP |    | mP | mP | oB |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    | mP | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP |    | mN |    |    |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR |    | mB | mQ | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    |    | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP |    |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | oP |    | mP | mP |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    | mP | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP |    | mN |    |    |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR |    | mB | oB | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    |    | oQ | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP | mP |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | oP |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    | mP | mP |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP |    | mN |    |    |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR |    | mB | oB | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    |    |    | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP | mP |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | oP |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    | mP | oQ |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP |    | mN |    |    |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR |    | mB | oB | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+    a    b    c    d    e    f    g    h
+  +----+----+----+----+----+----+----+----+
+8 | oR |    |    |    | oK | oB |    | oR | 8
+  +----+----+----+----+----+----+----+----+
+7 | oP | oP | oP |    |    | oP | oP | oP | 7
+  +----+----+----+----+----+----+----+----+
+6 |    |    | oN |    |    | oN |    |    | 6
+  +----+----+----+----+----+----+----+----+
+5 |    |    |    |    | oP | mP |    |    | 5
+  +----+----+----+----+----+----+----+----+
+4 |    |    | oP |    | mP |    |    |    | 4
+  +----+----+----+----+----+----+----+----+
+3 |    |    | mP | oQ |    |    |    |    | 3
+  +----+----+----+----+----+----+----+----+
+2 | mP | mP |    | mN |    |    |    | mP | 2
+  +----+----+----+----+----+----+----+----+
+1 | mR |    | mB | oB | mK |    | mN | mR | 1
+  +----+----+----+----+----+----+----+----+
+    a    b    c    d    e    f    g   h
+
+random move: g1h3
+Move written to championship/chess-ai-logic-and-proofs/move.csv successfully!
+eval: -2515
+qrbkqrbkqrbkqrbkqrbkqrbkResult
+Move: f6g8, Score: -1455
+Move: c6b8, Score: -1455
+Move: f6h5, Score: -1465
+Move: c6a5, Score: -1465
+Move: c6d8, Score: -1465
+Move: d3b1, Score: -1480
+Move: d3h3, Score: -1480
+Move: d3d8, Score: -1485
+Move: e5e6, Score: -1485
+Move: d3d7, Score: -1490
+Move: c6b4, Score: -1495
+Move: d3c2, Score: -1495
+Move: f6d7, Score: -1495
+Move: f6g4, Score: -1495
+Move: c6e7, Score: -1495
+Move: e8e7, Score: -1495
+Move: e8d7, Score: -1495
+Move: c4c5, Score: -1495
+Move: d3f3, Score: -1500
+Move: a8b8, Score: -1505
+Move: a8d8, Score: -1505
+Move: d1a4, Score: -1505
+Move: d1h5, Score: -1505
+Move: d3d6, Score: -1505
+Move: h8g8, Score: -1505
+Move: a8c8, Score: -1505
+Move: e8d8, Score: -1505
+Move: d3d4, Score: -1510
+Move: d3d5, Score: -1510
+Move: f6d5, Score: -1515
+Move: f8e7, Score: -1515
+Move: f8a3, Score: -1515
+Move: c6d4, Score: -1515
+Move: d1c2, Score: -1520
+Move: d1b3, Score: -1520
+Move: d1e2, Score: -1525
+Move: d1f3, Score: -1525
+Move: d1g4, Score: -1525
+Move: f8d6, Score: -1535
+Move: f8c5, Score: -1535
+Move: f8b4, Score: -1535
+Move: d3c3, Score: -1590
+Move: f6e4, Score: -1635
+Move: g7g8k, Score: -1655
+Move: b7b8k, Score: -1655
+Move: c7c8k, Score: -1665
+Move: g7g8b, Score: -1675
+Move: c7c8b, Score: -1675
+Move: b7b8b, Score: -1675
+Move: g7g8r, Score: -1895
+Move: c7c8r, Score: -1895
+Move: b7b8r, Score: -1895
+Move: b7b8q, Score: -2285
+Move: g7g8q, Score: -2285
+Move: c7c8q, Score: -2285
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 16 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mWhite player is playing g1 to h3.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[7;1m [0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[0;1mp[0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[30;1mp[0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[30;1mQ[0m| |[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[30;1mb[0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+Error : can't load the file openings.txt
+[DEBUG] Input history filename: championship/chess-ai-logic-and-proofs/history.csv
+[DEBUG] Output move file: championship/chess-ai-logic-and-proofs/move.csv
+[Parser][ply=] 17
+Opening move :
+the actual fen is : r3kb1r/ppp2ppp/2n2n2/4pP2/2p1P3/2Pq3N/PP1N3P/R1BbK2R b KQkq
+starting search...
+[search_random]: c6a5
+searched and found best move in search: 44331
+Total nodes searched: 178366
+info score depth 5 score 0
+how i see the board before writing next move: Turn: Black
+Enpassant: xx	Castling: WK WQ BK BQ 
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 | r  |    |    |    | k  | b  |    | r  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 | p  | p  | p  |    |    | p  | p  | p  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 |    |    | n  |    |    | n  |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 |    |    |    |    | p  | P  |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    | p  |    | P  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    | P  | q  |    |    |    | N  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | P  | P  |    | N  |    |    |    | P  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | R  |    | B  | b  | K  |    |    | R  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+[DEBUG] [Parser] Wrote to ouput file championship/chess-ai-logic-and-proofs/move.csv move : d3e2
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/chess-ai-logic-and-proofs/history.csv`...
+[32;1m[Board] [0mLoaded 17 move(s).
+[32;1m[Board] [0mLoading move file `championship/chess-ai-logic-and-proofs/move.csv`...
+[32;1m[Board] [0mBlack player is playing d3 to e2.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[7;1m [0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[0;1mp[0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[30;1mp[0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mk[0m|[30;1mQ[0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[30;1mb[0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
