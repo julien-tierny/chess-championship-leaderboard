@@ -21,30 +21,32 @@
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
-0 0 0 0 0 0 0 0 
-0 0 0 0 0 0 0 0 
-- - - - - - - - 
-- - - - - - - - 
-- - - - - - - - 
-- - - - - - - - 
-1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 
+* A B C D E F G H 
+8 0 0 0 0 0 0 0 0 
+7 0 0 0 0 0 0 0 0 
+6 - - - - - - - - 
+5 - - - - - - - - 
+4 - - - - - - - - 
+3 - - - - - - - - 
+2 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 
 --------
-0 0 0 0 0 0 0 0 
-0 0 0 0 0 0 0 0 
-- - - - - - - - 
-- - - - - - - - 
-- - - - - - - - 
-- - - 1 - - - - 
-1 1 1 - 1 1 1 1 
-1 1 1 1 1 1 1 1 
+* A B C D E F G H 
+8 0 0 0 0 0 0 0 0 
+7 0 0 0 0 0 0 0 0 
+6 - - - - - - - - 
+5 - - - - - - - - 
+4 - - - 1 - - - - 
+3 - - - - - - - - 
+2 1 1 1 - 1 1 1 1 
+1 1 1 1 1 1 1 1 1 
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/check-innit-mate-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 0 move(s).
 [32;1m[Board] [0mLoading move file `championship/check-innit-mate-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mWhite player is playing d2 to d3.
+[32;1m[Board] [0mWhite player is playing d2 to d4.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
@@ -56,9 +58,9 @@
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
@@ -71,16 +73,16 @@ Error : can't load the file openings.txt
 [DEBUG] Input history filename: championship/check-innit-mate-logic-and-proofs/history.csv
 [DEBUG] Output move file: championship/check-innit-mate-logic-and-proofs/move.csv
 [Parser][ply=] 1
-the actual fen is : rnbqkbnr/pppppppp/8/8/8/3P4/PPP1PPPP/RNBQKBNR b KQkq
+the actual fen is : rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq
 Opening move :
 starting search...
 done search in time, setting new best b8c6
-done search in time, setting new best c7c6
+done search in time, setting new best c7c5
 done search in time, setting new best b8c6
-done search in time, setting new best b7b6
-done search in time, setting new best b8c6
+done search in time, setting new best g7g5
+done search in time, setting new best d7d5
 how i see the board before writing next move: Turn: Black
-Enpassant: xx	Castling: WK WQ BK BQ 
+Enpassant: d3	Castling: WK WQ BK BQ 
    ---- ---- ---- ---- ---- ---- ---- ----
 8 | r  | n  | b  | q  | k  | b  | n  | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
@@ -90,37 +92,37 @@ Enpassant: xx	Castling: WK WQ BK BQ
    ---- ---- ---- ---- ---- ---- ---- ----
 5 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    |    |    |    |    |    |
+4 |    |    |    | P  |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    |    | P  |    |    |    |    |
+3 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
 2 | P  | P  | P  |    | P  | P  | P  | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
 1 | R  | N  | B  | Q  | K  | B  | N  | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
-[DEBUG] [Parser] Wrote to ouput file championship/check-innit-mate-logic-and-proofs/move.csv move : b8c6
+[DEBUG] [Parser] Wrote to ouput file championship/check-innit-mate-logic-and-proofs/move.csv move : d7d5
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/check-innit-mate-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 1 move(s).
 [32;1m[Board] [0mLoading move file `championship/check-innit-mate-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mBlack player is playing b8 to c6.
+[32;1m[Board] [0mBlack player is playing d7 to d5.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
@@ -129,48 +131,50 @@ Enpassant: xx	Castling: WK WQ BK BQ
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
-0 - 0 0 0 0 0 0 
-0 0 0 0 0 0 0 0 
-- - 0 - - - - - 
-- - - - - - - - 
-- - - - - - - - 
-- - - 1 - - - - 
-1 1 1 - 1 1 1 1 
-1 1 1 1 1 1 1 1 
+* A B C D E F G H 
+8 0 0 0 0 0 0 0 0 
+7 0 0 0 - 0 0 0 0 
+6 - - - - - - - - 
+5 - - - 0 - - - - 
+4 - - - 1 - - - - 
+3 - - - - - - - - 
+2 1 1 1 - 1 1 1 1 
+1 1 1 1 1 1 1 1 1 
 --------
-0 - 0 0 0 0 0 0 
-0 0 0 0 0 0 0 0 
-- - 0 - - - - - 
-- - - - - - - - 
-- - - - - - - - 
-- - - 1 - - - 1 
-1 1 1 - 1 1 1 1 
-1 1 1 1 1 1 - 1 
+* A B C D E F G H 
+8 0 0 0 0 0 0 0 0 
+7 0 0 0 - 0 0 0 0 
+6 - - - - - - - - 
+5 - - - 0 - - - - 
+4 - - - 1 - - - 1 
+3 - - - - - - - - 
+2 1 1 1 - 1 1 1 - 
+1 1 1 1 1 1 1 1 1 
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/check-innit-mate-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 2 move(s).
 [32;1m[Board] [0mLoading move file `championship/check-innit-mate-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mWhite player is playing g1 to h3.
+[32;1m[Board] [0mWhite player is playing h2 to h4.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|| 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| || 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -179,106 +183,108 @@ Error : can't load the file openings.txt
 [DEBUG] Input history filename: championship/check-innit-mate-logic-and-proofs/history.csv
 [DEBUG] Output move file: championship/check-innit-mate-logic-and-proofs/move.csv
 [Parser][ply=] 3
-the actual fen is : r1bqkbnr/pppppppp/2n5/8/8/3P3N/PPP1PPPP/RNBQKB1R b KQkq
+the actual fen is : rnbqkbnr/ppp1pppp/8/3p4/3P3P/8/PPP1PPP1/RNBQKBNR b KQkq
 Opening move :
 starting search...
-done search in time, setting new best g8f6
+done search in time, setting new best b8c6
+done search in time, setting new best c7c5
+done search in time, setting new best b8c6
 done search in time, setting new best g7g5
-done search in time, setting new best c6b4
-done search in time, setting new best c6b4
-done search in time, setting new best e7e5
 how i see the board before writing next move: Turn: Black
-Enpassant: xx	Castling: WK WQ BK BQ 
+Enpassant: h3	Castling: WK WQ BK BQ 
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  |    | b  | q  | k  | b  | n  | r  |
+8 | r  | n  | b  | q  | k  | b  | n  | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  | p  | p  | p  | p  | p  | p  | p  |
+7 | p  | p  | p  |    | p  | p  | p  | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
-6 |    |    | n  |    |    |    |    |    |
+6 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    |    |    |    |    |
+5 |    |    |    | p  |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    |    |    |    |    |    |
+4 |    |    |    | P  |    |    |    | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    |    | P  |    |    |    | N  |
+3 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 | P  | P  | P  |    | P  | P  | P  | P  |
+2 | P  | P  | P  |    | P  | P  | P  |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  | N  | B  | Q  | K  | B  |    | R  |
+1 | R  | N  | B  | Q  | K  | B  | N  | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
-[DEBUG] [Parser] Wrote to ouput file championship/check-innit-mate-logic-and-proofs/move.csv move : e7e5
+[DEBUG] [Parser] Wrote to ouput file championship/check-innit-mate-logic-and-proofs/move.csv move : g7g5
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/check-innit-mate-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 3 move(s).
 [32;1m[Board] [0mLoading move file `championship/check-innit-mate-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mBlack player is playing e7 to e5.
+[32;1m[Board] [0mBlack player is playing g7 to g5.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|| 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| || 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
-0 - 0 0 0 0 0 0 
-0 0 0 0 - 0 0 0 
-- - 0 - - - - - 
-- - - - 0 - - - 
-- - - - - - - - 
-- - - 1 - - - 1 
-1 1 1 - 1 1 1 1 
-1 1 1 1 1 1 - 1 
+* A B C D E F G H 
+8 0 0 0 0 0 0 0 0 
+7 0 0 0 - 0 0 - 0 
+6 - - - - - - - - 
+5 - - - 0 - - 0 - 
+4 - - - 1 - - - 1 
+3 - - - - - - - - 
+2 1 1 1 - 1 1 1 - 
+1 1 1 1 1 1 1 1 1 
 --------
-0 - 0 0 0 0 0 0 
-0 0 0 0 - 0 0 0 
-- - 0 - - - - - 
-- - - - 0 - - - 
-- - 1 - - - - - 
-- - - 1 - - - 1 
-1 1 - - 1 1 1 1 
-1 1 1 1 1 1 - 1 
+* A B C D E F G H 
+8 0 0 0 0 0 0 0 0 
+7 0 0 0 - 0 0 - 0 
+6 - - - - - - - - 
+5 - - - 0 - - 1 - 
+4 - - - 1 - - - 1 
+3 - - - - - - - - 
+2 1 1 1 - 1 1 1 - 
+1 1 1 - 1 1 1 1 1 
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/check-innit-mate-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 4 move(s).
 [32;1m[Board] [0mLoading move file `championship/check-innit-mate-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mWhite player is playing c2 to c4.
+[32;1m[Board] [0mWhite player is playing c1 to g5.
+[32;1m[Board] [0m[5;1mWhite Bishop is taking Black Pawn.[0m
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|[0;1mb[0m|[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|| 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| || 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -287,104 +293,108 @@ Error : can't load the file openings.txt
 [DEBUG] Input history filename: championship/check-innit-mate-logic-and-proofs/history.csv
 [DEBUG] Output move file: championship/check-innit-mate-logic-and-proofs/move.csv
 [Parser][ply=] 5
-the actual fen is : r1bqkbnr/pppp1ppp/2n5/4p3/2P5/3P3N/PP2PPPP/RNBQKB1R b KQkq
+the actual fen is : rnbqkbnr/ppp1pp1p/8/3p2B1/3P3P/8/PPP1PPP1/RN1QKBNR b KQkq
 Opening move :
 starting search...
-done search in time, setting new best f8b4
-done search in time, setting new best f8b4
-done search in time, setting new best d8h4
+done search in time, setting new best b8c6
+done search in time, setting new best c7c5
+done search in time, setting new best b8c6
+done search in time, setting new best c7c6
 how i see the board before writing next move: Turn: Black
-Enpassant: c3	Castling: WK WQ BK BQ 
+Enpassant: xx	Castling: WK WQ BK BQ 
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  |    | b  | q  | k  | b  | n  | r  |
+8 | r  | n  | b  | q  | k  | b  | n  | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  | p  | p  | p  |    | p  | p  | p  |
+7 | p  | p  | p  |    | p  | p  |    | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
-6 |    |    | n  |    |    |    |    |    |
+6 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    | p  |    |    |    |
+5 |    |    |    | p  |    |    | B  |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    | P  |    |    |    |    |    |
+4 |    |    |    | P  |    |    |    | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    |    | P  |    |    |    | N  |
+3 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 | P  | P  |    |    | P  | P  | P  | P  |
+2 | P  | P  | P  |    | P  | P  | P  |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  | N  | B  | Q  | K  | B  |    | R  |
+1 | R  | N  |    | Q  | K  | B  | N  | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
-[DEBUG] [Parser] Wrote to ouput file championship/check-innit-mate-logic-and-proofs/move.csv move : d8h4
+[DEBUG] [Parser] Wrote to ouput file championship/check-innit-mate-logic-and-proofs/move.csv move : c7c6
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/check-innit-mate-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 5 move(s).
 [32;1m[Board] [0mLoading move file `championship/check-innit-mate-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mBlack player is playing d8 to h4.
+[32;1m[Board] [0mBlack player is playing c7 to c6.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|[0;1mb[0m|[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mQ[0m|| 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|| 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| || 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
-0 - 0 - 0 0 0 0 
-0 0 0 0 - 0 0 0 
-- - 0 - - - - - 
-- - - - 0 - - - 
-- - 1 - - - - 0 
-- - - 1 - - - 1 
-1 1 - - 1 1 1 1 
-1 1 1 1 1 1 - 1 
+* A B C D E F G H 
+8 0 0 0 0 0 0 0 0 
+7 0 0 - - 0 0 - 0 
+6 - - 0 - - - - - 
+5 - - - 0 - - 1 - 
+4 - - - 1 - - - 1 
+3 - - - - - - - - 
+2 1 1 1 - 1 1 1 - 
+1 1 1 - 1 1 1 1 1 
 --------
-0 - 0 - 0 0 0 0 
-0 0 0 0 - 0 0 0 
-- - 0 - - - - - 
-- - - - 0 - - - 
-1 - 1 - - - - 0 
-- - - 1 - - - 1 
-1 1 - - 1 1 1 1 
-1 1 1 - 1 1 - 1 
+* A B C D E F G H 
+8 0 0 0 0 0 0 0 0 
+7 0 0 - - 1 0 - 0 
+6 - - 0 - - - - - 
+5 - - - 0 - - - - 
+4 - - - 1 - - - 1 
+3 - - - - - - - - 
+2 1 1 1 - 1 1 1 - 
+1 1 1 - 1 1 1 1 1 
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/check-innit-mate-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 6 move(s).
 [32;1m[Board] [0mLoading move file `championship/check-innit-mate-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mWhite player is playing d1 to a4.
+[32;1m[Board] [0mWhite player is playing g5 to e7.
+[32;1m[Board] [0m[5;1mWhite Bishop is taking Black Pawn.[0m
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|[0;1mb[0m|[30;1mp[0m| |[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[0;1mQ[0m| |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mQ[0m|| 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|| 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| || 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -393,413 +403,92 @@ Error : can't load the file openings.txt
 [DEBUG] Input history filename: championship/check-innit-mate-logic-and-proofs/history.csv
 [DEBUG] Output move file: championship/check-innit-mate-logic-and-proofs/move.csv
 [Parser][ply=] 7
-the actual fen is : r1b1kbnr/pppp1ppp/2n5/4p3/Q1P4q/3P3N/PP2PPPP/RNB1KB1R b KQkq
+the actual fen is : rnbqkbnr/pp2Bp1p/2p5/3p4/3P3P/8/PPP1PPP1/RN1QKBNR b KQkq
 Opening move :
 starting search...
-done search in time, setting new best h4f2
-done search in time, setting new best f8b4
-done search in time, setting new best g8f6
+done search in time, setting new best g8e7
+done search in time, setting new best e8e7
+done search in time, setting new best d8e7
+done search in time, setting new best d8a5
 how i see the board before writing next move: Turn: Black
 Enpassant: xx	Castling: WK WQ BK BQ 
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  |    | b  |    | k  | b  | n  | r  |
+8 | r  | n  | b  | q  | k  | b  | n  | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  | p  | p  | p  |    | p  | p  | p  |
+7 | p  | p  |    |    | B  | p  |    | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
-6 |    |    | n  |    |    |    |    |    |
+6 |    |    | p  |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    | p  |    |    |    |
+5 |    |    |    | p  |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-4 | Q  |    | P  |    |    |    |    | q  |
+4 |    |    |    | P  |    |    |    | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    |    | P  |    |    |    | N  |
+3 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 | P  | P  |    |    | P  | P  | P  | P  |
+2 | P  | P  | P  |    | P  | P  | P  |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  | N  | B  |    | K  | B  |    | R  |
+1 | R  | N  |    | Q  | K  | B  | N  | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
-[DEBUG] [Parser] Wrote to ouput file championship/check-innit-mate-logic-and-proofs/move.csv move : g8f6
+[DEBUG] [Parser] Wrote to ouput file championship/check-innit-mate-logic-and-proofs/move.csv move : d8a5
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/check-innit-mate-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 7 move(s).
 [32;1m[Board] [0mLoading move file `championship/check-innit-mate-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mBlack player is playing g8 to f6.
+[32;1m[Board] [0mBlack player is playing d8 to a5.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|[0;1mb[0m|[30;1mp[0m| |[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 ||[30;1mQ[0m|[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[0;1mQ[0m| |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mQ[0m|| 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|| 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| |[0;1mk[0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| || 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m| |[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
-0 - 0 - 0 0 - 0 
-0 0 0 0 - 0 0 0 
-- - 0 - - 0 - - 
-- - - - 0 - - - 
-1 - 1 - - - - 0 
-- - - 1 - - - 1 
-1 1 - - 1 1 1 1 
-1 1 1 - 1 1 - 1 
+[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mWhite King in check![0m
+[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by Black Queen (a5)
+* A B C D E F G H 
+8 0 0 0 - 0 0 0 0 
+7 0 0 - - 1 0 - 0 
+6 - - 0 - - - - - 
+5 0 - - 0 - - - - 
+4 - - - 1 - - - 1 
+3 - - - - - - - - 
+2 1 1 1 - 1 1 1 - 
+1 1 1 - 1 1 1 1 1 
 --------
-0 - 0 - 0 0 - 0 
-0 0 0 0 - 0 0 0 
-- - 1 - - 0 - - 
-- - - - 0 - - - 
-- - 1 - - - - 0 
-- - - 1 - - - 1 
-1 1 - - 1 1 1 1 
-1 1 1 - 1 1 - 1 
+* A B C D E F G H 
+8 0 0 0 - 0 1 0 0 
+7 0 0 - - - 0 - 0 
+6 - - 0 - - - - - 
+5 0 - - 0 - - - - 
+4 - - - 1 - - - 1 
+3 - - - - - - - - 
+2 1 1 1 - 1 1 1 - 
+1 1 1 - 1 1 1 1 1 
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/check-innit-mate-logic-and-proofs/history.csv`...
 [32;1m[Board] [0mLoaded 8 move(s).
 [32;1m[Board] [0mLoading move file `championship/check-innit-mate-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mWhite player is playing a4 to c6.
-[32;1m[Board] [0m[5;1mWhite Queen is taking Black Knight.[0m
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[0;1mQ[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mQ[0m|| 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| |[0;1mk[0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the Black player...
-Error : can't load the file openings.txt
-[DEBUG] Input history filename: championship/check-innit-mate-logic-and-proofs/history.csv
-[DEBUG] Output move file: championship/check-innit-mate-logic-and-proofs/move.csv
-[Parser][ply=] 9
-the actual fen is : r1b1kb1r/pppp1ppp/2Q2n2/4p3/2P4q/3P3N/PP2PPPP/RNB1KB1R b KQkq
-Opening move :
-starting search...
-done search in time, setting new best d7c6
-done search in time, setting new best f6g8
-done search in time, setting new best d7c6
-how i see the board before writing next move: Turn: Black
-Enpassant: xx	Castling: WK WQ BK BQ 
-   ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  |    | b  |    | k  | b  |    | r  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  | p  | p  | p  |    | p  | p  | p  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-6 |    |    | Q  |    |    | n  |    |    |
-   ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    | p  |    |    |    |
-   ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    | P  |    |    |    |    | q  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    |    | P  |    |    |    | N  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-2 | P  | P  |    |    | P  | P  | P  | P  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  | N  | B  |    | K  | B  |    | R  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-    a    b    c    d    e    f    g    h
-[DEBUG] [Parser] Wrote to ouput file championship/check-innit-mate-logic-and-proofs/move.csv move : d7c6
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/check-innit-mate-logic-and-proofs/history.csv`...
-[32;1m[Board] [0mLoaded 9 move(s).
-[32;1m[Board] [0mLoading move file `championship/check-innit-mate-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mBlack player is playing d7 to c6.
-[32;1m[Board] [0m[5;1mBlack Pawn is taking White Queen.[0m
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mQ[0m|| 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| |[0;1mk[0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the White player...
-0 - 0 - 0 0 - 0 
-0 0 0 - - 0 0 0 
-- - 0 - - 0 - - 
-- - - - 0 - - - 
-- - 1 - - - - 0 
-- - - 1 - - - 1 
-1 1 - - 1 1 1 1 
-1 1 1 - 1 1 - 1 
---------
-0 - 0 - 0 0 - 0 
-0 0 0 - - 0 0 0 
-- - 0 - - 0 - - 
-- - 1 - 0 - - - 
-- - - - - - - 0 
-- - - 1 - - - 1 
-1 1 - - 1 1 1 1 
-1 1 1 - 1 1 - 1 
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/check-innit-mate-logic-and-proofs/history.csv`...
-[32;1m[Board] [0mLoaded 10 move(s).
-[32;1m[Board] [0mLoading move file `championship/check-innit-mate-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mWhite player is playing c4 to c5.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mQ[0m|| 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| |[0;1mk[0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the Black player...
-Error : can't load the file openings.txt
-[DEBUG] Input history filename: championship/check-innit-mate-logic-and-proofs/history.csv
-[DEBUG] Output move file: championship/check-innit-mate-logic-and-proofs/move.csv
-[Parser][ply=] 11
-the actual fen is : r1b1kb1r/ppp2ppp/2p2n2/2P1p3/7q/3P3N/PP2PPPP/RNB1KB1R b KQkq
-Opening move :
-starting search...
-done search in time, setting new best f8c5
-done search in time, setting new best h4g3
-done search in time, setting new best f8c5
-how i see the board before writing next move: Turn: Black
-Enpassant: xx	Castling: WK WQ BK BQ 
-   ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  |    | b  |    | k  | b  |    | r  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  | p  | p  |    |    | p  | p  | p  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-6 |    |    | p  |    |    | n  |    |    |
-   ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    | P  |    | p  |    |    |    |
-   ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    |    |    |    |    | q  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    |    | P  |    |    |    | N  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-2 | P  | P  |    |    | P  | P  | P  | P  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  | N  | B  |    | K  | B  |    | R  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-    a    b    c    d    e    f    g    h
-[DEBUG] [Parser] Wrote to ouput file championship/check-innit-mate-logic-and-proofs/move.csv move : f8c5
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/check-innit-mate-logic-and-proofs/history.csv`...
-[32;1m[Board] [0mLoaded 11 move(s).
-[32;1m[Board] [0mLoading move file `championship/check-innit-mate-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mBlack player is playing f8 to c5.
-[32;1m[Board] [0m[5;1mBlack Bishop is taking White Pawn.[0m
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mQ[0m|| 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| |[0;1mk[0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the White player...
-0 - 0 - 0 - - 0 
-0 0 0 - - 0 0 0 
-- - 0 - - 0 - - 
-- - 0 - 0 - - - 
-- - - - - - - 0 
-- - - 1 - - - 1 
-1 1 - - 1 1 1 1 
-1 1 1 - 1 1 - 1 
---------
-0 - 0 - 0 - - 0 
-0 0 0 - - 0 0 0 
-- - 0 - - 0 - - 
-- - 0 - 0 - - - 
-- - - - - 1 - 0 
-- - - 1 - - - - 
-1 1 - - 1 1 1 1 
-1 1 1 - 1 1 - 1 
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/check-innit-mate-logic-and-proofs/history.csv`...
-[32;1m[Board] [0mLoaded 12 move(s).
-[32;1m[Board] [0mLoading move file `championship/check-innit-mate-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mWhite player is playing h3 to f4.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mk[0m|[7;1m [0m|[30;1mQ[0m|| 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the Black player...
-Error : can't load the file openings.txt
-[DEBUG] Input history filename: championship/check-innit-mate-logic-and-proofs/history.csv
-[DEBUG] Output move file: championship/check-innit-mate-logic-and-proofs/move.csv
-[Parser][ply=] 13
-the actual fen is : r1b1k2r/ppp2ppp/2p2n2/2b1p3/5N1q/3P4/PP2PPPP/RNB1KB1R b KQkq
-Opening move :
-starting search...
-done search in time, setting new best e5f4
-done search in time, setting new best f6e4
-done search in time, setting new best h4f2
-done search in time, setting new best h4f2
-done search in time, setting new best h4f2
-how i see the board before writing next move: Turn: Black
-Enpassant: xx	Castling: WK WQ BK BQ 
-   ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  |    | b  |    | k  |    |    | r  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  | p  | p  |    |    | p  | p  | p  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-6 |    |    | p  |    |    | n  |    |    |
-   ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    | b  |    | p  |    |    |    |
-   ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    |    |    | N  |    | q  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    |    | P  |    |    |    |    |
-   ---- ---- ---- ---- ---- ---- ---- ----
-2 | P  | P  |    |    | P  | P  | P  | P  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  | N  | B  |    | K  | B  |    | R  |
-   ---- ---- ---- ---- ---- ---- ---- ----
-    a    b    c    d    e    f    g    h
-[DEBUG] [Parser] Wrote to ouput file championship/check-innit-mate-logic-and-proofs/move.csv move : h4f2
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/check-innit-mate-logic-and-proofs/history.csv`...
-[32;1m[Board] [0mLoaded 13 move(s).
-[32;1m[Board] [0mLoading move file `championship/check-innit-mate-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mBlack player is playing h4 to f2.
-[32;1m[Board] [0m[5;1mBlack Queen is taking White Pawn.[0m
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mk[0m|[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[0;1mp[0m|[30;1mQ[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the White player...
-[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mWhite King in check![0m
-[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by Black Queen (f2)
-0 - 0 - 0 - - 0 
-0 0 0 - - 0 0 0 
-- - 0 - - 0 - - 
-- - 0 - 0 - - - 
-- - - - - 1 - - 
-- - - 1 - - - - 
-1 1 - - 1 0 1 1 
-1 1 1 - 1 1 - 1 
---------
-0 - 0 - 0 - - 0 
-0 0 0 - - 0 0 0 
-- - 0 - - 0 - - 
-- - 0 - 0 - - - 
-- - - - - 1 - - 
-- - - 1 - - - - 
-1 1 - - 1 1 1 1 
-1 1 1 - - 1 - 1 
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/check-innit-mate-logic-and-proofs/history.csv`...
-[32;1m[Board] [0mLoaded 14 move(s).
-[32;1m[Board] [0mLoading move file `championship/check-innit-mate-logic-and-proofs/move.csv`...
-[32;1m[Board] [0mWhite player is playing e1 to f2.
-[32;1m[Board] [0m[31;1m[ERROR][0m Target position (f2) puts the King in check :(
-[32;1m[Board] [0m[31;1m[ERROR][0m White King (e1) cannot reach its destination (f2) :(
+[32;1m[Board] [0mWhite player is playing e7 to f8.
+[32;1m[Board] [0m[31;1m[ERROR][0m Proposed move from (e7) to (f8) puts the King in check :(
+[32;1m[Board] [0m[31;1m[ERROR][0m White Bishop (e7) cannot reach its destination (f8) :(
 [32;1m[Referee] [0mInvalid move (code: -7) :(
 [32;1m[Game] [0mWhite player has lost on illegal move.
