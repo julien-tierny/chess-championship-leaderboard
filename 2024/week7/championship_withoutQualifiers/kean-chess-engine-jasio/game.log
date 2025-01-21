@@ -21,7 +21,25 @@
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
-Opening Book execution time: 6.985e-06 seconds.
+   ┌───┬───┬───┬───┬───┬───┬───┬───┐
+ 8 │ ♖ │ ♘ │ ♗ │ ♕ │ ♔ │ ♗ │ ♘ │ ♖ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 7 │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 6 │   │   │   │   │   │   │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 5 │   │   │   │   │   │   │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 4 │   │   │   │   │   │   │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 3 │   │   │   │   │   │   │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 2 │ ♟ │ ♟ │ ♟ │ ♟ │ ♟ │ ♟ │ ♟ │ ♟ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 1 │ ♜ │ ♞ │ ♝ │ ♛ │ ♚ │ ♝ │ ♞ │ ♜ │
+   └───┴───┴───┴───┴───┴───┴───┴───┘
+     a   b   c   d   e   f   g   h
+Opening Book execution time: 3.631e-06 seconds.
 From opening book
 d2d4
 [32;1m[Game] [0mPlayer's error code: 0
@@ -53,14 +71,407 @@ d2d4
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
-Usage: /home/julien/Pro/git/teaching/x/2024/jasio/build/jasio <input history file> <output move file>
-[32;1m[Game] [0mPlayer's error code: 256
+championship/kean-chess-engine-jasio/history.csv
+championship/kean-chess-engine-jasio/history.csv
+8 r n b q k b n r 
+7 p p p p p p p p 
+6 . . . . . . . . 
+5 . . . . . . . . 
+4 . . . P . . . . 
+3 . . . . . . . . 
+2 P P P . P P P P 
+1 R N B Q K B N R 
+  a b c d e f g h
+8 r n b q k b n r 
+7 p p p p p p p p 
+6 . . . . . . . . 
+5 . . . . . . . . 
+4 . . . P . . . . 
+3 . . . . . . . . 
+2 P P P . P P P P 
+1 R N B Q K B N R 
+  a b c d e f g h
+Legal moves for Black:
+a7a5 a7a6 b7b5 b7b6 b8a6 b8c6 c7c5 c7c6 d7d5 d7d6 e7e5 e7e6 f7f5 f7f6 g7g5 g7g6 g8f6 g8h6 h7h5 h7h6 c7d6 e7d6 
+Move chosen: g7g6
+[32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/kean-chess-engine-jasio/history.csv`...
 [32;1m[Board] [0mLoaded 1 move(s).
 [32;1m[Board] [0mLoading move file `championship/kean-chess-engine-jasio/move.csv`...
-[32;1m[Board] [0mBlack player is playing d2 to d4.
-[32;1m[Board] [0m[31;1m[ERROR][0m Move source (d2) contains no piece :(
-[32;1m[Referee] [0mInvalid move (code: -3) :(
-[32;1m[Game] [0mBlack player has lost on illegal move.
+[32;1m[Board] [0mBlack player is playing g7 to g6.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+   ┌───┬───┬───┬───┬───┬───┬───┬───┐
+ 8 │ ♖ │ ♘ │ ♗ │ ♕ │ ♔ │ ♗ │ ♘ │ ♖ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 7 │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │   │ ♙ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 6 │   │   │   │   │   │   │ ♙ │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 5 │   │   │   │   │   │   │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 4 │   │   │   │ ♟ │   │   │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 3 │   │   │   │   │   │   │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 2 │ ♟ │ ♟ │ ♟ │   │ ♟ │ ♟ │ ♟ │ ♟ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 1 │ ♜ │ ♞ │ ♝ │ ♛ │ ♚ │ ♝ │ ♞ │ ♜ │
+   └───┴───┴───┴───┴───┴───┴───┴───┘
+     a   b   c   d   e   f   g   h
+Opening Book execution time: 3.0311e-05 seconds.
+From opening book
+c2c4
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/kean-chess-engine-jasio/history.csv`...
+[32;1m[Board] [0mLoaded 2 move(s).
+[32;1m[Board] [0mLoading move file `championship/kean-chess-engine-jasio/move.csv`...
+[32;1m[Board] [0mWhite player is playing c2 to c4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+championship/kean-chess-engine-jasio/history.csv
+championship/kean-chess-engine-jasio/history.csv
+8 r n b q k b n r 
+7 p p p p p p . p 
+6 . . . . . . p . 
+5 . . . . . . . . 
+4 . . P P . . . . 
+3 . . . . . . . . 
+2 P P . . P P P P 
+1 R N B Q K B N R 
+  a b c d e f g h
+8 r n b q k b n r 
+7 p p p p p p . p 
+6 . . . . . . p . 
+5 . . . . . . . . 
+4 . . P P . . . . 
+3 . . . . . . . . 
+2 P P . . P P P P 
+1 R N B Q K B N R 
+  a b c d e f g h
+Legal moves for Black:
+a7a5 a7a6 b7b5 b7b6 b8a6 b8c6 c7c5 c7c6 d7d5 d7d6 e7e5 e7e6 f7f5 f7f6 f8h6 f8g7 g6g5 g8f6 g8h6 h7h5 h7h6 b7c6 d7c6 
+Move chosen: f7f5
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/kean-chess-engine-jasio/history.csv`...
+[32;1m[Board] [0mLoaded 3 move(s).
+[32;1m[Board] [0mLoading move file `championship/kean-chess-engine-jasio/move.csv`...
+[32;1m[Board] [0mBlack player is playing f7 to f5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+   ┌───┬───┬───┬───┬───┬───┬───┬───┐
+ 8 │ ♖ │ ♘ │ ♗ │ ♕ │ ♔ │ ♗ │ ♘ │ ♖ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 7 │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │   │   │ ♙ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 6 │   │   │   │   │   │   │ ♙ │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 5 │   │   │   │   │   │ ♙ │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 4 │   │   │ ♟ │ ♟ │   │   │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 3 │   │   │   │   │   │   │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 2 │ ♟ │ ♟ │   │   │ ♟ │ ♟ │ ♟ │ ♟ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 1 │ ♜ │ ♞ │ ♝ │ ♛ │ ♚ │ ♝ │ ♞ │ ♜ │
+   └───┴───┴───┴───┴───┴───┴───┴───┘
+     a   b   c   d   e   f   g   h
+Opening Book execution time: 0.0249366 seconds.
+No Book Moves Found
+Aspiration Window Exceeded, Expaning...
+Aspiration Window Exceeded, Expaning...
+Depth: 1 Best move found: e2e3 Evaluation: 540 Nodes searched: 41 (Alpha Beta 4, Quiescence 37)
+Depth: 2 Best move found: g2g3 Evaluation: 402 Nodes searched: 170 (Alpha Beta 33, Quiescence 137)
+Depth: 3 Best move found: b1a3 Evaluation: 486 Nodes searched: 199 (Alpha Beta 53, Quiescence 146)
+Depth: 4 Best move found: b1c3 Evaluation: 430 Nodes searched: 2723 (Alpha Beta 1200, Quiescence 1523)
+Depth: 5 Best move found: g2g3 Evaluation: 499 Nodes searched: 3686 (Alpha Beta 1742, Quiescence 1944)
+Time Elapsed: 9910ms
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/kean-chess-engine-jasio/history.csv`...
+[32;1m[Board] [0mLoaded 4 move(s).
+[32;1m[Board] [0mLoading move file `championship/kean-chess-engine-jasio/move.csv`...
+[32;1m[Board] [0mWhite player is playing g2 to g3.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+championship/kean-chess-engine-jasio/history.csv
+championship/kean-chess-engine-jasio/history.csv
+8 r n b q k b n r 
+7 p p p p p . . p 
+6 . . . . . . p . 
+5 . . . . . p . . 
+4 . . P P . . . . 
+3 . . . . . . P . 
+2 P P . . P P . P 
+1 R N B Q K B N R 
+  a b c d e f g h
+8 r n b q k b n r 
+7 p p p p p . . p 
+6 . . . . . . p . 
+5 . . . . . p . . 
+4 . . P P . . . . 
+3 . . . . . . P . 
+2 P P . . P P . P 
+1 R N B Q K B N R 
+  a b c d e f g h
+Legal moves for Black:
+a7a5 a7a6 b7b5 b7b6 b8a6 b8c6 c7c5 c7c6 d7d5 d7d6 e7e5 e7e6 e8f7 f5f4 f8h6 f8g7 g6g5 g8f6 g8h6 h7h5 h7h6 
+Move chosen: d7d5
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/kean-chess-engine-jasio/history.csv`...
+[32;1m[Board] [0mLoaded 5 move(s).
+[32;1m[Board] [0mLoading move file `championship/kean-chess-engine-jasio/move.csv`...
+[32;1m[Board] [0mBlack player is playing d7 to d5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mp[0m| |[30;1mp[0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+   ┌───┬───┬───┬───┬───┬───┬───┬───┐
+ 8 │ ♖ │ ♘ │ ♗ │ ♕ │ ♔ │ ♗ │ ♘ │ ♖ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 7 │ ♙ │ ♙ │ ♙ │   │ ♙ │   │   │ ♙ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 6 │   │   │   │   │   │   │ ♙ │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 5 │   │   │   │ ♙ │   │ ♙ │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 4 │   │   │ ♟ │ ♟ │   │   │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 3 │   │   │   │   │   │   │ ♟ │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 2 │ ♟ │ ♟ │   │   │ ♟ │ ♟ │   │ ♟ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 1 │ ♜ │ ♞ │ ♝ │ ♛ │ ♚ │ ♝ │ ♞ │ ♜ │
+   └───┴───┴───┴───┴───┴───┴───┴───┘
+     a   b   c   d   e   f   g   h
+Opening Book execution time: 0.0251915 seconds.
+No Book Moves Found
+Aspiration Window Exceeded, Expaning...
+Aspiration Window Exceeded, Expaning...
+Aspiration Window Exceeded, Expaning...
+Depth: 1 Best move found: f1g2 Evaluation: 661 Nodes searched: 42 (Alpha Beta 5, Quiescence 37)
+Depth: 2 Best move found: b1c3 Evaluation: 474 Nodes searched: 194 (Alpha Beta 34, Quiescence 160)
+Depth: 3 Best move found: f1g2 Evaluation: 617 Nodes searched: 434 (Alpha Beta 113, Quiescence 321)
+Depth: 4 Best move found: d1a4 Evaluation: 414 Nodes searched: 3624 (Alpha Beta 1700, Quiescence 1924)
+Depth: 5 Best move found: c4d5 Evaluation: 516 Nodes searched: 4996 (Alpha Beta 2220, Quiescence 2776)
+Time Elapsed: 9933ms
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/kean-chess-engine-jasio/history.csv`...
+[32;1m[Board] [0mLoaded 6 move(s).
+[32;1m[Board] [0mLoading move file `championship/kean-chess-engine-jasio/move.csv`...
+[32;1m[Board] [0mWhite player is playing c4 to d5.
+[32;1m[Board] [0m[5;1mWhite Pawn is taking Black Pawn.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[0;1mp[0m| |[30;1mp[0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+championship/kean-chess-engine-jasio/history.csv
+championship/kean-chess-engine-jasio/history.csv
+8 r n b q k b n r 
+7 p p p . p . . p 
+6 . . . . . . p . 
+5 . . . P . p . . 
+4 . . . P . . . . 
+3 . . . . . . P . 
+2 P P . . P P . P 
+1 R N B Q K B N R 
+  a b c d e f g h
+8 r n b q k b n r 
+7 p p p . p . . p 
+6 . . . . . . p . 
+5 . . . P . p . . 
+4 . . . P . . . . 
+3 . . . . . . P . 
+2 P P . . P P . P 
+1 R N B Q K B N R 
+  a b c d e f g h
+Legal moves for Black:
+a7a5 a7a6 b7b5 b7b6 b8a6 b8c6 b8d7 c7c5 c7c6 c8e6 c8d7 d8d5 d8d6 d8d7 e7e5 e7e6 e8d7 e8f7 f5f4 f8h6 f8g7 g6g5 g8f6 g8h6 h7h5 h7h6 
+Move chosen: e7e5
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/kean-chess-engine-jasio/history.csv`...
+[32;1m[Board] [0mLoaded 7 move(s).
+[32;1m[Board] [0mLoading move file `championship/kean-chess-engine-jasio/move.csv`...
+[32;1m[Board] [0mBlack player is playing e7 to e5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[0;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+   ┌───┬───┬───┬───┬───┬───┬───┬───┐
+ 8 │ ♖ │ ♘ │ ♗ │ ♕ │ ♔ │ ♗ │ ♘ │ ♖ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 7 │ ♙ │ ♙ │ ♙ │   │   │   │   │ ♙ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 6 │   │   │   │   │   │   │ ♙ │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 5 │   │   │   │ ♟ │ ♙ │ ♙ │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 4 │   │   │   │ ♟ │   │   │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 3 │   │   │   │   │   │   │ ♟ │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 2 │ ♟ │ ♟ │   │   │ ♟ │ ♟ │   │ ♟ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 1 │ ♜ │ ♞ │ ♝ │ ♛ │ ♚ │ ♝ │ ♞ │ ♜ │
+   └───┴───┴───┴───┴───┴───┴───┴───┘
+     a   b   c   d   e   f   g   h
+Opening Book execution time: 0.0269122 seconds.
+No Book Moves Found
+Aspiration Window Exceeded, Expaning...
+Aspiration Window Exceeded, Expaning...
+Aspiration Window Exceeded, Expaning...
+Depth: 1 Best move found: e2e4 Evaluation: 641 Nodes searched: 43 (Alpha Beta 5, Quiescence 38)
+Depth: 2 Best move found: f1g2 Evaluation: 423 Nodes searched: 186 (Alpha Beta 34, Quiescence 152)
+Depth: 3 Best move found: d5e6 Evaluation: 590 Nodes searched: 288 (Alpha Beta 69, Quiescence 219)
+Depth: 4 Best move found: b1d2 Evaluation: 418 Nodes searched: 6479 (Alpha Beta 2342, Quiescence 4137)
+[32;1m[Game] [0mPlayer's error code: 11
+[32;1m[Game] [0m[31;1m[ERROR][0m The program `/home/julien/Pro/git/teaching/x/2024/kean-chess-engine/build/KEAN_chess_engine' has crashed :(
+[32;1m[Game] [0mWhite player has lost on illegal move.

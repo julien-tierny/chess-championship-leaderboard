@@ -25,13 +25,14 @@ Error : can't load the file openings.txt
 [DEBUG] Input history filename: championship/logic-and-proofs-jasio/history.csv
 [DEBUG] Output move file: championship/logic-and-proofs-jasio/move.csv
 [Parser][ply=] 0
-Opening move :
 the actual fen is : rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq
+Opening move :
 starting search...
-[search_random]: e2e4
-searched and found best move in search: 2099508
-Total nodes searched: 30863
-info score depth 5 score 0
+done search in time, setting new best b1c3
+done search in time, setting new best b1c3
+done search in time, setting new best d2d3
+done search in time, setting new best b1c3
+done search in time, setting new best c2c4
 how i see the board before writing next move: Turn: White
 Enpassant: xx	Castling: WK WQ BK BQ 
    ---- ---- ---- ---- ---- ---- ---- ----
@@ -52,14 +53,14 @@ Enpassant: xx	Castling: WK WQ BK BQ
 1 | R  | N  | B  | Q  | K  | B  | N  | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
-[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-jasio/move.csv move : e2e4
+[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-jasio/move.csv move : c2c4
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-jasio/history.csv`...
 [32;1m[Board] [0mLoaded 0 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-jasio/move.csv`...
-[32;1m[Board] [0mWhite player is playing e2 to e4.
+[32;1m[Board] [0mWhite player is playing c2 to c4.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
@@ -71,25 +72,48 @@ Enpassant: xx	Castling: WK WQ BK BQ
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
-Usage: /home/julien/Pro/git/teaching/x/2024/jasio/build/jasio <input history file> <output move file>
-[32;1m[Game] [0mPlayer's error code: 256
+championship/logic-and-proofs-jasio/history.csv
+championship/logic-and-proofs-jasio/history.csv
+8 r n b q k b n r 
+7 p p p p p p p p 
+6 . . . . . . . . 
+5 . . . . . . . . 
+4 . . P . . . . . 
+3 . . . . . . . . 
+2 P P . P P P P P 
+1 R N B Q K B N R 
+  a b c d e f g h
+8 r n b q k b n r 
+7 p p p p p p p p 
+6 . . . . . . . . 
+5 . . . . . . . . 
+4 . . P . . . . . 
+3 . . . . . . . . 
+2 P P . P P P P P 
+1 R N B Q K B N R 
+  a b c d e f g h
+Legal moves for Black:
+a7a5 a7a6 b7b5 b7b6 b8a6 b8c6 c7c5 c7c6 d7d5 d7d6 e7e5 e7e6 f7f5 f7f6 g7g5 g7g6 g8f6 g8h6 h7h5 h7h6 b7c6 d7c6 
+Move chosen: b7c6
+[32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-jasio/history.csv`...
 [32;1m[Board] [0mLoaded 1 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-jasio/move.csv`...
-[32;1m[Board] [0mBlack player is playing e2 to e4.
-[32;1m[Board] [0m[31;1m[ERROR][0m Move source (e2) contains no piece :(
-[32;1m[Referee] [0mInvalid move (code: -3) :(
+[32;1m[Board] [0mBlack player is playing b7 to c6.
+[32;1m[Board] [0mBlack Pawn (b7) cannot move in diagonal to an empty spot :(
+[32;1m[Board] [0m[31;1m[ERROR][0m Black Pawn (b7) cannot reach its destination (c6) :(
+[32;1m[Referee] [0mInvalid move (code: -7) :(
 [32;1m[Game] [0mBlack player has lost on illegal move.

@@ -36,18 +36,18 @@ We are playing as White
   | A B C D E F G H 
 
 It is white's turn to play.
-Best move: e2e4
-Evaluation: 90
-Node count: 25077
+Best move: e2e3
+Evaluation: 75
+Node count: 29007
 
-Total time: 626.856 ms
+Total time: 809.408 ms
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
 [32;1m[Board] [0mLoaded 0 move(s).
 [32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mWhite player is playing e2 to e4.
+[32;1m[Board] [0mWhite player is playing e2 to e3.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
@@ -59,9 +59,9 @@ Total time: 626.856 ms
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
@@ -70,30 +70,48 @@ Total time: 626.856 ms
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
-Opening Book execution time: 7.263e-06 seconds.
+   ┌───┬───┬───┬───┬───┬───┬───┬───┐
+ 8 │ ♖ │ ♘ │ ♗ │ ♕ │ ♔ │ ♗ │ ♘ │ ♖ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 7 │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 6 │   │   │   │   │   │   │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 5 │   │   │   │   │   │   │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 4 │   │   │   │   │   │   │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 3 │   │   │   │   │ ♟ │   │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 2 │ ♟ │ ♟ │ ♟ │ ♟ │   │ ♟ │ ♟ │ ♟ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 1 │ ♜ │ ♞ │ ♝ │ ♛ │ ♚ │ ♝ │ ♞ │ ♜ │
+   └───┴───┴───┴───┴───┴───┴───┴───┘
+     a   b   c   d   e   f   g   h
+Opening Book execution time: 5.0286e-05 seconds.
 From opening book
-e7e5
+c7c5
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
 [32;1m[Board] [0mLoaded 1 move(s).
 [32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mBlack player is playing e7 to e5.
+[32;1m[Board] [0mBlack player is playing c7 to c5.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
@@ -106,79 +124,102 @@ Input file: championship/lizzie-iii-kean-chess-engine/history.csv
 Output file: championship/lizzie-iii-kean-chess-engine/move.csv
 We are playing as White
 8 | [1;31mR[0m [1;31mN[0m [1;31mB[0m [1;31mQ[0m [1;31mK[0m [1;31mB[0m [1;31mN[0m [1;31mR[0m 
-7 | [1;31mP[0m [1;31mP[0m [1;31mP[0m [1;31mP[0m [1;30m_[0m [1;31mP[0m [1;31mP[0m [1;31mP[0m 
+7 | [1;31mP[0m [1;31mP[0m [1;30m_[0m [1;31mP[0m [1;31mP[0m [1;31mP[0m [1;31mP[0m [1;31mP[0m 
 6 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-5 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-4 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-3 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
+5 | [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
+4 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
+3 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
 2 | [1;32mP[0m [1;32mP[0m [1;32mP[0m [1;32mP[0m [1;30m_[0m [1;32mP[0m [1;32mP[0m [1;32mP[0m 
 1 | [1;32mR[0m [1;32mN[0m [1;32mB[0m [1;32mQ[0m [1;32mK[0m [1;32mB[0m [1;32mN[0m [1;32mR[0m 
 -------------------
   | A B C D E F G H 
 
 It is white's turn to play.
-Best move: b1c3
-Evaluation: 130
-Node count: 44902
+Best move: d1g4
+Evaluation: 115
+Node count: 44705
 
-Total time: 1054.46 ms
+Total time: 1142.58 ms
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
 [32;1m[Board] [0mLoaded 2 move(s).
 [32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mWhite player is playing b1 to c3.
+[32;1m[Board] [0mWhite player is playing d1 to g4.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[0;1mQ[0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
-Opening Book execution time: 4.0298e-05 seconds.
-From opening book
-g8f6
+   ┌───┬───┬───┬───┬───┬───┬───┬───┐
+ 8 │ ♖ │ ♘ │ ♗ │ ♕ │ ♔ │ ♗ │ ♘ │ ♖ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 7 │ ♙ │ ♙ │   │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 6 │   │   │   │   │   │   │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 5 │   │   │ ♙ │   │   │   │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 4 │   │   │   │   │   │   │ ♛ │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 3 │   │   │   │   │ ♟ │   │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 2 │ ♟ │ ♟ │ ♟ │ ♟ │   │ ♟ │ ♟ │ ♟ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 1 │ ♜ │ ♞ │ ♝ │   │ ♚ │ ♝ │ ♞ │ ♜ │
+   └───┴───┴───┴───┴───┴───┴───┴───┘
+     a   b   c   d   e   f   g   h
+Opening Book execution time: 0.0150827 seconds.
+No Book Moves Found
+Depth: 1 Best move found: f7f6 Evaluation: -265 Nodes searched: 70 (Alpha Beta 3, Quiescence 67)
+Depth: 2 Best move found: f7f6 Evaluation: -484 Nodes searched: 220 (Alpha Beta 46, Quiescence 174)
+Depth: 3 Best move found: f7f6 Evaluation: -291 Nodes searched: 472 (Alpha Beta 91, Quiescence 381)
+Depth: 4 Best move found: b7b6 Evaluation: -407 Nodes searched: 2282 (Alpha Beta 904, Quiescence 1378)
+Depth: 5 Best move found: b7b6 Evaluation: -326 Nodes searched: 11582 (Alpha Beta 4688, Quiescence 6894)
+Time Elapsed: 9905ms
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
 [32;1m[Board] [0mLoaded 3 move(s).
 [32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mBlack player is playing g8 to f6.
+[32;1m[Board] [0mBlack player is playing b7 to b6.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[0;1mQ[0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -186,86 +227,103 @@ g8f6
 Input file: championship/lizzie-iii-kean-chess-engine/history.csv
 Output file: championship/lizzie-iii-kean-chess-engine/move.csv
 We are playing as White
-8 | [1;31mR[0m [1;31mN[0m [1;31mB[0m [1;31mQ[0m [1;31mK[0m [1;31mB[0m [1;30m_[0m [1;31mR[0m 
-7 | [1;31mP[0m [1;31mP[0m [1;31mP[0m [1;31mP[0m [1;30m_[0m [1;31mP[0m [1;31mP[0m [1;31mP[0m 
-6 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mN[0m [1;30m_[0m [1;30m_[0m 
-5 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-4 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-3 | [1;30m_[0m [1;30m_[0m [1;32mN[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
+8 | [1;31mR[0m [1;31mN[0m [1;31mB[0m [1;31mQ[0m [1;31mK[0m [1;31mB[0m [1;31mN[0m [1;31mR[0m 
+7 | [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;31mP[0m [1;31mP[0m [1;31mP[0m [1;31mP[0m 
+6 | [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
+5 | [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
+4 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mQ[0m [1;30m_[0m 
+3 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
 2 | [1;32mP[0m [1;32mP[0m [1;32mP[0m [1;32mP[0m [1;30m_[0m [1;32mP[0m [1;32mP[0m [1;32mP[0m 
-1 | [1;32mR[0m [1;30m_[0m [1;32mB[0m [1;32mQ[0m [1;32mK[0m [1;32mB[0m [1;32mN[0m [1;32mR[0m 
+1 | [1;32mR[0m [1;32mN[0m [1;32mB[0m [1;30m_[0m [1;32mK[0m [1;32mB[0m [1;32mN[0m [1;32mR[0m 
 -------------------
   | A B C D E F G H 
 
 It is white's turn to play.
-Best move: d1f3
-Evaluation: 150
-Node count: 74775
+Best move: g1f3
+Evaluation: 180
+Node count: 98314
 
-Total time: 1903.37 ms
+Total time: 2303.67 ms
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
 [32;1m[Board] [0mLoaded 4 move(s).
 [32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mWhite player is playing d1 to f3.
+[32;1m[Board] [0mWhite player is playing g1 to f3.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[0;1mQ[0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[0;1mQ[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mk[0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
-Opening Book execution time: 0.0142381 seconds.
-Depth: 1 Best move found: f6e4 Evaluation: -447 Nodes searched: 112 (Alpha Beta 4, Quiescence 108)
-Depth: 2 Best move found: f6e4 Evaluation: -507 Nodes searched: 133 (Alpha Beta 28, Quiescence 105)
-Depth: 3 Best move found: f6e4 Evaluation: -363 Nodes searched: 165 (Alpha Beta 68, Quiescence 97)
-Depth: 4 Best move found: f6e4 Evaluation: -431 Nodes searched: 797 (Alpha Beta 302, Quiescence 495)
-Depth: 5 Best move found: f6e4 Evaluation: -374 Nodes searched: 4455 (Alpha Beta 1574, Quiescence 2881)
-Depth: 6 Best move found: f6e4 Evaluation: -424 Nodes searched: 47592 (Alpha Beta 12240, Quiescence 35352)
-Time Elapsed: 9908ms
+   ┌───┬───┬───┬───┬───┬───┬───┬───┐
+ 8 │ ♖ │ ♘ │ ♗ │ ♕ │ ♔ │ ♗ │ ♘ │ ♖ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 7 │ ♙ │   │   │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 6 │   │ ♙ │   │   │   │   │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 5 │   │   │ ♙ │   │   │   │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 4 │   │   │   │   │   │   │ ♛ │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 3 │   │   │   │   │ ♟ │ ♞ │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 2 │ ♟ │ ♟ │ ♟ │ ♟ │   │ ♟ │ ♟ │ ♟ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 1 │ ♜ │ ♞ │ ♝ │   │ ♚ │ ♝ │   │ ♜ │
+   └───┴───┴───┴───┴───┴───┴───┴───┘
+     a   b   c   d   e   f   g   h
+Opening Book execution time: 0.0135908 seconds.
+No Book Moves Found
+Depth: 1 Best move found: f7f6 Evaluation: -246 Nodes searched: 67 (Alpha Beta 3, Quiescence 64)
+Depth: 2 Best move found: f7f6 Evaluation: -446 Nodes searched: 225 (Alpha Beta 44, Quiescence 181)
+Depth: 3 Best move found: c8b7 Evaluation: -295 Nodes searched: 782 (Alpha Beta 210, Quiescence 572)
+Depth: 4 Best move found: g8h6 Evaluation: -449 Nodes searched: 4561 (Alpha Beta 1542, Quiescence 3019)
+Depth: 5 Best move found: g7g6 Evaluation: -367 Nodes searched: 10313 (Alpha Beta 4579, Quiescence 5734)
+Time Elapsed: 9905ms
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
 [32;1m[Board] [0mLoaded 5 move(s).
 [32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mBlack player is playing f6 to e4.
-[32;1m[Board] [0m[5;1mBlack Knight is taking White Pawn.[0m
+[32;1m[Board] [0mBlack player is playing g7 to g6.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[0;1mQ[0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[0;1mQ[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mk[0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -273,86 +331,104 @@ Time Elapsed: 9908ms
 Input file: championship/lizzie-iii-kean-chess-engine/history.csv
 Output file: championship/lizzie-iii-kean-chess-engine/move.csv
 We are playing as White
-8 | [1;31mR[0m [1;31mN[0m [1;31mB[0m [1;31mQ[0m [1;31mK[0m [1;31mB[0m [1;30m_[0m [1;31mR[0m 
-7 | [1;31mP[0m [1;31mP[0m [1;31mP[0m [1;31mP[0m [1;30m_[0m [1;31mP[0m [1;31mP[0m [1;31mP[0m 
-6 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-5 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-4 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mN[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-3 | [1;30m_[0m [1;30m_[0m [1;32mN[0m [1;30m_[0m [1;30m_[0m [1;32mQ[0m [1;30m_[0m [1;30m_[0m 
+8 | [1;31mR[0m [1;31mN[0m [1;31mB[0m [1;31mQ[0m [1;31mK[0m [1;31mB[0m [1;31mN[0m [1;31mR[0m 
+7 | [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;31mP[0m [1;31mP[0m [1;30m_[0m [1;31mP[0m 
+6 | [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m 
+5 | [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
+4 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mQ[0m [1;30m_[0m 
+3 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mP[0m [1;32mN[0m [1;30m_[0m [1;30m_[0m 
 2 | [1;32mP[0m [1;32mP[0m [1;32mP[0m [1;32mP[0m [1;30m_[0m [1;32mP[0m [1;32mP[0m [1;32mP[0m 
-1 | [1;32mR[0m [1;30m_[0m [1;32mB[0m [1;30m_[0m [1;32mK[0m [1;32mB[0m [1;32mN[0m [1;32mR[0m 
+1 | [1;32mR[0m [1;32mN[0m [1;32mB[0m [1;30m_[0m [1;32mK[0m [1;32mB[0m [1;30m_[0m [1;32mR[0m 
 -------------------
   | A B C D E F G H 
 
 It is white's turn to play.
-Best move: f3e4
-Evaluation: 310
-Node count: 49696
+Best move: d2d4
+Evaluation: 220
+Node count: 145619
 
-Total time: 1219.05 ms
+Total time: 3497.02 ms
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
 [32;1m[Board] [0mLoaded 6 move(s).
 [32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mWhite player is playing f3 to e4.
-[32;1m[Board] [0m[5;1mWhite Queen is taking Black Knight.[0m
+[32;1m[Board] [0mWhite player is playing d2 to d4.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mQ[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[0;1mQ[0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mk[0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
-Opening Book execution time: 0.0146788 seconds.
-Depth: 1 Best move found: f7f6 Evaluation: -353 Nodes searched: 282 (Alpha Beta 10, Quiescence 272)
-Depth: 2 Best move found: f7f6 Evaluation: -413 Nodes searched: 187 (Alpha Beta 28, Quiescence 159)
-Depth: 3 Best move found: f7f6 Evaluation: -356 Nodes searched: 261 (Alpha Beta 77, Quiescence 184)
-Depth: 4 Best move found: b7b6 Evaluation: -388 Nodes searched: 3862 (Alpha Beta 993, Quiescence 2869)
-Depth: 5 Best move found: f7f6 Evaluation: -353 Nodes searched: 7488 (Alpha Beta 2963, Quiescence 4525)
-Depth: 6 Best move found: d7d6 Evaluation: -380 Nodes searched: 91099 (Alpha Beta 28043, Quiescence 63056)
-Time Elapsed: 9913ms
+   ┌───┬───┬───┬───┬───┬───┬───┬───┐
+ 8 │ ♖ │ ♘ │ ♗ │ ♕ │ ♔ │ ♗ │ ♘ │ ♖ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 7 │ ♙ │   │   │ ♙ │ ♙ │ ♙ │   │ ♙ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 6 │   │ ♙ │   │   │   │   │ ♙ │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 5 │   │   │ ♙ │   │   │   │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 4 │   │   │   │ ♟ │   │   │ ♛ │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 3 │   │   │   │   │ ♟ │ ♞ │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 2 │ ♟ │ ♟ │ ♟ │   │   │ ♟ │ ♟ │ ♟ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 1 │ ♜ │ ♞ │ ♝ │   │ ♚ │ ♝ │   │ ♜ │
+   └───┴───┴───┴───┴───┴───┴───┴───┘
+     a   b   c   d   e   f   g   h
+Opening Book execution time: 0.0137656 seconds.
+No Book Moves Found
+Depth: 1 Best move found: d7d6 Evaluation: -321 Nodes searched: 97 (Alpha Beta 4, Quiescence 93)
+Depth: 2 Best move found: c5d4 Evaluation: -538 Nodes searched: 145 (Alpha Beta 24, Quiescence 121)
+Depth: 3 Best move found: c5d4 Evaluation: -352 Nodes searched: 204 (Alpha Beta 67, Quiescence 137)
+Depth: 4 Best move found: f7f6 Evaluation: -464 Nodes searched: 3115 (Alpha Beta 1286, Quiescence 1829)
+Depth: 5 Best move found: c5d4 Evaluation: -385 Nodes searched: 8436 (Alpha Beta 3923, Quiescence 4513)
+Time Elapsed: 9908ms
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
 [32;1m[Board] [0mLoaded 7 move(s).
 [32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mBlack player is playing d7 to d6.
+[32;1m[Board] [0mBlack player is playing c5 to d4.
+[32;1m[Board] [0m[5;1mBlack Pawn is taking White Pawn.[0m
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mQ[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[0;1mQ[0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mk[0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -360,1460 +436,75 @@ Time Elapsed: 9913ms
 Input file: championship/lizzie-iii-kean-chess-engine/history.csv
 Output file: championship/lizzie-iii-kean-chess-engine/move.csv
 We are playing as White
-8 | [1;31mR[0m [1;31mN[0m [1;31mB[0m [1;31mQ[0m [1;31mK[0m [1;31mB[0m [1;30m_[0m [1;31mR[0m 
-7 | [1;31mP[0m [1;31mP[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;31mP[0m [1;31mP[0m 
-6 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-5 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-4 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mQ[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-3 | [1;30m_[0m [1;30m_[0m [1;32mN[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-2 | [1;32mP[0m [1;32mP[0m [1;32mP[0m [1;32mP[0m [1;30m_[0m [1;32mP[0m [1;32mP[0m [1;32mP[0m 
-1 | [1;32mR[0m [1;30m_[0m [1;32mB[0m [1;30m_[0m [1;32mK[0m [1;32mB[0m [1;32mN[0m [1;32mR[0m 
+8 | [1;31mR[0m [1;31mN[0m [1;31mB[0m [1;31mQ[0m [1;31mK[0m [1;31mB[0m [1;31mN[0m [1;31mR[0m 
+7 | [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;31mP[0m [1;31mP[0m [1;30m_[0m [1;31mP[0m 
+6 | [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m 
+5 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
+4 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;32mQ[0m [1;30m_[0m 
+3 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mP[0m [1;32mN[0m [1;30m_[0m [1;30m_[0m 
+2 | [1;32mP[0m [1;32mP[0m [1;32mP[0m [1;30m_[0m [1;30m_[0m [1;32mP[0m [1;32mP[0m [1;32mP[0m 
+1 | [1;32mR[0m [1;32mN[0m [1;32mB[0m [1;30m_[0m [1;32mK[0m [1;32mB[0m [1;30m_[0m [1;32mR[0m 
 -------------------
   | A B C D E F G H 
 
 It is white's turn to play.
-Best move: g1f3
-Evaluation: 380
-Node count: 138989
+Best move: g4e4
+Evaluation: 245
+Node count: 61019
 
-Total time: 2928.69 ms
+Total time: 1574.52 ms
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
 [32;1m[Board] [0mLoaded 8 move(s).
 [32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mWhite player is playing g1 to f3.
+[32;1m[Board] [0mWhite player is playing g4 to e4.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mQ[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[0;1mQ[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mk[0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
-Opening Book execution time: 0.0147746 seconds.
-Depth: 1 Best move found: f7f6 Evaluation: -323 Nodes searched: 313 (Alpha Beta 10, Quiescence 303)
-Depth: 2 Best move found: f7f6 Evaluation: -383 Nodes searched: 237 (Alpha Beta 31, Quiescence 206)
-Depth: 3 Best move found: f7f6 Evaluation: -323 Nodes searched: 257 (Alpha Beta 80, Quiescence 177)
-Depth: 4 Best move found: f7f6 Evaluation: -355 Nodes searched: 5179 (Alpha Beta 1611, Quiescence 3568)
-Depth: 5 Best move found: f7f6 Evaluation: -355 Nodes searched: 13139 (Alpha Beta 3887, Quiescence 9252)
-Depth: 6 Best move found: f7f6 Evaluation: -372 Nodes searched: 57609 (Alpha Beta 18912, Quiescence 38697)
-Time Elapsed: 9912ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 9 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mBlack player is playing f7 to f6.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mQ[0m| |[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the White player...
-Input file: championship/lizzie-iii-kean-chess-engine/history.csv
-Output file: championship/lizzie-iii-kean-chess-engine/move.csv
-We are playing as White
-8 | [1;31mR[0m [1;31mN[0m [1;31mB[0m [1;31mQ[0m [1;31mK[0m [1;31mB[0m [1;30m_[0m [1;31mR[0m 
-7 | [1;31mP[0m [1;31mP[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;31mP[0m 
-6 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m 
-5 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-4 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mQ[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-3 | [1;30m_[0m [1;30m_[0m [1;32mN[0m [1;30m_[0m [1;30m_[0m [1;32mN[0m [1;30m_[0m [1;30m_[0m 
-2 | [1;32mP[0m [1;32mP[0m [1;32mP[0m [1;32mP[0m [1;30m_[0m [1;32mP[0m [1;32mP[0m [1;32mP[0m 
-1 | [1;32mR[0m [1;30m_[0m [1;32mB[0m [1;30m_[0m [1;32mK[0m [1;32mB[0m [1;30m_[0m [1;32mR[0m 
--------------------
-  | A B C D E F G H 
-
-It is white's turn to play.
-Best move: d2d4
-Evaluation: 415
-Node count: 116172
-
-Total time: 2298.34 ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 10 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mWhite player is playing d2 to d4.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mQ[0m| |[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the Black player...
-Opening Book execution time: 0.016298 seconds.
-Depth: 1 Best move found: e8d7 Evaluation: -323 Nodes searched: 114 (Alpha Beta 4, Quiescence 110)
-Depth: 2 Best move found: e8d7 Evaluation: -355 Nodes searched: 112 (Alpha Beta 28, Quiescence 84)
-Depth: 3 Best move found: e8e7 Evaluation: -355 Nodes searched: 377 (Alpha Beta 128, Quiescence 249)
-Depth: 4 Best move found: e8d7 Evaluation: -368 Nodes searched: 2386 (Alpha Beta 597, Quiescence 1789)
-Depth: 5 Best move found: e8d7 Evaluation: -355 Nodes searched: 3955 (Alpha Beta 726, Quiescence 3229)
-Depth: 6 Best move found: d8d7 Evaluation: -399 Nodes searched: 96498 (Alpha Beta 35404, Quiescence 61094)
-Time Elapsed: 9913ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 11 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mBlack player is playing d8 to d7.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mQ[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mQ[0m| |[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the White player...
-Input file: championship/lizzie-iii-kean-chess-engine/history.csv
-Output file: championship/lizzie-iii-kean-chess-engine/move.csv
-We are playing as White
-8 | [1;31mR[0m [1;31mN[0m [1;31mB[0m [1;30m_[0m [1;31mK[0m [1;31mB[0m [1;30m_[0m [1;31mR[0m 
-7 | [1;31mP[0m [1;31mP[0m [1;31mP[0m [1;31mQ[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;31mP[0m 
-6 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m 
-5 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-4 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mP[0m [1;32mQ[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-3 | [1;30m_[0m [1;30m_[0m [1;32mN[0m [1;30m_[0m [1;30m_[0m [1;32mN[0m [1;30m_[0m [1;30m_[0m 
-2 | [1;32mP[0m [1;32mP[0m [1;32mP[0m [1;30m_[0m [1;30m_[0m [1;32mP[0m [1;32mP[0m [1;32mP[0m 
-1 | [1;32mR[0m [1;30m_[0m [1;32mB[0m [1;30m_[0m [1;32mK[0m [1;32mB[0m [1;30m_[0m [1;32mR[0m 
--------------------
-  | A B C D E F G H 
-
-It is white's turn to play.
-Best move: f1b5
-Evaluation: 450
-Node count: 138366
-
-Total time: 2757.62 ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 12 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mWhite player is playing f1 to b5.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mQ[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[0;1mb[0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mQ[0m| |[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the Black player...
-Opening Book execution time: 0.0161169 seconds.
-Depth: 1 Best move found: e8d8 Evaluation: 58 Nodes searched: 62 (Alpha Beta 31, Quiescence 31)
-Depth: 2 Best move found: d7b5 Evaluation: -353 Nodes searched: 102 (Alpha Beta 21, Quiescence 81)
-Depth: 3 Best move found: d7b5 Evaluation: -273 Nodes searched: 335 (Alpha Beta 91, Quiescence 244)
-Depth: 4 Best move found: b8c6 Evaluation: -365 Nodes searched: 1737 (Alpha Beta 394, Quiescence 1343)
-Depth: 5 Best move found: b8c6 Evaluation: -291 Nodes searched: 16149 (Alpha Beta 4378, Quiescence 11771)
-Depth: 6 Best move found: c7c6 Evaluation: -356 Nodes searched: 51780 (Alpha Beta 19681, Quiescence 32099)
-Time Elapsed: 9908ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 13 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mBlack player is playing c7 to c6.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mQ[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[0;1mb[0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mQ[0m| |[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the White player...
-Input file: championship/lizzie-iii-kean-chess-engine/history.csv
-Output file: championship/lizzie-iii-kean-chess-engine/move.csv
-We are playing as White
-8 | [1;31mR[0m [1;31mN[0m [1;31mB[0m [1;30m_[0m [1;31mK[0m [1;31mB[0m [1;30m_[0m [1;31mR[0m 
-7 | [1;31mP[0m [1;31mP[0m [1;30m_[0m [1;31mQ[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;31mP[0m 
-6 | [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;31mP[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m 
-5 | [1;30m_[0m [1;32mB[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-4 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mP[0m [1;32mQ[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-3 | [1;30m_[0m [1;30m_[0m [1;32mN[0m [1;30m_[0m [1;30m_[0m [1;32mN[0m [1;30m_[0m [1;30m_[0m 
-2 | [1;32mP[0m [1;32mP[0m [1;32mP[0m [1;30m_[0m [1;30m_[0m [1;32mP[0m [1;32mP[0m [1;32mP[0m 
-1 | [1;32mR[0m [1;30m_[0m [1;32mB[0m [1;30m_[0m [1;32mK[0m [1;30m_[0m [1;30m_[0m [1;32mR[0m 
--------------------
-  | A B C D E F G H 
-
-It is white's turn to play.
-Best move: b5d3
-Evaluation: 435
-Node count: 146922
-
-Total time: 2955.34 ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 14 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mWhite player is playing b5 to d3.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mQ[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mQ[0m| |[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[0;1mb[0m| |[0;1mk[0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the Black player...
-Opening Book execution time: 0.0161092 seconds.
-Depth: 1 Best move found: e8d8 Evaluation: -311 Nodes searched: 106 (Alpha Beta 4, Quiescence 102)
-Depth: 2 Best move found: e8d8 Evaluation: -344 Nodes searched: 101 (Alpha Beta 26, Quiescence 75)
-Depth: 3 Best move found: e8d8 Evaluation: -327 Nodes searched: 487 (Alpha Beta 176, Quiescence 311)
-Depth: 4 Best move found: e8d8 Evaluation: -356 Nodes searched: 868 (Alpha Beta 165, Quiescence 703)
-Depth: 5 Best move found: e8d8 Evaluation: -351 Nodes searched: 5197 (Alpha Beta 1990, Quiescence 3207)
-Depth: 6 Best move found: e8d8 Evaluation: -382 Nodes searched: 82193 (Alpha Beta 27481, Quiescence 54712)
-Time Elapsed: 9905ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 15 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mBlack player is playing e8 to d8.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mK[0m|[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mQ[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mQ[0m| |[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[0;1mb[0m| |[0;1mk[0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the White player...
-Input file: championship/lizzie-iii-kean-chess-engine/history.csv
-Output file: championship/lizzie-iii-kean-chess-engine/move.csv
-We are playing as White
-8 | [1;31mR[0m [1;31mN[0m [1;31mB[0m [1;31mK[0m [1;30m_[0m [1;31mB[0m [1;30m_[0m [1;31mR[0m 
-7 | [1;31mP[0m [1;31mP[0m [1;30m_[0m [1;31mQ[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;31mP[0m 
-6 | [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;31mP[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m 
-5 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-4 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mP[0m [1;32mQ[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-3 | [1;30m_[0m [1;30m_[0m [1;32mN[0m [1;32mB[0m [1;30m_[0m [1;32mN[0m [1;30m_[0m [1;30m_[0m 
-2 | [1;32mP[0m [1;32mP[0m [1;32mP[0m [1;30m_[0m [1;30m_[0m [1;32mP[0m [1;32mP[0m [1;32mP[0m 
-1 | [1;32mR[0m [1;30m_[0m [1;32mB[0m [1;30m_[0m [1;32mK[0m [1;30m_[0m [1;30m_[0m [1;32mR[0m 
--------------------
-  | A B C D E F G H 
-
-It is white's turn to play.
-Best move: d4e5
-Evaluation: 445
-Node count: 136137
-
-Total time: 2594.04 ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 16 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mWhite player is playing d4 to e5.
-[32;1m[Board] [0m[5;1mWhite Pawn is taking Black Pawn.[0m
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mK[0m|[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mQ[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mQ[0m| |[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[0;1mb[0m| |[0;1mk[0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the Black player...
-Opening Book execution time: 0.0137865 seconds.
-Depth: 1 Best move found: g7g5 Evaluation: -291 Nodes searched: 72 (Alpha Beta 31, Quiescence 41)
-Depth: 2 Best move found: g7g5 Evaluation: -356 Nodes searched: 221 (Alpha Beta 28, Quiescence 193)
-Depth: 3 Best move found: d6e5 Evaluation: -351 Nodes searched: 278 (Alpha Beta 54, Quiescence 224)
-Depth: 4 Best move found: d6e5 Evaluation: -359 Nodes searched: 1183 (Alpha Beta 210, Quiescence 973)
-Depth: 5 Best move found: d6e5 Evaluation: -356 Nodes searched: 1149 (Alpha Beta 262, Quiescence 887)
-Time Elapsed: 9902ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 17 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mBlack player is playing d6 to e5.
-[32;1m[Board] [0m[5;1mBlack Pawn is taking White Pawn.[0m
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mK[0m|[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mQ[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mQ[0m| |[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[0;1mb[0m| |[0;1mk[0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the White player...
-Input file: championship/lizzie-iii-kean-chess-engine/history.csv
-Output file: championship/lizzie-iii-kean-chess-engine/move.csv
-We are playing as White
-8 | [1;31mR[0m [1;31mN[0m [1;31mB[0m [1;31mK[0m [1;30m_[0m [1;31mB[0m [1;30m_[0m [1;31mR[0m 
-7 | [1;31mP[0m [1;31mP[0m [1;30m_[0m [1;31mQ[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;31mP[0m 
-6 | [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m 
-5 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-4 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mQ[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-3 | [1;30m_[0m [1;30m_[0m [1;32mN[0m [1;32mB[0m [1;30m_[0m [1;32mN[0m [1;30m_[0m [1;30m_[0m 
-2 | [1;32mP[0m [1;32mP[0m [1;32mP[0m [1;30m_[0m [1;30m_[0m [1;32mP[0m [1;32mP[0m [1;32mP[0m 
-1 | [1;32mR[0m [1;30m_[0m [1;32mB[0m [1;30m_[0m [1;32mK[0m [1;30m_[0m [1;30m_[0m [1;32mR[0m 
--------------------
-  | A B C D E F G H 
-
-It is white's turn to play.
-Best move: f3e5
-Evaluation: 450
-Node count: 173539
-
-Total time: 3313.14 ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 18 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mWhite player is playing f3 to e5.
-[32;1m[Board] [0m[5;1mWhite Knight is taking Black Pawn.[0m
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mK[0m|[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mQ[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mQ[0m| |[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[0;1mb[0m| |[7;1m [0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the Black player...
-Opening Book execution time: 0.0136604 seconds.
-Depth: 1 Best move found: d7d3 Evaluation: 596 Nodes searched: 70 (Alpha Beta 26, Quiescence 44)
-Depth: 2 Best move found: f6e5 Evaluation: -186 Nodes searched: 212 (Alpha Beta 34, Quiescence 178)
-Depth: 3 Best move found: f6e5 Evaluation: -134 Nodes searched: 205 (Alpha Beta 51, Quiescence 154)
-Depth: 4 Best move found: f6e5 Evaluation: -167 Nodes searched: 315 (Alpha Beta 99, Quiescence 216)
-Depth: 5 Best move found: f6e5 Evaluation: -127 Nodes searched: 4670 (Alpha Beta 1139, Quiescence 3531)
-Depth: 6 Best move found: f6e5 Evaluation: -191 Nodes searched: 41730 (Alpha Beta 16300, Quiescence 25430)
-Depth: 7 Best move found: f6e5 Evaluation: 111 Nodes searched: 1369 (Alpha Beta 488, Quiescence 881)
-Time Elapsed: 9902ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 19 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mBlack player is playing f6 to e5.
-[32;1m[Board] [0m[5;1mBlack Pawn is taking White Knight.[0m
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mK[0m|[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mQ[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mQ[0m| |[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[0;1mb[0m| |[7;1m [0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the White player...
-Input file: championship/lizzie-iii-kean-chess-engine/history.csv
-Output file: championship/lizzie-iii-kean-chess-engine/move.csv
-We are playing as White
-8 | [1;31mR[0m [1;31mN[0m [1;31mB[0m [1;31mK[0m [1;30m_[0m [1;31mB[0m [1;30m_[0m [1;31mR[0m 
-7 | [1;31mP[0m [1;31mP[0m [1;30m_[0m [1;31mQ[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;31mP[0m 
-6 | [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-5 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-4 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mQ[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-3 | [1;30m_[0m [1;30m_[0m [1;32mN[0m [1;32mB[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-2 | [1;32mP[0m [1;32mP[0m [1;32mP[0m [1;30m_[0m [1;30m_[0m [1;32mP[0m [1;32mP[0m [1;32mP[0m 
-1 | [1;32mR[0m [1;30m_[0m [1;32mB[0m [1;30m_[0m [1;32mK[0m [1;30m_[0m [1;30m_[0m [1;32mR[0m 
--------------------
-  | A B C D E F G H 
-
-It is white's turn to play.
-Best move: e4e5
-Evaluation: 470
-Node count: 156460
-
-Total time: 2798.07 ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 20 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mWhite player is playing e4 to e5.
-[32;1m[Board] [0m[5;1mWhite Queen is taking Black Pawn.[0m
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mK[0m|[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mQ[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[0;1mQ[0m|[7;1m [0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[0;1mb[0m| |[7;1m [0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the Black player...
-Opening Book execution time: 0.014815 seconds.
-Depth: 1 Best move found: d7d3 Evaluation: 1216 Nodes searched: 34 (Alpha Beta 5, Quiescence 29)
-Depth: 2 Best move found: d7d3 Evaluation: 167 Nodes searched: 230 (Alpha Beta 29, Quiescence 201)
-Depth: 3 Best move found: d7d3 Evaluation: 242 Nodes searched: 119 (Alpha Beta 49, Quiescence 70)
-Depth: 4 Best move found: d7e8 Evaluation: -339 Nodes searched: 2747 (Alpha Beta 743, Quiescence 2004)
-Depth: 5 Best move found: d7d5 Evaluation: -234 Nodes searched: 6575 (Alpha Beta 1856, Quiescence 4719)
-Depth: 6 Best move found: d7d5 Evaluation: -508 Nodes searched: 9782 (Alpha Beta 3569, Quiescence 6213)
-Time Elapsed: 9912ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 21 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mBlack player is playing d7 to d5.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mK[0m|[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mQ[0m|[0;1mQ[0m|[7;1m [0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[0;1mb[0m| |[7;1m [0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the White player...
-Input file: championship/lizzie-iii-kean-chess-engine/history.csv
-Output file: championship/lizzie-iii-kean-chess-engine/move.csv
-We are playing as White
-8 | [1;31mR[0m [1;31mN[0m [1;31mB[0m [1;31mK[0m [1;30m_[0m [1;31mB[0m [1;30m_[0m [1;31mR[0m 
-7 | [1;31mP[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;31mP[0m 
-6 | [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-5 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mQ[0m [1;32mQ[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-4 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-3 | [1;30m_[0m [1;30m_[0m [1;32mN[0m [1;32mB[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-2 | [1;32mP[0m [1;32mP[0m [1;32mP[0m [1;30m_[0m [1;30m_[0m [1;32mP[0m [1;32mP[0m [1;32mP[0m 
-1 | [1;32mR[0m [1;30m_[0m [1;32mB[0m [1;30m_[0m [1;32mK[0m [1;30m_[0m [1;30m_[0m [1;32mR[0m 
--------------------
-  | A B C D E F G H 
-
-It is white's turn to play.
-Best move: c1g5
-Evaluation: 1115
-Node count: 65287
-
-Total time: 1334.39 ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 22 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mWhite player is playing c1 to g5.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mK[0m|[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mQ[0m|[0;1mQ[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[0;1mb[0m| |[7;1m [0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the Black player...
-[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mBlack King in check![0m
-[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by White Bishop (g5)
-Opening Book execution time: 0.0135908 seconds.
-Depth: 1 Best move found: d8d7 Evaluation: 1213 Nodes searched: 9 (Alpha Beta 5, Quiescence 4)
-Depth: 2 Best move found: d8d7 Evaluation: 164 Nodes searched: 126 (Alpha Beta 3, Quiescence 123)
-Depth: 3 Best move found: d8d7 Evaluation: 151 Nodes searched: 144 (Alpha Beta 62, Quiescence 82)
-Depth: 4 Best move found: d8d7 Evaluation: -177 Nodes searched: 697 (Alpha Beta 125, Quiescence 572)
-Depth: 5 Best move found: d8d7 Evaluation: -148 Nodes searched: 745 (Alpha Beta 282, Quiescence 463)
-Depth: 6 Best move found: d8d7 Evaluation: -550 Nodes searched: 15187 (Alpha Beta 3519, Quiescence 11668)
-Depth: 7 Best move found: d8d7 Evaluation: -306 Nodes searched: 5447 (Alpha Beta 2160, Quiescence 3287)
-Time Elapsed: 9907ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 23 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mBlack player is playing d8 to d7.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mK[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mQ[0m|[0;1mQ[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[0;1mb[0m| |[7;1m [0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the White player...
-Input file: championship/lizzie-iii-kean-chess-engine/history.csv
-Output file: championship/lizzie-iii-kean-chess-engine/move.csv
-We are playing as White
-8 | [1;31mR[0m [1;31mN[0m [1;31mB[0m [1;30m_[0m [1;30m_[0m [1;31mB[0m [1;30m_[0m [1;31mR[0m 
-7 | [1;31mP[0m [1;31mP[0m [1;30m_[0m [1;31mK[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;31mP[0m 
-6 | [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-5 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mQ[0m [1;32mQ[0m [1;30m_[0m [1;32mB[0m [1;30m_[0m 
-4 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-3 | [1;30m_[0m [1;30m_[0m [1;32mN[0m [1;32mB[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-2 | [1;32mP[0m [1;32mP[0m [1;32mP[0m [1;30m_[0m [1;30m_[0m [1;32mP[0m [1;32mP[0m [1;32mP[0m 
-1 | [1;32mR[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mK[0m [1;30m_[0m [1;30m_[0m [1;32mR[0m 
--------------------
-  | A B C D E F G H 
-
-It is white's turn to play.
-Best move: d3f5
-Evaluation: 1420
-Node count: 43500
-
-Total time: 842.311 ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 24 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mWhite player is playing d3 to f5.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mK[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[30;1mQ[0m|[0;1mQ[0m|[0;1mb[0m|[0;1mb[0m|[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the Black player...
-[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mBlack King in check![0m
-[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by White Bishop (f5)
-Opening Book execution time: 0.0164533 seconds.
-Depth: 1 Best move found: d5e6 Evaluation: 1588 Nodes searched: 20 (Alpha Beta 10, Quiescence 10)
-Depth: 2 Best move found: d5e6 Evaluation: 548 Nodes searched: 48 (Alpha Beta 2, Quiescence 46)
-Depth: 3 Best move found: d5e6 Evaluation: 504 Nodes searched: 96 (Alpha Beta 49, Quiescence 47)
-Depth: 4 Best move found: d5e6 Evaluation: -541 Nodes searched: 70 (Alpha Beta 5, Quiescence 65)
-Depth: 5 Best move found: d5e6 Evaluation: -520 Nodes searched: 265 (Alpha Beta 67, Quiescence 198)
-Depth: 6 Best move found: d5e6 Evaluation: -928 Nodes searched: 2458 (Alpha Beta 1227, Quiescence 1231)
-Depth: 7 Best move found: d5e6 Evaluation: -590 Nodes searched: 6091 (Alpha Beta 2011, Quiescence 4080)
-Depth: 8 Best move found: d5e6 Evaluation: -1025 Nodes searched: 10199 (Alpha Beta 4728, Quiescence 5471)
-Depth: 9 Best move found: d5e6 Evaluation: -1025 Nodes searched: 23941 (Alpha Beta 6889, Quiescence 17052)
-Time Elapsed: 9903ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 25 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mBlack player is playing d5 to e6.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mK[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[30;1mQ[0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[0;1mQ[0m|[0;1mb[0m|[0;1mb[0m|[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the White player...
-Input file: championship/lizzie-iii-kean-chess-engine/history.csv
-Output file: championship/lizzie-iii-kean-chess-engine/move.csv
-We are playing as White
-8 | [1;31mR[0m [1;31mN[0m [1;31mB[0m [1;30m_[0m [1;30m_[0m [1;31mB[0m [1;30m_[0m [1;31mR[0m 
-7 | [1;31mP[0m [1;31mP[0m [1;30m_[0m [1;31mK[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;31mP[0m 
-6 | [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;31mQ[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-5 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mQ[0m [1;32mB[0m [1;32mB[0m [1;30m_[0m 
-4 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-3 | [1;30m_[0m [1;30m_[0m [1;32mN[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-2 | [1;32mP[0m [1;32mP[0m [1;32mP[0m [1;30m_[0m [1;30m_[0m [1;32mP[0m [1;32mP[0m [1;32mP[0m 
-1 | [1;32mR[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mK[0m [1;30m_[0m [1;30m_[0m [1;32mR[0m 
--------------------
-  | A B C D E F G H 
-
-It is white's turn to play.
-Best move: e5e6
-Evaluation: 1760
-Node count: 61149
-
-Total time: 1196.76 ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 26 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mWhite player is playing e5 to e6.
-[32;1m[Board] [0m[5;1mWhite Queen is taking Black Queen.[0m
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[30;1mK[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[0;1mQ[0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[0;1mb[0m|[0;1mb[0m|[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the Black player...
-[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mBlack King in check![0m
-[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by White Queen (e6)
-Opening Book execution time: 0.0193201 seconds.
-Depth: 1 Best move found: d7c7 Evaluation: 504 Nodes searched: 6 (Alpha Beta 4, Quiescence 2)
-Depth: 2 Best move found: d7c7 Evaluation: -529 Nodes searched: 91 (Alpha Beta 4, Quiescence 87)
-Depth: 3 Best move found: d7c7 Evaluation: -511 Nodes searched: 208 (Alpha Beta 62, Quiescence 146)
-Depth: 4 Best move found: d7c7 Evaluation: -910 Nodes searched: 289 (Alpha Beta 44, Quiescence 245)
-Depth: 5 Best move found: d7c7 Evaluation: -876 Nodes searched: 264 (Alpha Beta 97, Quiescence 167)
-Depth: 6 Best move found: d7c7 Evaluation: -962 Nodes searched: 8820 (Alpha Beta 3657, Quiescence 5163)
-Depth: 7 Best move found: d7c7 Evaluation: -900 Nodes searched: 5175 (Alpha Beta 2795, Quiescence 2380)
-Depth: 8 Best move found: d7c7 Evaluation: -1212 Nodes searched: 37695 (Alpha Beta 17756, Quiescence 19939)
-Time Elapsed: 9908ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 27 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mBlack player is playing d7 to c7.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mK[0m|[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[0;1mQ[0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[0;1mb[0m|[0;1mb[0m|[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the White player...
-Input file: championship/lizzie-iii-kean-chess-engine/history.csv
-Output file: championship/lizzie-iii-kean-chess-engine/move.csv
-We are playing as White
-8 | [1;31mR[0m [1;31mN[0m [1;31mB[0m [1;30m_[0m [1;30m_[0m [1;31mB[0m [1;30m_[0m [1;31mR[0m 
-7 | [1;31mP[0m [1;31mP[0m [1;31mK[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;31mP[0m 
-6 | [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;32mQ[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-5 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mB[0m [1;32mB[0m [1;30m_[0m 
-4 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-3 | [1;30m_[0m [1;30m_[0m [1;32mN[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-2 | [1;32mP[0m [1;32mP[0m [1;32mP[0m [1;30m_[0m [1;30m_[0m [1;32mP[0m [1;32mP[0m [1;32mP[0m 
-1 | [1;32mR[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mK[0m [1;30m_[0m [1;30m_[0m [1;32mR[0m 
--------------------
-  | A B C D E F G H 
-
-It is white's turn to play.
-Best move: e6c8
-Evaluation: 1760
-Node count: 162916
-
-Total time: 2642.28 ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 28 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mWhite player is playing e6 to c8.
-[32;1m[Board] [0m[5;1mWhite Queen is taking Black Bishop.[0m
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[0;1mQ[0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mK[0m|[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[0;1mb[0m|[0;1mb[0m|[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the Black player...
-[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mBlack King in check![0m
-[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by White Queen (c8)
-Opening Book execution time: 0.0145077 seconds.
-Depth: 1 Best move found: c7d6 Evaluation: 143 Nodes searched: 8 (Alpha Beta 3, Quiescence 5)
-Depth: 2 Best move found: c7d6 Evaluation: -256 Nodes searched: 65 (Alpha Beta 6, Quiescence 59)
-Depth: 3 Best move found: c7d6 Evaluation: -244 Nodes searched: 135 (Alpha Beta 56, Quiescence 79)
-Depth: 4 Best move found: c7d6 Evaluation: -502 Nodes searched: 351 (Alpha Beta 86, Quiescence 265)
-Depth: 5 Best move found: c7d6 Evaluation: -457 Nodes searched: 154 (Alpha Beta 61, Quiescence 93)
-Depth: 6 Best move found: c7d6 Evaluation: -846 Nodes searched: 5115 (Alpha Beta 2426, Quiescence 2689)
-Depth: 7 Best move found: c7d6 Evaluation: -834 Nodes searched: 4608 (Alpha Beta 2576, Quiescence 2032)
-Time Elapsed: 9903ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 29 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mBlack player is playing c7 to d6.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[0;1mQ[0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m|[30;1mK[0m|[7;1m [0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[0;1mb[0m|[0;1mb[0m|[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the White player...
-Input file: championship/lizzie-iii-kean-chess-engine/history.csv
-Output file: championship/lizzie-iii-kean-chess-engine/move.csv
-We are playing as White
-8 | [1;31mR[0m [1;31mN[0m [1;32mQ[0m [1;30m_[0m [1;30m_[0m [1;31mB[0m [1;30m_[0m [1;31mR[0m 
-7 | [1;31mP[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;31mP[0m 
-6 | [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;31mK[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-5 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mB[0m [1;32mB[0m [1;30m_[0m 
-4 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-3 | [1;30m_[0m [1;30m_[0m [1;32mN[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-2 | [1;32mP[0m [1;32mP[0m [1;32mP[0m [1;30m_[0m [1;30m_[0m [1;32mP[0m [1;32mP[0m [1;32mP[0m 
-1 | [1;32mR[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mK[0m [1;30m_[0m [1;30m_[0m [1;32mR[0m 
--------------------
-  | A B C D E F G H 
-
-It is white's turn to play.
-Best move: c8b7
-Evaluation: 2020
-Node count: 155357
-
-Total time: 2477.05 ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 30 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mWhite player is playing c8 to b7.
-[32;1m[Board] [0m[5;1mWhite Queen is taking Black Pawn.[0m
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[7;1m [0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[0;1mQ[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m|[30;1mK[0m|[7;1m [0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[0;1mb[0m|[0;1mb[0m|[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the Black player...
-Depth: 1 Best move found: c6c5 Evaluation: 46 Nodes searched: 48 (Alpha Beta 26, Quiescence 22)
-Depth: 2 Best move found: c6c5 Evaluation: -981 Nodes searched: 154 (Alpha Beta 13, Quiescence 141)
-Depth: 3 Best move found: h8g8 Evaluation: -970 Nodes searched: 739 (Alpha Beta 350, Quiescence 389)
-Depth: 4 Best move found: h7h6 Evaluation: -1073 Nodes searched: 3529 (Alpha Beta 1042, Quiescence 2487)
-Depth: 5 Best move found: a7a5 Evaluation: -1056 Nodes searched: 8511 (Alpha Beta 2450, Quiescence 6061)
-Depth: 6 Best move found: b8a6 Evaluation: -594 Nodes searched: 19166 (Alpha Beta 5396, Quiescence 13770)
-Time Elapsed: 9904ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 31 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mBlack player is playing b8 to a6.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[7;1m [0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[0;1mQ[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[30;1mp[0m|[30;1mK[0m|[7;1m [0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[0;1mb[0m|[0;1mb[0m|[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the White player...
-Input file: championship/lizzie-iii-kean-chess-engine/history.csv
-Output file: championship/lizzie-iii-kean-chess-engine/move.csv
-We are playing as White
-8 | [1;31mR[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mB[0m [1;30m_[0m [1;31mR[0m 
-7 | [1;31mP[0m [1;32mQ[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;31mP[0m 
-6 | [1;31mN[0m [1;30m_[0m [1;31mP[0m [1;31mK[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-5 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mB[0m [1;32mB[0m [1;30m_[0m 
-4 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-3 | [1;30m_[0m [1;30m_[0m [1;32mN[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-2 | [1;32mP[0m [1;32mP[0m [1;32mP[0m [1;30m_[0m [1;30m_[0m [1;32mP[0m [1;32mP[0m [1;32mP[0m 
-1 | [1;32mR[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mK[0m [1;30m_[0m [1;30m_[0m [1;32mR[0m 
--------------------
-  | A B C D E F G H 
-
-It is white's turn to play.
-Best move: g5f4
-Evaluation: 2345
-Node count: 87081
-
-Total time: 1519.05 ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 32 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mWhite player is playing g5 to f4.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[7;1m [0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[0;1mQ[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[30;1mp[0m|[30;1mK[0m|[7;1m [0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[0;1mb[0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mb[0m|[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the Black player...
-[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mBlack King in check![0m
-[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by White Bishop (f4)
-Depth: 1 Best move found: d6c5 Evaluation: -371 Nodes searched: 37 (Alpha Beta 26, Quiescence 11)
-Depth: 2 Best move found: d6c5 Evaluation: -1398 Nodes searched: 64 (Alpha Beta 2, Quiescence 62)
-Depth: 3 Best move found: d6c5 Evaluation: -1360 Nodes searched: 162 (Alpha Beta 61, Quiescence 101)
-Depth: 4 Best move found: d6c5 Evaluation: -1759 Nodes searched: 276 (Alpha Beta 35, Quiescence 241)
-Depth: 5 Best move found: d6c5 Evaluation: -1404 Nodes searched: 828 (Alpha Beta 322, Quiescence 506)
-Depth: 6 Best move found: d6c5 Evaluation: -1056 Nodes searched: 6836 (Alpha Beta 2680, Quiescence 4156)
-Depth: 7 Best move found: d6c5 Evaluation: -1440 Nodes searched: 1457 (Alpha Beta 656, Quiescence 801)
-Depth: 8 Best move found: d6c5 Evaluation: -1447 Nodes searched: 83422 (Alpha Beta 35270, Quiescence 48152)
-Time Elapsed: 9905ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 33 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mBlack player is playing d6 to c5.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[7;1m [0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[0;1mQ[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mK[0m|[7;1m [0m| |[0;1mb[0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mb[0m|[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the White player...
-Input file: championship/lizzie-iii-kean-chess-engine/history.csv
-Output file: championship/lizzie-iii-kean-chess-engine/move.csv
-We are playing as White
-8 | [1;31mR[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mB[0m [1;30m_[0m [1;31mR[0m 
-7 | [1;31mP[0m [1;32mQ[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;31mP[0m 
-6 | [1;31mN[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-5 | [1;30m_[0m [1;30m_[0m [1;31mK[0m [1;30m_[0m [1;30m_[0m [1;32mB[0m [1;30m_[0m [1;30m_[0m 
-4 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mB[0m [1;30m_[0m [1;30m_[0m 
-3 | [1;30m_[0m [1;30m_[0m [1;32mN[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-2 | [1;32mP[0m [1;32mP[0m [1;32mP[0m [1;30m_[0m [1;30m_[0m [1;32mP[0m [1;32mP[0m [1;32mP[0m 
-1 | [1;32mR[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mK[0m [1;30m_[0m [1;30m_[0m [1;32mR[0m 
--------------------
-  | A B C D E F G H 
-
-It is white's turn to play.
-Best move: f4e3
-Evaluation: 2330
-Node count: 89184
-
-Total time: 1485.87 ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 34 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mWhite player is playing f4 to e3.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[7;1m [0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[0;1mQ[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mK[0m|[7;1m [0m| |[0;1mb[0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the Black player...
-[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mBlack King in check![0m
-[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by White Bishop (e3)
-Depth: 1 Best move found: c5d6 Evaluation: -374 Nodes searched: 39 (Alpha Beta 26, Quiescence 13)
-Depth: 2 Best move found: c5d6 Evaluation: -1401 Nodes searched: 128 (Alpha Beta 3, Quiescence 125)
-Depth: 3 Best move found: c5d6 Evaluation: -1363 Nodes searched: 352 (Alpha Beta 121, Quiescence 231)
-Depth: 4 Best move found: c5d6 Evaluation: -1762 Nodes searched: 737 (Alpha Beta 99, Quiescence 638)
-Depth: 5 Best move found: c5d6 Evaluation: -1724 Nodes searched: 2563 (Alpha Beta 947, Quiescence 1616)
-Depth: 6 Best move found: c5d6 Evaluation: -1760 Nodes searched: 15221 (Alpha Beta 8045, Quiescence 7176)
-Depth: 7 Best move found: c5d6 Evaluation: -1758 Nodes searched: 10775 (Alpha Beta 5302, Quiescence 5473)
-Depth: 8 Best move found: c5d6 Evaluation: -1774 Nodes searched: 90560 (Alpha Beta 36873, Quiescence 53687)
-Time Elapsed: 9915ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 35 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mBlack player is playing c5 to d6.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[7;1m [0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[0;1mQ[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[30;1mp[0m|[30;1mK[0m|[7;1m [0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[0;1mb[0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the White player...
-Input file: championship/lizzie-iii-kean-chess-engine/history.csv
-Output file: championship/lizzie-iii-kean-chess-engine/move.csv
-We are playing as White
-8 | [1;31mR[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mB[0m [1;30m_[0m [1;31mR[0m 
-7 | [1;31mP[0m [1;32mQ[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;31mP[0m 
-6 | [1;31mN[0m [1;30m_[0m [1;31mP[0m [1;31mK[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-5 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mB[0m [1;30m_[0m [1;30m_[0m 
-4 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-3 | [1;30m_[0m [1;30m_[0m [1;32mN[0m [1;30m_[0m [1;32mB[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-2 | [1;32mP[0m [1;32mP[0m [1;32mP[0m [1;30m_[0m [1;30m_[0m [1;32mP[0m [1;32mP[0m [1;32mP[0m 
-1 | [1;32mR[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mK[0m [1;30m_[0m [1;30m_[0m [1;32mR[0m 
--------------------
-  | A B C D E F G H 
-
-It is white's turn to play.
-Best move: b7d7
-Evaluation: 100000
-Node count: 157213
-
-Total time: 2480.64 ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 36 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mWhite player is playing b7 to d7.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[7;1m [0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m| |[0;1mQ[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[30;1mp[0m|[30;1mK[0m|[7;1m [0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[0;1mb[0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the Black player...
-[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mBlack King in check![0m
-[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by White Queen (d7)
-Depth: 1 Best move found: d6e5 Evaluation: -374 Nodes searched: 37 (Alpha Beta 26, Quiescence 11)
-Depth: 2 Best move found: d6e5 Evaluation: -1409 Nodes searched: 64 (Alpha Beta 2, Quiescence 62)
-Depth: 3 Best move found: d6e5 Evaluation: -10000000 Nodes searched: 207 (Alpha Beta 63, Quiescence 144)
-Depth: 4 Best move found: d6e5 Evaluation: -1480 Nodes searched: 345 (Alpha Beta 72, Quiescence 273)
-Depth: 5 Best move found: d6e5 Evaluation: -1462 Nodes searched: 453 (Alpha Beta 172, Quiescence 281)
-Depth: 6 Best move found: d6e5 Evaluation: -10000000 Nodes searched: 4149 (Alpha Beta 1920, Quiescence 2229)
-Depth: 7 Best move found: d6e5 Evaluation: -1469 Nodes searched: 6811 (Alpha Beta 3430, Quiescence 3381)
-Depth: 8 Best move found: d6e5 Evaluation: -1525 Nodes searched: 37385 (Alpha Beta 15742, Quiescence 21643)
-Time Elapsed: 9910ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 37 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mBlack player is playing d6 to e5.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[7;1m [0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m| |[0;1mQ[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mK[0m|[0;1mb[0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the White player...
-Input file: championship/lizzie-iii-kean-chess-engine/history.csv
-Output file: championship/lizzie-iii-kean-chess-engine/move.csv
-We are playing as White
-8 | [1;31mR[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mB[0m [1;30m_[0m [1;31mR[0m 
-7 | [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;32mQ[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;31mP[0m 
-6 | [1;31mN[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-5 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mK[0m [1;32mB[0m [1;30m_[0m [1;30m_[0m 
-4 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-3 | [1;30m_[0m [1;30m_[0m [1;32mN[0m [1;30m_[0m [1;32mB[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-2 | [1;32mP[0m [1;32mP[0m [1;32mP[0m [1;30m_[0m [1;30m_[0m [1;32mP[0m [1;32mP[0m [1;32mP[0m 
-1 | [1;32mR[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mK[0m [1;30m_[0m [1;30m_[0m [1;32mR[0m 
--------------------
-  | A B C D E F G H 
-
-It is white's turn to play.
-Best move: f2f4
-Evaluation: 100000
-Node count: 105993
-
-Total time: 1785.21 ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 38 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mWhite player is playing f2 to f4.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[7;1m [0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m| |[0;1mQ[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mK[0m|[0;1mb[0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the Black player...
-[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mBlack King in check![0m
-[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by White Pawn (f4)
-Depth: 1 Best move found: e5f6 Evaluation: -337 Nodes searched: 42 (Alpha Beta 31, Quiescence 11)
-Depth: 2 Best move found: e5f6 Evaluation: -1372 Nodes searched: 61 (Alpha Beta 2, Quiescence 59)
-Depth: 3 Best move found: e5f6 Evaluation: -10000000 Nodes searched: 198 (Alpha Beta 61, Quiescence 137)
-Depth: 4 Best move found: e5f6 Evaluation: -1443 Nodes searched: 339 (Alpha Beta 71, Quiescence 268)
-Depth: 5 Best move found: e5f6 Evaluation: -1423 Nodes searched: 240 (Alpha Beta 110, Quiescence 130)
-Depth: 6 Best move found: e5f6 Evaluation: -10000000 Nodes searched: 3936 (Alpha Beta 1928, Quiescence 2008)
-Depth: 7 Best move found: e5f6 Evaluation: -10000000 Nodes searched: 1904 (Alpha Beta 735, Quiescence 1169)
-Time Elapsed: 9907ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 39 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mBlack player is playing e5 to f6.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[7;1m [0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m| |[0;1mQ[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[30;1mp[0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[0;1mb[0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the White player...
-Input file: championship/lizzie-iii-kean-chess-engine/history.csv
-Output file: championship/lizzie-iii-kean-chess-engine/move.csv
-We are playing as White
-8 | [1;31mR[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;31mB[0m [1;30m_[0m [1;31mR[0m 
-7 | [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;32mQ[0m [1;30m_[0m [1;30m_[0m [1;31mP[0m [1;31mP[0m 
-6 | [1;31mN[0m [1;30m_[0m [1;31mP[0m [1;30m_[0m [1;30m_[0m [1;31mK[0m [1;30m_[0m [1;30m_[0m 
-5 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mB[0m [1;30m_[0m [1;30m_[0m 
-4 | [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mP[0m [1;30m_[0m [1;30m_[0m 
-3 | [1;30m_[0m [1;30m_[0m [1;32mN[0m [1;30m_[0m [1;32mB[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m 
-2 | [1;32mP[0m [1;32mP[0m [1;32mP[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mP[0m [1;32mP[0m 
-1 | [1;32mR[0m [1;30m_[0m [1;30m_[0m [1;30m_[0m [1;32mK[0m [1;30m_[0m [1;30m_[0m [1;32mR[0m 
--------------------
-  | A B C D E F G H 
-
-It is white's turn to play.
-Best move: c3e4
-Evaluation: 100000
-Node count: 96039
-
-Total time: 1578.57 ms
-[32;1m[Game] [0mPlayer's error code: 0
-[32;1m[Game] [0mChecking move validity...
-[32;1m[Board] [0mInitializing board...
-[32;1m[Board] [0mLoading history file `championship/lizzie-iii-kean-chess-engine/history.csv`...
-[32;1m[Board] [0mLoaded 40 move(s).
-[32;1m[Board] [0mLoading move file `championship/lizzie-iii-kean-chess-engine/move.csv`...
-[32;1m[Board] [0mWhite player is playing c3 to e4.
-[32;1m[Board] [0m
-[32;1m[Board] [0m    a b c d e f g h 
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[7;1m [0m| |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m| |[0;1mQ[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[30;1mp[0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m| || 6
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[0;1mb[0m| |[7;1m [0m|| 5
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mk[0m|[0;1mp[0m|[7;1m [0m| || 4
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|| 3
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| |[0;1mp[0m|[0;1mp[0m|| 2
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
-[32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m    a b c d e f g h
-[32;1m[Board] [0m
-[32;1m[Referee] [0mThis is the turn of the Black player...
-[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mBlack King in checkmate![0m
-[32;1m[Board] [0m[33;1m[WARNING][0m The White player wins!
+   ┌───┬───┬───┬───┬───┬───┬───┬───┐
+ 8 │ ♖ │ ♘ │ ♗ │ ♕ │ ♔ │ ♗ │ ♘ │ ♖ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 7 │ ♙ │   │   │ ♙ │ ♙ │ ♙ │   │ ♙ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 6 │   │ ♙ │   │   │   │   │ ♙ │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 5 │   │   │   │   │   │   │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 4 │   │   │   │ ♙ │ ♛ │   │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 3 │   │   │   │   │ ♟ │ ♞ │   │   │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 2 │ ♟ │ ♟ │ ♟ │   │   │ ♟ │ ♟ │ ♟ │
+   ├───┼───┼───┼───┼───┼───┼───┼───┤
+ 1 │ ♜ │ ♞ │ ♝ │   │ ♚ │ ♝ │   │ ♜ │
+   └───┴───┴───┴───┴───┴───┴───┴───┘
+     a   b   c   d   e   f   g   h
+Opening Book execution time: 0.0164421 seconds.
+No Book Moves Found
+Depth: 1 Best move found: d4e3 Evaluation: -292 Nodes searched: 72 (Alpha Beta 3, Quiescence 69)
+Depth: 2 Best move found: d4e3 Evaluation: -498 Nodes searched: 184 (Alpha Beta 48, Quiescence 136)
+Depth: 3 Best move found: c8b7 Evaluation: -73 Nodes searched: 806 (Alpha Beta 179, Quiescence 627)
+[32;1m[Game] [0mPlayer's error code: 11
+[32;1m[Game] [0m[31;1m[ERROR][0m The program `/home/julien/Pro/git/teaching/x/2024/kean-chess-engine/build/KEAN_chess_engine' has crashed :(
+[32;1m[Game] [0mBlack player has lost on illegal move.
