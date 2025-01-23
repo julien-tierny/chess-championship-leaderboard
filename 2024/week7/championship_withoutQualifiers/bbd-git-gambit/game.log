@@ -22,7 +22,7 @@
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
 Succesfully loaded network via incbin!
-info score 145 depth 1 nodes 25 time 3
+info score 145 depth 1 nodes 25 time 4
 -32000 32000 30
 info score 57 depth 2 nodes 128 time 4
 -32000 32000 30
@@ -30,21 +30,21 @@ info score 126 depth 3 nodes 694 time 5
 -32000 32000 30
 info score 83 depth 4 nodes 2790 time 9
 -32000 32000 30
-info score 93 depth 5 nodes 14242 time 30
+info score 93 depth 5 nodes 14242 time 26
 53 113 30
-info score 63 depth 6 nodes 25126 time 52
+info score 63 depth 6 nodes 25126 time 43
 63 123 30
-info score 46 depth 6 nodes 41174 time 82
+info score 46 depth 6 nodes 41174 time 68
 33 123 60
-info score 76 depth 7 nodes 101889 time 194
+info score 76 depth 7 nodes 101889 time 163
 16 76 30
-info score 95 depth 7 nodes 164148 time 307
+info score 95 depth 7 nodes 164148 time 256
 16 106 60
-info score 94 depth 8 nodes 308626 time 585
+info score 94 depth 8 nodes 308626 time 478
 65 125 30
-info score 124 depth 9 nodes 409235 time 782
+info score 124 depth 9 nodes 409235 time 637
 64 124 30
-info score 124 depth 9 nodes 875012 time 1613
+info score 124 depth 9 nodes 875012 time 1341
 64 154 60
 bestmove e2e4
 [32;1m[Game] [0mPlayer's error code: 0
@@ -76,14 +76,801 @@ bestmove e2e4
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
-timeout: failed to run command '/home/julien/Pro/git/teaching/x/2024/git-gambit/build/git-gambit': No such file or directory
-[32;1m[Game] [0mPlayer's error code: 32512
+
+    a   b   c   d   e   f   g   h 
+8 | r | n | b | q | k | b | n | r  | 8
+7 | p | p | p | p | p | p | p | p  | 7
+6 |   |   |   |   |   |   |   |    | 6
+5 |   |   |   |   |   |   |   |    | 5
+4 |   |   |   |   | P |   |   |    | 4
+3 |   |   |   |   |   |   |   |    | 3
+2 | P | P | P | P |   | P | P | P  | 2
+1 | R | N | B | Q | K | B | N | R  | 1
+    a   b   c   d   e   f   g   h 
+
+[32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/bbd-git-gambit/history.csv`...
 [32;1m[Board] [0mLoaded 1 move(s).
 [32;1m[Board] [0mLoading move file `championship/bbd-git-gambit/move.csv`...
-[32;1m[Board] [0mBlack player is playing e2 to e4.
-[32;1m[Board] [0m[31;1m[ERROR][0m Move source (e2) contains no piece :(
-[32;1m[Referee] [0mInvalid move (code: -3) :(
-[32;1m[Game] [0mBlack player has lost on illegal move.
+[32;1m[Board] [0mBlack player is playing e7 to e5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+Succesfully loaded network via incbin!
+info score 166 depth 1 nodes 41 time 3
+-32000 32000 30
+info score 123 depth 2 nodes 302 time 4
+-32000 32000 30
+info score 123 depth 3 nodes 1370 time 5
+-32000 32000 30
+info score 40 depth 4 nodes 6057 time 13
+-32000 32000 30
+info score 70 depth 5 nodes 6736 time 14
+10 70 30
+info score 95 depth 5 nodes 28023 time 44
+10 100 60
+info score 95 depth 6 nodes 58119 time 90
+65 125 30
+info score 124 depth 7 nodes 166240 time 248
+65 125 30
+info score 94 depth 8 nodes 294439 time 450
+94 154 30
+info score 85 depth 8 nodes 477594 time 729
+64 154 60
+info score 115 depth 9 nodes 698922 time 1079
+55 115 30
+bestmove g1f3
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/bbd-git-gambit/history.csv`...
+[32;1m[Board] [0mLoaded 2 move(s).
+[32;1m[Board] [0mLoading move file `championship/bbd-git-gambit/move.csv`...
+[32;1m[Board] [0mWhite player is playing g1 to f3.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+
+    a   b   c   d   e   f   g   h 
+8 | r | n | b | q | k | b | n | r  | 8
+7 | p | p | p | p |   | p | p | p  | 7
+6 |   |   |   |   |   |   |   |    | 6
+5 |   |   |   |   | p |   |   |    | 5
+4 |   |   |   |   | P |   |   |    | 4
+3 |   |   |   |   |   | N |   |    | 3
+2 | P | P | P | P |   | P | P | P  | 2
+1 | R | N | B | Q | K | B |   | R  | 1
+    a   b   c   d   e   f   g   h 
+
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/bbd-git-gambit/history.csv`...
+[32;1m[Board] [0mLoaded 3 move(s).
+[32;1m[Board] [0mLoading move file `championship/bbd-git-gambit/move.csv`...
+[32;1m[Board] [0mBlack player is playing b8 to c6.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+Succesfully loaded network via incbin!
+info score 62 depth 1 nodes 55 time 3
+-32000 32000 30
+info score 40 depth 2 nodes 257 time 4
+-32000 32000 30
+info score 95 depth 3 nodes 1549 time 6
+-32000 32000 30
+info score 114 depth 4 nodes 5433 time 12
+-32000 32000 30
+info score 144 depth 5 nodes 7331 time 15
+84 144 30
+info score 146 depth 5 nodes 13544 time 24
+84 174 60
+info score 116 depth 6 nodes 32923 time 55
+116 176 30
+info score 112 depth 6 nodes 47158 time 77
+86 176 60
+info score 130 depth 7 nodes 151407 time 239
+82 142 30
+info score 141 depth 8 nodes 281688 time 441
+100 160 30
+bestmove d2d4
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/bbd-git-gambit/history.csv`...
+[32;1m[Board] [0mLoaded 4 move(s).
+[32;1m[Board] [0mLoading move file `championship/bbd-git-gambit/move.csv`...
+[32;1m[Board] [0mWhite player is playing d2 to d4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+
+    a   b   c   d   e   f   g   h 
+8 | r |   | b | q | k | b | n | r  | 8
+7 | p | p | p | p |   | p | p | p  | 7
+6 |   |   | n |   |   |   |   |    | 6
+5 |   |   |   |   | p |   |   |    | 5
+4 |   |   |   | P | P |   |   |    | 4
+3 |   |   |   |   |   | N |   |    | 3
+2 | P | P | P |   |   | P | P | P  | 2
+1 | R | N | B | Q | K | B |   | R  | 1
+    a   b   c   d   e   f   g   h 
+
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/bbd-git-gambit/history.csv`...
+[32;1m[Board] [0mLoaded 5 move(s).
+[32;1m[Board] [0mLoading move file `championship/bbd-git-gambit/move.csv`...
+[32;1m[Board] [0mBlack player is playing f8 to c5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m| |[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m|[30;1mb[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+Succesfully loaded network via incbin!
+info score 1517 depth 1 nodes 38 time 2
+-32000 32000 30
+info score 1494 depth 2 nodes 144 time 3
+-32000 32000 30
+info score 1598 depth 3 nodes 509 time 3
+-32000 32000 30
+info score 1535 depth 4 nodes 2903 time 7
+-32000 32000 30
+info score 1565 depth 5 nodes 5856 time 12
+1505 1565 30
+info score 1595 depth 5 nodes 6567 time 13
+1505 1595 60
+info score 1599 depth 5 nodes 11712 time 21
+1505 1655 120
+info score 1569 depth 6 nodes 14391 time 25
+1569 1629 30
+info score 1550 depth 6 nodes 30800 time 51
+1539 1629 60
+info score 1568 depth 7 nodes 95690 time 153
+1520 1580 30
+info score 1564 depth 8 nodes 324714 time 519
+1538 1598 30
+info score 1594 depth 9 nodes 604144 time 981
+1534 1594 30
+bestmove d4c5
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/bbd-git-gambit/history.csv`...
+[32;1m[Board] [0mLoaded 6 move(s).
+[32;1m[Board] [0mLoading move file `championship/bbd-git-gambit/move.csv`...
+[32;1m[Board] [0mWhite player is playing d4 to c5.
+[32;1m[Board] [0m[5;1mWhite Pawn is taking Black Bishop.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m| |[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+
+    a   b   c   d   e   f   g   h 
+8 | r |   | b | q | k |   | n | r  | 8
+7 | p | p | p | p |   | p | p | p  | 7
+6 |   |   | n |   |   |   |   |    | 6
+5 |   |   | P |   | p |   |   |    | 5
+4 |   |   |   |   | P |   |   |    | 4
+3 |   |   |   |   |   | N |   |    | 3
+2 | P | P | P |   |   | P | P | P  | 2
+1 | R | N | B | Q | K | B |   | R  | 1
+    a   b   c   d   e   f   g   h 
+
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/bbd-git-gambit/history.csv`...
+[32;1m[Board] [0mLoaded 7 move(s).
+[32;1m[Board] [0mLoading move file `championship/bbd-git-gambit/move.csv`...
+[32;1m[Board] [0mBlack player is playing d8 to h4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[30;1mK[0m| |[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m|[30;1mQ[0m|| 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+Succesfully loaded network via incbin!
+info score 5018 depth 1 nodes 39 time 3
+-32000 32000 30
+info score 4968 depth 2 nodes 147 time 4
+-32000 32000 30
+info score 5031 depth 3 nodes 425 time 4
+-32000 32000 30
+info score 4980 depth 4 nodes 1898 time 6
+-32000 32000 30
+info score 4980 depth 5 nodes 5835 time 14
+4950 5010 30
+info score 4973 depth 6 nodes 22138 time 38
+4950 5010 30
+info score 5003 depth 7 nodes 31296 time 52
+4943 5003 30
+info score 5005 depth 7 nodes 92123 time 143
+4943 5033 60
+info score 4995 depth 8 nodes 224872 time 353
+4975 5035 30
+info score 5015 depth 9 nodes 586523 time 917
+4965 5025 30
+bestmove f3h4
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/bbd-git-gambit/history.csv`...
+[32;1m[Board] [0mLoaded 8 move(s).
+[32;1m[Board] [0mLoading move file `championship/bbd-git-gambit/move.csv`...
+[32;1m[Board] [0mWhite player is playing f3 to h4.
+[32;1m[Board] [0m[5;1mWhite Knight is taking Black Queen.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[30;1mK[0m| |[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m|[0;1mk[0m|| 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+
+    a   b   c   d   e   f   g   h 
+8 | r |   | b |   | k |   | n | r  | 8
+7 | p | p | p | p |   | p | p | p  | 7
+6 |   |   | n |   |   |   |   |    | 6
+5 |   |   | P |   | p |   |   |    | 5
+4 |   |   |   |   | P |   |   | N  | 4
+3 |   |   |   |   |   |   |   |    | 3
+2 | P | P | P |   |   | P | P | P  | 2
+1 | R | N | B | Q | K | B |   | R  | 1
+    a   b   c   d   e   f   g   h 
+
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/bbd-git-gambit/history.csv`...
+[32;1m[Board] [0mLoaded 9 move(s).
+[32;1m[Board] [0mLoading move file `championship/bbd-git-gambit/move.csv`...
+[32;1m[Board] [0mBlack player is playing f7 to f5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[30;1mK[0m| |[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m|[0;1mk[0m|| 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+Succesfully loaded network via incbin!
+info score 5125 depth 1 nodes 43 time 3
+-32000 32000 30
+info score 5133 depth 2 nodes 176 time 4
+-32000 32000 30
+info score 5115 depth 3 nodes 1904 time 6
+-32000 32000 30
+info score 5025 depth 4 nodes 4285 time 10
+-32000 32000 30
+info score 5055 depth 5 nodes 4908 time 11
+4995 5055 30
+info score 5085 depth 5 nodes 5297 time 12
+4995 5085 60
+info score 5130 depth 5 nodes 14685 time 25
+4995 5145 120
+info score 5131 depth 6 nodes 29474 time 47
+5100 5160 30
+info score 5161 depth 7 nodes 47604 time 77
+5101 5161 30
+info score 5191 depth 7 nodes 72237 time 117
+5101 5191 60
+info score 5195 depth 7 nodes 175281 time 301
+5101 5251 120
+info score 5171 depth 8 nodes 362853 time 666
+5165 5225 30
+info score 5201 depth 9 nodes 506725 time 958
+5141 5201 30
+info score 5231 depth 9 nodes 760407 time 1461
+5141 5231 60
+info score 5231 depth 9 nodes 918768 time 1750
+5141 5291 120
+bestmove h4f5
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/bbd-git-gambit/history.csv`...
+[32;1m[Board] [0mLoaded 10 move(s).
+[32;1m[Board] [0mLoading move file `championship/bbd-git-gambit/move.csv`...
+[32;1m[Board] [0mWhite player is playing h4 to f5.
+[32;1m[Board] [0m[5;1mWhite Knight is taking Black Pawn.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[30;1mK[0m| |[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[30;1mp[0m|[0;1mk[0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+
+    a   b   c   d   e   f   g   h 
+8 | r |   | b |   | k |   | n | r  | 8
+7 | p | p | p | p |   |   | p | p  | 7
+6 |   |   | n |   |   |   |   |    | 6
+5 |   |   | P |   | p | N |   |    | 5
+4 |   |   |   |   | P |   |   |    | 4
+3 |   |   |   |   |   |   |   |    | 3
+2 | P | P | P |   |   | P | P | P  | 2
+1 | R | N | B | Q | K | B |   | R  | 1
+    a   b   c   d   e   f   g   h 
+
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/bbd-git-gambit/history.csv`...
+[32;1m[Board] [0mLoaded 11 move(s).
+[32;1m[Board] [0mLoading move file `championship/bbd-git-gambit/move.csv`...
+[32;1m[Board] [0mBlack player is playing a8 to b8.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mr[0m|[30;1mb[0m| |[30;1mK[0m| |[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[30;1mp[0m|[0;1mk[0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+Succesfully loaded network via incbin!
+info score 5379 depth 1 nodes 54 time 4
+-32000 32000 30
+info score 5358 depth 2 nodes 219 time 4
+-32000 32000 30
+info score 5332 depth 3 nodes 2612 time 8
+-32000 32000 30
+info score 5301 depth 4 nodes 7584 time 18
+-32000 32000 30
+info score 5331 depth 5 nodes 8555 time 21
+5271 5331 30
+info score 5361 depth 5 nodes 8981 time 22
+5271 5361 60
+info score 5399 depth 5 nodes 35152 time 67
+5271 5421 120
+info score 5369 depth 6 nodes 54739 time 105
+5369 5429 30
+info score 5355 depth 6 nodes 70143 time 135
+5339 5429 60
+info score 5385 depth 7 nodes 219214 time 421
+5325 5385 30
+info score 5404 depth 7 nodes 254816 time 486
+5325 5415 60
+info score 5434 depth 8 nodes 309422 time 597
+5374 5434 30
+info score 5464 depth 8 nodes 329335 time 638
+5374 5464 60
+info score 5477 depth 8 nodes 408011 time 790
+5374 5524 120
+info score 5507 depth 9 nodes 502953 time 987
+5447 5507 30
+info score 5537 depth 9 nodes 568558 time 1121
+5447 5537 60
+bestmove d1f3
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/bbd-git-gambit/history.csv`...
+[32;1m[Board] [0mLoaded 12 move(s).
+[32;1m[Board] [0mLoading move file `championship/bbd-git-gambit/move.csv`...
+[32;1m[Board] [0mWhite player is playing d1 to f3.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mr[0m|[30;1mb[0m| |[30;1mK[0m| |[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[30;1mp[0m|[0;1mk[0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mQ[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+
+    a   b   c   d   e   f   g   h 
+8 |   | r | b |   | k |   | n | r  | 8
+7 | p | p | p | p |   |   | p | p  | 7
+6 |   |   | n |   |   |   |   |    | 6
+5 |   |   | P |   | p | N |   |    | 5
+4 |   |   |   |   | P |   |   |    | 4
+3 |   |   |   |   |   | Q |   |    | 3
+2 | P | P | P |   |   | P | P | P  | 2
+1 | R | N | B |   | K | B |   | R  | 1
+    a   b   c   d   e   f   g   h 
+
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/bbd-git-gambit/history.csv`...
+[32;1m[Board] [0mLoaded 13 move(s).
+[32;1m[Board] [0mLoading move file `championship/bbd-git-gambit/move.csv`...
+[32;1m[Board] [0mBlack player is playing b7 to b5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mr[0m|[30;1mb[0m| |[30;1mK[0m| |[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[30;1mp[0m|[0;1mp[0m|[7;1m [0m|[30;1mp[0m|[0;1mk[0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mQ[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+Succesfully loaded network via incbin!
+info score 5416 depth 1 nodes 52 time 3
+-32000 32000 30
+info score 5416 depth 2 nodes 195 time 3
+-32000 32000 30
+info score 5435 depth 3 nodes 2802 time 8
+-32000 32000 30
+info score 5654 depth 4 nodes 4503 time 11
+-32000 32000 30
+info score 5654 depth 5 nodes 7588 time 16
+5624 5684 30
+info score 5721 depth 6 nodes 7604 time 17
+5624 5684 30
+info score 5721 depth 6 nodes 7610 time 17
+5624 5714 60
+info score 5777 depth 6 nodes 7632 time 17
+5624 5774 120
+info score 31995 depth 6 nodes 7647 time 17
+5624 5894 240
+info score 31995 depth 6 nodes 7650 time 17
+5624 6134 480
+info score 31995 depth 6 nodes 7653 time 17
+5624 6614 960
+info score 31995 depth 6 nodes 7656 time 17
+5624 7574 1920
+info score 31995 depth 6 nodes 7659 time 17
+5624 9494 3840
+info score 31995 depth 6 nodes 7662 time 17
+5624 13334 7680
+info score 31995 depth 6 nodes 7665 time 17
+5624 21014 15360
+info score 31995 depth 6 nodes 11480 time 24
+5624 32000 30720
+info score 31995 depth 7 nodes 28068 time 52
+31965 32000 30
+info score 31995 depth 8 nodes 48616 time 89
+31965 32000 30
+info score 31995 depth 9 nodes 170009 time 300
+31965 32000 30
+info score 31995 depth 10 nodes 315012 time 565
+31965 32000 30
+info score 31995 depth 11 nodes 888522 time 1559
+31965 32000 30
+bestmove f5g7
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/bbd-git-gambit/history.csv`...
+[32;1m[Board] [0mLoaded 14 move(s).
+[32;1m[Board] [0mLoading move file `championship/bbd-git-gambit/move.csv`...
+[32;1m[Board] [0mWhite player is playing f5 to g7.
+[32;1m[Board] [0m[5;1mWhite Knight is taking Black Pawn.[0m
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mr[0m|[30;1mb[0m| |[30;1mK[0m| |[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|[0;1mk[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[30;1mp[0m|[0;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mQ[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mBlack King in check![0m
+[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by White Knight (g7)
+
+    a   b   c   d   e   f   g   h 
+8 |   | r | b |   | k |   | n | r  | 8
+7 | p |   | p | p |   |   | N | p  | 7
+6 |   |   | n |   |   |   |   |    | 6
+5 |   | p | P |   | p |   |   |    | 5
+4 |   |   |   |   | P |   |   |    | 4
+3 |   |   |   |   |   | Q |   |    | 3
+2 | P | P | P |   |   | P | P | P  | 2
+1 | R | N | B |   | K | B |   | R  | 1
+    a   b   c   d   e   f   g   h 
+
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/bbd-git-gambit/history.csv`...
+[32;1m[Board] [0mLoaded 15 move(s).
+[32;1m[Board] [0mLoading move file `championship/bbd-git-gambit/move.csv`...
+[32;1m[Board] [0mBlack player is playing e8 to d8.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mr[0m|[30;1mb[0m|[30;1mK[0m|[7;1m [0m| |[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|[0;1mk[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[30;1mp[0m|[0;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mQ[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+Succesfully loaded network via incbin!
+info score 5098 depth 1 nodes 54 time 3
+-32000 32000 30
+info score 31999 depth 2 nodes 166 time 3
+-32000 32000 30
+info score 31999 depth 3 nodes 341 time 4
+-32000 32000 30
+info score 31999 depth 4 nodes 536 time 4
+-32000 32000 30
+info score 31999 depth 5 nodes 2871 time 8
+31969 32000 30
+info score 31999 depth 6 nodes 5563 time 13
+31969 32000 30
+info score 31999 depth 7 nodes 13944 time 27
+31969 32000 30
+info score 31999 depth 8 nodes 23157 time 43
+31969 32000 30
+info score 31999 depth 9 nodes 82916 time 143
+31969 32000 30
+info score 31999 depth 10 nodes 150984 time 261
+31969 32000 30
+info score 31999 depth 11 nodes 361225 time 616
+31969 32000 30
+info score 31999 depth 12 nodes 591967 time 1021
+31969 32000 30
+bestmove f3f8
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/bbd-git-gambit/history.csv`...
+[32;1m[Board] [0mLoaded 16 move(s).
+[32;1m[Board] [0mLoading move file `championship/bbd-git-gambit/move.csv`...
+[32;1m[Board] [0mWhite player is playing f3 to f8.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mr[0m|[30;1mb[0m|[30;1mK[0m|[7;1m [0m|[0;1mQ[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[7;1m [0m|[0;1mk[0m|[30;1mp[0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 || |[30;1mp[0m|[0;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mBlack King in checkmate![0m
+[32;1m[Board] [0m[33;1m[WARNING][0m The White player wins!
