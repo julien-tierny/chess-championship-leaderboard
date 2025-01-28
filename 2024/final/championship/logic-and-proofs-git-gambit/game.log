@@ -52,11 +52,11 @@ depth: 3 score: 122 time: 0 nodes: 915 hashfull: 0
 depth: 4 score: 89 time: 2 nodes: 2514 hashfull: 0
 depth: 5 score: 122 time: 6 nodes: 7337 hashfull: 0
 depth: 6 score: 90 time: 26 nodes: 29433 hashfull: 1
-depth: 7 score: 113 time: 83 nodes: 92763 hashfull: 3
+depth: 7 score: 113 time: 81 nodes: 92763 hashfull: 3
 depth: 8 score: 100 time: 357 nodes: 374205 hashfull: 13
-depth: 9 score: 113 time: 788 nodes: 998900 hashfull: 38
-depth: 10 score: 99 time: 2231 nodes: 2758737 hashfull: 87
-depth: 11 score: 99 time: 4869 nodes: 6625007 hashfull: 186
+depth: 9 score: 113 time: 787 nodes: 998900 hashfull: 38
+depth: 10 score: 99 time: 2255 nodes: 2758737 hashfull: 87
+depth: 11 score: 99 time: 4882 nodes: 6625007 hashfull: 186
 [DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : g1f3
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
@@ -107,9 +107,9 @@ v This is the 1 occurrence of this board layout.
 
     a   b   c   d   e   f   g   h 
 8 | r | n | b | q | k | b | n | r  | 8
-7 | p | p | p | p | p | p | p |    | 7
+7 |   | p | p | p | p | p | p | p  | 7
 6 |   |   |   |   |   |   |   |    | 6
-5 |   |   |   |   |   |   |   | p  | 5
+5 | p |   |   |   |   |   |   |    | 5
 4 |   |   |   |   |   |   |   |    | 4
 3 |   |   |   |   |   | N |   |    | 3
 2 | P | P | P | P | P | P | P | P  | 2
@@ -122,17 +122,17 @@ v This is the 1 occurrence of this board layout.
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
 [32;1m[Board] [0mLoaded 1 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
-[32;1m[Board] [0mBlack player is playing h7 to h5.
+[32;1m[Board] [0mBlack player is playing a7 to a5.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|| 7
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
@@ -150,15 +150,15 @@ Error : can't load the file openings.txt
 [DEBUG] Output move file: championship/logic-and-proofs-git-gambit/move.csv
 [Parser][ply=] 2
 how i see the board before writing next move: Turn: White
-Enpassant: h6	Castling: WK WQ BK BQ 
+Enpassant: a6	Castling: WK WQ BK BQ 
    ---- ---- ---- ---- ---- ---- ---- ----
 8 | r  | n  | b  | q  | k  | b  | n  | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  | p  | p  | p  | p  | p  | p  |    |
+7 |    | p  | p  | p  | p  | p  | p  | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
 6 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    |    |    |    | p  |
+5 | p  |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
 4 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
@@ -170,16 +170,16 @@ Enpassant: h6	Castling: WK WQ BK BQ
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
 starting search...
-depth: 1 score: 150 time: 0 nodes: 44 hashfull: 0
-depth: 2 score: 114 time: 0 nodes: 542 hashfull: 0
-depth: 3 score: 147 time: 0 nodes: 1248 hashfull: 0
-depth: 4 score: 122 time: 3 nodes: 4012 hashfull: 0
-depth: 5 score: 146 time: 9 nodes: 11538 hashfull: 0
-depth: 6 score: 142 time: 64 nodes: 61125 hashfull: 2
-depth: 7 score: 142 time: 87 nodes: 129403 hashfull: 4
-depth: 8 score: 146 time: 290 nodes: 351467 hashfull: 11
-depth: 9 score: 142 time: 1159 nodes: 1257803 hashfull: 43
-depth: 10 score: 140 time: 2009 nodes: 2829025 hashfull: 85
+depth: 1 score: 161 time: 0 nodes: 44 hashfull: 0
+depth: 2 score: 125 time: 0 nodes: 530 hashfull: 0
+depth: 3 score: 158 time: 0 nodes: 1247 hashfull: 0
+depth: 4 score: 133 time: 3 nodes: 3845 hashfull: 0
+depth: 5 score: 157 time: 9 nodes: 11160 hashfull: 0
+depth: 6 score: 153 time: 62 nodes: 58434 hashfull: 2
+depth: 7 score: 153 time: 90 nodes: 127667 hashfull: 4
+depth: 8 score: 156 time: 283 nodes: 342279 hashfull: 10
+depth: 9 score: 160 time: 1077 nodes: 1186513 hashfull: 41
+depth: 10 score: 156 time: 3616 nodes: 3966973 hashfull: 114
 [DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : e2e4
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
@@ -193,11 +193,11 @@ depth: 10 score: 140 time: 2009 nodes: 2829025 hashfull: 85
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|| 7
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
@@ -213,26 +213,26 @@ depth: 10 score: 140 time: 2009 nodes: 2829025 hashfull: 85
 
     a   b   c   d   e   f   g   h 
 8 | r | n | b | q | k | b | n | r  | 8
-7 | p | p | p | p | p | p | p |    | 7
+7 |   | p | p | p | p | p | p | p  | 7
 6 |   |   |   |   |   |   |   |    | 6
-5 |   |   |   |   |   |   |   | p  | 5
+5 | p |   |   |   |   |   |   |    | 5
 4 |   |   |   |   | P |   |   |    | 4
 3 |   |   |   |   |   | N |   |    | 3
 2 | P | P | P | P |   | P | P | P  | 2
 1 | R | N | B | Q | K | B |   | R  | 1
     a   b   c   d   e   f   g   h 
 
-Checking sequence: ,g1f3,h7h5,e2e4
+Checking sequence: ,g1f3,a7a5,e2e4
 Potential openings: 
 history does not match an opening
 ^ This is the 1 occurrence of this board layout.
 v This is the 1 occurrence of this board layout.
 
     a   b   c   d   e   f   g   h 
-8 | r | n | b | q | k | b |   | r  | 8
-7 | p | p | p | p | p | p | p |    | 7
-6 |   |   |   |   |   | n |   |    | 6
-5 |   |   |   |   |   |   |   | p  | 5
+8 | r | n | b | q | k | b | n | r  | 8
+7 |   | p | p | p | p |   | p | p  | 7
+6 |   |   |   |   |   | p |   |    | 6
+5 | p |   |   |   |   |   |   |    | 5
 4 |   |   |   |   | P |   |   |    | 4
 3 |   |   |   |   |   | N |   |    | 3
 2 | P | P | P | P |   | P | P | P  | 2
@@ -245,17 +245,17 @@ v This is the 1 occurrence of this board layout.
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
 [32;1m[Board] [0mLoaded 3 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
-[32;1m[Board] [0mBlack player is playing g8 to f6.
+[32;1m[Board] [0mBlack player is playing f7 to f6.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|| 7
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
@@ -275,13 +275,13 @@ Error : can't load the file openings.txt
 how i see the board before writing next move: Turn: White
 Enpassant: xx	Castling: WK WQ BK BQ 
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  | n  | b  | q  | k  | b  |    | r  |
+8 | r  | n  | b  | q  | k  | b  | n  | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  | p  | p  | p  | p  | p  | p  |    |
+7 |    | p  | p  | p  | p  |    | p  | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
-6 |    |    |    |    |    | n  |    |    |
+6 |    |    |    |    |    | p  |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    |    |    |    | p  |
+5 | p  |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
 4 |    |    |    |    | P  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
@@ -293,40 +293,39 @@ Enpassant: xx	Castling: WK WQ BK BQ
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
 starting search...
-depth: 1 score: 147 time: 0 nodes: 88 hashfull: 0
-depth: 2 score: 142 time: 0 nodes: 473 hashfull: 0
-depth: 3 score: 142 time: 1 nodes: 1417 hashfull: 0
-depth: 4 score: 142 time: 4 nodes: 4683 hashfull: 0
-depth: 5 score: 142 time: 14 nodes: 14953 hashfull: 0
-depth: 6 score: 146 time: 65 nodes: 64224 hashfull: 2
-depth: 7 score: 139 time: 130 nodes: 161442 hashfull: 4
-depth: 8 score: 140 time: 518 nodes: 559708 hashfull: 15
-depth: 9 score: 141 time: 1160 nodes: 1466842 hashfull: 44
-depth: 10 score: 162 time: 3927 nodes: 4422626 hashfull: 111
-[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : e4e5
+depth: 1 score: 177 time: 0 nodes: 56 hashfull: 0
+depth: 2 score: 172 time: 0 nodes: 415 hashfull: 0
+depth: 3 score: 180 time: 2 nodes: 1670 hashfull: 0
+depth: 4 score: 178 time: 6 nodes: 5463 hashfull: 0
+depth: 5 score: 178 time: 17 nodes: 16144 hashfull: 0
+depth: 6 score: 165 time: 62 nodes: 55242 hashfull: 2
+depth: 7 score: 173 time: 133 nodes: 136204 hashfull: 4
+depth: 8 score: 171 time: 607 nodes: 515535 hashfull: 15
+depth: 9 score: 171 time: 1001 nodes: 1164003 hashfull: 42
+[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : d2d4
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
 [32;1m[Board] [0mLoaded 4 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
-[32;1m[Board] [0mWhite player is playing e4 to e5.
+[32;1m[Board] [0mWhite player is playing d2 to d4.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|| 7
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
@@ -335,30 +334,30 @@ depth: 10 score: 162 time: 3927 nodes: 4422626 hashfull: 111
 [32;1m[Referee] [0mThis is the turn of the Black player...
 
     a   b   c   d   e   f   g   h 
-8 | r | n | b | q | k | b |   | r  | 8
-7 | p | p | p | p | p | p | p |    | 7
-6 |   |   |   |   |   | n |   |    | 6
-5 |   |   |   |   | P |   |   | p  | 5
-4 |   |   |   |   |   |   |   |    | 4
+8 | r | n | b | q | k | b | n | r  | 8
+7 |   | p | p | p | p |   | p | p  | 7
+6 |   |   |   |   |   | p |   |    | 6
+5 | p |   |   |   |   |   |   |    | 5
+4 |   |   |   | P | P |   |   |    | 4
 3 |   |   |   |   |   | N |   |    | 3
-2 | P | P | P | P |   | P | P | P  | 2
+2 | P | P | P |   |   | P | P | P  | 2
 1 | R | N | B | Q | K | B |   | R  | 1
     a   b   c   d   e   f   g   h 
 
-Checking sequence: ,g1f3,h7h5,e2e4,g8f6,e4e5
+Checking sequence: ,g1f3,a7a5,e2e4,f7f6,d2d4
 Potential openings: 
 history does not match an opening
 ^ This is the 1 occurrence of this board layout.
 v This is the 1 occurrence of this board layout.
 
     a   b   c   d   e   f   g   h 
-8 | r | n | b | q | k | b | n | r  | 8
-7 | p | p | p | p | p | p | p |    | 7
-6 |   |   |   |   |   |   |   |    | 6
-5 |   |   |   |   | P |   |   | p  | 5
-4 |   |   |   |   |   |   |   |    | 4
+8 |   | n | b | q | k | b | n | r  | 8
+7 | r | p | p | p | p |   | p | p  | 7
+6 |   |   |   |   |   | p |   |    | 6
+5 | p |   |   |   |   |   |   |    | 5
+4 |   |   |   | P | P |   |   |    | 4
 3 |   |   |   |   |   | N |   |    | 3
-2 | P | P | P | P |   | P | P | P  | 2
+2 | P | P | P |   |   | P | P | P  | 2
 1 | R | N | B | Q | K | B |   | R  | 1
     a   b   c   d   e   f   g   h 
 
@@ -368,23 +367,23 @@ v This is the 1 occurrence of this board layout.
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
 [32;1m[Board] [0mLoaded 5 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
-[32;1m[Board] [0mBlack player is playing f6 to g8.
+[32;1m[Board] [0mBlack player is playing a8 to a7.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|| 7
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
@@ -396,93 +395,92 @@ Error : can't load the file openings.txt
 [DEBUG] Output move file: championship/logic-and-proofs-git-gambit/move.csv
 [Parser][ply=] 6
 how i see the board before writing next move: Turn: White
-Enpassant: xx	Castling: WK WQ BK BQ 
+Enpassant: xx	Castling: WK WQ BK x
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  | n  | b  | q  | k  | b  | n  | r  |
+8 |    | n  | b  | q  | k  | b  | n  | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  | p  | p  | p  | p  | p  | p  |    |
+7 | r  | p  | p  | p  | p  |    | p  | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
-6 |    |    |    |    |    |    |    |    |
+6 |    |    |    |    |    | p  |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    | P  |    |    | p  |
+5 | p  |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    |    |    |    |    |    |
+4 |    |    |    | P  | P  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
 3 |    |    |    |    |    | N  |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 | P  | P  | P  | P  |    | P  | P  | P  |
+2 | P  | P  | P  |    |    | P  | P  | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
 1 | R  | N  | B  | Q  | K  | B  |    | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
 starting search...
-depth: 1 score: 188 time: 0 nodes: 57 hashfull: 0
-depth: 2 score: 185 time: 0 nodes: 368 hashfull: 0
-depth: 3 score: 193 time: 1 nodes: 1687 hashfull: 0
-depth: 4 score: 163 time: 11 nodes: 9329 hashfull: 0
-depth: 5 score: 187 time: 33 nodes: 32608 hashfull: 0
-depth: 6 score: 189 time: 91 nodes: 99524 hashfull: 2
-depth: 7 score: 189 time: 293 nodes: 311238 hashfull: 7
-depth: 8 score: 183 time: 368 nodes: 585182 hashfull: 15
-depth: 9 score: 179 time: 1191 nodes: 1499549 hashfull: 47
-depth: 10 score: 169 time: 6689 nodes: 6592477 hashfull: 161
-[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : d2d4
+depth: 1 score: 255 time: 0 nodes: 72 hashfull: 0
+depth: 2 score: 252 time: 1 nodes: 570 hashfull: 0
+depth: 3 score: 252 time: 1 nodes: 1515 hashfull: 0
+depth: 4 score: 240 time: 10 nodes: 7225 hashfull: 0
+depth: 5 score: 248 time: 20 nodes: 19156 hashfull: 0
+depth: 6 score: 237 time: 120 nodes: 92215 hashfull: 2
+depth: 7 score: 237 time: 248 nodes: 239574 hashfull: 6
+depth: 8 score: 225 time: 1124 nodes: 939636 hashfull: 27
+depth: 9 score: 225 time: 2284 nodes: 2388867 hashfull: 77
+[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : f1c4
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
 [32;1m[Board] [0mLoaded 6 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
-[32;1m[Board] [0mWhite player is playing d2 to d4.
+[32;1m[Board] [0mWhite player is playing f1 to c4.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[7;1m [0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|| 7
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[0;1mb[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
 
     a   b   c   d   e   f   g   h 
-8 | r | n | b | q | k | b | n | r  | 8
-7 | p | p | p | p | p | p | p |    | 7
-6 |   |   |   |   |   |   |   |    | 6
-5 |   |   |   |   | P |   |   | p  | 5
-4 |   |   |   | P |   |   |   |    | 4
+8 |   | n | b | q | k | b | n | r  | 8
+7 | r | p | p | p | p |   | p | p  | 7
+6 |   |   |   |   |   | p |   |    | 6
+5 | p |   |   |   |   |   |   |    | 5
+4 |   |   | B | P | P |   |   |    | 4
 3 |   |   |   |   |   | N |   |    | 3
 2 | P | P | P |   |   | P | P | P  | 2
-1 | R | N | B | Q | K | B |   | R  | 1
+1 | R | N | B | Q | K |   |   | R  | 1
     a   b   c   d   e   f   g   h 
 
-Checking sequence: ,g1f3,h7h5,e2e4,g8f6,e4e5,f6g8,d2d4
+Checking sequence: ,g1f3,a7a5,e2e4,f7f6,d2d4,a8a7,f1c4
 Potential openings: 
 history does not match an opening
 ^ This is the 1 occurrence of this board layout.
 v This is the 1 occurrence of this board layout.
 
     a   b   c   d   e   f   g   h 
-8 | r | n | b | q | k | b |   | r  | 8
-7 | p | p | p | p | p | p | p |    | 7
-6 |   |   |   |   |   | n |   |    | 6
-5 |   |   |   |   | P |   |   | p  | 5
-4 |   |   |   | P |   |   |   |    | 4
+8 |   |   | b | q | k | b | n | r  | 8
+7 | r | p | p | p | p |   | p | p  | 7
+6 |   |   | n |   |   | p |   |    | 6
+5 | p |   |   |   |   |   |   |    | 5
+4 |   |   | B | P | P |   |   |    | 4
 3 |   |   |   |   |   | N |   |    | 3
 2 | P | P | P |   |   | P | P | P  | 2
-1 | R | N | B | Q | K | B |   | R  | 1
+1 | R | N | B | Q | K |   |   | R  | 1
     a   b   c   d   e   f   g   h 
 
 [32;1m[Game] [0mPlayer's error code: 0
@@ -491,25 +489,25 @@ v This is the 1 occurrence of this board layout.
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
 [32;1m[Board] [0mLoaded 7 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
-[32;1m[Board] [0mBlack player is playing g8 to f6.
+[32;1m[Board] [0mBlack player is playing b8 to c6.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[7;1m [0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|| 7
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[0;1mb[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -519,94 +517,92 @@ Error : can't load the file openings.txt
 [DEBUG] Output move file: championship/logic-and-proofs-git-gambit/move.csv
 [Parser][ply=] 8
 how i see the board before writing next move: Turn: White
-Enpassant: xx	Castling: WK WQ BK BQ 
+Enpassant: xx	Castling: WK WQ BK x
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  | n  | b  | q  | k  | b  |    | r  |
+8 |    |    | b  | q  | k  | b  | n  | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  | p  | p  | p  | p  | p  | p  |    |
+7 | r  | p  | p  | p  | p  |    | p  | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
-6 |    |    |    |    |    | n  |    |    |
+6 |    |    | n  |    |    | p  |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    | P  |    |    | p  |
+5 | p  |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    | P  |    |    |    |    |
+4 |    |    | B  | P  | P  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
 3 |    |    |    |    |    | N  |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
 2 | P  | P  | P  |    |    | P  | P  | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  | N  | B  | Q  | K  | B  |    | R  |
+1 | R  | N  | B  | Q  | K  |    |    | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
 starting search...
-depth: 1 score: 368 time: 0 nodes: 76 hashfull: 0
-depth: 2 score: 368 time: 0 nodes: 188 hashfull: 0
-depth: 3 score: 402 time: 3 nodes: 2112 hashfull: 0
-depth: 4 score: 367 time: 7 nodes: 6892 hashfull: 0
-depth: 5 score: 366 time: 12 nodes: 14185 hashfull: 0
-depth: 6 score: 350 time: 89 nodes: 69117 hashfull: 2
-depth: 7 score: 350 time: 220 nodes: 203510 hashfull: 5
-depth: 8 score: 337 time: 410 nodes: 455496 hashfull: 11
-depth: 9 score: 342 time: 2372 nodes: 1934503 hashfull: 53
-depth: 10 score: 327 time: 4767 nodes: 5385158 hashfull: 127
-[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : e5f6
+depth: 1 score: 260 time: 0 nodes: 109 hashfull: 0
+depth: 2 score: 243 time: 3 nodes: 2230 hashfull: 0
+depth: 3 score: 243 time: 2 nodes: 4244 hashfull: 0
+depth: 4 score: 237 time: 13 nodes: 13191 hashfull: 0
+depth: 5 score: 237 time: 23 nodes: 30014 hashfull: 0
+depth: 6 score: 222 time: 303 nodes: 244562 hashfull: 5
+depth: 7 score: 236 time: 245 nodes: 419291 hashfull: 8
+depth: 8 score: 231 time: 786 nodes: 1004492 hashfull: 22
+depth: 9 score: 288 time: 3817 nodes: 3490026 hashfull: 102
+[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : d4d5
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
 [32;1m[Board] [0mLoaded 8 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
-[32;1m[Board] [0mWhite player is playing e5 to f6.
-[32;1m[Board] [0m[5;1mWhite Pawn is taking Black Knight.[0m
+[32;1m[Board] [0mWhite player is playing d4 to d5.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[7;1m [0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|| 7
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[0;1mb[0m| |[0;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
 
     a   b   c   d   e   f   g   h 
-8 | r | n | b | q | k | b |   | r  | 8
-7 | p | p | p | p | p | p | p |    | 7
-6 |   |   |   |   |   | P |   |    | 6
-5 |   |   |   |   |   |   |   | p  | 5
-4 |   |   |   | P |   |   |   |    | 4
+8 |   |   | b | q | k | b | n | r  | 8
+7 | r | p | p | p | p |   | p | p  | 7
+6 |   |   | n |   |   | p |   |    | 6
+5 | p |   |   | P |   |   |   |    | 5
+4 |   |   | B |   | P |   |   |    | 4
 3 |   |   |   |   |   | N |   |    | 3
 2 | P | P | P |   |   | P | P | P  | 2
-1 | R | N | B | Q | K | B |   | R  | 1
+1 | R | N | B | Q | K |   |   | R  | 1
     a   b   c   d   e   f   g   h 
 
-Checking sequence: ,g1f3,h7h5,e2e4,g8f6,e4e5,f6g8,d2d4,g8f6,e5f6
+Checking sequence: ,g1f3,a7a5,e2e4,f7f6,d2d4,a8a7,f1c4,b8c6,d4d5
 Potential openings: 
 history does not match an opening
 ^ This is the 1 occurrence of this board layout.
 v This is the 1 occurrence of this board layout.
 
     a   b   c   d   e   f   g   h 
-8 | r | n | b | q | k | b |   | r  | 8
-7 | p | p | p | p |   | p | p |    | 7
-6 |   |   |   |   |   | p |   |    | 6
-5 |   |   |   |   |   |   |   | p  | 5
-4 |   |   |   | P |   |   |   |    | 4
+8 |   |   | b | q | k | b | n | r  | 8
+7 | r | p | p | p | p |   | p |    | 7
+6 |   |   | n |   |   | p |   | p  | 6
+5 | p |   |   | P |   |   |   |    | 5
+4 |   |   | B |   | P |   |   |    | 4
 3 |   |   |   |   |   | N |   |    | 3
 2 | P | P | P |   |   | P | P | P  | 2
-1 | R | N | B | Q | K | B |   | R  | 1
+1 | R | N | B | Q | K |   |   | R  | 1
     a   b   c   d   e   f   g   h 
 
 [32;1m[Game] [0mPlayer's error code: 0
@@ -615,26 +611,25 @@ v This is the 1 occurrence of this board layout.
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
 [32;1m[Board] [0mLoaded 9 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
-[32;1m[Board] [0mBlack player is playing e7 to f6.
-[32;1m[Board] [0m[5;1mBlack Pawn is taking White Pawn.[0m
+[32;1m[Board] [0mBlack player is playing h7 to h6.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[7;1m [0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[7;1m [0m|| 7
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mk[0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|| 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[0;1mb[0m| |[0;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -644,60 +639,60 @@ Error : can't load the file openings.txt
 [DEBUG] Output move file: championship/logic-and-proofs-git-gambit/move.csv
 [Parser][ply=] 10
 how i see the board before writing next move: Turn: White
-Enpassant: xx	Castling: WK WQ BK BQ 
+Enpassant: xx	Castling: WK WQ BK x
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  | n  | b  | q  | k  | b  |    | r  |
+8 |    |    | b  | q  | k  | b  | n  | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  | p  | p  | p  |    | p  | p  |    |
+7 | r  | p  | p  | p  | p  |    | p  |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-6 |    |    |    |    |    | p  |    |    |
+6 |    |    | n  |    |    | p  |    | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    |    |    |    | p  |
+5 | p  |    |    | P  |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    | P  |    |    |    |    |
+4 |    |    | B  |    | P  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
 3 |    |    |    |    |    | N  |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
 2 | P  | P  | P  |    |    | P  | P  | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  | N  | B  | Q  | K  | B  |    | R  |
+1 | R  | N  | B  | Q  | K  |    |    | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
 starting search...
-depth: 1 score: 402 time: 0 nodes: 70 hashfull: 0
-depth: 2 score: 367 time: 1 nodes: 832 hashfull: 0
-depth: 3 score: 366 time: 1 nodes: 2125 hashfull: 0
-depth: 4 score: 350 time: 21 nodes: 17163 hashfull: 0
-depth: 5 score: 350 time: 31 nodes: 40710 hashfull: 0
-depth: 6 score: 337 time: 86 nodes: 105975 hashfull: 3
-depth: 7 score: 342 time: 164 nodes: 228546 hashfull: 6
-depth: 8 score: 327 time: 1026 nodes: 1028628 hashfull: 29
-depth: 9 score: 332 time: 2155 nodes: 2722073 hashfull: 79
-depth: 10 score: 340 time: 3734 nodes: 5542371 hashfull: 133
-[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : f1e2
+depth: 1 score: 431 time: 0 nodes: 179 hashfull: 0
+depth: 2 score: 431 time: 0 nodes: 386 hashfull: 0
+depth: 3 score: 474 time: 11 nodes: 6275 hashfull: 0
+depth: 4 score: 481 time: 22 nodes: 17927 hashfull: 0
+depth: 5 score: 515 time: 21 nodes: 29706 hashfull: 0
+depth: 6 score: 468 time: 225 nodes: 155456 hashfull: 3
+depth: 7 score: 477 time: 362 nodes: 364709 hashfull: 7
+depth: 8 score: 485 time: 840 nodes: 845376 hashfull: 16
+depth: 9 score: 496 time: 2651 nodes: 2883145 hashfull: 87
+[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : d5c6
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
 [32;1m[Board] [0mLoaded 10 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
-[32;1m[Board] [0mWhite player is playing f1 to e2.
+[32;1m[Board] [0mWhite player is playing d5 to c6.
+[32;1m[Board] [0m[5;1mWhite Pawn is taking Black Knight.[0m
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[7;1m [0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[7;1m [0m|| 7
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[0;1mp[0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|| 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[0;1mb[0m| |[0;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mb[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
@@ -706,30 +701,30 @@ depth: 10 score: 340 time: 3734 nodes: 5542371 hashfull: 133
 [32;1m[Referee] [0mThis is the turn of the Black player...
 
     a   b   c   d   e   f   g   h 
-8 | r | n | b | q | k | b |   | r  | 8
-7 | p | p | p | p |   | p | p |    | 7
-6 |   |   |   |   |   | p |   |    | 6
-5 |   |   |   |   |   |   |   | p  | 5
-4 |   |   |   | P |   |   |   |    | 4
+8 |   |   | b | q | k | b | n | r  | 8
+7 | r | p | p | p | p |   | p |    | 7
+6 |   |   | P |   |   | p |   | p  | 6
+5 | p |   |   |   |   |   |   |    | 5
+4 |   |   | B |   | P |   |   |    | 4
 3 |   |   |   |   |   | N |   |    | 3
-2 | P | P | P |   | B | P | P | P  | 2
+2 | P | P | P |   |   | P | P | P  | 2
 1 | R | N | B | Q | K |   |   | R  | 1
     a   b   c   d   e   f   g   h 
 
-Checking sequence: ,g1f3,h7h5,e2e4,g8f6,e4e5,f6g8,d2d4,g8f6,e5f6,e7f6,f1e2
+Checking sequence: ,g1f3,a7a5,e2e4,f7f6,d2d4,a8a7,f1c4,b8c6,d4d5,h7h6,d5c6
 Potential openings: 
 history does not match an opening
 ^ This is the 1 occurrence of this board layout.
 v This is the 1 occurrence of this board layout.
 
     a   b   c   d   e   f   g   h 
-8 | r | n | b | q | k |   |   | r  | 8
-7 | p | p | p | p |   | p | p |    | 7
-6 |   |   |   |   |   | p |   |    | 6
-5 |   |   |   |   |   |   |   | p  | 5
-4 |   | b |   | P |   |   |   |    | 4
+8 |   |   | b | q | k | b | n | r  | 8
+7 | r | p | p |   | p |   | p |    | 7
+6 |   |   | p |   |   | p |   | p  | 6
+5 | p |   |   |   |   |   |   |    | 5
+4 |   |   | B |   | P |   |   |    | 4
 3 |   |   |   |   |   | N |   |    | 3
-2 | P | P | P |   | B | P | P | P  | 2
+2 | P | P | P |   |   | P | P | P  | 2
 1 | R | N | B | Q | K |   |   | R  | 1
     a   b   c   d   e   f   g   h 
 
@@ -739,123 +734,123 @@ v This is the 1 occurrence of this board layout.
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
 [32;1m[Board] [0mLoaded 11 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
-[32;1m[Board] [0mBlack player is playing f8 to b4.
+[32;1m[Board] [0mBlack player is playing d7 to c6.
+[32;1m[Board] [0m[5;1mBlack Pawn is taking White Pawn.[0m
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[7;1m [0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[7;1m [0m|| 7
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|| 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m|[30;1mb[0m|[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[0;1mb[0m| |[0;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[0;1mb[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
-[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mWhite King in check![0m
-[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by Black Bishop (b4)
 Error : can't load the file openings.txt
 [DEBUG] Input history filename: championship/logic-and-proofs-git-gambit/history.csv
 [DEBUG] Output move file: championship/logic-and-proofs-git-gambit/move.csv
 [Parser][ply=] 12
 how i see the board before writing next move: Turn: White
-Enpassant: xx	Castling: WK WQ BK BQ 
+Enpassant: xx	Castling: WK WQ BK x
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  | n  | b  | q  | k  |    |    | r  |
+8 |    |    | b  | q  | k  | b  | n  | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  | p  | p  | p  |    | p  | p  |    |
+7 | r  | p  | p  |    | p  |    | p  |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-6 |    |    |    |    |    | p  |    |    |
+6 |    |    | p  |    |    | p  |    | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    |    |    |    | p  |
+5 | p  |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-4 |    | b  |    | P  |    |    |    |    |
+4 |    |    | B  |    | P  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
 3 |    |    |    |    |    | N  |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 | P  | P  | P  |    | B  | P  | P  | P  |
+2 | P  | P  | P  |    |    | P  | P  | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
 1 | R  | N  | B  | Q  | K  |    |    | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
 starting search...
-depth: 1 score: 381 time: 0 nodes: 196 hashfull: 0
-depth: 2 score: 374 time: 0 nodes: 463 hashfull: 0
-depth: 3 score: 345 time: 11 nodes: 1264 hashfull: 0
-depth: 4 score: 345 time: 3 nodes: 3619 hashfull: 0
-depth: 5 score: 345 time: 18 nodes: 8564 hashfull: 0
-depth: 6 score: 327 time: 66 nodes: 37990 hashfull: 1
-depth: 7 score: 331 time: 64 nodes: 80353 hashfull: 2
-depth: 8 score: 344 time: 293 nodes: 219916 hashfull: 6
-depth: 9 score: 345 time: 1237 nodes: 987581 hashfull: 27
-depth: 10 score: 333 time: 1980 nodes: 2178828 hashfull: 58
-depth: 11 score: 337 time: 4837 nodes: 5476667 hashfull: 138
-[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : c2c3
+depth: 1 score: 474 time: 0 nodes: 264 hashfull: 0
+depth: 2 score: 979 time: 0 nodes: 482 hashfull: 0
+depth: 3 score: 979 time: 2 nodes: 2193 hashfull: 0
+depth: 4 score: 1029 time: 7 nodes: 6862 hashfull: 0
+depth: 5 score: 1029 time: 10 nodes: 13791 hashfull: 0
+depth: 6 score: 1029 time: 40 nodes: 41219 hashfull: 1
+depth: 7 score: 1029 time: 113 nodes: 109115 hashfull: 2
+depth: 8 score: 1058 time: 229 nodes: 255481 hashfull: 7
+depth: 9 score: 1060 time: 1164 nodes: 980895 hashfull: 36
+depth: 10 score: 1077 time: 2987 nodes: 2702023 hashfull: 73
+[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : c4f7
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
 [32;1m[Board] [0mLoaded 12 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
-[32;1m[Board] [0mWhite player is playing c2 to c3.
+[32;1m[Board] [0mWhite player is playing c4 to f7.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[7;1m [0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[7;1m [0m|| 7
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[0;1mb[0m|[30;1mp[0m|[7;1m [0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|| 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m|[30;1mb[0m|[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[0;1mb[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
+[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mBlack King in check![0m
+[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by White Bishop (f7)
 
     a   b   c   d   e   f   g   h 
-8 | r | n | b | q | k |   |   | r  | 8
-7 | p | p | p | p |   | p | p |    | 7
-6 |   |   |   |   |   | p |   |    | 6
-5 |   |   |   |   |   |   |   | p  | 5
-4 |   | b |   | P |   |   |   |    | 4
-3 |   |   | P |   |   | N |   |    | 3
-2 | P | P |   |   | B | P | P | P  | 2
+8 |   |   | b | q | k | b | n | r  | 8
+7 | r | p | p |   | p | B | p |    | 7
+6 |   |   | p |   |   | p |   | p  | 6
+5 | p |   |   |   |   |   |   |    | 5
+4 |   |   |   |   | P |   |   |    | 4
+3 |   |   |   |   |   | N |   |    | 3
+2 | P | P | P |   |   | P | P | P  | 2
 1 | R | N | B | Q | K |   |   | R  | 1
     a   b   c   d   e   f   g   h 
 
-Checking sequence: ,g1f3,h7h5,e2e4,g8f6,e4e5,f6g8,d2d4,g8f6,e5f6,e7f6,f1e2,f8b4,c2c3
+Checking sequence: ,g1f3,a7a5,e2e4,f7f6,d2d4,a8a7,f1c4,b8c6,d4d5,h7h6,d5c6,d7c6,c4f7
 Potential openings: 
 history does not match an opening
 ^ This is the 1 occurrence of this board layout.
 v This is the 1 occurrence of this board layout.
 
     a   b   c   d   e   f   g   h 
-8 | r | n | b | q | k |   |   | r  | 8
-7 | p | p | p | p |   | p | p |    | 7
-6 |   |   |   |   |   | p |   |    | 6
-5 |   |   |   |   |   |   |   | p  | 5
-4 |   |   |   | P |   |   |   |    | 4
-3 |   |   | b |   |   | N |   |    | 3
-2 | P | P |   |   | B | P | P | P  | 2
+8 |   |   | b | q |   | b | n | r  | 8
+7 | r | p | p |   | p | k | p |    | 7
+6 |   |   | p |   |   | p |   | p  | 6
+5 | p |   |   |   |   |   |   |    | 5
+4 |   |   |   |   | P |   |   |    | 4
+3 |   |   |   |   |   | N |   |    | 3
+2 | P | P | P |   |   | P | P | P  | 2
 1 | R | N | B | Q | K |   |   | R  | 1
     a   b   c   d   e   f   g   h 
 
@@ -865,125 +860,124 @@ v This is the 1 occurrence of this board layout.
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
 [32;1m[Board] [0mLoaded 13 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
-[32;1m[Board] [0mBlack player is playing b4 to c3.
-[32;1m[Board] [0m[5;1mBlack Bishop is taking White Pawn.[0m
+[32;1m[Board] [0mBlack player is playing e8 to f7.
+[32;1m[Board] [0m[5;1mBlack King is taking White Bishop.[0m
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[7;1m [0m| |[30;1mb[0m|[30;1mQ[0m|[7;1m [0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[7;1m [0m|| 7
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mK[0m|[30;1mp[0m|[7;1m [0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|| 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[30;1mb[0m|[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[0;1mb[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the White player...
-[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mWhite King in check![0m
-[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by Black Bishop (c3)
 Error : can't load the file openings.txt
 [DEBUG] Input history filename: championship/logic-and-proofs-git-gambit/history.csv
 [DEBUG] Output move file: championship/logic-and-proofs-git-gambit/move.csv
 [Parser][ply=] 14
 how i see the board before writing next move: Turn: White
-Enpassant: xx	Castling: WK WQ BK BQ 
+Enpassant: xx	Castling: WK WQ xx
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  | n  | b  | q  | k  |    |    | r  |
+8 |    |    | b  | q  |    | b  | n  | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  | p  | p  | p  |    | p  | p  |    |
+7 | r  | p  | p  |    | p  | k  | p  |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-6 |    |    |    |    |    | p  |    |    |
+6 |    |    | p  |    |    | p  |    | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    |    |    |    | p  |
+5 | p  |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    | P  |    |    |    |    |
+4 |    |    |    |    | P  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    | b  |    |    | N  |    |    |
+3 |    |    |    |    |    | N  |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 | P  | P  |    |    | B  | P  | P  | P  |
+2 | P  | P  | P  |    |    | P  | P  | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
 1 | R  | N  | B  | Q  | K  |    |    | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
 starting search...
-depth: 1 score: 636 time: 0 nodes: 56 hashfull: 0
-depth: 2 score: 636 time: 0 nodes: 152 hashfull: 0
-depth: 3 score: 636 time: 0 nodes: 525 hashfull: 0
-depth: 4 score: 639 time: 4 nodes: 3596 hashfull: 0
-depth: 5 score: 639 time: 5 nodes: 8005 hashfull: 0
-depth: 6 score: 623 time: 15 nodes: 20792 hashfull: 0
-depth: 7 score: 628 time: 91 nodes: 92743 hashfull: 2
-depth: 8 score: 615 time: 227 nodes: 271314 hashfull: 6
-depth: 9 score: 630 time: 496 nodes: 672192 hashfull: 18
-depth: 10 score: 631 time: 2796 nodes: 2913155 hashfull: 69
-[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : b1c3
+depth: 1 score: 979 time: 0 nodes: 77 hashfull: 0
+depth: 2 score: 1029 time: 1 nodes: 887 hashfull: 0
+depth: 3 score: 1029 time: 2 nodes: 2761 hashfull: 0
+depth: 4 score: 1029 time: 7 nodes: 6676 hashfull: 0
+depth: 5 score: 1029 time: 12 nodes: 14565 hashfull: 0
+depth: 6 score: 1058 time: 60 nodes: 48218 hashfull: 1
+depth: 7 score: 1060 time: 101 nodes: 112663 hashfull: 2
+depth: 8 score: 1077 time: 480 nodes: 414981 hashfull: 12
+depth: 9 score: 1077 time: 870 nodes: 967273 hashfull: 28
+depth: 10 score: 1096 time: 2315 nodes: 2351737 hashfull: 57
+depth: 11 score: 1095 time: 5500 nodes: 6222441 hashfull: 167
+[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : d1d8
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
 [32;1m[Board] [0mLoaded 14 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
-[32;1m[Board] [0mWhite player is playing b1 to c3.
-[32;1m[Board] [0m[5;1mWhite Knight is taking Black Bishop.[0m
+[32;1m[Board] [0mWhite player is playing d1 to d8.
+[32;1m[Board] [0m[5;1mWhite Queen is taking Black Queen.[0m
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m|[30;1mk[0m|[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[7;1m [0m| |[30;1mb[0m|[0;1mQ[0m|[7;1m [0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[7;1m [0m|| 7
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mK[0m|[30;1mp[0m|[7;1m [0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|| 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[0;1mb[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
 
     a   b   c   d   e   f   g   h 
-8 | r | n | b | q | k |   |   | r  | 8
-7 | p | p | p | p |   | p | p |    | 7
-6 |   |   |   |   |   | p |   |    | 6
-5 |   |   |   |   |   |   |   | p  | 5
-4 |   |   |   | P |   |   |   |    | 4
-3 |   |   | N |   |   | N |   |    | 3
-2 | P | P |   |   | B | P | P | P  | 2
-1 | R |   | B | Q | K |   |   | R  | 1
+8 |   |   | b | Q |   | b | n | r  | 8
+7 | r | p | p |   | p | k | p |    | 7
+6 |   |   | p |   |   | p |   | p  | 6
+5 | p |   |   |   |   |   |   |    | 5
+4 |   |   |   |   | P |   |   |    | 4
+3 |   |   |   |   |   | N |   |    | 3
+2 | P | P | P |   |   | P | P | P  | 2
+1 | R | N | B |   | K |   |   | R  | 1
     a   b   c   d   e   f   g   h 
 
-Checking sequence: ,g1f3,h7h5,e2e4,g8f6,e4e5,f6g8,d2d4,g8f6,e5f6,e7f6,f1e2,f8b4,c2c3,b4c3,b1c3
+Checking sequence: ,g1f3,a7a5,e2e4,f7f6,d2d4,a8a7,f1c4,b8c6,d4d5,h7h6,d5c6,d7c6,c4f7,e8f7,d1d8
 Potential openings: 
 history does not match an opening
 ^ This is the 1 occurrence of this board layout.
 v This is the 1 occurrence of this board layout.
 
     a   b   c   d   e   f   g   h 
-8 | r |   | b | q | k |   |   | r  | 8
-7 | p | p | p | p |   | p | p |    | 7
-6 | n |   |   |   |   | p |   |    | 6
-5 |   |   |   |   |   |   |   | p  | 5
-4 |   |   |   | P |   |   |   |    | 4
-3 |   |   | N |   |   | N |   |    | 3
-2 | P | P |   |   | B | P | P | P  | 2
-1 | R |   | B | Q | K |   |   | R  | 1
+8 |   |   | b | Q |   | b | n | r  | 8
+7 | r | p | p |   | p | k | p |    | 7
+6 |   |   | p |   |   |   |   | p  | 6
+5 | p |   |   |   |   | p |   |    | 5
+4 |   |   |   |   | P |   |   |    | 4
+3 |   |   |   |   |   | N |   |    | 3
+2 | P | P | P |   |   | P | P | P  | 2
+1 | R | N | B |   | K |   |   | R  | 1
     a   b   c   d   e   f   g   h 
 
 [32;1m[Game] [0mPlayer's error code: 0
@@ -992,25 +986,25 @@ v This is the 1 occurrence of this board layout.
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
 [32;1m[Board] [0mLoaded 15 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
-[32;1m[Board] [0mBlack player is playing b8 to a6.
+[32;1m[Board] [0mBlack player is playing f6 to f5.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[7;1m [0m| |[30;1mb[0m|[0;1mQ[0m|[7;1m [0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[7;1m [0m|| 7
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mK[0m|[30;1mp[0m|[7;1m [0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|| 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[0;1mb[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -1020,94 +1014,94 @@ Error : can't load the file openings.txt
 [DEBUG] Output move file: championship/logic-and-proofs-git-gambit/move.csv
 [Parser][ply=] 16
 how i see the board before writing next move: Turn: White
-Enpassant: xx	Castling: WK WQ BK BQ 
+Enpassant: xx	Castling: WK WQ xx
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  |    | b  | q  | k  |    |    | r  |
+8 |    |    | b  | Q  |    | b  | n  | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  | p  | p  | p  |    | p  | p  |    |
+7 | r  | p  | p  |    | p  | k  | p  |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-6 | n  |    |    |    |    | p  |    |    |
+6 |    |    | p  |    |    |    |    | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    |    |    |    | p  |
+5 | p  |    |    |    |    | p  |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    | P  |    |    |    |    |
+4 |    |    |    |    | P  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    | N  |    |    | N  |    |    |
+3 |    |    |    |    |    | N  |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 | P  | P  |    |    | B  | P  | P  | P  |
+2 | P  | P  | P  |    |    | P  | P  | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  |    | B  | Q  | K  |    |    | R  |
+1 | R  | N  | B  |    | K  |    |    | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
 starting search...
-depth: 1 score: 670 time: 1 nodes: 588 hashfull: 0
-depth: 2 score: 670 time: 1 nodes: 1094 hashfull: 0
-depth: 3 score: 670 time: 2 nodes: 2599 hashfull: 0
-depth: 4 score: 673 time: 15 nodes: 11352 hashfull: 0
-depth: 5 score: 684 time: 31 nodes: 29744 hashfull: 0
-depth: 6 score: 657 time: 88 nodes: 85264 hashfull: 3
-depth: 7 score: 645 time: 336 nodes: 288553 hashfull: 7
-depth: 8 score: 645 time: 397 nodes: 530145 hashfull: 12
-depth: 9 score: 660 time: 2316 nodes: 1989829 hashfull: 62
-depth: 10 score: 657 time: 5940 nodes: 5631011 hashfull: 122
-[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : e1g1
+depth: 1 score: 1196 time: 0 nodes: 171 hashfull: 0
+depth: 2 score: 1196 time: 0 nodes: 376 hashfull: 0
+depth: 3 score: 1273 time: 5 nodes: 3496 hashfull: 0
+depth: 4 score: 1273 time: 9 nodes: 8525 hashfull: 0
+depth: 5 score: 1307 time: 19 nodes: 20336 hashfull: 0
+depth: 6 score: 1366 time: 94 nodes: 82638 hashfull: 3
+depth: 7 score: 1408 time: 338 nodes: 279770 hashfull: 6
+depth: 8 score: 1408 time: 410 nodes: 533794 hashfull: 13
+depth: 9 score: 1446 time: 2360 nodes: 2045499 hashfull: 73
+depth: 10 score: 1467 time: 4935 nodes: 4951299 hashfull: 122
+[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : d8c8
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
 [32;1m[Board] [0mLoaded 16 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
-[32;1m[Board] [0mWhite player is playing e1 to g1.
-[32;1m[Board] [0mWhite player is castling kingside...
+[32;1m[Board] [0mWhite player is playing d8 to c8.
+[32;1m[Board] [0m[5;1mWhite Queen is taking Black Bishop.[0m
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[7;1m [0m| |[0;1mQ[0m| |[7;1m [0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m|[30;1mp[0m|[7;1m [0m|| 7
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mK[0m|[30;1mp[0m|[7;1m [0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|| 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[0;1mb[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m| |[0;1mr[0m|[0;1mK[0m|[7;1m [0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
 
     a   b   c   d   e   f   g   h 
-8 | r |   | b | q | k |   |   | r  | 8
-7 | p | p | p | p |   | p | p |    | 7
-6 | n |   |   |   |   | p |   |    | 6
-5 |   |   |   |   |   |   |   | p  | 5
-4 |   |   |   | P |   |   |   |    | 4
-3 |   |   | N |   |   | N |   |    | 3
-2 | P | P |   |   | B | P | P | P  | 2
-1 | R |   | B | Q |   | R | K |    | 1
+8 |   |   | Q |   |   | b | n | r  | 8
+7 | r | p | p |   | p | k | p |    | 7
+6 |   |   | p |   |   |   |   | p  | 6
+5 | p |   |   |   |   | p |   |    | 5
+4 |   |   |   |   | P |   |   |    | 4
+3 |   |   |   |   |   | N |   |    | 3
+2 | P | P | P |   |   | P | P | P  | 2
+1 | R | N | B |   | K |   |   | R  | 1
     a   b   c   d   e   f   g   h 
 
-Checking sequence: ,g1f3,h7h5,e2e4,g8f6,e4e5,f6g8,d2d4,g8f6,e5f6,e7f6,f1e2,f8b4,c2c3,b4c3,b1c3,b8a6,e1g1
+Checking sequence: ,g1f3,a7a5,e2e4,f7f6,d2d4,a8a7,f1c4,b8c6,d4d5,h7h6,d5c6,d7c6,c4f7,e8f7,d1d8,f6f5,d8c8
 Potential openings: 
 history does not match an opening
 ^ This is the 1 occurrence of this board layout.
 v This is the 1 occurrence of this board layout.
 
     a   b   c   d   e   f   g   h 
-8 | r |   | b | q | k |   |   | r  | 8
-7 | p | p | p | p |   | p |   |    | 7
-6 | n |   |   |   |   | p | p |    | 6
-5 |   |   |   |   |   |   |   | p  | 5
-4 |   |   |   | P |   |   |   |    | 4
-3 |   |   | N |   |   | N |   |    | 3
-2 | P | P |   |   | B | P | P | P  | 2
-1 | R |   | B | Q |   | R | K |    | 1
+8 |   |   | Q |   |   | b | n | r  | 8
+7 | r | p | p |   | p | k | p |    | 7
+6 |   |   | p |   |   |   |   | p  | 6
+5 | p |   |   |   |   |   |   |    | 5
+4 |   |   |   |   | p |   |   |    | 4
+3 |   |   |   |   |   | N |   |    | 3
+2 | P | P | P |   |   | P | P | P  | 2
+1 | R | N | B |   | K |   |   | R  | 1
     a   b   c   d   e   f   g   h 
 
 [32;1m[Game] [0mPlayer's error code: 0
@@ -1116,25 +1110,26 @@ v This is the 1 occurrence of this board layout.
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
 [32;1m[Board] [0mLoaded 17 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
-[32;1m[Board] [0mBlack player is playing g7 to g6.
+[32;1m[Board] [0mBlack player is playing f5 to e4.
+[32;1m[Board] [0m[5;1mBlack Pawn is taking White Pawn.[0m
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[7;1m [0m| |[0;1mQ[0m| |[7;1m [0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mK[0m|[30;1mp[0m|[7;1m [0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|| 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[0;1mb[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[0;1mQ[0m| |[0;1mr[0m|[0;1mK[0m|[7;1m [0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -1144,92 +1139,95 @@ Error : can't load the file openings.txt
 [DEBUG] Output move file: championship/logic-and-proofs-git-gambit/move.csv
 [Parser][ply=] 18
 how i see the board before writing next move: Turn: White
-Enpassant: xx	Castling: xxBK BQ 
+Enpassant: xx	Castling: WK WQ xx
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  |    | b  | q  | k  |    |    | r  |
+8 |    |    | Q  |    |    | b  | n  | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  | p  | p  | p  |    | p  |    |    |
+7 | r  | p  | p  |    | p  | k  | p  |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-6 | n  |    |    |    |    | p  | p  |    |
+6 |    |    | p  |    |    |    |    | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    |    |    |    | p  |
+5 | p  |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    | P  |    |    |    |    |
+4 |    |    |    |    | p  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    | N  |    |    | N  |    |    |
+3 |    |    |    |    |    | N  |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 | P  | P  |    |    | B  | P  | P  | P  |
+2 | P  | P  | P  |    |    | P  | P  | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  |    | B  | Q  |    | R  | K  |    |
+1 | R  | N  | B  |    | K  |    |    | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
 starting search...
-depth: 1 score: 692 time: 0 nodes: 431 hashfull: 0
-depth: 2 score: 692 time: 0 nodes: 896 hashfull: 0
-depth: 3 score: 701 time: 1 nodes: 2183 hashfull: 0
-depth: 4 score: 687 time: 16 nodes: 14179 hashfull: 0
-depth: 5 score: 706 time: 9 nodes: 21141 hashfull: 0
-depth: 6 score: 679 time: 90 nodes: 90586 hashfull: 2
-depth: 7 score: 683 time: 208 nodes: 251618 hashfull: 6
-depth: 8 score: 682 time: 1341 nodes: 1300190 hashfull: 33
-depth: 9 score: 683 time: 1955 nodes: 2683490 hashfull: 75
-[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : d1c2
+depth: 1 score: 1218 time: 1 nodes: 605 hashfull: 0
+depth: 2 score: 1307 time: 0 nodes: 904 hashfull: 0
+depth: 3 score: 1307 time: 2 nodes: 2564 hashfull: 0
+depth: 4 score: 1366 time: 6 nodes: 7716 hashfull: 0
+depth: 5 score: 1549 time: 9 nodes: 15187 hashfull: 0
+depth: 6 score: 1589 time: 55 nodes: 62703 hashfull: 2
+depth: 7 score: 1600 time: 137 nodes: 167726 hashfull: 4
+depth: 8 score: 1702 time: 248 nodes: 372260 hashfull: 11
+depth: 9 score: 1711 time: 1235 nodes: 1338922 hashfull: 53
+depth: 10 score: 1728 time: 3420 nodes: 3407722 hashfull: 93
+[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : f3e5
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
 [32;1m[Board] [0mLoaded 18 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
-[32;1m[Board] [0mWhite player is playing d1 to c2.
+[32;1m[Board] [0mWhite player is playing f3 to e5.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[7;1m [0m| |[0;1mQ[0m| |[7;1m [0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mK[0m|[30;1mp[0m|[7;1m [0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[30;1mp[0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|| 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mQ[0m| |[0;1mb[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[0;1mr[0m|[0;1mK[0m|[7;1m [0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
+[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mBlack King in check![0m
+[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by White Knight (e5)
 
     a   b   c   d   e   f   g   h 
-8 | r |   | b | q | k |   |   | r  | 8
-7 | p | p | p | p |   | p |   |    | 7
-6 | n |   |   |   |   | p | p |    | 6
-5 |   |   |   |   |   |   |   | p  | 5
-4 |   |   |   | P |   |   |   |    | 4
-3 |   |   | N |   |   | N |   |    | 3
-2 | P | P | Q |   | B | P | P | P  | 2
-1 | R |   | B |   |   | R | K |    | 1
+8 |   |   | Q |   |   | b | n | r  | 8
+7 | r | p | p |   | p | k | p |    | 7
+6 |   |   | p |   |   |   |   | p  | 6
+5 | p |   |   |   | N |   |   |    | 5
+4 |   |   |   |   | p |   |   |    | 4
+3 |   |   |   |   |   |   |   |    | 3
+2 | P | P | P |   |   | P | P | P  | 2
+1 | R | N | B |   | K |   |   | R  | 1
     a   b   c   d   e   f   g   h 
 
-Checking sequence: ,g1f3,h7h5,e2e4,g8f6,e4e5,f6g8,d2d4,g8f6,e5f6,e7f6,f1e2,f8b4,c2c3,b4c3,b1c3,b8a6,e1g1,g7g6,d1c2
+Checking sequence: ,g1f3,a7a5,e2e4,f7f6,d2d4,a8a7,f1c4,b8c6,d4d5,h7h6,d5c6,d7c6,c4f7,e8f7,d1d8,f6f5,d8c8,f5e4,f3e5
 Potential openings: 
 history does not match an opening
 ^ This is the 1 occurrence of this board layout.
 v This is the 1 occurrence of this board layout.
 
     a   b   c   d   e   f   g   h 
-8 | r |   | b | q | k |   |   | r  | 8
-7 | p | p | p | p |   | p |   |    | 7
-6 | n |   |   |   |   |   | p |    | 6
-5 |   |   |   |   |   | p |   | p  | 5
-4 |   |   |   | P |   |   |   |    | 4
-3 |   |   | N |   |   | N |   |    | 3
-2 | P | P | Q |   | B | P | P | P  | 2
-1 | R |   | B |   |   | R | K |    | 1
+8 |   |   | Q |   |   | b | n | r  | 8
+7 | r | p | p |   | p |   | p |    | 7
+6 |   |   | p |   |   | k |   | p  | 6
+5 | p |   |   |   | N |   |   |    | 5
+4 |   |   |   |   | p |   |   |    | 4
+3 |   |   |   |   |   |   |   |    | 3
+2 | P | P | P |   |   | P | P | P  | 2
+1 | R | N | B |   | K |   |   | R  | 1
     a   b   c   d   e   f   g   h 
 
 [32;1m[Game] [0mPlayer's error code: 0
@@ -1238,25 +1236,25 @@ v This is the 1 occurrence of this board layout.
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
 [32;1m[Board] [0mLoaded 19 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
-[32;1m[Board] [0mBlack player is playing f6 to f5.
+[32;1m[Board] [0mBlack player is playing f7 to f6.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[7;1m [0m| |[0;1mQ[0m| |[7;1m [0m|[30;1mb[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mk[0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m|[30;1mp[0m|| 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mQ[0m| |[0;1mb[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[0;1mr[0m|[0;1mK[0m|[7;1m [0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -1266,94 +1264,96 @@ Error : can't load the file openings.txt
 [DEBUG] Output move file: championship/logic-and-proofs-git-gambit/move.csv
 [Parser][ply=] 20
 how i see the board before writing next move: Turn: White
-Enpassant: xx	Castling: xxBK BQ 
+Enpassant: xx	Castling: WK WQ xx
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  |    | b  | q  | k  |    |    | r  |
+8 |    |    | Q  |    |    | b  | n  | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  | p  | p  | p  |    | p  |    |    |
+7 | r  | p  | p  |    | p  |    | p  |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-6 | n  |    |    |    |    |    | p  |    |
+6 |    |    | p  |    |    | k  |    | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    |    | p  |    | p  |
+5 | p  |    |    |    | N  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    | P  |    |    |    |    |
+4 |    |    |    |    | p  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    | N  |    |    | N  |    |    |
+3 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 | P  | P  | Q  |    | B  | P  | P  | P  |
+2 | P  | P  | P  |    |    | P  | P  | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  |    | B  |    |    | R  | K  |    |
+1 | R  | N  | B  |    | K  |    |    | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
 starting search...
-depth: 1 score: 758 time: 0 nodes: 388 hashfull: 0
-depth: 2 score: 755 time: 1 nodes: 1098 hashfull: 0
-depth: 3 score: 755 time: 2 nodes: 2785 hashfull: 0
-depth: 4 score: 755 time: 9 nodes: 9321 hashfull: 0
-depth: 5 score: 755 time: 18 nodes: 22513 hashfull: 0
-depth: 6 score: 760 time: 86 nodes: 89304 hashfull: 2
-depth: 7 score: 773 time: 241 nodes: 262186 hashfull: 5
-depth: 8 score: 773 time: 502 nodes: 633296 hashfull: 12
-depth: 9 score: 773 time: 2667 nodes: 2720948 hashfull: 75
-depth: 10 score: 770 time: 5905 nodes: 6516132 hashfull: 128
-[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : e2a6
+depth: 1 score: 1307 time: 0 nodes: 178 hashfull: 0
+depth: 2 score: 1366 time: 1 nodes: 1202 hashfull: 0
+depth: 3 score: 1549 time: 3 nodes: 3580 hashfull: 0
+depth: 4 score: 1589 time: 11 nodes: 9982 hashfull: 0
+depth: 5 score: 1600 time: 14 nodes: 18808 hashfull: 0
+depth: 6 score: 1702 time: 99 nodes: 82617 hashfull: 3
+depth: 7 score: 1711 time: 211 nodes: 205438 hashfull: 5
+depth: 8 score: 1728 time: 354 nodes: 422125 hashfull: 10
+depth: 9 score: 1735 time: 1671 nodes: 1771407 hashfull: 71
+depth: 10 score: 1738 time: 4557 nodes: 4819923 hashfull: 121
+[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : c8f8
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
 [32;1m[Board] [0mLoaded 20 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
-[32;1m[Board] [0mWhite player is playing e2 to a6.
-[32;1m[Board] [0m[5;1mWhite Bishop is taking Black Knight.[0m
+[32;1m[Board] [0mWhite player is playing c8 to f8.
+[32;1m[Board] [0m[5;1mWhite Queen is taking Black Bishop.[0m
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mQ[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[30;1mp[0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[0;1mb[0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m|[30;1mp[0m|| 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mQ[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[0;1mr[0m|[0;1mK[0m|[7;1m [0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
+[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mBlack King in check![0m
+[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by White Queen (f8)
 
     a   b   c   d   e   f   g   h 
-8 | r |   | b | q | k |   |   | r  | 8
-7 | p | p | p | p |   | p |   |    | 7
-6 | B |   |   |   |   |   | p |    | 6
-5 |   |   |   |   |   | p |   | p  | 5
-4 |   |   |   | P |   |   |   |    | 4
-3 |   |   | N |   |   | N |   |    | 3
-2 | P | P | Q |   |   | P | P | P  | 2
-1 | R |   | B |   |   | R | K |    | 1
+8 |   |   |   |   |   | Q | n | r  | 8
+7 | r | p | p |   | p |   | p |    | 7
+6 |   |   | p |   |   | k |   | p  | 6
+5 | p |   |   |   | N |   |   |    | 5
+4 |   |   |   |   | p |   |   |    | 4
+3 |   |   |   |   |   |   |   |    | 3
+2 | P | P | P |   |   | P | P | P  | 2
+1 | R | N | B |   | K |   |   | R  | 1
     a   b   c   d   e   f   g   h 
 
-Checking sequence: ,g1f3,h7h5,e2e4,g8f6,e4e5,f6g8,d2d4,g8f6,e5f6,e7f6,f1e2,f8b4,c2c3,b4c3,b1c3,b8a6,e1g1,g7g6,d1c2,f6f5,e2a6
+Checking sequence: ,g1f3,a7a5,e2e4,f7f6,d2d4,a8a7,f1c4,b8c6,d4d5,h7h6,d5c6,d7c6,c4f7,e8f7,d1d8,f6f5,d8c8,f5e4,f3e5,f7f6,c8f8
 Potential openings: 
 history does not match an opening
 ^ This is the 1 occurrence of this board layout.
 v This is the 1 occurrence of this board layout.
 
     a   b   c   d   e   f   g   h 
-8 | r |   | b | q | k |   |   | r  | 8
-7 | p |   | p | p |   | p |   |    | 7
-6 | p |   |   |   |   |   | p |    | 6
-5 |   |   |   |   |   | p |   | p  | 5
-4 |   |   |   | P |   |   |   |    | 4
-3 |   |   | N |   |   | N |   |    | 3
-2 | P | P | Q |   |   | P | P | P  | 2
-1 | R |   | B |   |   | R | K |    | 1
+8 |   |   |   |   |   | Q | n | r  | 8
+7 | r | p | p |   | p |   | p |    | 7
+6 |   |   | p |   |   |   |   | p  | 6
+5 | p |   |   |   | k |   |   |    | 5
+4 |   |   |   |   | p |   |   |    | 4
+3 |   |   |   |   |   |   |   |    | 3
+2 | P | P | P |   |   | P | P | P  | 2
+1 | R | N | B |   | K |   |   | R  | 1
     a   b   c   d   e   f   g   h 
 
 [32;1m[Game] [0mPlayer's error code: 0
@@ -1362,26 +1362,26 @@ v This is the 1 occurrence of this board layout.
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
 [32;1m[Board] [0mLoaded 21 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
-[32;1m[Board] [0mBlack player is playing b7 to a6.
-[32;1m[Board] [0m[5;1mBlack Pawn is taking White Bishop.[0m
+[32;1m[Board] [0mBlack player is playing f6 to e5.
+[32;1m[Board] [0m[5;1mBlack King is taking White Knight.[0m
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mQ[0m|[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|| 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mQ[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[0;1mr[0m|[0;1mK[0m|[7;1m [0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -1391,93 +1391,96 @@ Error : can't load the file openings.txt
 [DEBUG] Output move file: championship/logic-and-proofs-git-gambit/move.csv
 [Parser][ply=] 22
 how i see the board before writing next move: Turn: White
-Enpassant: xx	Castling: xxBK BQ 
+Enpassant: xx	Castling: WK WQ xx
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  |    | b  | q  | k  |    |    | r  |
+8 |    |    |    |    |    | Q  | n  | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  |    | p  | p  |    | p  |    |    |
+7 | r  | p  | p  |    | p  |    | p  |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-6 | p  |    |    |    |    |    | p  |    |
+6 |    |    | p  |    |    |    |    | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    |    | p  |    | p  |
+5 | p  |    |    |    | k  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    | P  |    |    |    |    |
+4 |    |    |    |    | p  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    | N  |    |    | N  |    |    |
+3 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 | P  | P  | Q  |    |    | P  | P  | P  |
+2 | P  | P  | P  |    |    | P  | P  | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  |    | B  |    |    | R  | K  |    |
+1 | R  | N  | B  |    | K  |    |    | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
 starting search...
-depth: 1 score: 733 time: 0 nodes: 182 hashfull: 0
-depth: 2 score: 751 time: 0 nodes: 521 hashfull: 0
-depth: 3 score: 755 time: 2 nodes: 2219 hashfull: 0
-depth: 4 score: 760 time: 9 nodes: 7316 hashfull: 0
-depth: 5 score: 773 time: 16 nodes: 16855 hashfull: 0
-depth: 6 score: 773 time: 65 nodes: 59956 hashfull: 2
-depth: 7 score: 773 time: 225 nodes: 189063 hashfull: 5
-depth: 8 score: 770 time: 466 nodes: 463398 hashfull: 10
-depth: 9 score: 781 time: 1984 nodes: 1730658 hashfull: 62
-depth: 10 score: 781 time: 3967 nodes: 4558865 hashfull: 108
-[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : c3d5
+depth: 1 score: 1273 time: 0 nodes: 141 hashfull: 0
+depth: 2 score: 1674 time: 0 nodes: 400 hashfull: 0
+depth: 3 score: 1674 time: 2 nodes: 1786 hashfull: 0
+depth: 4 score: 1702 time: 7 nodes: 6107 hashfull: 0
+depth: 5 score: 1711 time: 12 nodes: 13750 hashfull: 0
+depth: 6 score: 1728 time: 75 nodes: 62957 hashfull: 2
+depth: 7 score: 1735 time: 201 nodes: 180578 hashfull: 4
+depth: 8 score: 1738 time: 382 nodes: 420409 hashfull: 10
+depth: 9 score: 1759 time: 1669 nodes: 1523044 hashfull: 56
+depth: 10 score: 1770 time: 3778 nodes: 4044848 hashfull: 103
+[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : f8g7
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
 [32;1m[Board] [0mLoaded 22 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
-[32;1m[Board] [0mWhite player is playing c3 to d5.
+[32;1m[Board] [0mWhite player is playing f8 to g7.
+[32;1m[Board] [0m[5;1mWhite Queen is taking Black Pawn.[0m
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m|[30;1mQ[0m|[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mk[0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m|[0;1mQ[0m|[7;1m [0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mp[0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|| 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[0;1mk[0m| |[30;1mp[0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mQ[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[0;1mr[0m|[0;1mK[0m|[7;1m [0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
+[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mBlack King in check![0m
+[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by White Queen (g7)
 
     a   b   c   d   e   f   g   h 
-8 | r |   | b | q | k |   |   | r  | 8
-7 | p |   | p | p |   | p |   |    | 7
-6 | p |   |   |   |   |   | p |    | 6
-5 |   |   |   | N |   | p |   | p  | 5
-4 |   |   |   | P |   |   |   |    | 4
-3 |   |   |   |   |   | N |   |    | 3
-2 | P | P | Q |   |   | P | P | P  | 2
-1 | R |   | B |   |   | R | K |    | 1
+8 |   |   |   |   |   |   | n | r  | 8
+7 | r | p | p |   | p |   | Q |    | 7
+6 |   |   | p |   |   |   |   | p  | 6
+5 | p |   |   |   | k |   |   |    | 5
+4 |   |   |   |   | p |   |   |    | 4
+3 |   |   |   |   |   |   |   |    | 3
+2 | P | P | P |   |   | P | P | P  | 2
+1 | R | N | B |   | K |   |   | R  | 1
     a   b   c   d   e   f   g   h 
 
-Checking sequence: ,g1f3,h7h5,e2e4,g8f6,e4e5,f6g8,d2d4,g8f6,e5f6,e7f6,f1e2,f8b4,c2c3,b4c3,b1c3,b8a6,e1g1,g7g6,d1c2,f6f5,e2a6,b7a6,c3d5
+Checking sequence: ,g1f3,a7a5,e2e4,f7f6,d2d4,a8a7,f1c4,b8c6,d4d5,h7h6,d5c6,d7c6,c4f7,e8f7,d1d8,f6f5,d8c8,f5e4,f3e5,f7f6,c8f8,f6e5,f8g7
 Potential openings: 
 history does not match an opening
 ^ This is the 1 occurrence of this board layout.
 v This is the 1 occurrence of this board layout.
 
     a   b   c   d   e   f   g   h 
-8 | r |   | b |   | k |   |   | r  | 8
-7 | p |   | p | p |   | p |   |    | 7
-6 | p |   |   |   |   | q | p |    | 6
-5 |   |   |   | N |   | p |   | p  | 5
-4 |   |   |   | P |   |   |   |    | 4
-3 |   |   |   |   |   | N |   |    | 3
-2 | P | P | Q |   |   | P | P | P  | 2
-1 | R |   | B |   |   | R | K |    | 1
+8 |   |   |   |   |   |   |   | r  | 8
+7 | r | p | p |   | p |   | Q |    | 7
+6 |   |   | p |   |   | n |   | p  | 6
+5 | p |   |   |   | k |   |   |    | 5
+4 |   |   |   |   | p |   |   |    | 4
+3 |   |   |   |   |   |   |   |    | 3
+2 | P | P | P |   |   | P | P | P  | 2
+1 | R | N | B |   | K |   |   | R  | 1
     a   b   c   d   e   f   g   h 
 
 [32;1m[Game] [0mPlayer's error code: 0
@@ -1486,25 +1489,25 @@ v This is the 1 occurrence of this board layout.
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
 [32;1m[Board] [0mLoaded 23 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
-[32;1m[Board] [0mBlack player is playing d8 to f6.
+[32;1m[Board] [0mBlack player is playing g8 to f6.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[30;1mr[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m|[0;1mQ[0m|[7;1m [0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mQ[0m|[30;1mp[0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m|[30;1mp[0m|| 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[0;1mk[0m| |[30;1mp[0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mQ[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[0;1mr[0m|[0;1mK[0m|[7;1m [0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -1514,95 +1517,94 @@ Error : can't load the file openings.txt
 [DEBUG] Output move file: championship/logic-and-proofs-git-gambit/move.csv
 [Parser][ply=] 24
 how i see the board before writing next move: Turn: White
-Enpassant: xx	Castling: xxBK BQ 
+Enpassant: xx	Castling: WK WQ xx
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  |    | b  |    | k  |    |    | r  |
+8 |    |    |    |    |    |    |    | r  |
    ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  |    | p  | p  |    | p  |    |    |
+7 | r  | p  | p  |    | p  |    | Q  |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-6 | p  |    |    |    |    | q  | p  |    |
+6 |    |    | p  |    |    | n  |    | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    | N  |    | p  |    | p  |
+5 | p  |    |    |    | k  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    | P  |    |    |    |    |
+4 |    |    |    |    | p  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    |    |    |    | N  |    |    |
+3 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 | P  | P  | Q  |    |    | P  | P  | P  |
+2 | P  | P  | P  |    |    | P  | P  | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  |    | B  |    |    | R  | K  |    |
+1 | R  | N  | B  |    | K  |    |    | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
 starting search...
-depth: 1 score: 1679 time: 0 nodes: 88 hashfull: 0
-depth: 2 score: 1643 time: 0 nodes: 280 hashfull: 0
-depth: 3 score: 1674 time: 2 nodes: 2076 hashfull: 0
-depth: 4 score: 1664 time: 10 nodes: 9057 hashfull: 0
-depth: 5 score: 1690 time: 12 nodes: 17866 hashfull: 0
-depth: 6 score: 1691 time: 97 nodes: 98954 hashfull: 3
-depth: 7 score: 1710 time: 218 nodes: 260564 hashfull: 6
-depth: 8 score: 1728 time: 478 nodes: 623633 hashfull: 15
-depth: 9 score: 1728 time: 2236 nodes: 2507709 hashfull: 78
-[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : d5f6
+depth: 1 score: 1674 time: 0 nodes: 78 hashfull: 0
+depth: 2 score: 1702 time: 0 nodes: 384 hashfull: 0
+depth: 3 score: 1711 time: 2 nodes: 2283 hashfull: 0
+depth: 4 score: 1728 time: 6 nodes: 7449 hashfull: 0
+depth: 5 score: 1735 time: 14 nodes: 18324 hashfull: 0
+depth: 6 score: 1738 time: 87 nodes: 95391 hashfull: 3
+depth: 7 score: 1759 time: 168 nodes: 228174 hashfull: 5
+depth: 8 score: 1770 time: 363 nodes: 491291 hashfull: 11
+depth: 9 score: 1775 time: 2272 nodes: 2072834 hashfull: 67
+depth: 10 score: 1770 time: 5759 nodes: 5241148 hashfull: 122
+[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : g7h8
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
 [32;1m[Board] [0mLoaded 24 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
-[32;1m[Board] [0mWhite player is playing d5 to f6.
-[32;1m[Board] [0m[5;1mWhite Knight is taking Black Queen.[0m
+[32;1m[Board] [0mWhite player is playing g7 to h8.
+[32;1m[Board] [0m[5;1mWhite Queen is taking Black Rook.[0m
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[30;1mK[0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mQ[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m| |[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|[0;1mk[0m|[30;1mp[0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m|[30;1mp[0m|| 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mQ[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[0;1mr[0m|[0;1mK[0m|[7;1m [0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
-[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mBlack King in check![0m
-[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by White Knight (f6)
 
     a   b   c   d   e   f   g   h 
-8 | r |   | b |   | k |   |   | r  | 8
-7 | p |   | p | p |   | p |   |    | 7
-6 | p |   |   |   |   | N | p |    | 6
-5 |   |   |   |   |   | p |   | p  | 5
-4 |   |   |   | P |   |   |   |    | 4
-3 |   |   |   |   |   | N |   |    | 3
-2 | P | P | Q |   |   | P | P | P  | 2
-1 | R |   | B |   |   | R | K |    | 1
+8 |   |   |   |   |   |   |   | Q  | 8
+7 | r | p | p |   | p |   |   |    | 7
+6 |   |   | p |   |   | n |   | p  | 6
+5 | p |   |   |   | k |   |   |    | 5
+4 |   |   |   |   | p |   |   |    | 4
+3 |   |   |   |   |   |   |   |    | 3
+2 | P | P | P |   |   | P | P | P  | 2
+1 | R | N | B |   | K |   |   | R  | 1
     a   b   c   d   e   f   g   h 
 
-Checking sequence: ,g1f3,h7h5,e2e4,g8f6,e4e5,f6g8,d2d4,g8f6,e5f6,e7f6,f1e2,f8b4,c2c3,b4c3,b1c3,b8a6,e1g1,g7g6,d1c2,f6f5,e2a6,b7a6,c3d5,d8f6,d5f6
+Checking sequence: ,g1f3,a7a5,e2e4,f7f6,d2d4,a8a7,f1c4,b8c6,d4d5,h7h6,d5c6,d7c6,c4f7,e8f7,d1d8,f6f5,d8c8,f5e4,f3e5,f7f6,c8f8,f6e5,f8g7,g8f6,g7h8
 Potential openings: 
 history does not match an opening
 ^ This is the 1 occurrence of this board layout.
 v This is the 1 occurrence of this board layout.
 
     a   b   c   d   e   f   g   h 
-8 | r |   | b |   |   |   |   | r  | 8
-7 | p |   | p | p | k | p |   |    | 7
-6 | p |   |   |   |   | N | p |    | 6
-5 |   |   |   |   |   | p |   | p  | 5
-4 |   |   |   | P |   |   |   |    | 4
-3 |   |   |   |   |   | N |   |    | 3
-2 | P | P | Q |   |   | P | P | P  | 2
-1 | R |   | B |   |   | R | K |    | 1
+8 |   |   |   |   |   |   |   | Q  | 8
+7 | r | p | p |   | p |   |   |    | 7
+6 |   |   | p |   |   | n |   | p  | 6
+5 | p |   |   |   | k |   |   |    | 5
+4 |   |   |   |   |   |   |   |    | 4
+3 |   |   |   |   | p |   |   |    | 3
+2 | P | P | P |   |   | P | P | P  | 2
+1 | R | N | B |   | K |   |   | R  | 1
     a   b   c   d   e   f   g   h 
 
 [32;1m[Game] [0mPlayer's error code: 0
@@ -1611,25 +1613,25 @@ v This is the 1 occurrence of this board layout.
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
 [32;1m[Board] [0mLoaded 25 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
-[32;1m[Board] [0mBlack player is playing e8 to e7.
+[32;1m[Board] [0mBlack player is playing e4 to e3.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[7;1m [0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mQ[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[30;1mp[0m|[30;1mK[0m|[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|[0;1mk[0m|[30;1mp[0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m|[30;1mp[0m|| 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mQ[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[0;1mr[0m|[0;1mK[0m|[7;1m [0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -1639,94 +1641,95 @@ Error : can't load the file openings.txt
 [DEBUG] Output move file: championship/logic-and-proofs-git-gambit/move.csv
 [Parser][ply=] 26
 how i see the board before writing next move: Turn: White
-Enpassant: xx	Castling: xxxx
+Enpassant: xx	Castling: WK WQ xx
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  |    | b  |    |    |    |    | r  |
+8 |    |    |    |    |    |    |    | Q  |
    ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  |    | p  | p  | k  | p  |    |    |
+7 | r  | p  | p  |    | p  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-6 | p  |    |    |    |    | N  | p  |    |
+6 |    |    | p  |    |    | n  |    | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    |    | p  |    | p  |
+5 | p  |    |    |    | k  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    | P  |    |    |    |    |
+4 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    |    |    |    | N  |    |    |
+3 |    |    |    |    | p  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 | P  | P  | Q  |    |    | P  | P  | P  |
+2 | P  | P  | P  |    |    | P  | P  | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  |    | B  |    |    | R  | K  |    |
+1 | R  | N  | B  |    | K  |    |    | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
 starting search...
-depth: 1 score: 1700 time: 0 nodes: 257 hashfull: 0
-depth: 2 score: 1666 time: 0 nodes: 717 hashfull: 0
-depth: 3 score: 1710 time: 3 nodes: 2669 hashfull: 0
-depth: 4 score: 1696 time: 8 nodes: 7433 hashfull: 0
-depth: 5 score: 1721 time: 13 nodes: 17120 hashfull: 0
-depth: 6 score: 1740 time: 102 nodes: 79211 hashfull: 3
-depth: 7 score: 1753 time: 225 nodes: 208185 hashfull: 5
-depth: 8 score: 1783 time: 464 nodes: 501282 hashfull: 13
-depth: 9 score: 1841 time: 2488 nodes: 2112234 hashfull: 77
-depth: 10 score: 1830 time: 4245 nodes: 4988179 hashfull: 128
-[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : c2c7
+depth: 1 score: 1807 time: 0 nodes: 88 hashfull: 0
+depth: 2 score: 1869 time: 0 nodes: 529 hashfull: 0
+depth: 3 score: 1869 time: 2 nodes: 1924 hashfull: 0
+depth: 4 score: 1853 time: 5 nodes: 5490 hashfull: 0
+depth: 5 score: 1861 time: 15 nodes: 14831 hashfull: 0
+depth: 6 score: 1875 time: 39 nodes: 40127 hashfull: 1
+depth: 7 score: 1888 time: 90 nodes: 97503 hashfull: 2
+depth: 8 score: 1888 time: 385 nodes: 252286 hashfull: 8
+depth: 9 score: 1890 time: 771 nodes: 759304 hashfull: 23
+depth: 10 score: 1907 time: 1493 nodes: 1864299 hashfull: 51
+depth: 11 score: 1918 time: 4820 nodes: 5408176 hashfull: 165
+[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : c1e3
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
 [32;1m[Board] [0mLoaded 26 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
-[32;1m[Board] [0mWhite player is playing c2 to c7.
-[32;1m[Board] [0m[5;1mWhite Queen is taking Black Pawn.[0m
+[32;1m[Board] [0mWhite player is playing c1 to e3.
+[32;1m[Board] [0m[5;1mWhite Bishop is taking Black Pawn.[0m
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[7;1m [0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mQ[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[0;1mQ[0m|[30;1mp[0m|[30;1mK[0m|[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m7 ||[30;1mr[0m|[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|[0;1mk[0m|[30;1mp[0m| || 6
+[32;1m[Board] [0m6 ||[7;1m [0m| |[30;1mp[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m|[30;1mp[0m|| 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[0;1mr[0m|[0;1mK[0m|[7;1m [0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
 [32;1m[Referee] [0mThis is the turn of the Black player...
 
     a   b   c   d   e   f   g   h 
-8 | r |   | b |   |   |   |   | r  | 8
-7 | p |   | Q | p | k | p |   |    | 7
-6 | p |   |   |   |   | N | p |    | 6
-5 |   |   |   |   |   | p |   | p  | 5
-4 |   |   |   | P |   |   |   |    | 4
-3 |   |   |   |   |   | N |   |    | 3
-2 | P | P |   |   |   | P | P | P  | 2
-1 | R |   | B |   |   | R | K |    | 1
+8 |   |   |   |   |   |   |   | Q  | 8
+7 | r | p | p |   | p |   |   |    | 7
+6 |   |   | p |   |   | n |   | p  | 6
+5 | p |   |   |   | k |   |   |    | 5
+4 |   |   |   |   |   |   |   |    | 4
+3 |   |   |   |   | B |   |   |    | 3
+2 | P | P | P |   |   | P | P | P  | 2
+1 | R | N |   |   | K |   |   | R  | 1
     a   b   c   d   e   f   g   h 
 
-Checking sequence: ,g1f3,h7h5,e2e4,g8f6,e4e5,f6g8,d2d4,g8f6,e5f6,e7f6,f1e2,f8b4,c2c3,b4c3,b1c3,b8a6,e1g1,g7g6,d1c2,f6f5,e2a6,b7a6,c3d5,d8f6,d5f6,e8e7,c2c7
+Checking sequence: ,g1f3,a7a5,e2e4,f7f6,d2d4,a8a7,f1c4,b8c6,d4d5,h7h6,d5c6,d7c6,c4f7,e8f7,d1d8,f6f5,d8c8,f5e4,f3e5,f7f6,c8f8,f6e5,f8g7,g8f6,g7h8,e4e3,c1e3
 Potential openings: 
 history does not match an opening
 ^ This is the 1 occurrence of this board layout.
 v This is the 1 occurrence of this board layout.
 
     a   b   c   d   e   f   g   h 
-8 | r |   | b |   |   |   |   | r  | 8
-7 | p |   | Q | p |   | p |   |    | 7
-6 | p |   |   |   |   | k | p |    | 6
-5 |   |   |   |   |   | p |   | p  | 5
-4 |   |   |   | P |   |   |   |    | 4
-3 |   |   |   |   |   | N |   |    | 3
-2 | P | P |   |   |   | P | P | P  | 2
-1 | R |   | B |   |   | R | K |    | 1
+8 |   |   |   |   |   |   |   | Q  | 8
+7 |   | p | p |   | p |   |   |    | 7
+6 | r |   | p |   |   | n |   | p  | 6
+5 | p |   |   |   | k |   |   |    | 5
+4 |   |   |   |   |   |   |   |    | 4
+3 |   |   |   |   | B |   |   |    | 3
+2 | P | P | P |   |   | P | P | P  | 2
+1 | R | N |   |   | K |   |   | R  | 1
     a   b   c   d   e   f   g   h 
 
 [32;1m[Game] [0mPlayer's error code: 0
@@ -1735,26 +1738,25 @@ v This is the 1 occurrence of this board layout.
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
 [32;1m[Board] [0mLoaded 27 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
-[32;1m[Board] [0mBlack player is playing e7 to f6.
-[32;1m[Board] [0m[5;1mBlack King is taking White Knight.[0m
+[32;1m[Board] [0mBlack player is playing a7 to a6.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[7;1m [0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mQ[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m|[0;1mQ[0m|[30;1mp[0m| |[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mK[0m|[30;1mp[0m| || 6
+[32;1m[Board] [0m6 ||[30;1mr[0m| |[30;1mp[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m|[30;1mp[0m|| 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[0;1mr[0m|[0;1mK[0m|[7;1m [0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m
@@ -1764,54 +1766,545 @@ Error : can't load the file openings.txt
 [DEBUG] Output move file: championship/logic-and-proofs-git-gambit/move.csv
 [Parser][ply=] 28
 how i see the board before writing next move: Turn: White
-Enpassant: xx	Castling: xxxx
+Enpassant: xx	Castling: WK WQ xx
    ---- ---- ---- ---- ---- ---- ---- ----
-8 | r  |    | b  |    |    |    |    | r  |
+8 |    |    |    |    |    |    |    | Q  |
    ---- ---- ---- ---- ---- ---- ---- ----
-7 | p  |    | Q  | p  |    | p  |    |    |
+7 |    | p  | p  |    | p  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-6 | p  |    |    |    |    | k  | p  |    |
+6 | r  |    | p  |    |    | n  |    | p  |
    ---- ---- ---- ---- ---- ---- ---- ----
-5 |    |    |    |    |    | p  |    | p  |
+5 | p  |    |    |    | k  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-4 |    |    |    | P  |    |    |    |    |
+4 |    |    |    |    |    |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-3 |    |    |    |    |    | N  |    |    |
+3 |    |    |    |    | B  |    |    |    |
    ---- ---- ---- ---- ---- ---- ---- ----
-2 | P  | P  |    |    |    | P  | P  | P  |
+2 | P  | P  | P  |    |    | P  | P  | P  |
    ---- ---- ---- ---- ---- ---- ---- ----
-1 | R  |    | B  |    |    | R  | K  |    |
+1 | R  | N  |    |    | K  |    |    | R  |
    ---- ---- ---- ---- ---- ---- ---- ----
     a    b    c    d    e    f    g    h
 starting search...
-depth: 1 score: 1375 time: 0 nodes: 90 hashfull: 0
-depth: 2 score: 99999 time: 0 nodes: 367 hashfull: 0
-[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : c7e5
+depth: 1 score: 1869 time: 0 nodes: 96 hashfull: 0
+depth: 2 score: 1853 time: 0 nodes: 495 hashfull: 0
+depth: 3 score: 1861 time: 5 nodes: 4277 hashfull: 0
+depth: 4 score: 1875 time: 7 nodes: 9713 hashfull: 0
+depth: 5 score: 1888 time: 21 nodes: 25405 hashfull: 0
+depth: 6 score: 1888 time: 77 nodes: 88216 hashfull: 3
+depth: 7 score: 1890 time: 240 nodes: 261529 hashfull: 6
+depth: 8 score: 1907 time: 628 nodes: 745153 hashfull: 19
+depth: 9 score: 1918 time: 2364 nodes: 2634486 hashfull: 90
+[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : b1c3
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
 [32;1m[Board] [0mLoaded 28 move(s).
 [32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
-[32;1m[Board] [0mWhite player is playing c7 to e5.
+[32;1m[Board] [0mWhite player is playing b1 to c3.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m8 ||[30;1mr[0m| |[30;1mb[0m| |[7;1m [0m| |[7;1m [0m|[30;1mr[0m|| 8
+[32;1m[Board] [0m8 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mQ[0m|| 8
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m7 ||[30;1mp[0m|[7;1m [0m| |[30;1mp[0m| |[30;1mp[0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[7;1m [0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m|| 7
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m6 ||[30;1mp[0m| |[7;1m [0m| |[7;1m [0m|[30;1mK[0m|[30;1mp[0m| || 6
+[32;1m[Board] [0m6 ||[30;1mr[0m| |[30;1mp[0m| |[7;1m [0m|[30;1mk[0m|[7;1m [0m|[30;1mp[0m|| 6
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m|[0;1mQ[0m|[30;1mp[0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[0;1mk[0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[0;1mr[0m|[0;1mK[0m|[7;1m [0m|| 1
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+
+    a   b   c   d   e   f   g   h 
+8 |   |   |   |   |   |   |   | Q  | 8
+7 |   | p | p |   | p |   |   |    | 7
+6 | r |   | p |   |   | n |   | p  | 6
+5 | p |   |   |   | k |   |   |    | 5
+4 |   |   |   |   |   |   |   |    | 4
+3 |   |   | N |   | B |   |   |    | 3
+2 | P | P | P |   |   | P | P | P  | 2
+1 | R |   |   |   | K |   |   | R  | 1
+    a   b   c   d   e   f   g   h 
+
+Checking sequence: ,g1f3,a7a5,e2e4,f7f6,d2d4,a8a7,f1c4,b8c6,d4d5,h7h6,d5c6,d7c6,c4f7,e8f7,d1d8,f6f5,d8c8,f5e4,f3e5,f7f6,c8f8,f6e5,f8g7,g8f6,g7h8,e4e3,c1e3,a7a6,b1c3
+Potential openings: 
+history does not match an opening
+^ This is the 1 occurrence of this board layout.
+v This is the 1 occurrence of this board layout.
+
+    a   b   c   d   e   f   g   h 
+8 |   |   |   |   |   |   |   | Q  | 8
+7 |   | p | p |   |   |   |   |    | 7
+6 | r |   | p |   | p | n |   | p  | 6
+5 | p |   |   |   | k |   |   |    | 5
+4 |   |   |   |   |   |   |   |    | 4
+3 |   |   | N |   | B |   |   |    | 3
+2 | P | P | P |   |   | P | P | P  | 2
+1 | R |   |   |   | K |   |   | R  | 1
+    a   b   c   d   e   f   g   h 
+
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
+[32;1m[Board] [0mLoaded 29 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
+[32;1m[Board] [0mBlack player is playing e7 to e6.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mQ[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mr[0m| |[30;1mp[0m| |[30;1mp[0m|[30;1mk[0m|[7;1m [0m|[30;1mp[0m|| 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+Error : can't load the file openings.txt
+[DEBUG] Input history filename: championship/logic-and-proofs-git-gambit/history.csv
+[DEBUG] Output move file: championship/logic-and-proofs-git-gambit/move.csv
+[Parser][ply=] 30
+how i see the board before writing next move: Turn: White
+Enpassant: xx	Castling: WK WQ xx
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 |    |    |    |    |    |    |    | Q  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 |    | p  | p  |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 | r  |    | p  |    | p  | n  |    | p  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 | p  |    |    |    | k  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    | N  |    | B  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | P  | P  | P  |    |    | P  | P  | P  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | R  |    |    |    | K  |    |    | R  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+starting search...
+depth: 1 score: 1907 time: 0 nodes: 104 hashfull: 0
+depth: 2 score: 1902 time: 0 nodes: 424 hashfull: 0
+depth: 3 score: 1902 time: 6 nodes: 4020 hashfull: 0
+depth: 4 score: 1930 time: 17 nodes: 13921 hashfull: 0
+depth: 5 score: 1973 time: 20 nodes: 26325 hashfull: 0
+depth: 6 score: 1977 time: 121 nodes: 104371 hashfull: 3
+depth: 7 score: 2117 time: 501 nodes: 399859 hashfull: 10
+depth: 8 score: 2114 time: 596 nodes: 764515 hashfull: 20
+depth: 9 score: 2228 time: 4419 nodes: 3784818 hashfull: 134
+[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : g2g4
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
+[32;1m[Board] [0mLoaded 30 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
+[32;1m[Board] [0mWhite player is playing g2 to g4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mQ[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mr[0m| |[30;1mp[0m| |[30;1mp[0m|[30;1mk[0m|[7;1m [0m|[30;1mp[0m|| 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m| |[7;1m [0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+
+    a   b   c   d   e   f   g   h 
+8 |   |   |   |   |   |   |   | Q  | 8
+7 |   | p | p |   |   |   |   |    | 7
+6 | r |   | p |   | p | n |   | p  | 6
+5 | p |   |   |   | k |   |   |    | 5
+4 |   |   |   |   |   |   | P |    | 4
+3 |   |   | N |   | B |   |   |    | 3
+2 | P | P | P |   |   | P |   | P  | 2
+1 | R |   |   |   | K |   |   | R  | 1
+    a   b   c   d   e   f   g   h 
+
+Checking sequence: ,g1f3,a7a5,e2e4,f7f6,d2d4,a8a7,f1c4,b8c6,d4d5,h7h6,d5c6,d7c6,c4f7,e8f7,d1d8,f6f5,d8c8,f5e4,f3e5,f7f6,c8f8,f6e5,f8g7,g8f6,g7h8,e4e3,c1e3,a7a6,b1c3,e7e6,g2g4
+Potential openings: 
+history does not match an opening
+^ This is the 1 occurrence of this board layout.
+v This is the 1 occurrence of this board layout.
+
+    a   b   c   d   e   f   g   h 
+8 |   |   |   |   |   |   |   | Q  | 8
+7 |   | p | p |   |   |   |   |    | 7
+6 | r |   | p |   | p | n |   |    | 6
+5 | p |   |   |   | k |   |   | p  | 5
+4 |   |   |   |   |   |   | P |    | 4
+3 |   |   | N |   | B |   |   |    | 3
+2 | P | P | P |   |   | P |   | P  | 2
+1 | R |   |   |   | K |   |   | R  | 1
+    a   b   c   d   e   f   g   h 
+
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
+[32;1m[Board] [0mLoaded 31 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
+[32;1m[Board] [0mBlack player is playing h6 to h5.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mQ[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mr[0m| |[30;1mp[0m| |[30;1mp[0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+Error : can't load the file openings.txt
+[DEBUG] Input history filename: championship/logic-and-proofs-git-gambit/history.csv
+[DEBUG] Output move file: championship/logic-and-proofs-git-gambit/move.csv
+[Parser][ply=] 32
+how i see the board before writing next move: Turn: White
+Enpassant: xx	Castling: WK WQ xx
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 |    |    |    |    |    |    |    | Q  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 |    | p  | p  |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 | r  |    | p  |    | p  | n  |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 | p  |    |    |    | k  |    |    | p  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    |    | P  |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    | N  |    | B  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | P  | P  | P  |    |    | P  |    | P  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | R  |    |    |    | K  |    |    | R  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+starting search...
+depth: 1 score: 1879 time: 0 nodes: 109 hashfull: 0
+depth: 2 score: 1902 time: 0 nodes: 435 hashfull: 0
+depth: 3 score: 2152 time: 3 nodes: 3435 hashfull: 0
+depth: 4 score: 2147 time: 9 nodes: 9298 hashfull: 0
+depth: 5 score: 2192 time: 17 nodes: 21644 hashfull: 0
+depth: 6 score: 2211 time: 98 nodes: 101085 hashfull: 4
+depth: 7 score: 2236 time: 262 nodes: 288565 hashfull: 7
+depth: 8 score: 2236 time: 403 nodes: 593076 hashfull: 15
+depth: 9 score: 99999 time: 2457 nodes: 2553895 hashfull: 96
+[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : f2f4
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
+[32;1m[Board] [0mLoaded 32 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
+[32;1m[Board] [0mWhite player is playing f2 to f4.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mQ[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mr[0m| |[30;1mp[0m| |[30;1mp[0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m|[30;1mK[0m|[7;1m [0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mBlack King in check![0m
+[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by White Pawn (f4)
+
+    a   b   c   d   e   f   g   h 
+8 |   |   |   |   |   |   |   | Q  | 8
+7 |   | p | p |   |   |   |   |    | 7
+6 | r |   | p |   | p | n |   |    | 6
+5 | p |   |   |   | k |   |   | p  | 5
+4 |   |   |   |   |   | P | P |    | 4
+3 |   |   | N |   | B |   |   |    | 3
+2 | P | P | P |   |   |   |   | P  | 2
+1 | R |   |   |   | K |   |   | R  | 1
+    a   b   c   d   e   f   g   h 
+
+Checking sequence: ,g1f3,a7a5,e2e4,f7f6,d2d4,a8a7,f1c4,b8c6,d4d5,h7h6,d5c6,d7c6,c4f7,e8f7,d1d8,f6f5,d8c8,f5e4,f3e5,f7f6,c8f8,f6e5,f8g7,g8f6,g7h8,e4e3,c1e3,a7a6,b1c3,e7e6,g2g4,h6h5,f2f4
+Potential openings: 
+history does not match an opening
+^ This is the 1 occurrence of this board layout.
+v This is the 1 occurrence of this board layout.
+
+    a   b   c   d   e   f   g   h 
+8 |   |   |   |   |   |   |   | Q  | 8
+7 |   | p | p |   |   |   |   |    | 7
+6 | r |   | p | k | p | n |   |    | 6
+5 | p |   |   |   |   |   |   | p  | 5
+4 |   |   |   |   |   | P | P |    | 4
+3 |   |   | N |   | B |   |   |    | 3
+2 | P | P | P |   |   |   |   | P  | 2
+1 | R |   |   |   | K |   |   | R  | 1
+    a   b   c   d   e   f   g   h 
+
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
+[32;1m[Board] [0mLoaded 33 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
+[32;1m[Board] [0mBlack player is playing e5 to d6.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mQ[0m|| 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mr[0m| |[30;1mp[0m|[30;1mK[0m|[30;1mp[0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+Error : can't load the file openings.txt
+[DEBUG] Input history filename: championship/logic-and-proofs-git-gambit/history.csv
+[DEBUG] Output move file: championship/logic-and-proofs-git-gambit/move.csv
+[Parser][ply=] 34
+how i see the board before writing next move: Turn: White
+Enpassant: xx	Castling: WK WQ xx
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 |    |    |    |    |    |    |    | Q  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 |    | p  | p  |    |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 | r  |    | p  | k  | p  | n  |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 | p  |    |    |    |    |    |    | p  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    | P  | P  |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    | N  |    | B  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | P  | P  | P  |    |    |    |    | P  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | R  |    |    |    | K  |    |    | R  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+starting search...
+depth: 1 score: 2033 time: 0 nodes: 110 hashfull: 0
+depth: 2 score: 2033 time: 0 nodes: 243 hashfull: 0
+depth: 3 score: 2037 time: 2 nodes: 2097 hashfull: 0
+depth: 4 score: 2037 time: 8 nodes: 7579 hashfull: 0
+depth: 5 score: 2037 time: 11 nodes: 16039 hashfull: 0
+depth: 6 score: 99999 time: 57 nodes: 59665 hashfull: 2
+[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : h8d8
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
+[32;1m[Board] [0mLoaded 34 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
+[32;1m[Board] [0mWhite player is playing h8 to d8.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m| |[7;1m [0m|[0;1mQ[0m|[7;1m [0m| |[7;1m [0m| || 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mr[0m| |[30;1mp[0m|[30;1mK[0m|[30;1mp[0m|[30;1mk[0m|[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the Black player...
+[32;1m[Board] [0m[33;1m[WARNING][0m [5;1mBlack King in check![0m
+[32;1m[Board] [0m[33;1m[WARNING][0m    Threatened by White Queen (d8)
+
+    a   b   c   d   e   f   g   h 
+8 |   |   |   | Q |   |   |   |    | 8
+7 |   | p | p |   |   |   |   |    | 7
+6 | r |   | p | k | p | n |   |    | 6
+5 | p |   |   |   |   |   |   | p  | 5
+4 |   |   |   |   |   | P | P |    | 4
+3 |   |   | N |   | B |   |   |    | 3
+2 | P | P | P |   |   |   |   | P  | 2
+1 | R |   |   |   | K |   |   | R  | 1
+    a   b   c   d   e   f   g   h 
+
+Checking sequence: ,g1f3,a7a5,e2e4,f7f6,d2d4,a8a7,f1c4,b8c6,d4d5,h7h6,d5c6,d7c6,c4f7,e8f7,d1d8,f6f5,d8c8,f5e4,f3e5,f7f6,c8f8,f6e5,f8g7,g8f6,g7h8,e4e3,c1e3,a7a6,b1c3,e7e6,g2g4,h6h5,f2f4,e5d6,h8d8
+Potential openings: 
+history does not match an opening
+^ This is the 1 occurrence of this board layout.
+v This is the 1 occurrence of this board layout.
+
+    a   b   c   d   e   f   g   h 
+8 |   |   |   | Q |   |   |   |    | 8
+7 |   | p | p | n |   |   |   |    | 7
+6 | r |   | p | k | p |   |   |    | 6
+5 | p |   |   |   |   |   |   | p  | 5
+4 |   |   |   |   |   | P | P |    | 4
+3 |   |   | N |   | B |   |   |    | 3
+2 | P | P | P |   |   |   |   | P  | 2
+1 | R |   |   |   | K |   |   | R  | 1
+    a   b   c   d   e   f   g   h 
+
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
+[32;1m[Board] [0mLoaded 35 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
+[32;1m[Board] [0mBlack player is playing f6 to d7.
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m| |[7;1m [0m|[0;1mQ[0m|[7;1m [0m| |[7;1m [0m| || 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[30;1mk[0m| |[7;1m [0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mr[0m| |[30;1mp[0m|[30;1mK[0m|[30;1mp[0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 ||[0;1mr[0m|[7;1m [0m| |[7;1m [0m|[0;1mK[0m|[7;1m [0m| |[0;1mr[0m|| 1
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m    a b c d e f g h
+[32;1m[Board] [0m
+[32;1m[Referee] [0mThis is the turn of the White player...
+Error : can't load the file openings.txt
+[DEBUG] Input history filename: championship/logic-and-proofs-git-gambit/history.csv
+[DEBUG] Output move file: championship/logic-and-proofs-git-gambit/move.csv
+[Parser][ply=] 36
+how i see the board before writing next move: Turn: White
+Enpassant: xx	Castling: WK WQ xx
+   ---- ---- ---- ---- ---- ---- ---- ----
+8 |    |    |    | Q  |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+7 |    | p  | p  | n  |    |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+6 | r  |    | p  | k  | p  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+5 | p  |    |    |    |    |    |    | p  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+4 |    |    |    |    |    | P  | P  |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+3 |    |    | N  |    | B  |    |    |    |
+   ---- ---- ---- ---- ---- ---- ---- ----
+2 | P  | P  | P  |    |    |    |    | P  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+1 | R  |    |    |    | K  |    |    | R  |
+   ---- ---- ---- ---- ---- ---- ---- ----
+    a    b    c    d    e    f    g    h
+starting search...
+depth: 1 score: 1862 time: 0 nodes: 116 hashfull: 0
+depth: 2 score: 1884 time: 0 nodes: 498 hashfull: 0
+depth: 3 score: 99999 time: 0 nodes: 1010 hashfull: 0
+[DEBUG] [Parser] Wrote to ouput file championship/logic-and-proofs-git-gambit/move.csv move : e1c1
+[32;1m[Game] [0mPlayer's error code: 0
+[32;1m[Game] [0mChecking move validity...
+[32;1m[Board] [0mInitializing board...
+[32;1m[Board] [0mLoading history file `championship/logic-and-proofs-git-gambit/history.csv`...
+[32;1m[Board] [0mLoaded 36 move(s).
+[32;1m[Board] [0mLoading move file `championship/logic-and-proofs-git-gambit/move.csv`...
+[32;1m[Board] [0mWhite player is playing e1 to c1.
+[32;1m[Board] [0mWhite player is castling queenside...
+[32;1m[Board] [0m
+[32;1m[Board] [0m    a b c d e f g h 
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m8 ||[7;1m [0m| |[7;1m [0m|[0;1mQ[0m|[7;1m [0m| |[7;1m [0m| || 8
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m7 || |[30;1mp[0m|[30;1mp[0m|[30;1mk[0m| |[7;1m [0m| |[7;1m [0m|| 7
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m6 ||[30;1mr[0m| |[30;1mp[0m|[30;1mK[0m|[30;1mp[0m| |[7;1m [0m| || 6
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m5 ||[30;1mp[0m|[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[30;1mp[0m|| 5
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[0;1mp[0m| || 4
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m3 || |[7;1m [0m|[0;1mk[0m|[7;1m [0m|[0;1mb[0m|[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m| |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m  -------------------
+[32;1m[Board] [0m1 || |[7;1m [0m|[0;1mK[0m|[0;1mr[0m| |[7;1m [0m| |[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m    a b c d e f g h
 [32;1m[Board] [0m

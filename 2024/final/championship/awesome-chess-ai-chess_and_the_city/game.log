@@ -63,15 +63,15 @@ h2 -> h4 legal
 1 [40;31mrw[0m[47;31mnw[0m[40;31mbw[0m[47;31mqw[0m[40;31mkw[0m[47;31mbw[0m[40;31mnw[0m[47;31mrw[0m 1
   a b c d e f g h 
 3229009034
-c2 -> c4   0
-c2c4
+e2 -> e3   0
+e2e3
 [32;1m[Game] [0mPlayer's error code: 0
 [32;1m[Game] [0mChecking move validity...
 [32;1m[Board] [0mInitializing board...
 [32;1m[Board] [0mLoading history file `championship/awesome-chess-ai-chess_and_the_city/history.csv`...
 [32;1m[Board] [0mLoaded 0 move(s).
 [32;1m[Board] [0mLoading move file `championship/awesome-chess-ai-chess_and_the_city/move.csv`...
-[32;1m[Board] [0mWhite player is playing c2 to c4.
+[32;1m[Board] [0mWhite player is playing e2 to e3.
 [32;1m[Board] [0m
 [32;1m[Board] [0m    a b c d e f g h 
 [32;1m[Board] [0m  -------------------
@@ -83,11 +83,11 @@ c2c4
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m5 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 5
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m4 ||[7;1m [0m| |[0;1mp[0m| |[7;1m [0m| |[7;1m [0m| || 4
+[32;1m[Board] [0m4 ||[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| || 4
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m| |[7;1m [0m| |[7;1m [0m|| 3
+[32;1m[Board] [0m3 || |[7;1m [0m| |[7;1m [0m|[0;1mp[0m|[7;1m [0m| |[7;1m [0m|| 3
 [32;1m[Board] [0m  -------------------
-[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
+[32;1m[Board] [0m2 ||[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|[7;1m [0m|[0;1mp[0m|[0;1mp[0m|[0;1mp[0m|| 2
 [32;1m[Board] [0m  -------------------
 [32;1m[Board] [0m1 ||[0;1mr[0m|[0;1mk[0m|[0;1mb[0m|[0;1mQ[0m|[0;1mK[0m|[0;1mb[0m|[0;1mk[0m|[0;1mr[0m|| 1
 [32;1m[Board] [0m  -------------------
@@ -110,46 +110,54 @@ c2c4
 7| p p p p p p p p |
 6| . . . . . . . . |
 5| . . . . . . . . |
-4| . . P . . . . . |
-3| . . . . . . . . |
-2| P P . P P P P P |
+4| . . . . . . . . |
+3| . . . . P . . . |
+2| P P P P . P P P |
 1| R H B Q K B H R |
 --------------------
    a b c d e f g h
 In find bet move
 Move: horse from b1 to c3
 Move: horse from b1 to a3
-Move: queen from d1 to c2
-Move: queen from d1 to b3
-Move: queen from d1 to a4
+Move: queen from d1 to e2
+Move: queen from d1 to f3
+Move: queen from d1 to g4
+Move: queen from d1 to h5
+Move: king from e1 to e2
+Move: bishop from f1 to e2
+Move: bishop from f1 to d3
+Move: bishop from f1 to c4
+Move: bishop from f1 to b5
+Move: bishop from f1 to a6
+Move: horse from g1 to e2
 Move: horse from g1 to h3
 Move: horse from g1 to f3
 Move: pawn from a2 to a3
 Move: pawn from a2 to a4
 Move: pawn from b2 to b3
 Move: pawn from b2 to b4
-Move: pawn from c4 to c5
+Move: pawn from c2 to c3
+Move: pawn from c2 to c4
 Move: pawn from d2 to d3
 Move: pawn from d2 to d4
-Move: pawn from e2 to e3
-Move: pawn from e2 to e4
+Move: pawn from e3 to e4
 Move: pawn from f2 to f3
 Move: pawn from f2 to f4
 Move: pawn from g2 to g3
 Move: pawn from g2 to g4
 Move: pawn from h2 to h3
 Move: pawn from h2 to h4
-Best move: d1 to c2
+Best move: g1 to e2
 Out
 --------------------
 8| r h b q k b h r |
 7| p p p p p p p p |
 6| . . . . . . . . |
 5| . . . . . . . . |
-4| . . P . . . . . |
-3| . . . . . . . . |
-2| P P Q P P P P P |
-1| R H B . K B H R |
+4| . . . . . . . . |
+3| . . . . P . . . |
+2| P P P P H P P P |
+1| R H B Q K B . R |
 --------------------
    a b c d e f g h
 [32;1m[Game] [0mPlayer's error code: 0
@@ -158,7 +166,7 @@ Out
 [32;1m[Board] [0mLoading history file `championship/awesome-chess-ai-chess_and_the_city/history.csv`...
 [32;1m[Board] [0mLoaded 1 move(s).
 [32;1m[Board] [0mLoading move file `championship/awesome-chess-ai-chess_and_the_city/move.csv`...
-[32;1m[Board] [0mBlack player is playing d1 to c2.
-[32;1m[Board] [0m[31;1m[ERROR][0m Move source (d1) contains an opponent's piece :(
+[32;1m[Board] [0mBlack player is playing g1 to e2.
+[32;1m[Board] [0m[31;1m[ERROR][0m Move source (g1) contains an opponent's piece :(
 [32;1m[Referee] [0mInvalid move (code: -4) :(
 [32;1m[Game] [0mBlack player has lost on illegal move.
